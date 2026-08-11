@@ -74,13 +74,13 @@ export default function PsicoterapiaInfantilPage() {
         }}
       />
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-start">
           <SectionHeading
             eyebrow="Quando procurar"
             title="Nem toda mudança significa que existe um problema. Mas algumas mudanças merecem ser compreendidas."
           />
-          <div className="space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>
               Às vezes, os responsáveis percebem que a criança está diferente, mas
               não conseguem entender exatamente o motivo.
@@ -99,10 +99,10 @@ export default function PsicoterapiaInfantilPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-white py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading title="“Meu filho não fala sobre o que está acontecendo.”" />
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>
               Crianças nem sempre expressam o que sentem da mesma maneira que os
               adultos.
@@ -121,7 +121,7 @@ export default function PsicoterapiaInfantilPage() {
         </Container>
       </section>
 
-      <section className="bg-mist py-20 sm:py-24">
+      <section className="bg-mist py-12 sm:py-16">
         <Container>
           <SectionHeading
             eyebrow="O que pode levar os responsáveis a buscar psicoterapia?"
@@ -134,14 +134,14 @@ export default function PsicoterapiaInfantilPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-base leading-relaxed text-mid sm:text-lg">
+          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
             Essas situações podem ter significados diferentes para cada criança e
             precisam ser compreendidas dentro de sua história e contexto.
           </p>
         </Container>
       </section>
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container className="grid gap-10 lg:grid-cols-2">
           <article className="rounded-2xl bg-ink p-8 text-white sm:p-10">
             <p className="text-[11px] tracking-[0.16em] text-peach uppercase">
@@ -172,7 +172,7 @@ export default function PsicoterapiaInfantilPage() {
         </Container>
         <Container className="mt-10">
           <SectionHeading title="Às vezes, a dúvida dos pais começa justamente aqui." />
-          <p className="mt-6 max-w-3xl text-base leading-relaxed text-mid sm:text-lg">
+          <p className="mt-6 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
             Se houver dúvida sobre qual caminho faz mais sentido, ela pode ser
             compreendida a partir da demanda apresentada.
           </p>
@@ -187,13 +187,13 @@ export default function PsicoterapiaInfantilPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-white py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Como funciona a psicoterapia infantil?"
             title="Para compreender uma criança, também é preciso conhecer o contexto em que ela vive."
           />
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>
               O processo considera a idade, o desenvolvimento, a história e as
               necessidades da criança.
@@ -210,16 +210,16 @@ export default function PsicoterapiaInfantilPage() {
         </Container>
       </section>
 
-      <section className="bg-ink py-20 text-white sm:py-24">
+      <section className="bg-ink py-12 text-white sm:py-16">
         <Container className="max-w-4xl">
           <p className="text-[11px] font-medium tracking-[0.2em] text-peach uppercase">
             Quem vai acompanhar seu filho?
           </p>
-          <h2 className="font-display mt-4 text-4xl leading-[1.15] font-medium sm:text-5xl">
+          <h2 className="font-display mt-4 text-3xl leading-[1.2] font-medium sm:text-4xl">
             Experiência clínica também é saber que uma criança não pode ser
             compreendida apenas pelo comportamento que preocupa os adultos.
           </h2>
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mist sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
               Sou Laís Barone, psicóloga desde 2008 e Mestre pela Universidade de São
               Paulo (USP).
@@ -241,7 +241,7 @@ export default function PsicoterapiaInfantilPage() {
         </Container>
       </section>
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container>
           <SectionHeading title="Dúvidas frequentes" />
           <div className="mt-10">

@@ -68,13 +68,13 @@ export default function PsicoterapiaAutoconhecimentoPage() {
         }}
       />
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Terapia também é para quem quer se conhecer"
             title="“Minha vida está bem. Ainda assim, sinto que há coisas sobre mim que gostaria de entender melhor.”"
           />
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>
               Nem toda busca por psicoterapia começa em um momento de sofrimento
               intenso.
@@ -92,7 +92,7 @@ export default function PsicoterapiaAutoconhecimentoPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-white py-12 sm:py-16">
         <Container>
           <SectionHeading
             eyebrow="O que pode ser trabalhado na psicoterapia?"
@@ -111,20 +111,20 @@ export default function PsicoterapiaAutoconhecimentoPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-base leading-relaxed text-mid sm:text-lg">
+          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
             As questões trabalhadas são construídas a partir da história e dos
             objetivos de cada pessoa.
           </p>
         </Container>
       </section>
 
-      <section className="bg-mist py-20 sm:py-24">
+      <section className="bg-mist py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Autoconhecimento"
             title="Autoconhecimento vai além de “saber como eu sou”"
           />
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>Perceber um padrão é diferente de compreender de onde ele vem.</p>
             <p>
               Ao longo da vida, construímos maneiras de interpretar situações, lidar
@@ -139,13 +139,13 @@ export default function PsicoterapiaAutoconhecimentoPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-white py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Como eu trabalho"
             title="Sua história não cabe em uma fórmula pronta."
           />
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>
               Meu trabalho clínico é orientado principalmente pela Terapia
               Cognitivo-Comportamental (TCC) e pela Terapia do Esquema.
@@ -164,16 +164,16 @@ export default function PsicoterapiaAutoconhecimentoPage() {
         </Container>
       </section>
 
-      <section className="bg-ink py-20 text-white sm:py-24">
+      <section className="bg-ink py-12 text-white sm:py-16">
         <Container className="max-w-4xl">
           <p className="text-[11px] font-medium tracking-[0.2em] text-peach uppercase">
             Quem vai conduzir seu processo?
           </p>
-          <h2 className="font-display mt-4 text-4xl leading-[1.15] font-medium sm:text-5xl">
+          <h2 className="font-display mt-4 text-3xl leading-[1.2] font-medium sm:text-4xl">
             Experiência clínica também é saber que nem toda pessoa chega à terapia
             procurando a mesma coisa.
           </h2>
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mist sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
               Sou Laís Barone, psicóloga desde 2008 e Mestre pela Universidade de São
               Paulo (USP).
@@ -196,7 +196,7 @@ export default function PsicoterapiaAutoconhecimentoPage() {
         </Container>
       </section>
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container>
           <SectionHeading title="Dúvidas frequentes" />
           <div className="mt-10">

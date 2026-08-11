@@ -16,15 +16,15 @@ export function ContactBand({
 }) {
   return (
     <section className="bg-ink text-white">
-      <Container className="grid gap-10 py-20 md:grid-cols-[1.4fr_1fr] md:items-end">
+      <Container className="grid gap-8 py-14 md:grid-cols-[1.4fr_1fr] md:items-end md:py-16">
         <div>
           <p className="text-[11px] font-medium tracking-[0.2em] text-peach uppercase">
             Contato
           </p>
-          <h2 className="font-display mt-4 max-w-2xl text-4xl leading-[1.15] font-medium text-balance sm:text-5xl">
+          <h2 className="font-display mt-3 max-w-2xl text-3xl leading-[1.2] font-medium text-balance sm:text-4xl">
             {title}
           </h2>
-          <p className="mt-5 max-w-xl text-lg leading-relaxed text-mist">{description}</p>
+          <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-mist sm:text-base">{description}</p>
           {modality ? <p className="mt-4 text-soft">{modality}</p> : null}
         </div>
         <div className="flex flex-col gap-3 md:items-end">

@@ -77,13 +77,13 @@ export default function AvaliacaoAdultosPage() {
         }}
       />
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-start">
           <SectionHeading
             eyebrow="O que leva um adulto a procurar uma avaliação?"
             title="“Eu sempre fui assim ou alguma coisa mudou?”"
           />
-          <div className="space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>
               Talvez você tenha dificuldade para se concentrar, esqueça compromissos,
               perca objetos, comece tarefas e não consiga terminá-las ou sinta que se
@@ -103,13 +103,13 @@ export default function AvaliacaoAdultosPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-white py-12 sm:py-16">
         <Container>
           <SectionHeading
             eyebrow="O que a avaliação pode investigar?"
             title="A pergunta não é apenas “o que está difícil?”, mas “como você funciona?”."
           />
-          <p className="mt-8 max-w-3xl text-base leading-relaxed text-mid sm:text-lg">
+          <p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
             De acordo com a necessidade de cada caso, podem ser investigados aspectos
             como:
           </p>
@@ -120,17 +120,17 @@ export default function AvaliacaoAdultosPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-base leading-relaxed text-mid sm:text-lg">
+          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
             Essas informações são interpretadas considerando também a história, o
             contexto e a questão que motivou a avaliação.
           </p>
         </Container>
       </section>
 
-      <section className="bg-mist py-20 sm:py-24">
+      <section className="bg-mist py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading title="“Será que eu tenho TDAH? Autismo? Ou existe outra explicação?”" />
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>Chegar com uma hipótese é diferente de chegar com uma conclusão.</p>
             <p>
               Muitos adultos procuram avaliação depois de se reconhecerem em
@@ -157,13 +157,13 @@ export default function AvaliacaoAdultosPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-white py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Como funciona a avaliação em adultos?"
             title="Você não chega para provar que tem ou não tem um diagnóstico."
           />
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>
               O processo começa pela compreensão da sua história, das dificuldades
               percebidas e da pergunta que motivou a avaliação.
@@ -187,16 +187,16 @@ export default function AvaliacaoAdultosPage() {
         </Container>
       </section>
 
-      <section className="bg-ink py-20 text-white sm:py-24">
+      <section className="bg-ink py-12 text-white sm:py-16">
         <Container className="max-w-4xl">
           <p className="text-[11px] font-medium tracking-[0.2em] text-peach uppercase">
             Quem vai conduzir sua avaliação?
           </p>
-          <h2 className="font-display mt-4 text-4xl leading-[1.15] font-medium sm:text-5xl">
+          <h2 className="font-display mt-4 text-3xl leading-[1.2] font-medium sm:text-4xl">
             Um resultado pode trazer números. A experiência clínica ajuda a
             compreender o que eles significam.
           </h2>
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mist sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
               Sou Laís Barone, psicóloga e neuropsicóloga, com atuação desde 2008.
             </p>
@@ -216,7 +216,7 @@ export default function AvaliacaoAdultosPage() {
         </Container>
       </section>
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container>
           <SectionHeading title="Dúvidas frequentes" />
           <div className="mt-10">

@@ -20,7 +20,7 @@ const areas = [
     pill: "Avaliação",
     title: "Avaliação Neuropsicológica",
     lead: "Quando existem dúvidas, investigar com cuidado faz diferença.",
-    text: "A avaliação neuropsicológica busca compreender diferentes aspectos do funcionamento cognitivo, emocional e comportamental, considerando a história de cada pessoa e diferentes fontes de informação — não apenas o resultado de testes isolados.",
+    text: "Compreende o funcionamento cognitivo, emocional e comportamental além de resultados isolados.",
     cta: "Conheça a Avaliação Neuropsicológica",
   },
   {
@@ -30,7 +30,7 @@ const areas = [
     pill: "Psicoterapia",
     title: "Psicoterapia Individual",
     lead: "Entender o que acontece nem sempre é suficiente para deixar de repetir.",
-    text: "Na psicoterapia, olhamos para emoções, relações, necessidades e padrões que foram sendo construídos ao longo da vida e que podem continuar influenciando escolhas, comportamentos e vínculos no presente.",
+    text: "Olhamos para emoções, relações, necessidades e padrões que influenciam escolhas e vínculos no presente.",
     cta: "Conheça a Psicoterapia",
   },
   {
@@ -40,7 +40,7 @@ const areas = [
     pill: "Supervisão",
     title: "Supervisão Clínica",
     lead: "A prática clínica também se constrói quando aprendemos a olhar melhor para cada caso.",
-    text: "A supervisão é um espaço de discussão e reflexão para profissionais que desejam aprofundar o raciocínio clínico, ampliar possibilidades de compreensão e pensar com mais cuidado sobre a condução de seus casos.",
+    text: "Espaço para discutir casos, ampliar hipóteses e aprofundar o raciocínio clínico.",
     cta: "Conheça a Supervisão Clínica",
   },
 ];
@@ -51,14 +51,14 @@ export default function Home() {
       <section className="relative overflow-hidden bg-mist">
         <div className="pointer-events-none absolute -top-28 right-[-5rem] h-80 w-80 rounded-full bg-soft/55" />
         <div className="pointer-events-none absolute bottom-[-6rem] left-[-4rem] h-72 w-72 rounded-full bg-peach/70" />
-        <Container className="relative grid gap-12 py-20 lg:grid-cols-[1.25fr_0.95fr] lg:items-end lg:py-24">
+        <Container className="relative grid gap-10 py-14 lg:grid-cols-[1.25fr_0.95fr] lg:items-end lg:py-16">
           <div>
             <Pill>Laís Barone</Pill>
-            <h1 className="font-display mt-6 max-w-3xl text-[2.45rem] leading-[1.12] font-medium text-balance sm:text-6xl">
+            <h1 className="font-display mt-5 max-w-3xl text-[2rem] leading-[1.15] font-medium text-balance sm:text-5xl">
               Avaliação neuropsicológica e psicoterapia para compreender além do
               que aparece à primeira vista.
             </h1>
-            <p className="mt-7 max-w-2xl text-base leading-relaxed text-mid sm:text-lg">
+            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-mid sm:text-base">
               Sou Laís Barone, psicóloga e neuropsicóloga, com atuação desde 2008.
               Meu trabalho une experiência clínica, conhecimento técnico e um olhar
               individualizado para compreender cada pessoa em sua história e
@@ -101,7 +101,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section id="atuacao" className="bg-base py-20 sm:py-24">
+      <section id="atuacao" className="bg-base py-12 sm:py-16">
         <Container>
           <SectionHeading
             eyebrow="Áreas de atuação"
@@ -139,7 +139,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-white py-12 sm:py-16">
         <Container className="grid gap-12 lg:grid-cols-[0.9fr_1.2fr] lg:items-center">
           <div className="rounded-2xl bg-soft p-10 text-ink">
             <p className="text-[10px] tracking-[0.18em] uppercase opacity-70">Desde 2008</p>
@@ -156,23 +156,15 @@ export default function Home() {
               eyebrow="Sobre Laís Barone"
               title="Uma trajetória construída entre ciência, experiência clínica e um olhar que não se limita ao sintoma."
             />
-            <div className="mt-6 space-y-5 text-base leading-relaxed text-mid">
+            <div className="mt-6 space-y-4 text-[15px] leading-relaxed text-mid sm:text-base">
               <p>
-                Sou psicóloga desde 2008, Mestre pela Universidade de São Paulo
-                (USP) e tenho formação em Neuropsicologia pela USP, além de formação
-                em Terapia Cognitivo-Comportamental (TCC), Terapia do Esquema e
-                Psicopatologia.
+                Sou psicóloga desde 2008, Mestre pela USP, com formação em
+                Neuropsicologia, TCC, Terapia do Esquema e Psicopatologia.
               </p>
               <p>
-                Ao longo de quase duas décadas de atuação, fui construindo uma forma
-                de trabalhar que une conhecimento técnico e experiência clínica sem
-                perder de vista algo essencial: uma mesma dificuldade pode ter
-                significados e explicações muito diferentes de uma pessoa para outra.
-              </p>
-              <p>
-                Por isso, meu trabalho considera não apenas aquilo que aparece como
-                queixa ou sintoma, mas também a história, o contexto e as
-                particularidades de quem está diante de mim.
+                Meu trabalho une conhecimento técnico e experiência clínica sem
+                perder de vista que uma mesma dificuldade pode ter significados
+                diferentes de uma pessoa para outra.
               </p>
             </div>
             <ButtonLink href="/sobre" variant="primary" className="mt-8">
@@ -182,37 +174,32 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="bg-peach py-20 sm:py-24">
+      <section className="bg-peach py-12 sm:py-16">
         <Container className="max-w-4xl">
           <SectionHeading
             align="center"
             eyebrow="Um pouco sobre a forma como trabalho"
             title="A mesma queixa pode contar histórias completamente diferentes."
           />
-          <p className="mx-auto mt-8 max-w-3xl text-center text-base leading-relaxed text-ink/80">
-            Dificuldade de concentração nem sempre tem a mesma explicação.
-            Esquecimentos podem acontecer por diferentes motivos. Um comportamento
-            isolado não define uma pessoa. E compreender racionalmente um padrão nem
-            sempre é suficiente para conseguir mudá-lo.
+          <p className="mx-auto mt-6 max-w-2xl text-center text-[15px] leading-relaxed text-ink/80 sm:text-base">
+            Dificuldade de concentração, esquecimentos ou um comportamento isolado
+            não contam a história inteira. Por isso, o trabalho começa por uma
+            pergunta:
           </p>
-          <p className="mx-auto mt-5 max-w-3xl text-center text-base leading-relaxed text-ink/80">
-            Por isso, meu trabalho não começa pela tentativa de encaixar alguém em
-            uma resposta pronta. Começa por uma pergunta:
-          </p>
-          <blockquote className="mt-10 text-center">
-            <LineMarks className="mx-auto mb-4 h-10 w-14 text-ink/40" />
-            <p className="font-display text-4xl leading-snug font-medium text-ink sm:text-5xl">
+          <blockquote className="mt-8 text-center">
+            <LineMarks className="mx-auto mb-3 h-8 w-12 text-ink/40" />
+            <p className="font-display text-3xl leading-snug font-medium text-ink sm:text-4xl">
               O que precisamos compreender melhor aqui?
             </p>
           </blockquote>
-          <p className="mx-auto mt-8 max-w-3xl text-center text-base leading-relaxed text-ink/80">
-            É a partir dessa compreensão que conduzo meu trabalho em avaliação
-            neuropsicológica, psicoterapia e supervisão clínica.
+          <p className="mx-auto mt-6 max-w-2xl text-center text-[15px] leading-relaxed text-ink/80 sm:text-base">
+            É a partir dessa compreensão que conduzo avaliação, psicoterapia e
+            supervisão clínica.
           </p>
         </Container>
       </section>
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container>
           <SectionHeading
             eyebrow="Blog"

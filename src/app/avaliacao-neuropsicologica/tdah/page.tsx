@@ -72,7 +72,7 @@ export default function AvaliacaoTdahPage() {
         }}
       />
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container>
           <SectionHeading
             eyebrow="Para quem é a avaliação?"
@@ -126,10 +126,10 @@ export default function AvaliacaoTdahPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-white py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading title="Por que não basta identificar os sintomas?" />
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>Porque dificuldade de atenção não é sinônimo de TDAH.</p>
             <p>
               Na criança ou no adulto, características parecidas podem aparecer por
@@ -152,13 +152,13 @@ export default function AvaliacaoTdahPage() {
         </Container>
       </section>
 
-      <section className="bg-mist py-20 sm:py-24">
+      <section className="bg-mist py-12 sm:py-16">
         <Container>
           <SectionHeading
             eyebrow="O que pode ser investigado?"
             title="O diagnóstico não está no resultado de um único teste."
           />
-          <p className="mt-8 max-w-3xl text-base leading-relaxed text-mid sm:text-lg">
+          <p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
             De acordo com cada caso, podem ser investigados aspectos como:
           </p>
           <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -168,14 +168,14 @@ export default function AvaliacaoTdahPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-base leading-relaxed text-mid sm:text-lg">
+          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
             Os resultados são interpretados junto à história, ao contexto e às demais
             informações obtidas durante a avaliação.
           </p>
         </Container>
       </section>
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container>
           <SectionHeading
             eyebrow="Infância e vida adulta"
@@ -215,13 +215,13 @@ export default function AvaliacaoTdahPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-white py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Como funciona a avaliação?"
             title="Você não chega para provar que é TDAH. Seu filho também não."
           />
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>
               O processo começa pela compreensão da queixa, da história e da pergunta
               que motivou a avaliação.
@@ -245,16 +245,16 @@ export default function AvaliacaoTdahPage() {
         </Container>
       </section>
 
-      <section className="bg-ink py-20 text-white sm:py-24">
+      <section className="bg-ink py-12 text-white sm:py-16">
         <Container className="max-w-4xl">
           <p className="text-[11px] font-medium tracking-[0.2em] text-peach uppercase">
             Quem vai conduzir a avaliação?
           </p>
-          <h2 className="font-display mt-4 text-4xl leading-[1.15] font-medium sm:text-5xl">
+          <h2 className="font-display mt-4 text-3xl leading-[1.2] font-medium sm:text-4xl">
             Experiência clínica importa quando é preciso olhar além do sintoma mais
             evidente.
           </h2>
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mist sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
               Sou Laís Barone, psicóloga e neuropsicóloga, com atuação desde 2008.
             </p>
@@ -274,7 +274,7 @@ export default function AvaliacaoTdahPage() {
         </Container>
       </section>
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container>
           <SectionHeading title="Dúvidas frequentes" />
           <div className="mt-10">

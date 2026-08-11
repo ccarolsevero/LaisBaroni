@@ -74,13 +74,13 @@ export default function SobrePage() {
         }}
       />
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-start">
           <SectionHeading
             eyebrow="Minha trajetória"
             title="A experiência não trouxe respostas prontas. Trouxe perguntas melhores."
           />
-          <div className="space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>
               Desde 2008, minha trajetória profissional vem sendo construída a partir
               do encontro entre experiência clínica e formação acadêmica.
@@ -99,7 +99,7 @@ export default function SobrePage() {
         </Container>
       </section>
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-white py-12 sm:py-16">
         <Container>
           <SectionHeading
             eyebrow="Formação e experiência"
@@ -115,7 +115,7 @@ export default function SobrePage() {
         </Container>
       </section>
 
-      <section className="bg-peach py-20 sm:py-24">
+      <section className="bg-peach py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="A forma de trabalhar"
@@ -140,7 +140,7 @@ export default function SobrePage() {
         </Container>
       </section>
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container>
           <SectionHeading
             eyebrow="Na prática"
@@ -175,13 +175,13 @@ export default function SobrePage() {
         </Container>
       </section>
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-white py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="O que orienta meu trabalho"
             title="Técnica para investigar. Experiência para interpretar. Escuta para compreender quem está por trás da queixa."
           />
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>Não acredito em uma forma única de compreender pessoas diferentes.</p>
             <p>
               Meu trabalho é construído a partir das particularidades de cada caso,

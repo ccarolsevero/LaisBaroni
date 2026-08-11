@@ -59,13 +59,13 @@ export default function SupervisaoPage() {
         }}
       />
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-start">
           <SectionHeading
             eyebrow="Para quem é a supervisão?"
             title="Você não precisa estar “sem saber o que fazer” para levar um caso à supervisão."
           />
-          <div className="space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>
               A supervisão pode fazer sentido tanto diante de um caso que trouxe
               dúvidas ou impasses quanto para profissionais que desejam aprofundar o
@@ -79,7 +79,7 @@ export default function SupervisaoPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-white py-12 sm:py-16">
         <Container>
           <SectionHeading
             eyebrow="O que pode ser trabalhado na supervisão?"
@@ -93,7 +93,7 @@ export default function SupervisaoPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-base leading-relaxed text-mid sm:text-lg">
+          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
             O objetivo não é entregar uma receita de condução, mas ampliar a
             compreensão clínica e construir possibilidades a partir do caso
             apresentado.
@@ -101,13 +101,13 @@ export default function SupervisaoPage() {
         </Container>
       </section>
 
-      <section className="bg-mist py-20 sm:py-24">
+      <section className="bg-mist py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Da teoria para o caso real"
             title="Porque nenhum paciente chega à sessão exatamente como aparece nos livros."
           />
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>
               Conhecer conceitos e técnicas é fundamental. Mas a clínica exige
               integrar conhecimento, história, contexto, vínculo e aquilo que
@@ -122,13 +122,13 @@ export default function SupervisaoPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-white py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Qual é o olhar que orienta a supervisão?"
             title="Compreender o sintoma é importante. Compreender a pessoa que apresenta esse sintoma é ainda mais."
           />
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>
               Minha trajetória clínica reúne referências da Terapia
               Cognitivo-Comportamental, Terapia do Esquema, Psicopatologia e
@@ -143,16 +143,16 @@ export default function SupervisaoPage() {
         </Container>
       </section>
 
-      <section className="bg-ink py-20 text-white sm:py-24">
+      <section className="bg-ink py-12 text-white sm:py-16">
         <Container className="max-w-4xl">
           <p className="text-[11px] font-medium tracking-[0.2em] text-peach uppercase">
             Quem vai conduzir a supervisão?
           </p>
-          <h2 className="font-display mt-4 text-4xl leading-[1.15] font-medium sm:text-5xl">
+          <h2 className="font-display mt-4 text-3xl leading-[1.2] font-medium sm:text-4xl">
             Experiência clínica não elimina as perguntas. Ela muda a qualidade das
             perguntas que fazemos diante de um caso.
           </h2>
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mist sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
               Sou Laís Barone, psicóloga desde 2008 e Mestre pela Universidade de São
               Paulo (USP).
@@ -174,13 +174,13 @@ export default function SupervisaoPage() {
         </Container>
       </section>
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Como funciona?"
             title="Um espaço para levar casos reais e pensar a clínica com profundidade."
           />
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>
               Os encontros são direcionados às questões apresentadas pelo
               profissional e aos casos que deseja discutir.
@@ -196,7 +196,7 @@ export default function SupervisaoPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-white py-12 sm:py-16">
         <Container>
           <SectionHeading title="Dúvidas frequentes" />
           <div className="mt-10">

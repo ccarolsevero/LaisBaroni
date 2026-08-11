@@ -33,7 +33,7 @@ export default async function BlogPostPage({
 
   return (
     <article className="bg-base">
-      <Container className="max-w-3xl py-20 sm:py-28">
+      <Container className="max-w-3xl py-12 sm:py-16">
         <Link href="/blog" className="text-sm text-mid hover:text-ink">
           ← Voltar ao blog
         </Link>
@@ -47,7 +47,7 @@ export default async function BlogPostPage({
             year: "numeric",
           })}
         </time>
-        <h1 className="font-display mt-4 text-4xl leading-[1.15] font-medium sm:text-5xl">
+        <h1 className="font-display mt-4 text-3xl leading-[1.2] font-medium sm:text-4xl">
           {post.title}
         </h1>
         <p className="mt-8 text-xl leading-relaxed text-mid">{post.excerpt}</p>

@@ -25,7 +25,7 @@ export default function ContatoPage() {
         }}
       />
 
-      <section className="bg-base py-16 sm:py-20">
+      <section className="bg-base py-12 sm:py-16">
         <Container className="grid gap-3 lg:grid-cols-[0.9fr_1.2fr]">
           <aside className="rounded-2xl bg-ink p-8 text-white sm:p-10">
             <p className="font-display text-3xl font-medium">{site.name}</p>

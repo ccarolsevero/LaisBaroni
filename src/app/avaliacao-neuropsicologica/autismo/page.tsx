@@ -79,7 +79,7 @@ export default function AvaliacaoAutismoPage() {
         }}
       />
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container>
           <SectionHeading
             eyebrow="Para quem é a avaliação?"
@@ -130,10 +130,10 @@ export default function AvaliacaoAutismoPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-white py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading title="“Eu me identifiquei com vários sinais. Isso significa que sou autista?”" />
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>
               Se reconhecer em algumas características pode despertar uma pergunta.
               Não responde a ela.
@@ -151,13 +151,13 @@ export default function AvaliacaoAutismoPage() {
         </Container>
       </section>
 
-      <section className="bg-mist py-20 sm:py-24">
+      <section className="bg-mist py-12 sm:py-16">
         <Container>
           <SectionHeading
             eyebrow="O que pode ser investigado?"
             title="Avaliar significa compreender o funcionamento como um todo."
           />
-          <p className="mt-8 max-w-3xl text-base leading-relaxed text-mid sm:text-lg">
+          <p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
             De acordo com a necessidade de cada caso, podem ser considerados aspectos
             relacionados a:
           </p>
@@ -168,14 +168,14 @@ export default function AvaliacaoAutismoPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-base leading-relaxed text-mid sm:text-lg">
+          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
             Essas informações são interpretadas junto à história e ao contexto de
             cada pessoa.
           </p>
         </Container>
       </section>
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container>
           <SectionHeading
             eyebrow="Infância e vida adulta"
@@ -215,13 +215,13 @@ export default function AvaliacaoAutismoPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-white py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Como funciona a avaliação?"
             title="A avaliação não começa perguntando “onde estão os sinais de Autismo?”. Começa conhecendo a pessoa."
           />
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>
               O processo parte da queixa, da história e das questões que motivaram a
               busca.
@@ -246,15 +246,15 @@ export default function AvaliacaoAutismoPage() {
         </Container>
       </section>
 
-      <section className="bg-ink py-20 text-white sm:py-24">
+      <section className="bg-ink py-12 text-white sm:py-16">
         <Container className="max-w-4xl">
           <p className="text-[11px] font-medium tracking-[0.2em] text-peach uppercase">
             Quem vai conduzir a avaliação?
           </p>
-          <h2 className="font-display mt-4 text-4xl leading-[1.15] font-medium sm:text-5xl">
+          <h2 className="font-display mt-4 text-3xl leading-[1.2] font-medium sm:text-4xl">
             Quando o funcionamento humano é complexo, experiência clínica importa.
           </h2>
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mist sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
               Sou Laís Barone, psicóloga e neuropsicóloga, com atuação desde 2008.
             </p>
@@ -274,7 +274,7 @@ export default function AvaliacaoAutismoPage() {
         </Container>
       </section>
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container>
           <SectionHeading title="Dúvidas frequentes" />
           <div className="mt-10">

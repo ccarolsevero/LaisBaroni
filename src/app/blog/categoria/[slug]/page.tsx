@@ -39,7 +39,7 @@ export default async function BlogCategoryPage({
         description={category.description}
         primary={{ href: "/blog", label: "Ver todos os conteúdos" }}
       />
-      <section className="bg-white py-16 sm:py-20">
+      <section className="bg-white py-12 sm:py-16">
         <Container>
           {posts.length > 0 ? (
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">

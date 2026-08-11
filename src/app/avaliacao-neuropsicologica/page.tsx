@@ -128,13 +128,13 @@ export default function AvaliacaoPage() {
         }}
       />
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-start">
           <SectionHeading
             eyebrow="Quando vale investigar?"
             title="Nem toda dificuldade significa um diagnóstico. Mas algumas perguntas merecem ser investigadas."
           />
-          <div className="space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>
               Esquecimentos frequentes, dificuldade para manter a atenção, organizar
               tarefas, aprender ou lidar com determinadas situações podem despertar
@@ -152,13 +152,13 @@ export default function AvaliacaoPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-white py-12 sm:py-16">
         <Container>
           <SectionHeading
             eyebrow="O que é a avaliação neuropsicológica?"
             title="Um teste mostra uma parte. Uma avaliação precisa compreender o conjunto."
           />
-          <div className="mt-8 max-w-3xl space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="mt-8 max-w-3xl space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>
               É um processo clínico que investiga aspectos como atenção, memória,
               linguagem, funções executivas e aprendizagem, de acordo com a
@@ -173,7 +173,7 @@ export default function AvaliacaoPage() {
         </Container>
       </section>
 
-      <section className="bg-mist py-20 sm:py-24">
+      <section className="bg-mist py-12 sm:py-16">
         <Container>
           <SectionHeading
             eyebrow="A mesma queixa"
@@ -191,7 +191,7 @@ export default function AvaliacaoPage() {
               </blockquote>
             ))}
           </div>
-          <div className="mt-10 max-w-3xl space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="mt-10 max-w-3xl space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>Essas frases podem ser o começo de uma investigação — não uma conclusão.</p>
             <p>
               Dificuldades parecidas podem ter diferentes explicações. Por isso,
@@ -201,7 +201,7 @@ export default function AvaliacaoPage() {
         </Container>
       </section>
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container>
           <SectionHeading title="Qual avaliação você está procurando?" />
           <div className="mt-12 grid gap-3 lg:grid-cols-2">
@@ -235,7 +235,7 @@ export default function AvaliacaoPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-white py-12 sm:py-16">
         <Container>
           <SectionHeading
             eyebrow="Como funciona?"
@@ -259,16 +259,16 @@ export default function AvaliacaoPage() {
         </Container>
       </section>
 
-      <section className="bg-ink py-20 text-white sm:py-24">
+      <section className="bg-ink py-12 text-white sm:py-16">
         <Container className="max-w-4xl">
           <p className="text-[11px] font-medium tracking-[0.2em] text-peach uppercase">
             Quem vai conduzir sua avaliação?
           </p>
-          <h2 className="font-display mt-4 text-4xl leading-[1.15] font-medium sm:text-5xl">
+          <h2 className="font-display mt-4 text-3xl leading-[1.2] font-medium sm:text-4xl">
             Experiência clínica faz diferença quando o resultado precisa ser
             interpretado — e não apenas calculado.
           </h2>
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mist sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>Sou Laís Barone, psicóloga e neuropsicóloga, com atuação desde 2008.</p>
             <p>
               Sou Mestre pela USP e tenho formação em Neuropsicologia pela USP, além
@@ -289,7 +289,7 @@ export default function AvaliacaoPage() {
         </Container>
       </section>
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container>
           <SectionHeading title="Dúvidas frequentes" />
           <div className="mt-10">

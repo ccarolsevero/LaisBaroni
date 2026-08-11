@@ -26,7 +26,7 @@ export default async function BlogPage() {
         description="Conteúdos sobre Neuropsicologia, saúde emocional, relações e padrões de comportamento, traduzindo temas complexos para uma linguagem mais próxima da vida real."
       />
 
-      <section className="bg-base py-16 sm:py-20">
+      <section className="bg-base py-12 sm:py-16">
         <Container>
           <h2 className="text-[11px] font-medium tracking-[0.2em] text-mid uppercase">
             Categorias
@@ -56,7 +56,7 @@ export default async function BlogPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-16 sm:py-20">
+      <section className="bg-white py-12 sm:py-16">
         <Container>
           <h2 className="font-display text-[2.15rem] font-medium">Conteúdos mais recentes</h2>
           {posts.length > 0 ? (

@@ -51,12 +51,12 @@ export function SectionHeading({
     <div className={`max-w-3xl ${align === "center" ? "mx-auto text-center" : ""}`}>
       {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
       {title ? (
-        <h2 className={`font-display text-[2.15rem] leading-[1.18] font-medium text-balance sm:text-5xl ${eyebrow ? "mt-4" : ""}`}>
+        <h2 className={`font-display text-[1.85rem] leading-[1.2] font-medium text-balance sm:text-4xl ${eyebrow ? "mt-3" : ""}`}>
           {title}
         </h2>
       ) : null}
       {description ? (
-        <p className="mt-5 text-base leading-relaxed text-mid sm:text-lg">{description}</p>
+        <p className="mt-4 text-[15px] leading-relaxed text-mid sm:text-base">{description}</p>
       ) : null}
     </div>
   );

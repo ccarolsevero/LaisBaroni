@@ -82,13 +82,13 @@ export default function PsicoterapiaRelacionamentosPage() {
         }}
       />
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-start">
           <SectionHeading
             eyebrow="Quando o relacionamento muda, mas o padrão continua"
             title="Talvez não seja apenas sobre escolher “a pessoa errada”."
           />
-          <div className="space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>Você muda de relacionamento, mas algumas sensações permanecem.</p>
             <p>
               Pode ser difícil dizer não. Você se responsabiliza demais pelo outro.
@@ -107,7 +107,7 @@ export default function PsicoterapiaRelacionamentosPage() {
         </Container>
       </section>
 
-      <section className="bg-mist py-20 sm:py-24">
+      <section className="bg-mist py-12 sm:py-16">
         <Container>
           <SectionHeading
             eyebrow="Repetições"
@@ -125,7 +125,7 @@ export default function PsicoterapiaRelacionamentosPage() {
               </blockquote>
             ))}
           </div>
-          <div className="mt-10 max-w-3xl space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="mt-10 max-w-3xl space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>Essas experiências podem ter histórias muito diferentes.</p>
             <p>
               A psicoterapia permite compreender o que essas formas de se relacionar
@@ -135,13 +135,13 @@ export default function PsicoterapiaRelacionamentosPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-white py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Terapia do Esquema e relacionamentos"
             title="Alguns padrões começam muito antes do relacionamento em que você está hoje."
           />
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>
               Ao longo da vida, construímos formas de compreender a nós mesmos, aos
               outros e às relações.
@@ -161,7 +161,7 @@ export default function PsicoterapiaRelacionamentosPage() {
         </Container>
       </section>
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container>
           <SectionHeading
             eyebrow="O que pode ser trabalhado na psicoterapia?"
@@ -174,20 +174,20 @@ export default function PsicoterapiaRelacionamentosPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-base leading-relaxed text-mid sm:text-lg">
+          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
             Não se trata de encaixar a pessoa em um padrão, mas de compreender como
             ele aparece e qual função teve — ou ainda tem — em sua história.
           </p>
         </Container>
       </section>
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-white py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Como funciona a psicoterapia?"
             title="O objetivo não é ensinar você a “escolher melhor”. É compreender como você participa das relações que constrói."
           />
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>
               O processo começa pela sua história, pelas relações que fazem parte
               dela e pelas questões que estão trazendo sofrimento ou despertando
@@ -203,16 +203,16 @@ export default function PsicoterapiaRelacionamentosPage() {
         </Container>
       </section>
 
-      <section className="bg-ink py-20 text-white sm:py-24">
+      <section className="bg-ink py-12 text-white sm:py-16">
         <Container className="max-w-4xl">
           <p className="text-[11px] font-medium tracking-[0.2em] text-peach uppercase">
             Quem vai conduzir seu processo?
           </p>
-          <h2 className="font-display mt-4 text-4xl leading-[1.15] font-medium sm:text-5xl">
+          <h2 className="font-display mt-4 text-3xl leading-[1.2] font-medium sm:text-4xl">
             Quase duas décadas de clínica mostram que aquilo que se repete costuma
             ter uma história.
           </h2>
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mist sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
               Sou Laís Barone, psicóloga desde 2008 e Mestre pela Universidade de São
               Paulo (USP).
@@ -235,7 +235,7 @@ export default function PsicoterapiaRelacionamentosPage() {
         </Container>
       </section>
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container>
           <SectionHeading title="Dúvidas frequentes" />
           <div className="mt-10">

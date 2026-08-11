@@ -71,13 +71,13 @@ export default function AvaliacaoInfantilPage() {
         }}
       />
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-start">
           <SectionHeading
             eyebrow="O que leva uma família a buscar uma avaliação?"
             title="Às vezes, a dúvida começa com uma frase simples: “Por que isso está sendo tão difícil para ele?”"
           />
-          <div className="space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>
               A escola percebe uma dificuldade. A criança não consegue acompanhar
               algumas atividades como esperado. Manter a atenção parece exigir um
@@ -90,13 +90,13 @@ export default function AvaliacaoInfantilPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-white py-12 sm:py-16">
         <Container>
           <SectionHeading
             eyebrow="O que a avaliação pode investigar?"
             title="Não é apenas sobre descobrir uma dificuldade. É sobre compreender como aquela criança funciona."
           />
-          <p className="mt-8 max-w-3xl text-base leading-relaxed text-mid sm:text-lg">
+          <p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
             De acordo com a necessidade de cada caso, a avaliação pode investigar
             aspectos como:
           </p>
@@ -107,17 +107,17 @@ export default function AvaliacaoInfantilPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-base leading-relaxed text-mid sm:text-lg">
+          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
             Essas informações são analisadas junto à história de desenvolvimento,
             contexto e queixa que motivou a avaliação.
           </p>
         </Container>
       </section>
 
-      <section className="bg-mist py-20 sm:py-24">
+      <section className="bg-mist py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading title="“Meu filho tem TDAH? Autismo? É uma dificuldade de aprendizagem?”" />
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>
               A avaliação não deveria começar pela resposta. Deveria começar pela
               investigação.
@@ -138,13 +138,13 @@ export default function AvaliacaoInfantilPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-white py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Como funciona a avaliação neuropsicológica infantil?"
             title="A criança não chega para “passar em uma prova”."
           />
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mid sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
             <p>
               O processo começa pela compreensão da queixa e da história da criança,
               incluindo informações relevantes sobre seu desenvolvimento e cotidiano.
@@ -168,16 +168,16 @@ export default function AvaliacaoInfantilPage() {
         </Container>
       </section>
 
-      <section className="bg-ink py-20 text-white sm:py-24">
+      <section className="bg-ink py-12 text-white sm:py-16">
         <Container className="max-w-4xl">
           <p className="text-[11px] font-medium tracking-[0.2em] text-peach uppercase">
             Quem vai conduzir a avaliação?
           </p>
-          <h2 className="font-display mt-4 text-4xl leading-[1.15] font-medium sm:text-5xl">
+          <h2 className="font-display mt-4 text-3xl leading-[1.2] font-medium sm:text-4xl">
             Experiência para investigar com técnica. Cuidado para não reduzir uma
             criança a um resultado.
           </h2>
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-mist sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
               Sou Laís Barone, psicóloga e neuropsicóloga, com atuação desde 2008.
             </p>
@@ -197,7 +197,7 @@ export default function AvaliacaoInfantilPage() {
         </Container>
       </section>
 
-      <section className="bg-base py-20 sm:py-24">
+      <section className="bg-base py-12 sm:py-16">
         <Container>
           <SectionHeading title="Dúvidas frequentes" />
           <div className="mt-10">
