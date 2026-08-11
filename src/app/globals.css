@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #49657b;
+  --mid: #64859d;
+  --soft: #94b0c1;
+  --mist: #e8ecef;
+  --base: #ededed;
+  --peach: #f3d7bd;
+  --paper: #f6f3ef;
+  --white: #fbfbfb;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-mid: var(--mid);
+  --color-soft: var(--soft);
+  --color-mist: var(--mist);
+  --color-base: var(--base);
+  --color-peach: var(--peach);
+  --color-paper: var(--paper);
+  --color-white: var(--white);
+  --font-sans: var(--font-montserrat);
+  --font-display: var(--font-playfair);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--base);
+  color: var(--ink);
+  font-family: var(--font-montserrat), "Segoe UI", sans-serif;
+}
+
+::selection {
+  background: var(--peach);
+  color: var(--ink);
+}
+
+.font-display {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.prose-article {
+  font-size: 1.125rem;
+  line-height: 1.85;
+  color: color-mix(in srgb, var(--ink) 80%, transparent);
+}
+
+.prose-article h2,
+.prose-article h3 {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-weight: 500;
+  color: var(--ink);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.25;
+}
+
+.prose-article p {
+  margin-bottom: 1.15rem;
+}
+
+.prose-article ul,
+.prose-article ol {
+  margin: 0 0 1.15rem 1.25rem;
+}
+
+.prose-article li {
+  margin-bottom: 0.4rem;
+}
+
+.prose-article a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.prose-article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
