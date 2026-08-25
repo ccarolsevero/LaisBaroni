@@ -149,7 +149,8 @@ export default function Home() {
               src={photos.sobre.src}
               alt={photos.sobre.alt}
               fill
-              className="object-cover object-top"
+              quality={90}
+              className="object-cover object-[center_15%]"
               sizes="(max-width: 1024px) 90vw, 40vw"
             />
           </div>

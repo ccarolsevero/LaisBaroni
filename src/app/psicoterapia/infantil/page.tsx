@@ -63,7 +63,7 @@ export default function PsicoterapiaInfantilPage() {
           site.pills.therapy,
           "TCC • Terapia do Esquema • Psicopatologia",
         ]}
-        image={photos.psicoterapia}
+        image={photos.infantil}
         primary={{
           href: whatsappUrl(infoMessage),
           label: "Quero informações sobre psicoterapia infantil",

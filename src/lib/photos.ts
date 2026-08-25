@@ -4,7 +4,7 @@ export const photos = {
     alt: "Laís Baroni em seu consultório",
   },
   sobre: {
-    src: "/photos/retrato-psicologia.jpg",
+    src: "/photos/retrato-sobre-v2.jpg",
     alt: "Laís Baroni no consultório",
   },
   trajetoria: {
@@ -18,6 +18,10 @@ export const photos = {
   avaliacao: {
     src: "/photos/avaliacao-livro.jpg",
     alt: "Laís Baroni com material de avaliação neuropsicológica",
+  },
+  infantil: {
+    src: "/photos/hero-infantil.jpg",
+    alt: "Laís Baroni em atendimento infantil",
   },
   psicoterapia: {
     src: "/photos/sessao.jpg",

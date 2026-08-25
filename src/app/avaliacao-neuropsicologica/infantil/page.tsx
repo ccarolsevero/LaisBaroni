@@ -60,7 +60,7 @@ export default function AvaliacaoInfantilPage() {
         pills={[
           site.pills.neuro,
         ]}
-        image={photos.avaliacao}
+        image={photos.infantil}
         primary={{
           href: whatsappUrl(infoMessage),
           label: "Quero informações sobre a avaliação infantil",
