@@ -3,7 +3,7 @@ import { ContactBand } from "@/components/contact-band";
 import { FaqList } from "@/components/faq-list";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
-import { whatsappUrl } from "@/lib/site";
+import { site, whatsappUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Psicoterapia para Ansiedade, Estresse e Sofrimento Emocional",
@@ -61,7 +61,7 @@ export default function PsicoterapiaAnsiedadePage() {
         description="Preocupações constantes, ansiedade, estresse, sobrecarga ou mudanças no humor podem começar a ocupar espaço demais na rotina, nas relações e na forma como você se sente."
         extra="Na psicoterapia, buscamos compreender o que está acontecendo, o que mantém esse sofrimento e como ele se relaciona com a sua história e com o momento que você está vivendo."
         pills={[
-          "Laís Barone | Psicóloga desde 2008 | Mestre pela USP",
+          site.pills.therapy,
           "TCC • Terapia do Esquema • Psicopatologia",
         ]}
         primary={{
@@ -82,7 +82,7 @@ export default function PsicoterapiaAnsiedadePage() {
             eyebrow="Quando o sofrimento começa a ocupar espaço demais"
             title="Nem sempre é fácil perceber quando “estou dando conta” virou “estou apenas tentando aguentar”."
           />
-          <div className="space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               Talvez seja difícil desacelerar. A preocupação esteja sempre presente.
               O corpo permaneça em alerta. Ou você perceba irritabilidade, cansaço,
@@ -103,7 +103,7 @@ export default function PsicoterapiaAnsiedadePage() {
       <section className="bg-white py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading title="“Mas será que o que eu sinto é ansiedade?”" />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               Antes de procurar um rótulo, é importante compreender o que você está
               vivendo.
@@ -131,7 +131,7 @@ export default function PsicoterapiaAnsiedadePage() {
             eyebrow="O que pode levar alguém a procurar psicoterapia?"
             title="Às vezes, o corpo e a rotina começam a mostrar que alguma coisa precisa de atenção."
           />
-          <p className="mt-8 text-base text-mid">A busca pode acontecer diante de:</p>
+          <p className="mt-8 text-base text-ink/80">A busca pode acontecer diante de:</p>
           <ul className="mt-8 grid gap-3 sm:grid-cols-2">
             {motivos.map((item) => (
               <li key={item} className="rounded-2xl bg-white px-6 py-5 text-ink">
@@ -139,7 +139,7 @@ export default function PsicoterapiaAnsiedadePage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
+          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
             Essas experiências não têm o mesmo significado para todas as pessoas. Por
             isso, precisam ser compreendidas dentro de cada história.
           </p>
@@ -152,7 +152,7 @@ export default function PsicoterapiaAnsiedadePage() {
             eyebrow="Como a psicoterapia pode ajudar?"
             title="O objetivo não é simplesmente aprender a “controlar a ansiedade”."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               Meu trabalho clínico é orientado principalmente pela Terapia
               Cognitivo-Comportamental (TCC) e pela Terapia do Esquema.
@@ -183,13 +183,14 @@ export default function PsicoterapiaAnsiedadePage() {
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
-              Sou Laís Barone, psicóloga desde 2008 e Mestre pela Universidade de São
-              Paulo (USP).
+              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação profissional e clínica desde 2009.
             </p>
             <p>
-              Minha formação inclui TCC, Terapia do Esquema, Psicopatologia e
-              Neuropsicologia pela USP.
+              Tenho formação em Neuropsicologia e Psicopatologia no IPq-USP, em TCC
+              e Terapia do Esquema pelo CETCC, e em Reabilitação Cognitiva pelo
+              INESP. A ACT integra meus estudos e conhecimentos clínicos.
             </p>
+
             <p>
               Essa trajetória orienta uma prática que busca compreender sintomas e
               dificuldades sem separá-los da história, do contexto e das
@@ -197,8 +198,7 @@ export default function PsicoterapiaAnsiedadePage() {
             </p>
           </div>
           <p className="mt-6 text-sm tracking-wide text-peach">
-            Psicóloga desde 2008 • Mestre pela USP • TCC • Terapia do Esquema •
-            Psicopatologia
+            {site.credentialLines.therapy}
           </p>
         </Container>
       </section>

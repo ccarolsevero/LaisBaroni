@@ -30,7 +30,7 @@ export function Pill({
 
 export function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
-    <p className="text-[11px] font-medium tracking-[0.2em] text-mid uppercase">
+    <p className="text-[11px] font-medium tracking-[0.2em] text-ink/70 uppercase">
       {children}
     </p>
   );
@@ -56,7 +56,7 @@ export function SectionHeading({
         </h2>
       ) : null}
       {description ? (
-        <p className="mt-4 text-[15px] leading-relaxed text-mid sm:text-base">{description}</p>
+        <p className="mt-4 text-[15px] leading-relaxed text-ink/80 sm:text-base">{description}</p>
       ) : null}
     </div>
   );

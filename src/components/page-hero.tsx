@@ -30,11 +30,11 @@ export function PageHero({
         <h1 className="font-display mt-5 max-w-3xl text-[2rem] leading-[1.18] font-medium text-balance sm:text-5xl">
           {title}
         </h1>
-        <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-mid sm:text-base">
+        <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
           {description}
         </p>
         {extra ? (
-          <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-mid sm:text-base">
+          <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
             {extra}
           </p>
         ) : null}

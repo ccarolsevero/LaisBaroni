@@ -3,7 +3,7 @@ import { ContactBand } from "@/components/contact-band";
 import { FaqList } from "@/components/faq-list";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
-import { whatsappUrl } from "@/lib/site";
+import { site, whatsappUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Psicoterapia para Autoconhecimento e Desenvolvimento Emocional",
@@ -53,7 +53,7 @@ export default function PsicoterapiaAutoconhecimentoPage() {
         description="Talvez não exista um grande problema para resolver. Mas existem escolhas que você gostaria de entender, emoções que nem sempre consegue nomear ou aspectos da sua história que deseja olhar com mais cuidado."
         extra="A psicoterapia também pode ser um espaço de autoconhecimento e desenvolvimento emocional."
         pills={[
-          "Laís Barone | Psicóloga desde 2008 | Mestre pela USP",
+          site.pills.therapy,
           "TCC • Terapia do Esquema • Psicopatologia",
         ]}
         primary={{
@@ -74,7 +74,7 @@ export default function PsicoterapiaAutoconhecimentoPage() {
             eyebrow="Terapia também é para quem quer se conhecer"
             title="“Minha vida está bem. Ainda assim, sinto que há coisas sobre mim que gostaria de entender melhor.”"
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               Nem toda busca por psicoterapia começa em um momento de sofrimento
               intenso.
@@ -98,7 +98,7 @@ export default function PsicoterapiaAutoconhecimentoPage() {
             eyebrow="O que pode ser trabalhado na psicoterapia?"
             title="Algumas perguntas não surgem porque algo está errado. Surgem porque você começou a olhar para si com mais atenção."
           />
-          <p className="mt-8 text-base text-mid">
+          <p className="mt-8 text-base text-ink/80">
             A psicoterapia pode abrir espaço para questões como:
           </p>
           <ul className="mt-8 grid gap-3 sm:grid-cols-2">
@@ -111,7 +111,7 @@ export default function PsicoterapiaAutoconhecimentoPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
+          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
             As questões trabalhadas são construídas a partir da história e dos
             objetivos de cada pessoa.
           </p>
@@ -124,7 +124,7 @@ export default function PsicoterapiaAutoconhecimentoPage() {
             eyebrow="Autoconhecimento"
             title="Autoconhecimento vai além de “saber como eu sou”"
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>Perceber um padrão é diferente de compreender de onde ele vem.</p>
             <p>
               Ao longo da vida, construímos maneiras de interpretar situações, lidar
@@ -145,7 +145,7 @@ export default function PsicoterapiaAutoconhecimentoPage() {
             eyebrow="Como eu trabalho"
             title="Sua história não cabe em uma fórmula pronta."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               Meu trabalho clínico é orientado principalmente pela Terapia
               Cognitivo-Comportamental (TCC) e pela Terapia do Esquema.
@@ -175,13 +175,14 @@ export default function PsicoterapiaAutoconhecimentoPage() {
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
-              Sou Laís Barone, psicóloga desde 2008 e Mestre pela Universidade de São
-              Paulo (USP).
+              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação profissional e clínica desde 2009.
             </p>
             <p>
-              Minha formação inclui TCC, Terapia do Esquema, Psicopatologia e
-              Neuropsicologia pela USP.
+              Tenho formação em Neuropsicologia e Psicopatologia no IPq-USP, em TCC
+              e Terapia do Esquema pelo CETCC, e em Reabilitação Cognitiva pelo
+              INESP. A ACT integra meus estudos e conhecimentos clínicos.
             </p>
+
             <p>
               Ao longo de quase duas décadas de clínica, construí um trabalho que
               busca compreender cada pessoa para além da dificuldade que a trouxe à
@@ -190,8 +191,7 @@ export default function PsicoterapiaAutoconhecimentoPage() {
             </p>
           </div>
           <p className="mt-6 text-sm tracking-wide text-peach">
-            Psicóloga desde 2008 • Mestre pela USP • TCC • Terapia do Esquema •
-            Psicopatologia
+            {site.credentialLines.therapy}
           </p>
         </Container>
       </section>

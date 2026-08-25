@@ -1,6 +1,6 @@
-# Laís Barone — site institucional
+# Laís Baroni — site institucional
 
-Site da psicóloga e neuropsicóloga Laís Barone, em Next.js.
+Site da psicóloga e neuropsicóloga Laís Baroni, em Next.js.
 
 ## Desenvolvimento
 

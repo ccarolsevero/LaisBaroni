@@ -5,7 +5,7 @@ import { FaqList } from "@/components/faq-list";
 import { IconArrow } from "@/components/icons";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
-import { whatsappUrl } from "@/lib/site";
+import { site, whatsappUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Psicoterapia Infantil",
@@ -59,7 +59,7 @@ export default function PsicoterapiaInfantilPage() {
         description="Mudanças no comportamento, dificuldades emocionais, medos, conflitos ou situações que começam a afetar a rotina da criança podem gerar dúvidas nos responsáveis."
         extra="A psicoterapia infantil oferece um espaço adequado à idade e ao momento de desenvolvimento da criança para compreender e trabalhar aquilo que ela está vivendo."
         pills={[
-          "Laís Barone | Psicóloga desde 2008 | Mestre pela USP",
+          site.pills.therapy,
           "TCC • Terapia do Esquema • Psicopatologia",
         ]}
         primary={{
@@ -80,7 +80,7 @@ export default function PsicoterapiaInfantilPage() {
             eyebrow="Quando procurar"
             title="Nem toda mudança significa que existe um problema. Mas algumas mudanças merecem ser compreendidas."
           />
-          <div className="space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               Às vezes, os responsáveis percebem que a criança está diferente, mas
               não conseguem entender exatamente o motivo.
@@ -102,7 +102,7 @@ export default function PsicoterapiaInfantilPage() {
       <section className="bg-white py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading title="“Meu filho não fala sobre o que está acontecendo.”" />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               Crianças nem sempre expressam o que sentem da mesma maneira que os
               adultos.
@@ -134,7 +134,7 @@ export default function PsicoterapiaInfantilPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
+          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
             Essas situações podem ter significados diferentes para cada criança e
             precisam ser compreendidas dentro de sua história e contexto.
           </p>
@@ -172,7 +172,7 @@ export default function PsicoterapiaInfantilPage() {
         </Container>
         <Container className="mt-10">
           <SectionHeading title="Às vezes, a dúvida dos pais começa justamente aqui." />
-          <p className="mt-6 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
+          <p className="mt-6 max-w-3xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
             Se houver dúvida sobre qual caminho faz mais sentido, ela pode ser
             compreendida a partir da demanda apresentada.
           </p>
@@ -193,7 +193,7 @@ export default function PsicoterapiaInfantilPage() {
             eyebrow="Como funciona a psicoterapia infantil?"
             title="Para compreender uma criança, também é preciso conhecer o contexto em que ela vive."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               O processo considera a idade, o desenvolvimento, a história e as
               necessidades da criança.
@@ -221,13 +221,14 @@ export default function PsicoterapiaInfantilPage() {
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
-              Sou Laís Barone, psicóloga desde 2008 e Mestre pela Universidade de São
-              Paulo (USP).
+              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação profissional e clínica desde 2009.
             </p>
             <p>
-              Minha formação inclui TCC, Terapia do Esquema, Psicopatologia e
-              Neuropsicologia pela USP.
+              Tenho formação em Neuropsicologia e Psicopatologia no IPq-USP, em TCC
+              e Terapia do Esquema pelo CETCC, e em Reabilitação Cognitiva pelo
+              INESP. A ACT integra meus estudos e conhecimentos clínicos.
             </p>
+
             <p>
               Essa trajetória contribui para um olhar que considera não apenas a
               dificuldade apresentada, mas também o desenvolvimento, a história e o
@@ -235,8 +236,7 @@ export default function PsicoterapiaInfantilPage() {
             </p>
           </div>
           <p className="mt-6 text-sm tracking-wide text-peach">
-            Psicóloga desde 2008 • Mestre pela USP • TCC • Terapia do Esquema •
-            Psicopatologia
+            {site.credentialLines.therapy}
           </p>
         </Container>
       </section>

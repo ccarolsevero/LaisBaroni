@@ -18,12 +18,13 @@ export const metadata: Metadata = {
 };
 
 const formacao = [
-  "Psicóloga desde 2008",
-  "Mestre pela Universidade de São Paulo — USP",
-  "Formação em Neuropsicologia pela USP",
-  "Formação em Terapia Cognitivo-Comportamental — TCC",
-  "Formação em Terapia do Esquema",
-  "Formação em Psicopatologia",
+  "Graduação em Psicologia concluída em dezembro de 2008",
+  "Atuação profissional e clínica desde 2009",
+  `Consultório particular desde ${site.privatePracticeSince}`,
+  "Especializações em Neuropsicologia e Psicopatologia — IPq-USP",
+  "Formações em TCC e Terapia do Esquema — CETCC",
+  "Formação em Reabilitação Cognitiva — INESP",
+  "Pesquisa de Mestrado em Psicologia — IP-USP (ingresso em 2019)",
   site.crp,
 ];
 
@@ -58,14 +59,11 @@ export default function SobrePage() {
   return (
     <>
       <PageHero
-        eyebrow="Sobre Laís Barone"
+        eyebrow="Sobre Laís Baroni"
         title="Quase duas décadas de clínica ensinam que compreender uma pessoa exige mais do que encontrar um nome para o que ela sente."
-        description="Sou Laís Barone, psicóloga e neuropsicóloga, com atuação desde 2008."
+        description="Sou Laís Beringhs Baroni, psicóloga e neuropsicóloga, com atuação profissional e clínica desde 2009."
         extra="Minha trajetória foi construída entre clínica, estudo e diferentes formas de compreender o funcionamento humano — sempre com o compromisso de olhar para cada pessoa dentro da sua história e do seu contexto."
-        pills={[
-          "Mestre e Neuropsicóloga pela USP",
-          "TCC • Terapia do Esquema • Psicopatologia",
-        ]}
+        pills={[...site.credentials]}
         primary={{ href: "/#atuacao", label: "Conheça minhas áreas de atuação" }}
         secondary={{
           href: whatsappUrl(),
@@ -80,20 +78,23 @@ export default function SobrePage() {
             eyebrow="Minha trajetória"
             title="A experiência não trouxe respostas prontas. Trouxe perguntas melhores."
           />
-          <div className="space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
-              Desde 2008, minha trajetória profissional vem sendo construída a partir
-              do encontro entre experiência clínica e formação acadêmica.
+              Concluí a graduação em Psicologia em dezembro de 2008 e atuo
+              profissional e clinicamente desde 2009. Em março de 2020, iniciei o
+              consultório particular.
             </p>
             <p>
-              Sou Mestre pela Universidade de São Paulo (USP) e tenho formação em
-              Neuropsicologia pela USP, além de formação em Terapia
-              Cognitivo-Comportamental (TCC), Terapia do Esquema e Psicopatologia.
+              Ao longo de aproximadamente seis anos no Instituto de Psiquiatria da
+              USP (IPq-USP), reuni as especializações em Neuropsicologia e
+              Psicopatologia, atuei como monitora e colaboradora, tive experiência
+              em supervisão clínica e realizei a coleta de dados da pesquisa de
+              mestrado.
             </p>
             <p>
-              Cada uma dessas áreas ampliou meu olhar sobre aquilo que encontro na
-              prática: aspectos cognitivos, emocionais, comportamentais e relacionais
-              que não podem ser compreendidos de forma isolada.
+              Cada uma dessas vivências ampliou meu olhar sobre aquilo que encontro
+              na prática: aspectos cognitivos, emocionais, comportamentais e
+              relacionais que não podem ser compreendidos de forma isolada.
             </p>
           </div>
         </Container>
@@ -112,6 +113,60 @@ export default function SobrePage() {
               </li>
             ))}
           </ul>
+        </Container>
+      </section>
+
+      <section className="bg-mist py-12 sm:py-16">
+        <Container className="max-w-3xl">
+          <SectionHeading
+            eyebrow="Pesquisa de mestrado"
+            title="Avaliação Neuropsicológica da Impulsividade em Pacientes com Epilepsia"
+          />
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
+            <p>
+              Em 2019, ingressei na Pesquisa de Mestrado em Psicologia no Instituto
+              de Psicologia da USP (IP-USP), no Programa de Pós-Graduação em
+              Psicologia Escolar e do Desenvolvimento Humano, Departamento de
+              Psicologia da Aprendizagem, do Desenvolvimento e da Personalidade
+              (PSA), sob orientação do Prof. Dr. Daniel Fuentes.
+            </p>
+            <p>
+              A pesquisa investigou impulsividade e funcionamento executivo em
+              pacientes com epilepsia — incluindo tomada de decisão, controle
+              inibitório, planejamento e flexibilidade cognitiva —, na área temática
+              de Neuropsicologia, Epilepsia, Impulsividade e Funções Executivas.
+            </p>
+            <p>
+              Apresento essa trajetória como pesquisa de mestrado, sem atribuição do
+              título de Mestre.
+            </p>
+          </div>
+        </Container>
+      </section>
+
+      <section className="bg-white py-12 sm:py-16">
+        <Container className="max-w-3xl">
+          <SectionHeading
+            eyebrow="Docência e supervisão"
+            title="Ensinar e supervisionar também fazem parte da minha prática."
+          />
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
+            <p>
+              Sou professora e supervisora do curso de Neuropsicologia do CETCC, com
+              docência também em módulos de Terapia Focada nos Esquemas. Atuo como
+              supervisora clínica no INESP e no IPq-USP.
+            </p>
+            <p>
+              Também realizei supervisão de psicólogos clínicos angolanos em programa
+              intensivo de formação na Beneficência Portuguesa, em curso coordenado
+              pelo Prof. Dr. Daniel Fuentes.
+            </p>
+            <p>
+              A ACT (Terapia de Aceitação e Compromisso) integra meus estudos e
+              conhecimentos clínicos, sem se configurar como pós-graduação ou
+              especialização formal.
+            </p>
+          </div>
         </Container>
       </section>
 
@@ -181,7 +236,7 @@ export default function SobrePage() {
             eyebrow="O que orienta meu trabalho"
             title="Técnica para investigar. Experiência para interpretar. Escuta para compreender quem está por trás da queixa."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>Não acredito em uma forma única de compreender pessoas diferentes.</p>
             <p>
               Meu trabalho é construído a partir das particularidades de cada caso,

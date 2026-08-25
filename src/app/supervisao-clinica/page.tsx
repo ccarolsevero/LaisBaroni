@@ -3,7 +3,7 @@ import { ContactBand } from "@/components/contact-band";
 import { FaqList } from "@/components/faq-list";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
-import { whatsappUrl } from "@/lib/site";
+import { site, whatsappUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Supervisão Clínica",
@@ -14,12 +14,12 @@ export const metadata: Metadata = {
 const infoMessage = "Olá, Laís. Gostaria de informações sobre supervisão clínica.";
 
 const temas = [
-  "Compreensão e formulação do caso",
-  "Hipóteses clínicas",
-  "Planejamento e condução do processo terapêutico",
-  "Escolha e discussão de intervenções",
-  "Padrões emocionais e relacionais presentes no caso",
-  "Impasses ao longo da psicoterapia",
+  "Formulação de caso e raciocínio clínico",
+  "Raciocínio transdiagnóstico e psicopatologia",
+  "Relação terapêutica e respostas do terapeuta",
+  "Manejo de impasses e tomada de decisão clínica",
+  "Articulação entre teoria e prática",
+  "Desenvolvimento de autonomia profissional",
 ];
 
 const faqs = [
@@ -42,10 +42,10 @@ export default function SupervisaoPage() {
         eyebrow="Supervisão clínica"
         title="Alguns casos não pedem uma resposta rápida. Pedem um olhar clínico mais aprofundado."
         description="A supervisão clínica é um espaço para pensar casos, ampliar hipóteses, discutir intervenções e compreender os impasses que surgem ao longo da prática profissional."
-        extra="Um trabalho construído a partir da experiência clínica, do conhecimento teórico e das particularidades de cada caso."
+        extra="Um trabalho construído a partir da experiência clínica, do conhecimento teórico e das particularidades de cada caso — com o objetivo de desenvolver autonomia e raciocínio clínico do terapeuta, e não apenas escolher técnicas para uma sessão."
         pills={[
-          "Laís Barone | Psicóloga desde 2008 | Mestre pela USP",
-          "TCC • Terapia do Esquema • Psicopatologia • Neuropsicologia pela USP",
+          site.pills.supervision,
+          "TCC • Terapia do Esquema • ACT • Psicopatologia • Neuropsicologia",
         ]}
         primary={{
           href: whatsappUrl(infoMessage),
@@ -65,7 +65,7 @@ export default function SupervisaoPage() {
             eyebrow="Para quem é a supervisão?"
             title="Você não precisa estar “sem saber o que fazer” para levar um caso à supervisão."
           />
-          <div className="space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               A supervisão pode fazer sentido tanto diante de um caso que trouxe
               dúvidas ou impasses quanto para profissionais que desejam aprofundar o
@@ -85,7 +85,7 @@ export default function SupervisaoPage() {
             eyebrow="O que pode ser trabalhado na supervisão?"
             title="Às vezes, a dificuldade não está em conhecer a teoria. Está em saber o que fazer com ela diante daquela pessoa."
           />
-          <p className="mt-8 text-base text-mid">A supervisão pode envolver:</p>
+          <p className="mt-8 text-base text-ink/80">A supervisão pode envolver:</p>
           <ul className="mt-8 grid gap-3 sm:grid-cols-2">
             {temas.map((item) => (
               <li key={item} className="rounded-2xl bg-mist px-6 py-5 text-ink">
@@ -93,11 +93,22 @@ export default function SupervisaoPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
-            O objetivo não é entregar uma receita de condução, mas ampliar a
-            compreensão clínica e construir possibilidades a partir do caso
-            apresentado.
-          </p>
+          <div className="mt-10 max-w-3xl space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
+            <p>
+              A supervisão ajuda o profissional a ampliar sua compreensão dos casos,
+              desenvolver raciocínio clínico e caminhar em direção à autonomia
+              profissional. O trabalho envolve formular e revisar hipóteses,
+              reconhecer fatores que mantêm as dificuldades, compreender impasses e
+              escolher intervenções coerentes com o caso e o momento do processo
+              terapêutico.
+            </p>
+            <p>
+              Em algumas situações, o impasse não está na falta de uma técnica, mas
+              na forma como o caso está sendo compreendido. Quando pertinente, a
+              supervisão também pode considerar a relação terapêutica e as respostas
+              do próprio terapeuta como informações preciosas à análise do caso.
+            </p>
+          </div>
         </Container>
       </section>
 
@@ -107,7 +118,7 @@ export default function SupervisaoPage() {
             eyebrow="Da teoria para o caso real"
             title="Porque nenhum paciente chega à sessão exatamente como aparece nos livros."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               Conhecer conceitos e técnicas é fundamental. Mas a clínica exige
               integrar conhecimento, história, contexto, vínculo e aquilo que
@@ -128,11 +139,11 @@ export default function SupervisaoPage() {
             eyebrow="Qual é o olhar que orienta a supervisão?"
             title="Compreender o sintoma é importante. Compreender a pessoa que apresenta esse sintoma é ainda mais."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               Minha trajetória clínica reúne referências da Terapia
-              Cognitivo-Comportamental, Terapia do Esquema, Psicopatologia e
-              Neuropsicologia.
+              Cognitivo-Comportamental, Terapia do Esquema, ACT, Psicopatologia e
+              Neuropsicologia — respeitando a natureza de cada formação.
             </p>
             <p>
               Esse repertório contribui para uma discussão que não olha apenas para
@@ -154,22 +165,24 @@ export default function SupervisaoPage() {
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
-              Sou Laís Barone, psicóloga desde 2008 e Mestre pela Universidade de São
-              Paulo (USP).
+              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação profissional
+              e clínica desde 2009.
             </p>
             <p>
-              Tenho formação em Neuropsicologia pela USP, além de formação em
-              Terapia Cognitivo-Comportamental, Terapia do Esquema e Psicopatologia.
+              Atuo como professora e supervisora no curso de Neuropsicologia do
+              CETCC; como supervisora clínica no INESP e no IPq-USP; e realizei
+              supervisão de psicólogos clínicos angolanos em programa intensivo de
+              formação na Beneficência Portuguesa.
             </p>
             <p>
-              Ao longo de quase duas décadas de atuação, a experiência clínica e
-              acadêmica foi construindo um olhar que busca integrar teoria, raciocínio
-              clínico e singularidade de cada caso.
+              Minha formação inclui TCC, Terapia do Esquema, ACT, Psicopatologia e
+              Neuropsicologia. Ao longo da trajetória, a experiência clínica e
+              acadêmica foi construindo um olhar que busca integrar teoria,
+              raciocínio clínico e singularidade de cada caso.
             </p>
           </div>
           <p className="mt-6 text-sm tracking-wide text-peach">
-            Psicóloga desde 2008 • Mestre pela USP • Neuropsicologia pela USP • TCC •
-            Terapia do Esquema • Psicopatologia
+            {site.credentialLines.supervision}
           </p>
         </Container>
       </section>
@@ -180,14 +193,16 @@ export default function SupervisaoPage() {
             eyebrow="Como funciona?"
             title="Um espaço para levar casos reais e pensar a clínica com profundidade."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               Os encontros são direcionados às questões apresentadas pelo
               profissional e aos casos que deseja discutir.
             </p>
             <p>
               A supervisão pode envolver compreensão do caso, dúvidas sobre condução,
-              formulação de hipóteses e discussão de estratégias e intervenções.
+              formulação de hipóteses e discussão de estratégias e intervenções — com
+              foco no desenvolvimento do raciocínio clínico, e não apenas em
+              respostas prontas sobre a próxima sessão.
             </p>
             <p>
               Entre em contato para informações sobre formato e disponibilidade.

@@ -50,7 +50,7 @@ export function EditorialGrid() {
       <div className="relative flex min-h-[280px] flex-col justify-end overflow-hidden rounded-2xl bg-peach p-7 sm:min-h-[320px]">
         <LineDesk className="pointer-events-none absolute top-8 right-4 h-36 w-36 text-ink/15" />
         <LineLeaves className="pointer-events-none absolute -bottom-4 -left-2 h-28 w-28 text-ink/20" />
-        <p className="font-display text-2xl font-medium text-ink">Laís Barone</p>
+        <p className="font-display text-2xl font-medium text-ink">Laís Baroni</p>
         <p className="mt-1 text-sm tracking-[0.12em] text-ink/70 uppercase">
           Psicóloga e neuropsicóloga
         </p>

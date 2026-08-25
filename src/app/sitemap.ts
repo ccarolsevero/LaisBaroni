@@ -10,6 +10,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/avaliacao-neuropsicologica",
     "/avaliacao-neuropsicologica/infantil",
     "/avaliacao-neuropsicologica/adultos",
+    "/avaliacao-neuropsicologica/idosos",
     "/avaliacao-neuropsicologica/tdah",
     "/avaliacao-neuropsicologica/autismo",
     "/psicoterapia",

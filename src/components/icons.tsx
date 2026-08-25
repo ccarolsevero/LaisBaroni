@@ -90,3 +90,24 @@ export function IconPuzzle({ className = "h-7 w-7" }: { className?: string }) {
     </svg>
   );
 }
+
+export function IconElderly({ className = "h-7 w-7" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 32 32" fill="none" className={className} aria-hidden>
+      <circle cx="16" cy="9" r="3.4" stroke="currentColor" strokeWidth="1.6" />
+      <path
+        d="M9 26.5v-2.4C9 20.6 11.8 18.2 16 18.2s7 2.4 7 5.9v2.4"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+      />
+      <path
+        d="M12.5 13.8c.8 1.4 2 2.2 3.5 2.2s2.7-.8 3.5-2.2"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+      />
+      <path d="M22.5 8.2c1.2.4 2 1.5 2 2.8" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+    </svg>
+  );
+}

@@ -6,7 +6,7 @@ import { IconArrow } from "@/components/icons";
 import { LineMarks } from "@/components/illustrations";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
-import { whatsappUrl } from "@/lib/site";
+import { site, whatsappUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Avaliação Neuropsicológica em Adultos",
@@ -63,7 +63,7 @@ export default function AvaliacaoAdultosPage() {
         description="Dificuldades de atenção, memória, organização ou funcionamento no dia a dia podem ter diferentes explicações."
         extra="A avaliação neuropsicológica em adultos ajuda a investigar essas questões de forma cuidadosa, considerando seu funcionamento cognitivo, sua história e o contexto em que essas dificuldades aparecem."
         pills={[
-          "Laís Barone | Neuropsicóloga e Mestre pela USP | Psicóloga desde 2008",
+          site.pills.neuro,
         ]}
         primary={{
           href: whatsappUrl(infoMessage),
@@ -83,7 +83,7 @@ export default function AvaliacaoAdultosPage() {
             eyebrow="O que leva um adulto a procurar uma avaliação?"
             title="“Eu sempre fui assim ou alguma coisa mudou?”"
           />
-          <div className="space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               Talvez você tenha dificuldade para se concentrar, esqueça compromissos,
               perca objetos, comece tarefas e não consiga terminá-las ou sinta que se
@@ -99,6 +99,14 @@ export default function AvaliacaoAdultosPage() {
               dificuldades aparecem na sua história e o que pode estar relacionado a
               elas.
             </p>
+            <p>
+              A avaliação também pode ser útil quando há descompasso entre o potencial
+              cognitivo e o impacto que suas dificuldades têm na funcionalidade — nos
+              estudos, no trabalho, na organização da rotina e/ou na autonomia. A
+              investigação ajuda a compreender quais processos podem estar
+              contribuindo para essa diferença e como eles repercutem na vida
+              cotidiana.
+            </p>
           </div>
         </Container>
       </section>
@@ -109,7 +117,7 @@ export default function AvaliacaoAdultosPage() {
             eyebrow="O que a avaliação pode investigar?"
             title="A pergunta não é apenas “o que está difícil?”, mas “como você funciona?”."
           />
-          <p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
+          <p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
             De acordo com a necessidade de cada caso, podem ser investigados aspectos
             como:
           </p>
@@ -120,7 +128,7 @@ export default function AvaliacaoAdultosPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
+          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
             Essas informações são interpretadas considerando também a história, o
             contexto e a questão que motivou a avaliação.
           </p>
@@ -130,7 +138,7 @@ export default function AvaliacaoAdultosPage() {
       <section className="bg-mist py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading title="“Será que eu tenho TDAH? Autismo? Ou existe outra explicação?”" />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>Chegar com uma hipótese é diferente de chegar com uma conclusão.</p>
             <p>
               Muitos adultos procuram avaliação depois de se reconhecerem em
@@ -163,7 +171,7 @@ export default function AvaliacaoAdultosPage() {
             eyebrow="Como funciona a avaliação em adultos?"
             title="Você não chega para provar que tem ou não tem um diagnóstico."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               O processo começa pela compreensão da sua história, das dificuldades
               percebidas e da pergunta que motivou a avaliação.
@@ -198,11 +206,14 @@ export default function AvaliacaoAdultosPage() {
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
-              Sou Laís Barone, psicóloga e neuropsicóloga, com atuação desde 2008.
+              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação profissional
+              e clínica desde 2009.
             </p>
             <p>
-              Sou Mestre pela USP e tenho formação em Neuropsicologia pela USP, além
-              de formação em TCC, Terapia do Esquema e Psicopatologia.
+              Tenho formação em Neuropsicologia e Psicopatologia no IPq-USP, em TCC
+              e Terapia do Esquema pelo CETCC, e em Reabilitação Cognitiva pelo
+              INESP. Também desenvolvo Pesquisa de Mestrado em Psicologia no
+              Instituto de Psicologia da USP (IP-USP), com ingresso em 2019.
             </p>
             <p>
               Minha experiência clínica e acadêmica orienta uma avaliação que
@@ -211,7 +222,7 @@ export default function AvaliacaoAdultosPage() {
             </p>
           </div>
           <p className="mt-6 text-sm tracking-wide text-peach">
-            Mestre e Neuropsicóloga pela USP • Psicóloga desde 2008
+            {site.credentialLines.neuro}
           </p>
         </Container>
       </section>

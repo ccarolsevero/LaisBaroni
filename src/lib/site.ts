@@ -1,10 +1,14 @@
 import { categories } from "./blog";
 
 export const site = {
-  name: "Laís Barone",
+  name: "Laís Baroni",
+  fullName: "Laís Beringhs Baroni",
   role: "Psicóloga e Neuropsicóloga",
   crp: "CRP 06/95581",
-  since: 2008,
+  /** Atuação profissional e clínica */
+  since: 2009,
+  graduatedYear: 2008,
+  privatePracticeSince: "março de 2020",
   tagline:
     "Avaliação neuropsicológica e psicoterapia para compreender além do que aparece à primeira vista.",
   address: "Avenida Vereador José Diniz, 3651, cj. 74",
@@ -17,9 +21,26 @@ export const site = {
     "Supervisão Clínica",
   ] as const,
   credentials: [
-    "Mestre e Neuropsicóloga pela USP",
-    "TCC • Terapia do Esquema • Psicopatologia",
+    "Neuropsicologia e Psicopatologia — IPq-USP",
+    "TCC e Terapia do Esquema — CETCC",
+    "Reabilitação Cognitiva — INESP",
   ] as const,
+  pills: {
+    neuro:
+      "Laís Baroni | Psicóloga e Neuropsicóloga | Atuação clínica desde 2009",
+    therapy:
+      "Laís Baroni | Psicóloga e Neuropsicóloga | Atuação clínica desde 2009",
+    supervision:
+      "Laís Baroni | Psicóloga e Neuropsicóloga | Atuação clínica desde 2009",
+  },
+  credentialLines: {
+    neuro:
+      "Neuropsicologia e Psicopatologia — IPq-USP • TCC e Terapia do Esquema — CETCC • Reabilitação Cognitiva — INESP • Atuação clínica desde 2009",
+    therapy:
+      "Atuação clínica desde 2009 • Neuropsicologia e Psicopatologia — IPq-USP • TCC • Terapia do Esquema • ACT • Pesquisa de Mestrado em Psicologia — USP",
+    supervision:
+      "Atuação clínica desde 2009 • TCC • Terapia do Esquema • ACT • Psicopatologia • Neuropsicologia",
+  },
   whatsapp: {
     number: process.env.NEXT_PUBLIC_WHATSAPP ?? "5511999999999",
     display: process.env.NEXT_PUBLIC_WHATSAPP_DISPLAY ?? "[inserir número]",
@@ -47,6 +68,7 @@ export const nav: NavItem[] = [
     children: [
       { href: "/avaliacao-neuropsicologica/infantil", label: "Infantil" },
       { href: "/avaliacao-neuropsicologica/adultos", label: "Adultos" },
+      { href: "/avaliacao-neuropsicologica/idosos", label: "Idosos" },
       { href: "/avaliacao-neuropsicologica/tdah", label: "TDAH" },
       { href: "/avaliacao-neuropsicologica/autismo", label: "Autismo / TEA" },
     ],

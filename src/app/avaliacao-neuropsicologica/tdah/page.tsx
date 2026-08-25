@@ -6,7 +6,7 @@ import { IconAdult, IconArrow, IconChild } from "@/components/icons";
 import { LineMarks } from "@/components/illustrations";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
-import { whatsappUrl } from "@/lib/site";
+import { site, whatsappUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Avaliação Neuropsicológica para TDAH",
@@ -58,7 +58,7 @@ export default function AvaliacaoTdahPage() {
         description="Dificuldades de atenção, organização, impulsividade ou comportamento podem levantar a hipótese de TDAH tanto na infância quanto na vida adulta."
         extra="A avaliação neuropsicológica contribui para investigar essas dificuldades considerando como elas aparecem, a história da pessoa e outros aspectos importantes do seu funcionamento."
         pills={[
-          "Laís Barone | Neuropsicóloga e Mestre pela USP | Psicóloga desde 2008",
+          site.pills.neuro,
         ]}
         primary={{
           href: whatsappUrl(infoMessage),
@@ -129,7 +129,7 @@ export default function AvaliacaoTdahPage() {
       <section className="bg-white py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading title="Por que não basta identificar os sintomas?" />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>Porque dificuldade de atenção não é sinônimo de TDAH.</p>
             <p>
               Na criança ou no adulto, características parecidas podem aparecer por
@@ -158,7 +158,7 @@ export default function AvaliacaoTdahPage() {
             eyebrow="O que pode ser investigado?"
             title="O diagnóstico não está no resultado de um único teste."
           />
-          <p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
+          <p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
             De acordo com cada caso, podem ser investigados aspectos como:
           </p>
           <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -168,7 +168,7 @@ export default function AvaliacaoTdahPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
+          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
             Os resultados são interpretados junto à história, ao contexto e às demais
             informações obtidas durante a avaliação.
           </p>
@@ -221,7 +221,7 @@ export default function AvaliacaoTdahPage() {
             eyebrow="Como funciona a avaliação?"
             title="Você não chega para provar que é TDAH. Seu filho também não."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               O processo começa pela compreensão da queixa, da história e da pergunta
               que motivou a avaliação.
@@ -256,11 +256,14 @@ export default function AvaliacaoTdahPage() {
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
-              Sou Laís Barone, psicóloga e neuropsicóloga, com atuação desde 2008.
+              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação profissional
+              e clínica desde 2009.
             </p>
             <p>
-              Sou Mestre pela USP e tenho formação em Neuropsicologia pela USP, além
-              de formação em TCC, Terapia do Esquema e Psicopatologia.
+              Tenho formação em Neuropsicologia e Psicopatologia no IPq-USP, em TCC
+              e Terapia do Esquema pelo CETCC, e em Reabilitação Cognitiva pelo
+              INESP. Também desenvolvo Pesquisa de Mestrado em Psicologia no
+              Instituto de Psicologia da USP (IP-USP), com ingresso em 2019.
             </p>
             <p>
               Minha experiência clínica e acadêmica orienta uma avaliação que integra
@@ -269,7 +272,7 @@ export default function AvaliacaoTdahPage() {
             </p>
           </div>
           <p className="mt-6 text-sm tracking-wide text-peach">
-            Mestre e Neuropsicóloga pela USP • Psicóloga desde 2008
+            {site.credentialLines.neuro}
           </p>
         </Container>
       </section>

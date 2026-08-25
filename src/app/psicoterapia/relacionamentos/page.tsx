@@ -3,7 +3,7 @@ import { ContactBand } from "@/components/contact-band";
 import { FaqList } from "@/components/faq-list";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
-import { whatsappUrl } from "@/lib/site";
+import { site, whatsappUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Psicoterapia para Relacionamentos e Padrões Emocionais",
@@ -67,7 +67,7 @@ export default function PsicoterapiaRelacionamentosPage() {
         description="Relacionamentos podem revelar padrões que se repetem: dificuldade para colocar limites, medo de perder o outro, necessidade constante de aprovação ou a sensação de estar sempre vivendo versões parecidas da mesma história."
         extra="Na psicoterapia, podemos compreender o que sustenta essas repetições e como sua história influencia a maneira como você se relaciona hoje."
         pills={[
-          "Laís Barone | Psicóloga desde 2008 | Mestre pela USP",
+          site.pills.therapy,
           "TCC • Terapia do Esquema • Psicopatologia",
         ]}
         primary={{
@@ -88,7 +88,7 @@ export default function PsicoterapiaRelacionamentosPage() {
             eyebrow="Quando o relacionamento muda, mas o padrão continua"
             title="Talvez não seja apenas sobre escolher “a pessoa errada”."
           />
-          <div className="space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>Você muda de relacionamento, mas algumas sensações permanecem.</p>
             <p>
               Pode ser difícil dizer não. Você se responsabiliza demais pelo outro.
@@ -125,7 +125,7 @@ export default function PsicoterapiaRelacionamentosPage() {
               </blockquote>
             ))}
           </div>
-          <div className="mt-10 max-w-3xl space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-10 max-w-3xl space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>Essas experiências podem ter histórias muito diferentes.</p>
             <p>
               A psicoterapia permite compreender o que essas formas de se relacionar
@@ -141,7 +141,7 @@ export default function PsicoterapiaRelacionamentosPage() {
             eyebrow="Terapia do Esquema e relacionamentos"
             title="Alguns padrões começam muito antes do relacionamento em que você está hoje."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               Ao longo da vida, construímos formas de compreender a nós mesmos, aos
               outros e às relações.
@@ -174,7 +174,7 @@ export default function PsicoterapiaRelacionamentosPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
+          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
             Não se trata de encaixar a pessoa em um padrão, mas de compreender como
             ele aparece e qual função teve — ou ainda tem — em sua história.
           </p>
@@ -187,7 +187,7 @@ export default function PsicoterapiaRelacionamentosPage() {
             eyebrow="Como funciona a psicoterapia?"
             title="O objetivo não é ensinar você a “escolher melhor”. É compreender como você participa das relações que constrói."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               O processo começa pela sua história, pelas relações que fazem parte
               dela e pelas questões que estão trazendo sofrimento ou despertando
@@ -214,13 +214,14 @@ export default function PsicoterapiaRelacionamentosPage() {
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
-              Sou Laís Barone, psicóloga desde 2008 e Mestre pela Universidade de São
-              Paulo (USP).
+              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação profissional e clínica desde 2009.
             </p>
             <p>
-              Minha formação inclui Terapia do Esquema, TCC, Psicopatologia e
-              Neuropsicologia pela USP.
+              Tenho formação em Neuropsicologia e Psicopatologia no IPq-USP, em TCC
+              e Terapia do Esquema pelo CETCC, e em Reabilitação Cognitiva pelo
+              INESP. A ACT integra meus estudos e conhecimentos clínicos.
             </p>
+
             <p>
               Essa trajetória orienta um trabalho que busca compreender não apenas a
               relação atual, mas também os padrões emocionais, necessidades e
@@ -229,8 +230,7 @@ export default function PsicoterapiaRelacionamentosPage() {
             </p>
           </div>
           <p className="mt-6 text-sm tracking-wide text-peach">
-            Psicóloga desde 2008 • Mestre pela USP • Terapia do Esquema • TCC •
-            Psicopatologia
+            {site.credentialLines.therapy}
           </p>
         </Container>
       </section>

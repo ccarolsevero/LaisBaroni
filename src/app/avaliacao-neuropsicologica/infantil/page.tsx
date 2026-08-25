@@ -4,7 +4,7 @@ import { FaqList } from "@/components/faq-list";
 import { LineMarks } from "@/components/illustrations";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
-import { whatsappUrl } from "@/lib/site";
+import { site, whatsappUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Avaliação Neuropsicológica Infantil",
@@ -57,7 +57,7 @@ export default function AvaliacaoInfantilPage() {
         description="Dificuldades na aprendizagem, atenção, comportamento ou desenvolvimento podem gerar muitas dúvidas para a família."
         extra="A avaliação neuropsicológica infantil ajuda a investigar como a criança funciona em diferentes aspectos, considerando seus recursos, dificuldades, história e contexto."
         pills={[
-          "Laís Barone | Neuropsicóloga e Mestre pela USP | Psicóloga desde 2008",
+          site.pills.neuro,
         ]}
         primary={{
           href: whatsappUrl(infoMessage),
@@ -77,7 +77,7 @@ export default function AvaliacaoInfantilPage() {
             eyebrow="O que leva uma família a buscar uma avaliação?"
             title="Às vezes, a dúvida começa com uma frase simples: “Por que isso está sendo tão difícil para ele?”"
           />
-          <div className="space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               A escola percebe uma dificuldade. A criança não consegue acompanhar
               algumas atividades como esperado. Manter a atenção parece exigir um
@@ -96,7 +96,7 @@ export default function AvaliacaoInfantilPage() {
             eyebrow="O que a avaliação pode investigar?"
             title="Não é apenas sobre descobrir uma dificuldade. É sobre compreender como aquela criança funciona."
           />
-          <p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
+          <p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
             De acordo com a necessidade de cada caso, a avaliação pode investigar
             aspectos como:
           </p>
@@ -107,7 +107,7 @@ export default function AvaliacaoInfantilPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
+          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
             Essas informações são analisadas junto à história de desenvolvimento,
             contexto e queixa que motivou a avaliação.
           </p>
@@ -117,7 +117,7 @@ export default function AvaliacaoInfantilPage() {
       <section className="bg-mist py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading title="“Meu filho tem TDAH? Autismo? É uma dificuldade de aprendizagem?”" />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               A avaliação não deveria começar pela resposta. Deveria começar pela
               investigação.
@@ -144,7 +144,7 @@ export default function AvaliacaoInfantilPage() {
             eyebrow="Como funciona a avaliação neuropsicológica infantil?"
             title="A criança não chega para “passar em uma prova”."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               O processo começa pela compreensão da queixa e da história da criança,
               incluindo informações relevantes sobre seu desenvolvimento e cotidiano.
@@ -179,11 +179,14 @@ export default function AvaliacaoInfantilPage() {
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
-              Sou Laís Barone, psicóloga e neuropsicóloga, com atuação desde 2008.
+              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação profissional
+              e clínica desde 2009.
             </p>
             <p>
-              Sou Mestre pela USP e tenho formação em Neuropsicologia pela USP, além
-              de formação em TCC, Terapia do Esquema e Psicopatologia.
+              Tenho formação em Neuropsicologia e Psicopatologia no IPq-USP, em TCC
+              e Terapia do Esquema pelo CETCC, e em Reabilitação Cognitiva pelo
+              INESP. Também desenvolvo Pesquisa de Mestrado em Psicologia no
+              Instituto de Psicologia da USP (IP-USP), com ingresso em 2019.
             </p>
             <p>
               Minha experiência clínica e acadêmica orienta uma avaliação que
@@ -192,7 +195,7 @@ export default function AvaliacaoInfantilPage() {
             </p>
           </div>
           <p className="mt-6 text-sm tracking-wide text-peach">
-            Mestre e Neuropsicóloga pela USP • Psicóloga desde 2008
+            {site.credentialLines.neuro}
           </p>
         </Container>
       </section>

@@ -53,16 +53,16 @@ export default function Home() {
         <div className="pointer-events-none absolute bottom-[-6rem] left-[-4rem] h-72 w-72 rounded-full bg-peach/70" />
         <Container className="relative grid gap-10 py-14 lg:grid-cols-[1.25fr_0.95fr] lg:items-end lg:py-16">
           <div>
-            <Pill>Laís Barone</Pill>
+            <Pill>Laís Baroni</Pill>
             <h1 className="font-display mt-5 max-w-3xl text-[2rem] leading-[1.15] font-medium text-balance sm:text-5xl">
               Avaliação neuropsicológica e psicoterapia para compreender além do
               que aparece à primeira vista.
             </h1>
-            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-mid sm:text-base">
-              Sou Laís Barone, psicóloga e neuropsicóloga, com atuação desde 2008.
-              Meu trabalho une experiência clínica, conhecimento técnico e um olhar
-              individualizado para compreender cada pessoa em sua história e
-              contexto.
+            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
+              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação
+              profissional e clínica desde 2009. Meu trabalho une experiência
+              clínica, conhecimento técnico e um olhar individualizado para
+              compreender cada pessoa em sua história e contexto.
             </p>
             <div className="mt-8 flex flex-wrap gap-2">
               {site.credentials.map((item) => (
@@ -142,7 +142,9 @@ export default function Home() {
       <section className="bg-white py-12 sm:py-16">
         <Container className="grid gap-12 lg:grid-cols-[0.9fr_1.2fr] lg:items-center">
           <div className="rounded-2xl bg-soft p-10 text-ink">
-            <p className="text-[10px] tracking-[0.18em] uppercase opacity-70">Desde 2008</p>
+            <p className="text-[10px] tracking-[0.18em] uppercase opacity-70">
+              Desde {site.since}
+            </p>
             <p className="font-display mt-4 text-5xl leading-none font-medium">
               Quase duas décadas
             </p>
@@ -153,13 +155,15 @@ export default function Home() {
           </div>
           <div>
             <SectionHeading
-              eyebrow="Sobre Laís Barone"
+              eyebrow="Sobre Laís Baroni"
               title="Uma trajetória construída entre ciência, experiência clínica e um olhar que não se limita ao sintoma."
             />
-            <div className="mt-6 space-y-4 text-[15px] leading-relaxed text-mid sm:text-base">
+            <div className="mt-6 space-y-4 text-[15px] leading-relaxed text-ink/80 sm:text-base">
               <p>
-                Sou psicóloga desde 2008, Mestre pela USP, com formação em
-                Neuropsicologia, TCC, Terapia do Esquema e Psicopatologia.
+                Sou psicóloga e neuropsicóloga, com atuação profissional e clínica
+                desde 2009. Tenho formação em Neuropsicologia e Psicopatologia no
+                IPq-USP, em TCC e Terapia do Esquema pelo CETCC, e em Reabilitação
+                Cognitiva pelo INESP. Atuo também em supervisão clínica e docência.
               </p>
               <p>
                 Meu trabalho une conhecimento técnico e experiência clínica sem

@@ -6,7 +6,7 @@ import { IconAdult, IconArrow, IconChild } from "@/components/icons";
 import { LineMarks } from "@/components/illustrations";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
-import { whatsappUrl } from "@/lib/site";
+import { site, whatsappUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Avaliação Neuropsicológica para Autismo / TEA",
@@ -65,7 +65,7 @@ export default function AvaliacaoAutismoPage() {
         description="Dúvidas relacionadas à comunicação, interação social, comportamento, interesses ou desenvolvimento podem levar à investigação de Transtorno do Espectro Autista (TEA) na infância ou na vida adulta."
         extra="A avaliação contribui para compreender essas características dentro da história, do desenvolvimento e do funcionamento de cada pessoa."
         pills={[
-          "Laís Barone | Neuropsicóloga e Mestre pela USP | Psicóloga desde 2008",
+          site.pills.neuro,
         ]}
         primary={{
           href: whatsappUrl(infoMessage),
@@ -133,7 +133,7 @@ export default function AvaliacaoAutismoPage() {
       <section className="bg-white py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading title="“Eu me identifiquei com vários sinais. Isso significa que sou autista?”" />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               Se reconhecer em algumas características pode despertar uma pergunta.
               Não responde a ela.
@@ -157,7 +157,7 @@ export default function AvaliacaoAutismoPage() {
             eyebrow="O que pode ser investigado?"
             title="Avaliar significa compreender o funcionamento como um todo."
           />
-          <p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
+          <p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
             De acordo com a necessidade de cada caso, podem ser considerados aspectos
             relacionados a:
           </p>
@@ -168,7 +168,7 @@ export default function AvaliacaoAutismoPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-mid sm:text-base">
+          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
             Essas informações são interpretadas junto à história e ao contexto de
             cada pessoa.
           </p>
@@ -221,7 +221,7 @@ export default function AvaliacaoAutismoPage() {
             eyebrow="Como funciona a avaliação?"
             title="A avaliação não começa perguntando “onde estão os sinais de Autismo?”. Começa conhecendo a pessoa."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               O processo parte da queixa, da história e das questões que motivaram a
               busca.
@@ -256,11 +256,14 @@ export default function AvaliacaoAutismoPage() {
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
-              Sou Laís Barone, psicóloga e neuropsicóloga, com atuação desde 2008.
+              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação profissional
+              e clínica desde 2009.
             </p>
             <p>
-              Sou Mestre pela USP e tenho formação em Neuropsicologia pela USP, além
-              de formação em TCC, Terapia do Esquema e Psicopatologia.
+              Tenho formação em Neuropsicologia e Psicopatologia no IPq-USP, em TCC
+              e Terapia do Esquema pelo CETCC, e em Reabilitação Cognitiva pelo
+              INESP. Também desenvolvo Pesquisa de Mestrado em Psicologia no
+              Instituto de Psicologia da USP (IP-USP), com ingresso em 2019.
             </p>
             <p>
               Minha experiência clínica e acadêmica orienta uma avaliação que integra
@@ -269,7 +272,7 @@ export default function AvaliacaoAutismoPage() {
             </p>
           </div>
           <p className="mt-6 text-sm tracking-wide text-peach">
-            Mestre e Neuropsicóloga pela USP • Psicóloga desde 2008
+            {site.credentialLines.neuro}
           </p>
         </Container>
       </section>

@@ -6,13 +6,14 @@ import {
   IconAdult,
   IconArrow,
   IconChild,
+  IconElderly,
   IconPuzzle,
   IconSearch,
 } from "@/components/icons";
 import { LineMarks } from "@/components/illustrations";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
-import { whatsappUrl } from "@/lib/site";
+import { site, whatsappUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Avaliação Neuropsicológica",
@@ -45,6 +46,16 @@ const tipos = [
     cta: "Conheça a Avaliação em Adultos",
   },
   {
+    href: "/avaliacao-neuropsicologica/idosos",
+    icon: IconElderly,
+    tone: "bg-peach text-ink",
+    title: "Avaliação Neuropsicológica em Idosos",
+    paragraphs: [
+      "Quando mudanças de memória, atenção, linguagem ou organização começam a interferir na autonomia e no cotidiano.",
+    ],
+    cta: "Conheça a Avaliação em Idosos",
+  },
+  {
     href: "/avaliacao-neuropsicologica/tdah",
     icon: IconSearch,
     tone: "bg-mid text-white",
@@ -58,7 +69,7 @@ const tipos = [
   {
     href: "/avaliacao-neuropsicologica/autismo",
     icon: IconPuzzle,
-    tone: "bg-peach text-ink",
+    tone: "bg-soft text-ink",
     title: "Avaliação Neuropsicológica e Autismo",
     paragraphs: [
       "Quando algumas características começam a fazer mais sentido — e também a trazer novas perguntas.",
@@ -103,8 +114,9 @@ const faqs = [
       "Não. O processo é definido de acordo com a idade, a demanda e os objetivos da avaliação.",
   },
   {
-    question: "A Laís avalia crianças e adultos?",
-    answer: "Sim. A avaliação neuropsicológica é realizada com crianças e adultos.",
+    question: "A Laís avalia crianças, adultos e idosos?",
+    answer:
+      "Sim. A avaliação neuropsicológica é realizada com crianças, adultos e idosos.",
   },
 ];
 
@@ -115,7 +127,7 @@ export default function AvaliacaoPage() {
         eyebrow="Avaliação Neuropsicológica"
         title="Quando as dificuldades começam a levantar perguntas, uma avaliação cuidadosa pode ajudar a encontrar respostas."
         description="Dificuldades de atenção, memória, aprendizagem, organização ou comportamento podem ter diferentes explicações. A avaliação neuropsicológica ajuda a compreender o que pode estar por trás delas, considerando o funcionamento, a história e o contexto de cada pessoa."
-        note="Avaliação neuropsicológica infantil e adulta"
+        note="Avaliação neuropsicológica infantil, adulta e em idosos"
         primary={{
           href: whatsappUrl(infoMessage),
           label: "Quero informações sobre a avaliação",
@@ -134,15 +146,23 @@ export default function AvaliacaoPage() {
             eyebrow="Quando vale investigar?"
             title="Nem toda dificuldade significa um diagnóstico. Mas algumas perguntas merecem ser investigadas."
           />
-          <div className="space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               Esquecimentos frequentes, dificuldade para manter a atenção, organizar
               tarefas, aprender ou lidar com determinadas situações podem despertar
               dúvidas.
             </p>
             <p>
-              Isso pode acontecer na infância ou aparecer — ou ganhar outro peso —
-              na vida adulta.
+              Isso pode acontecer na infância, aparecer — ou ganhar outro peso — na
+              vida adulta, ou surgir no envelhecimento, quando mudanças cognitivas
+              começam a interferir na autonomia e nas atividades cotidianas.
+            </p>
+            <p>
+              A avaliação também pode ser útil quando existe discrepância entre o
+              funcionamento cognitivo esperado e o desempenho da pessoa na vida
+              cotidiana — por exemplo, quando suas capacidades não se traduzem de
+              modo consistente no estudo, no trabalho, na organização da rotina ou
+              na autonomia.
             </p>
             <p>
               A avaliação não parte de um diagnóstico pronto. Ela investiga o que
@@ -158,16 +178,22 @@ export default function AvaliacaoPage() {
             eyebrow="O que é a avaliação neuropsicológica?"
             title="Um teste mostra uma parte. Uma avaliação precisa compreender o conjunto."
           />
-          <div className="mt-8 max-w-3xl space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-8 max-w-3xl space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               É um processo clínico que investiga aspectos como atenção, memória,
               linguagem, funções executivas e aprendizagem, de acordo com a
               necessidade de cada pessoa.
             </p>
             <p>
-              Testes e instrumentos fazem parte desse processo, mas não são
-              interpretados de forma isolada. História, contexto e demais informações
-              também fazem parte da compreensão.
+              A avaliação não se resume à aplicação de testes. A compreensão
+              integra história clínica, observação, dados quantitativos e
+              qualitativos, funções preservadas e comprometidas, hipóteses clínicas
+              e impacto funcional.
+            </p>
+            <p>
+              Ela ajuda a entender não só as dificuldades, mas também o que a pessoa
+              preserva e consegue fazer bem — e de que forma memória, atenção,
+              raciocínio, organização e outras habilidades aparecem no dia a dia.
             </p>
           </div>
         </Container>
@@ -191,11 +217,14 @@ export default function AvaliacaoPage() {
               </blockquote>
             ))}
           </div>
-          <div className="mt-10 max-w-3xl space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-10 max-w-3xl space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>Essas frases podem ser o começo de uma investigação — não uma conclusão.</p>
             <p>
-              Dificuldades parecidas podem ter diferentes explicações. Por isso,
-              avaliar significa olhar além da queixa inicial.
+              Dificuldades de memória, atenção, organização ou raciocínio podem ter
+              diferentes causas. A Avaliação Neuropsicológica integra história
+              clínica, funcionamento cotidiano, observação e instrumentos para
+              compreender essas mudanças. Quando pertinentes, informações de outros
+              profissionais podem enriquecer a análise do caso.
             </p>
           </div>
         </Container>
@@ -223,7 +252,13 @@ export default function AvaliacaoPage() {
                 </div>
                 <ButtonLink
                   href={tipo.href}
-                  variant={tipo.href.includes("infantil") || tipo.href.includes("autismo") ? "secondary" : "ghost"}
+                  variant={
+                    tipo.href.includes("infantil") ||
+                    tipo.href.includes("autismo") ||
+                    tipo.href.includes("idosos")
+                      ? "secondary"
+                      : "ghost"
+                  }
                   className="mt-8 self-start"
                 >
                   {tipo.cta}
@@ -269,19 +304,24 @@ export default function AvaliacaoPage() {
             interpretado — e não apenas calculado.
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
-            <p>Sou Laís Barone, psicóloga e neuropsicóloga, com atuação desde 2008.</p>
             <p>
-              Sou Mestre pela USP e tenho formação em Neuropsicologia pela USP, além
-              de formação em TCC, Terapia do Esquema e Psicopatologia.
+              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação profissional
+              e clínica desde 2009.
             </p>
             <p>
-              Minha experiência clínica e acadêmica orienta um trabalho que considera
-              os resultados dos instrumentos dentro da história e do contexto de cada
-              pessoa.
+              Tenho formação em Neuropsicologia e Psicopatologia no IPq-USP, em TCC
+              e Terapia do Esquema pelo CETCC, e em Reabilitação Cognitiva pelo
+              INESP. Também desenvolvo Pesquisa de Mestrado em Psicologia no
+              Instituto de Psicologia da USP (IP-USP), com ingresso em 2019.
+            </p>
+            <p>
+              Minha experiência clínica e acadêmica orienta um trabalho que
+              considera os resultados dos instrumentos dentro da história e do
+              contexto de cada pessoa.
             </p>
           </div>
           <p className="mt-6 text-sm tracking-wide text-peach">
-            Mestre e Neuropsicóloga pela USP • Psicóloga desde 2008
+            {site.credentialLines.neuro}
           </p>
           <ButtonLink href="/sobre" variant="peach" className="mt-8">
             Conheça minha trajetória

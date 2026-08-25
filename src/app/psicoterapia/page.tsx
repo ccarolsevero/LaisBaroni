@@ -11,7 +11,7 @@ import {
 } from "@/components/icons";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
-import { whatsappUrl } from "@/lib/site";
+import { site, whatsappUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Psicoterapia Individual",
@@ -83,7 +83,7 @@ const faqs = [
   {
     question: "Qual abordagem é utilizada?",
     answer:
-      "A Terapia Cognitivo-Comportamental (TCC) e a Terapia do Esquema estão entre as principais referências que orientam o trabalho clínico da Laís.",
+      "A Terapia Cognitivo-Comportamental (TCC) e a Terapia do Esquema estão entre as principais referências que orientam o trabalho clínico da Laís. A ACT (Terapia de Aceitação e Compromisso) também integra seus estudos e conhecimentos clínicos, e a Psicopatologia é uma área importante da sua formação.",
   },
   {
     question: "A psicoterapia pode ser online?",
@@ -101,8 +101,8 @@ export default function PsicoterapiaPage() {
         description="Nem sempre quem procura terapia consegue dar um nome exato ao que está sentindo. Pode ser ansiedade, sobrecarga, dificuldades nos relacionamentos, um momento de mudança ou simplesmente o desejo de se conhecer melhor."
         extra="A psicoterapia é um espaço para compreender essas experiências dentro da sua história e construir novas formas de lidar com elas."
         pills={[
-          "Laís Barone | Psicóloga desde 2008 | Mestre pela USP",
-          "TCC • Terapia do Esquema • Psicopatologia",
+          site.pills.therapy,
+          "TCC • Terapia do Esquema • ACT • Psicopatologia",
         ]}
         primary={{
           href: whatsappUrl(infoMessage),
@@ -160,16 +160,26 @@ export default function PsicoterapiaPage() {
             eyebrow="Como eu trabalho"
             title="Entender o que acontece é importante. Entender por que continua acontecendo pode mudar o caminho da terapia."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
-              Meu trabalho clínico é orientado principalmente pela Terapia
-              Cognitivo-Comportamental (TCC) e pela Terapia do Esquema,
-              considerando a história e as necessidades de cada pessoa.
+              Meu trabalho clínico é orientado pela Terapia Cognitivo-Comportamental
+              (TCC) e pela Terapia do Esquema. A ACT (Terapia de Aceitação e
+              Compromisso) também integra meus estudos e conhecimentos clínicos, e a
+              Psicopatologia é uma área importante da minha formação.
             </p>
             <p>
-              Mais do que olhar para uma dificuldade isolada, buscamos compreender
-              emoções, pensamentos, comportamentos, relações e padrões que podem
-              estar relacionados ao que você vive hoje.
+              O trabalho parte de formulação clínica individualizada, considerando
+              história e contexto de vida, padrões emocionais e relacionais,
+              necessidades, objetivos e processos que contribuem para a manutenção
+              das dificuldades.
+            </p>
+            <p>
+              A psicoterapia considera a história, o contexto, emoções, pensamentos,
+              comportamentos, relações e necessidades individuais. A partir dessa
+              compreensão, são escolhidas intervenções que façam sentido para cada
+              caso e momento do processo — ajudando a ampliar formas de lidar com
+              pensamentos e emoções, reduzir estratégias que limitam a vida e
+              aproximar as ações de valores e objetivos pessoais.
             </p>
             <p>Não existe uma fórmula pronta para pessoas diferentes.</p>
           </div>
@@ -182,7 +192,7 @@ export default function PsicoterapiaPage() {
             eyebrow="Terapia do Esquema"
             title="Algumas histórias mudam de personagem, mas parecem repetir o mesmo roteiro."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               Alguns padrões emocionais e relacionais são construídos ao longo da
               nossa história e podem continuar aparecendo mesmo quando já
@@ -207,7 +217,7 @@ export default function PsicoterapiaPage() {
             eyebrow="Como funciona a psicoterapia?"
             title="A terapia começa pela sua história, não por uma resposta pronta."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mid sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
             <p>
               Nos primeiros encontros, buscamos compreender o que levou você à
               psicoterapia, sua história e as dificuldades ou questões que fazem
@@ -233,12 +243,13 @@ export default function PsicoterapiaPage() {
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
-              Sou Laís Barone, psicóloga desde 2008 e Mestre pela Universidade de
-              São Paulo (USP).
+              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação profissional
+              e clínica desde 2009.
             </p>
             <p>
-              Minha formação inclui Terapia Cognitivo-Comportamental (TCC), Terapia
-              do Esquema, Psicopatologia e Neuropsicologia pela USP.
+              Tenho formação em Neuropsicologia e Psicopatologia no IPq-USP, em TCC
+              e Terapia do Esquema pelo CETCC, e em Reabilitação Cognitiva pelo
+              INESP. A ACT integra meus estudos e conhecimentos clínicos.
             </p>
             <p>
               Essa trajetória me permite olhar para cada pessoa considerando o que
@@ -247,8 +258,7 @@ export default function PsicoterapiaPage() {
             </p>
           </div>
           <p className="mt-6 text-sm tracking-wide text-peach">
-            Psicóloga desde 2008 • Mestre pela USP • TCC • Terapia do Esquema •
-            Psicopatologia
+            {site.credentialLines.therapy}
           </p>
           <ButtonLink href="/sobre" variant="peach" className="mt-8">
             Conheça minha trajetória
