@@ -82,7 +82,7 @@ export default function PsicoterapiaAnsiedadePage() {
             eyebrow="Quando o sofrimento começa a ocupar espaço demais"
             title="Nem sempre é fácil perceber quando “estou dando conta” virou “estou apenas tentando aguentar”."
           />
-          <div className="space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
+          <div className="space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               Talvez seja difícil desacelerar. A preocupação esteja sempre presente.
               O corpo permaneça em alerta. Ou você perceba irritabilidade, cansaço,
@@ -103,7 +103,7 @@ export default function PsicoterapiaAnsiedadePage() {
       <section className="bg-white py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading title="“Mas será que o que eu sinto é ansiedade?”" />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               Antes de procurar um rótulo, é importante compreender o que você está
               vivendo.
@@ -139,7 +139,7 @@ export default function PsicoterapiaAnsiedadePage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-ink sm:text-base">
+          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed hero-copy sm:text-base">
             Essas experiências não têm o mesmo significado para todas as pessoas. Por
             isso, precisam ser compreendidas dentro de cada história.
           </p>
@@ -152,7 +152,7 @@ export default function PsicoterapiaAnsiedadePage() {
             eyebrow="Como a psicoterapia pode ajudar?"
             title="O objetivo não é simplesmente aprender a “controlar a ansiedade”."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               Meu trabalho clínico é orientado principalmente pela Terapia
               Cognitivo-Comportamental (TCC) e pela Terapia do Esquema.

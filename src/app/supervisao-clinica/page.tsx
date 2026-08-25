@@ -65,7 +65,7 @@ export default function SupervisaoPage() {
             eyebrow="Para quem é a supervisão?"
             title="Você não precisa estar “sem saber o que fazer” para levar um caso à supervisão."
           />
-          <div className="space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
+          <div className="space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               A supervisão pode fazer sentido tanto diante de um caso que trouxe
               dúvidas ou impasses quanto para profissionais que desejam aprofundar o
@@ -93,7 +93,7 @@ export default function SupervisaoPage() {
               </li>
             ))}
           </ul>
-          <div className="mt-10 max-w-3xl space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
+          <div className="mt-10 max-w-3xl space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               A supervisão ajuda o profissional a ampliar sua compreensão dos casos,
               desenvolver raciocínio clínico e caminhar em direção à autonomia
@@ -118,7 +118,7 @@ export default function SupervisaoPage() {
             eyebrow="Da teoria para o caso real"
             title="Porque nenhum paciente chega à sessão exatamente como aparece nos livros."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               Conhecer conceitos e técnicas é fundamental. Mas a clínica exige
               integrar conhecimento, história, contexto, vínculo e aquilo que
@@ -139,7 +139,7 @@ export default function SupervisaoPage() {
             eyebrow="Qual é o olhar que orienta a supervisão?"
             title="Compreender o sintoma é importante. Compreender a pessoa que apresenta esse sintoma é ainda mais."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               Minha trajetória clínica reúne referências da Terapia
               Cognitivo-Comportamental, Terapia do Esquema, ACT, Psicopatologia e
@@ -193,7 +193,7 @@ export default function SupervisaoPage() {
             eyebrow="Como funciona?"
             title="Um espaço para levar casos reais e pensar a clínica com profundidade."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               Os encontros são direcionados às questões apresentadas pelo
               profissional e aos casos que deseja discutir.

@@ -13,7 +13,7 @@ export function FaqList({
               +
             </span>
           </summary>
-          <p className="max-w-3xl pb-6 leading-relaxed text-ink">{item.answer}</p>
+          <p className="max-w-3xl pb-6 leading-relaxed hero-copy">{item.answer}</p>
         </details>
       ))}
     </div>

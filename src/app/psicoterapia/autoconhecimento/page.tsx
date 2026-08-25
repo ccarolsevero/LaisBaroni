@@ -74,7 +74,7 @@ export default function PsicoterapiaAutoconhecimentoPage() {
             eyebrow="Terapia também é para quem quer se conhecer"
             title="“Minha vida está bem. Ainda assim, sinto que há coisas sobre mim que gostaria de entender melhor.”"
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               Nem toda busca por psicoterapia começa em um momento de sofrimento
               intenso.
@@ -111,7 +111,7 @@ export default function PsicoterapiaAutoconhecimentoPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-ink sm:text-base">
+          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed hero-copy sm:text-base">
             As questões trabalhadas são construídas a partir da história e dos
             objetivos de cada pessoa.
           </p>
@@ -124,7 +124,7 @@ export default function PsicoterapiaAutoconhecimentoPage() {
             eyebrow="Autoconhecimento"
             title="Autoconhecimento vai além de “saber como eu sou”"
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>Perceber um padrão é diferente de compreender de onde ele vem.</p>
             <p>
               Ao longo da vida, construímos maneiras de interpretar situações, lidar
@@ -145,7 +145,7 @@ export default function PsicoterapiaAutoconhecimentoPage() {
             eyebrow="Como eu trabalho"
             title="Sua história não cabe em uma fórmula pronta."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               Meu trabalho clínico é orientado principalmente pela Terapia
               Cognitivo-Comportamental (TCC) e pela Terapia do Esquema.

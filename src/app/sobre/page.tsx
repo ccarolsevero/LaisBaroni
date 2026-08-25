@@ -78,7 +78,7 @@ export default function SobrePage() {
             eyebrow="Minha trajetória"
             title="A experiência não trouxe respostas prontas. Trouxe perguntas melhores."
           />
-          <div className="space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
+          <div className="space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               Concluí a graduação em Psicologia em dezembro de 2008 e atuo
               profissional e clinicamente desde 2009. Em março de 2020, iniciei o
@@ -122,7 +122,7 @@ export default function SobrePage() {
             eyebrow="Pesquisa de mestrado"
             title="Avaliação Neuropsicológica da Impulsividade em Pacientes com Epilepsia"
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               Em 2019, ingressei na Pesquisa de Mestrado em Psicologia no Instituto
               de Psicologia da USP (IP-USP), no Programa de Pós-Graduação em
@@ -150,7 +150,7 @@ export default function SobrePage() {
             eyebrow="Docência e supervisão"
             title="Ensinar e supervisionar também fazem parte da minha prática."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               Sou professora e supervisora do curso de Neuropsicologia do CETCC, com
               docência também em módulos de Terapia Focada nos Esquemas. Atuo como
@@ -176,7 +176,7 @@ export default function SobrePage() {
             eyebrow="A forma de trabalhar"
             title="Uma mesma dificuldade pode contar histórias completamente diferentes."
           />
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-ink sm:text-lg">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               Ao longo dos anos, fui aprendendo a não olhar para uma queixa de forma
               isolada.
@@ -236,7 +236,7 @@ export default function SobrePage() {
             eyebrow="O que orienta meu trabalho"
             title="Técnica para investigar. Experiência para interpretar. Escuta para compreender quem está por trás da queixa."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>Não acredito em uma forma única de compreender pessoas diferentes.</p>
             <p>
               Meu trabalho é construído a partir das particularidades de cada caso,

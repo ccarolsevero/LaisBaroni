@@ -160,7 +160,7 @@ export default function PsicoterapiaPage() {
             eyebrow="Como eu trabalho"
             title="Entender o que acontece é importante. Entender por que continua acontecendo pode mudar o caminho da terapia."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               Meu trabalho clínico é orientado pela Terapia Cognitivo-Comportamental
               (TCC) e pela Terapia do Esquema. A ACT (Terapia de Aceitação e
@@ -192,7 +192,7 @@ export default function PsicoterapiaPage() {
             eyebrow="Terapia do Esquema"
             title="Algumas histórias mudam de personagem, mas parecem repetir o mesmo roteiro."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               Alguns padrões emocionais e relacionais são construídos ao longo da
               nossa história e podem continuar aparecendo mesmo quando já
@@ -217,7 +217,7 @@ export default function PsicoterapiaPage() {
             eyebrow="Como funciona a psicoterapia?"
             title="A terapia começa pela sua história, não por uma resposta pronta."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               Nos primeiros encontros, buscamos compreender o que levou você à
               psicoterapia, sua história e as dificuldades ou questões que fazem

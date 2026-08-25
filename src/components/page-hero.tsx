@@ -23,18 +23,18 @@ export function PageHero({
 }) {
   return (
     <section className="relative overflow-hidden bg-mist">
-      <div className="pointer-events-none absolute -top-24 -right-16 h-72 w-72 rounded-full bg-soft/45" />
-      <div className="pointer-events-none absolute -bottom-28 -left-10 h-64 w-64 rounded-full bg-peach/60" />
+      <div className="pointer-events-none absolute -top-24 -right-16 h-72 w-72 rounded-full bg-soft/45 lg:hidden" />
+      <div className="pointer-events-none absolute -bottom-28 -left-10 h-64 w-64 rounded-full bg-peach/60 lg:hidden" />
       <Container className="relative py-14 sm:py-16">
         <Pill>{eyebrow}</Pill>
-        <h1 className="font-display mt-5 max-w-3xl text-[2rem] leading-[1.18] font-medium text-balance text-ink sm:text-5xl">
+        <h1 className="font-display mt-5 max-w-3xl text-[2rem] leading-[1.18] font-medium text-balance sm:text-5xl">
           {title}
         </h1>
-        <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-ink sm:text-base">
+        <p className="hero-copy relative mt-5 max-w-2xl text-[15px] leading-relaxed sm:text-base">
           {description}
         </p>
         {extra ? (
-          <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-ink sm:text-base">
+          <p className="hero-copy relative mt-3 max-w-2xl text-[15px] leading-relaxed sm:text-base">
             {extra}
           </p>
         ) : null}

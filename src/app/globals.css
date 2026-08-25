@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --ink: #1c2e3a;
-  --mid: #2c4556;
-  --soft: #5a7a8f;
+  --ink: #2f4554;
+  --mid: #64859d;
+  --soft: #94b0c1;
   --mist: #e8ecef;
   --base: #ededed;
   --peach: #f3d7bd;
@@ -12,14 +12,14 @@
 }
 
 @theme inline {
-  --color-ink: #1c2e3a;
-  --color-mid: #2c4556;
-  --color-soft: #5a7a8f;
-  --color-mist: #e8ecef;
-  --color-base: #ededed;
-  --color-peach: #f3d7bd;
-  --color-paper: #f6f3ef;
-  --color-white: #fbfbfb;
+  --color-ink: #2f4554;
+  --color-mid: var(--mid);
+  --color-soft: var(--soft);
+  --color-mist: var(--mist);
+  --color-base: var(--base);
+  --color-peach: var(--peach);
+  --color-paper: var(--paper);
+  --color-white: var(--white);
   --font-sans: var(--font-montserrat);
   --font-display: var(--font-playfair);
 }
@@ -43,6 +43,11 @@ body {
   font-family: var(--font-playfair), Georgia, serif;
 }
 
+/* Parágrafos da hero: no desktop text-mid/ink + blobs ficavam ilegíveis */
+.hero-copy {
+  color: #2f4554;
+}
+
 details > summary {
   list-style: none;
 }
@@ -54,7 +59,7 @@ details > summary::-webkit-details-marker {
 .prose-article {
   font-size: 1.125rem;
   line-height: 1.85;
-  color: var(--ink);
+  color: color-mix(in srgb, var(--ink) 80%, transparent);
 }
 
 .prose-article h2,

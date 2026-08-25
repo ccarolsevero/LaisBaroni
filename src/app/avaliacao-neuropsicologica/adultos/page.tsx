@@ -83,7 +83,7 @@ export default function AvaliacaoAdultosPage() {
             eyebrow="O que leva um adulto a procurar uma avaliação?"
             title="“Eu sempre fui assim ou alguma coisa mudou?”"
           />
-          <div className="space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
+          <div className="space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               Talvez você tenha dificuldade para se concentrar, esqueça compromissos,
               perca objetos, comece tarefas e não consiga terminá-las ou sinta que se
@@ -117,7 +117,7 @@ export default function AvaliacaoAdultosPage() {
             eyebrow="O que a avaliação pode investigar?"
             title="A pergunta não é apenas “o que está difícil?”, mas “como você funciona?”."
           />
-          <p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-ink sm:text-base">
+          <p className="mt-8 max-w-3xl text-[15px] leading-relaxed hero-copy sm:text-base">
             De acordo com a necessidade de cada caso, podem ser investigados aspectos
             como:
           </p>
@@ -128,7 +128,7 @@ export default function AvaliacaoAdultosPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-ink sm:text-base">
+          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed hero-copy sm:text-base">
             Essas informações são interpretadas considerando também a história, o
             contexto e a questão que motivou a avaliação.
           </p>
@@ -138,7 +138,7 @@ export default function AvaliacaoAdultosPage() {
       <section className="bg-mist py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading title="“Será que eu tenho TDAH? Autismo? Ou existe outra explicação?”" />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>Chegar com uma hipótese é diferente de chegar com uma conclusão.</p>
             <p>
               Muitos adultos procuram avaliação depois de se reconhecerem em
@@ -171,7 +171,7 @@ export default function AvaliacaoAdultosPage() {
             eyebrow="Como funciona a avaliação em adultos?"
             title="Você não chega para provar que tem ou não tem um diagnóstico."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               O processo começa pela compreensão da sua história, das dificuldades
               percebidas e da pergunta que motivou a avaliação.

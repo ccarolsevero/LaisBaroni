@@ -49,8 +49,8 @@ export default function Home() {
   return (
     <>
       <section className="relative overflow-hidden bg-mist">
-        <div className="pointer-events-none absolute -top-28 right-[-5rem] h-80 w-80 rounded-full bg-soft/55" />
-        <div className="pointer-events-none absolute bottom-[-6rem] left-[-4rem] h-72 w-72 rounded-full bg-peach/70" />
+        <div className="pointer-events-none absolute -top-28 right-[-5rem] h-80 w-80 rounded-full bg-soft/55 lg:hidden" />
+        <div className="pointer-events-none absolute bottom-[-6rem] left-[-4rem] h-72 w-72 rounded-full bg-peach/70 lg:hidden" />
         <Container className="relative grid gap-10 py-14 lg:grid-cols-[1.25fr_0.95fr] lg:items-end lg:py-16">
           <div>
             <Pill>Laís Baroni</Pill>
@@ -58,7 +58,7 @@ export default function Home() {
               Avaliação neuropsicológica e psicoterapia para compreender além do
               que aparece à primeira vista.
             </h1>
-            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-ink sm:text-base">
+            <p className="hero-copy relative mt-5 max-w-2xl text-[15px] leading-relaxed sm:text-base">
               Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação
               profissional e clínica desde 2009. Meu trabalho une experiência
               clínica, conhecimento técnico e um olhar individualizado para
@@ -74,7 +74,7 @@ export default function Home() {
                 </span>
               ))}
             </div>
-            <p className="mt-5 text-sm text-ink">{site.services.join(" • ")}</p>
+            <p className="hero-copy mt-5 text-sm">{site.services.join(" • ")}</p>
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
               <ButtonLink href="#atuacao" variant="primary">
                 Conheça meu trabalho
@@ -158,7 +158,7 @@ export default function Home() {
               eyebrow="Sobre Laís Baroni"
               title="Uma trajetória construída entre ciência, experiência clínica e um olhar que não se limita ao sintoma."
             />
-            <div className="mt-6 space-y-4 text-[15px] leading-relaxed text-ink sm:text-base">
+            <div className="mt-6 space-y-4 text-[15px] leading-relaxed hero-copy sm:text-base">
               <p>
                 Sou psicóloga e neuropsicóloga, com atuação profissional e clínica
                 desde 2009. Tenho formação em Neuropsicologia e Psicopatologia no
@@ -185,7 +185,7 @@ export default function Home() {
             eyebrow="Um pouco sobre a forma como trabalho"
             title="A mesma queixa pode contar histórias completamente diferentes."
           />
-          <p className="mx-auto mt-6 max-w-2xl text-center text-[15px] leading-relaxed text-ink sm:text-base">
+          <p className="mx-auto mt-6 max-w-2xl text-center text-[15px] leading-relaxed hero-copy sm:text-base">
             Dificuldade de concentração, esquecimentos ou um comportamento isolado
             não contam a história inteira. Por isso, o trabalho começa por uma
             pergunta:
@@ -196,7 +196,7 @@ export default function Home() {
               O que precisamos compreender melhor aqui?
             </p>
           </blockquote>
-          <p className="mx-auto mt-6 max-w-2xl text-center text-[15px] leading-relaxed text-ink sm:text-base">
+          <p className="mx-auto mt-6 max-w-2xl text-center text-[15px] leading-relaxed hero-copy sm:text-base">
             É a partir dessa compreensão que conduzo avaliação, psicoterapia e
             supervisão clínica.
           </p>

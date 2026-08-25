@@ -24,7 +24,7 @@ export function ArticleCard({ post }: { post: Post }) {
             {post.title}
           </Link>
         </h3>
-        <p className="mt-3 flex-1 text-sm leading-relaxed text-ink">{post.excerpt}</p>
+        <p className="mt-3 flex-1 text-sm leading-relaxed hero-copy">{post.excerpt}</p>
         <Link
           href={`/blog/${post.slug}`}
           className="mt-5 inline-flex items-center gap-2 text-sm text-ink"

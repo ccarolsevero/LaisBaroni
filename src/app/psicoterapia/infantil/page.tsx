@@ -80,7 +80,7 @@ export default function PsicoterapiaInfantilPage() {
             eyebrow="Quando procurar"
             title="Nem toda mudança significa que existe um problema. Mas algumas mudanças merecem ser compreendidas."
           />
-          <div className="space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
+          <div className="space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               Às vezes, os responsáveis percebem que a criança está diferente, mas
               não conseguem entender exatamente o motivo.
@@ -102,7 +102,7 @@ export default function PsicoterapiaInfantilPage() {
       <section className="bg-white py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading title="“Meu filho não fala sobre o que está acontecendo.”" />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               Crianças nem sempre expressam o que sentem da mesma maneira que os
               adultos.
@@ -134,7 +134,7 @@ export default function PsicoterapiaInfantilPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-ink sm:text-base">
+          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed hero-copy sm:text-base">
             Essas situações podem ter significados diferentes para cada criança e
             precisam ser compreendidas dentro de sua história e contexto.
           </p>
@@ -172,7 +172,7 @@ export default function PsicoterapiaInfantilPage() {
         </Container>
         <Container className="mt-10">
           <SectionHeading title="Às vezes, a dúvida dos pais começa justamente aqui." />
-          <p className="mt-6 max-w-3xl text-[15px] leading-relaxed text-ink sm:text-base">
+          <p className="mt-6 max-w-3xl text-[15px] leading-relaxed hero-copy sm:text-base">
             Se houver dúvida sobre qual caminho faz mais sentido, ela pode ser
             compreendida a partir da demanda apresentada.
           </p>
@@ -193,7 +193,7 @@ export default function PsicoterapiaInfantilPage() {
             eyebrow="Como funciona a psicoterapia infantil?"
             title="Para compreender uma criança, também é preciso conhecer o contexto em que ela vive."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               O processo considera a idade, o desenvolvimento, a história e as
               necessidades da criança.
