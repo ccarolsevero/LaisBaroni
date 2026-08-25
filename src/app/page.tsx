@@ -50,64 +50,47 @@ const areas = [
 export default function Home() {
   return (
     <>
-      <section className="relative overflow-hidden bg-mist">
-        <div className="pointer-events-none absolute -top-28 right-[-5rem] h-80 w-80 rounded-full bg-soft/55 lg:hidden" />
-        <div className="pointer-events-none absolute bottom-[-6rem] left-[-4rem] h-72 w-72 rounded-full bg-peach/70 lg:hidden" />
-        <Container className="relative grid gap-10 py-14 lg:grid-cols-[1.25fr_0.95fr] lg:items-end lg:py-16">
-          <div>
-            <Pill>Laís Baroni</Pill>
-            <h1 className="font-display mt-5 max-w-3xl text-[2rem] leading-[1.15] font-medium text-balance sm:text-5xl">
+      <section className="relative min-h-[88vh] overflow-hidden bg-ink lg:min-h-[92vh]">
+        <Image
+          src={photos.heroHome.src}
+          alt={photos.heroHome.alt}
+          fill
+          priority
+          className="object-cover object-[70%_center] sm:object-[75%_center]"
+          sizes="100vw"
+        />
+        {/* Leitura à esquerda — sem texto sobre o rosto/foto */}
+        <div className="absolute inset-0 bg-gradient-to-r from-ink/88 via-ink/55 to-ink/10 sm:via-ink/45 sm:to-transparent" />
+        <Container className="relative flex min-h-[88vh] flex-col justify-end py-14 lg:min-h-[92vh] lg:justify-center lg:py-20">
+          <div className="max-w-xl text-white">
+            <Pill className="bg-white/15 text-white">Laís Baroni</Pill>
+            <h1 className="font-display mt-5 text-[2rem] leading-[1.15] font-medium text-balance sm:text-5xl">
               Avaliação neuropsicológica e psicoterapia para compreender além do
               que aparece à primeira vista.
             </h1>
-            <p className="hero-copy relative mt-5 max-w-2xl text-[15px] leading-relaxed sm:text-base">
-              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação
-              profissional e clínica desde 2009. Meu trabalho une experiência
-              clínica, conhecimento técnico e um olhar individualizado para
-              compreender cada pessoa em sua história e contexto.
+            <p className="mt-5 text-[15px] leading-relaxed text-white/90 sm:text-base">
+              Psicóloga e neuropsicóloga, com atuação profissional e clínica desde
+              2009. Um olhar individualizado para compreender cada pessoa em sua
+              história e contexto.
             </p>
-            <div className="mt-8 flex flex-wrap gap-2">
-              {site.credentials.map((item) => (
-                <span
-                  key={item}
-                  className="rounded-full bg-white/80 px-3.5 py-1.5 text-[11px] tracking-[0.08em] text-ink uppercase"
-                >
-                  {item}
-                </span>
-              ))}
-            </div>
-            <p className="hero-copy mt-5 text-sm">{site.services.join(" • ")}</p>
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-              <ButtonLink href="#atuacao" variant="primary">
+              <ButtonLink href="#atuacao" variant="peach">
                 Conheça meu trabalho
               </ButtonLink>
-              <ButtonLink href={whatsappUrl()} variant="secondary" external>
+              <ButtonLink
+                href={whatsappUrl()}
+                variant="ghost"
+                external
+                className="ring-white/40"
+              >
                 <IconWhatsApp />
                 Fale comigo pelo WhatsApp
               </ButtonLink>
             </div>
+            <p className="mt-8 text-sm tracking-[0.12em] text-peach uppercase">
+              {site.crp}
+            </p>
           </div>
-
-          <aside className="relative mx-auto aspect-[3/4] w-full max-w-md overflow-hidden rounded-2xl bg-ink lg:mx-0 lg:aspect-auto lg:min-h-[520px] lg:max-w-none">
-            <Image
-              src={photos.heroHome.src}
-              alt={photos.heroHome.alt}
-              fill
-              className="object-cover object-top"
-              sizes="(max-width: 1024px) 90vw, 40vw"
-              priority
-            />
-            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/90 via-ink/55 to-transparent p-6 pt-20 text-white sm:p-8">
-              <LineMarks className="mb-3 h-8 w-12 text-peach" />
-              <p className="font-display text-xl leading-snug font-medium sm:text-2xl">
-                A experiência clínica não é sobre saber tudo. É sobre fazer
-                melhores perguntas.
-              </p>
-              <p className="mt-4 text-sm tracking-[0.14em] text-peach uppercase">
-                {site.crp}
-              </p>
-            </div>
-          </aside>
         </Container>
       </section>
 
