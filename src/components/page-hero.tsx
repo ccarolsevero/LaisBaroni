@@ -22,22 +22,26 @@ export function PageHero({
   pills?: string[];
   primary?: { href: string; label: string; external?: boolean };
   secondary?: { href: string; label: string; external?: boolean };
-  image?: { src: string; alt: string };
+  image?: { src: string; alt: string; className?: string };
 }) {
   if (image) {
     return (
-      <section className="relative min-h-[70vh] overflow-hidden bg-ink lg:min-h-[78vh]">
+      <section className="relative min-h-[68vh] overflow-hidden bg-ink lg:min-h-[76vh]">
         <Image
           src={image.src}
           alt={image.alt}
           fill
           priority
-          className="object-cover object-[center_20%] sm:object-[70%_center]"
+          quality={95}
+          className={
+            image.className ??
+            "object-cover object-[70%_top] sm:object-[72%_center]"
+          }
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/60 to-ink/20 sm:via-ink/50 sm:to-ink/10" />
-        <Container className="relative flex min-h-[70vh] flex-col justify-end py-14 lg:min-h-[78vh] lg:justify-center lg:py-20">
-          <div className="max-w-2xl text-white">
+        <div className="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/55 to-ink/15 sm:via-ink/45 sm:to-ink/10" />
+        <Container className="relative flex min-h-[68vh] flex-col justify-end py-14 lg:min-h-[76vh] lg:justify-center lg:py-20">
+          <div className="max-w-xl text-white lg:max-w-2xl">
             <Pill className="bg-white/15 text-white">{eyebrow}</Pill>
             <h1 className="font-display mt-5 text-[2rem] leading-[1.18] font-medium text-balance sm:text-5xl">
               {title}

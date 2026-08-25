@@ -57,7 +57,7 @@ export default function Home() {
           fill
           priority
           quality={95}
-          className="object-cover object-[center_20%] sm:object-[70%_center]"
+          className="object-cover object-[70%_top] sm:object-[72%_center]"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/55 to-ink/15 sm:via-ink/45 sm:to-ink/10" />
@@ -146,8 +146,8 @@ export default function Home() {
         <Container className="grid gap-12 lg:grid-cols-[0.9fr_1.2fr] lg:items-center">
           <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-soft">
             <Image
-              src={photos.sobre.src}
-              alt={photos.sobre.alt}
+              src={photos.homeSobre.src}
+              alt={photos.homeSobre.alt}
               fill
               quality={90}
               className="object-cover object-[center_15%]"
