@@ -10,7 +10,7 @@ import {
   IconWhatsApp,
 } from "@/components/icons";
 import { LineMarks } from "@/components/illustrations";
-import { Container, Pill, SectionHeading } from "@/components/ui";
+import { Container, SectionHeading } from "@/components/ui";
 import { photos } from "@/lib/photos";
 import { site, whatsappUrl } from "@/lib/site";
 
@@ -50,28 +50,41 @@ const areas = [
 export default function Home() {
   return (
     <>
-      <section className="relative min-h-[88vh] overflow-hidden bg-ink lg:min-h-[92vh]">
+      <section className="relative min-h-[78vh] overflow-hidden bg-ink lg:min-h-[88vh]">
         <Image
           src={photos.heroHome.src}
           alt={photos.heroHome.alt}
           fill
           priority
-          className="object-cover object-[70%_center] sm:object-[75%_center]"
+          quality={95}
+          className="object-cover object-[center_20%] sm:object-[70%_center]"
           sizes="100vw"
         />
-        {/* Leitura à esquerda — sem texto sobre o rosto/foto */}
-        <div className="absolute inset-0 bg-gradient-to-r from-ink/88 via-ink/55 to-ink/10 sm:via-ink/45 sm:to-transparent" />
-        <Container className="relative flex min-h-[88vh] flex-col justify-end py-14 lg:min-h-[92vh] lg:justify-center lg:py-20">
-          <div className="max-w-xl text-white">
-            <Pill className="bg-white/15 text-white">Laís Baroni</Pill>
-            <h1 className="font-display mt-5 text-[2rem] leading-[1.15] font-medium text-balance sm:text-5xl">
+        <div className="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/55 to-ink/15 sm:via-ink/45 sm:to-ink/10" />
+        <Container className="relative flex min-h-[78vh] flex-col justify-end py-14 lg:min-h-[88vh] lg:justify-center lg:py-20">
+          <div className="max-w-2xl text-white">
+            <h1 className="font-display text-[2rem] leading-[1.15] font-medium text-balance sm:text-5xl">
               Avaliação neuropsicológica e psicoterapia para compreender além do
               que aparece à primeira vista.
             </h1>
             <p className="mt-5 text-[15px] leading-relaxed text-white/90 sm:text-base">
-              Psicóloga e neuropsicóloga, com atuação profissional e clínica desde
-              2009. Um olhar individualizado para compreender cada pessoa em sua
-              história e contexto.
+              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação
+              profissional e clínica desde 2009. Meu trabalho une experiência
+              clínica, conhecimento técnico e um olhar individualizado para
+              compreender cada pessoa em sua história e contexto.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-2">
+              {site.credentials.map((item) => (
+                <span
+                  key={item}
+                  className="rounded-full bg-white/15 px-3.5 py-1.5 text-[11px] tracking-[0.08em] text-white uppercase"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
+            <p className="mt-5 text-sm text-white/80">
+              {site.services.join(" • ")}
             </p>
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
               <ButtonLink href="#atuacao" variant="peach">
@@ -87,9 +100,6 @@ export default function Home() {
                 Fale comigo pelo WhatsApp
               </ButtonLink>
             </div>
-            <p className="mt-8 text-sm tracking-[0.12em] text-peach uppercase">
-              {site.crp}
-            </p>
           </div>
         </Container>
       </section>
@@ -133,13 +143,13 @@ export default function Home() {
       </section>
 
       <section className="bg-white py-12 sm:py-16">
-        <Container className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-          <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-2xl lg:mx-0 lg:max-w-none">
+        <Container className="grid gap-12 lg:grid-cols-[0.9fr_1.2fr] lg:items-center">
+          <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-soft">
             <Image
-              src={photos.consultorio.src}
-              alt={photos.consultorio.alt}
+              src={photos.sobre.src}
+              alt={photos.sobre.alt}
               fill
-              className="object-cover object-[center_20%]"
+              className="object-cover object-top"
               sizes="(max-width: 1024px) 90vw, 40vw"
             />
           </div>

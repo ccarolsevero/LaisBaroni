@@ -6,6 +6,7 @@ import { IconAdult, IconArrow, IconChild } from "@/components/icons";
 import { LineMarks } from "@/components/illustrations";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
+import { photos } from "@/lib/photos";
 import { site, whatsappUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -60,6 +61,7 @@ export default function AvaliacaoTdahPage() {
         pills={[
           site.pills.neuro,
         ]}
+        image={photos.avaliacao}
         primary={{
           href: whatsappUrl(infoMessage),
           label: "Quero informações sobre a avaliação",

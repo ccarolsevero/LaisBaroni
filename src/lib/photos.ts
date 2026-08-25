@@ -1,6 +1,6 @@
 export const photos = {
   heroHome: {
-    src: "/photos/hero-principal.jpg",
+    src: "/photos/hero-principal-v2.jpg",
     alt: "Laís Baroni em seu consultório",
   },
   sobre: {

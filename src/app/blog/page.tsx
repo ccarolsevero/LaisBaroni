@@ -5,6 +5,7 @@ import { IconArrow } from "@/components/icons";
 import { PageHero } from "@/components/page-hero";
 import { Container } from "@/components/ui";
 import { categories } from "@/lib/blog";
+import { photos } from "@/lib/photos";
 import { getAllPosts } from "@/lib/posts";
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default async function BlogPage() {
         eyebrow="Blog"
         title="Psicologia para compreender além das respostas rápidas."
         description="Conteúdos sobre Neuropsicologia, saúde emocional, relações e padrões de comportamento, traduzindo temas complexos para uma linguagem mais próxima da vida real."
+        image={photos.consultorio}
       />
 
       <section className="bg-base py-12 sm:py-16">

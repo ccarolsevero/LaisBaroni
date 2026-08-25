@@ -3,6 +3,7 @@ import { ContactBand } from "@/components/contact-band";
 import { FaqList } from "@/components/faq-list";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
+import { photos } from "@/lib/photos";
 import { site, whatsappUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -56,6 +57,7 @@ export default function PsicoterapiaAutoconhecimentoPage() {
           site.pills.therapy,
           "TCC • Terapia do Esquema • Psicopatologia",
         ]}
+        image={photos.psicoterapia}
         primary={{
           href: whatsappUrl(infoMessage),
           label: "Quero começar a psicoterapia",

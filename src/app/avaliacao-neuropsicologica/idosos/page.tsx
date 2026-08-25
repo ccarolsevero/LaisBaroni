@@ -4,6 +4,7 @@ import { FaqList } from "@/components/faq-list";
 import { LineMarks } from "@/components/illustrations";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
+import { photos } from "@/lib/photos";
 import { site, whatsappUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -50,6 +51,7 @@ export default function AvaliacaoIdososPage() {
         description="Ao longo do envelhecimento, algumas mudanças cognitivas podem ocorrer de forma esperada, enquanto outras merecem investigação mais cuidadosa."
         extra="A Avaliação Neuropsicológica contribui para compreender o perfil cognitivo atual, identificar capacidades preservadas e dificuldades, e auxiliar na investigação de alterações associadas ao envelhecimento."
         pills={[site.pills.neuro]}
+        image={photos.avaliacao}
         primary={{
           href: whatsappUrl(infoMessage),
           label: "Quero informações sobre a avaliação",

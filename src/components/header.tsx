@@ -68,9 +68,6 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-ink/8 bg-base/90 backdrop-blur-md">
       <div className="mx-auto flex h-[4.5rem] max-w-[88rem] items-center justify-between gap-6 px-5 sm:px-8">
         <Link href="/" className="flex shrink-0 items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="grid h-9 w-9 place-items-center rounded-full bg-ink text-[11px] font-medium tracking-[0.14em] text-peach">
-            LB
-          </span>
           <span className="leading-tight">
             <span className="font-display block text-[1.2rem] font-medium text-ink">
               {site.name}

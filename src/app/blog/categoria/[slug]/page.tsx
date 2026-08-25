@@ -5,6 +5,7 @@ import { ArticleCard } from "@/components/article-card";
 import { PageHero } from "@/components/page-hero";
 import { Container } from "@/components/ui";
 import { categories, getCategory } from "@/lib/blog";
+import { photos } from "@/lib/photos";
 import { getPostsByCategory } from "@/lib/posts";
 
 export const dynamic = "force-dynamic";
@@ -37,6 +38,7 @@ export default async function BlogCategoryPage({
         eyebrow="Blog"
         title={category.label}
         description={category.description}
+        image={photos.consultorio}
         primary={{ href: "/blog", label: "Ver todos os conteúdos" }}
       />
       <section className="bg-white py-12 sm:py-16">

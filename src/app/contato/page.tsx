@@ -3,6 +3,7 @@ import { ButtonLink } from "@/components/button-link";
 import { IconWhatsApp } from "@/components/icons";
 import { PageHero } from "@/components/page-hero";
 import { Container } from "@/components/ui";
+import { photos } from "@/lib/photos";
 import { site, whatsappUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -18,6 +19,7 @@ export default function ContatoPage() {
         eyebrow="Contato"
         title="Vamos conversar?"
         description="Para informações, dúvidas ou agendamentos, entre em contato pelo WhatsApp."
+        image={photos.heroHome}
         primary={{
           href: whatsappUrl(),
           label: "Fale comigo pelo WhatsApp",
