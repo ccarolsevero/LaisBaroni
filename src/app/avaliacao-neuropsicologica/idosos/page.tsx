@@ -68,7 +68,7 @@ export default function AvaliacaoIdososPage() {
             eyebrow="Quando vale investigar?"
             title="Mudanças que interferem na autonomia merecem um olhar mais atento."
           />
-          <div className="space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <div className="space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
             <p>
               Alterações de memória, atenção, linguagem, organização ou raciocínio —
               sobretudo quando representam uma mudança em relação ao funcionamento
@@ -99,7 +99,7 @@ export default function AvaliacaoIdososPage() {
               </li>
             ))}
           </ul>
-          <div className="mt-10 max-w-3xl space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <div className="mt-10 max-w-3xl space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
             <p>
               Nem toda queixa de memória indica demência. Diferentes fatores
               influenciam o funcionamento cognitivo, e a avaliação busca
@@ -116,7 +116,7 @@ export default function AvaliacaoIdososPage() {
             eyebrow="Como funciona?"
             title="A avaliação não se resume à aplicação de testes."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
             <p>
               A compreensão integra história clínica, observação, dados
               quantitativos e qualitativos, funções preservadas e comprometidas,

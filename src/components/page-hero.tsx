@@ -27,14 +27,14 @@ export function PageHero({
       <div className="pointer-events-none absolute -bottom-28 -left-10 h-64 w-64 rounded-full bg-peach/60" />
       <Container className="relative py-14 sm:py-16">
         <Pill>{eyebrow}</Pill>
-        <h1 className="font-display mt-5 max-w-3xl text-[2rem] leading-[1.18] font-medium text-balance sm:text-5xl">
+        <h1 className="font-display mt-5 max-w-3xl text-[2rem] leading-[1.18] font-medium text-balance text-ink sm:text-5xl">
           {title}
         </h1>
-        <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
+        <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-ink sm:text-base">
           {description}
         </p>
         {extra ? (
-          <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-ink sm:text-base">
             {extra}
           </p>
         ) : null}

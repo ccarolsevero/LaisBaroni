@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --ink: #2f4554;
-  --mid: #456278;
-  --soft: #7a9aad;
+  --ink: #1c2e3a;
+  --mid: #2c4556;
+  --soft: #5a7a8f;
   --mist: #e8ecef;
   --base: #ededed;
   --peach: #f3d7bd;
@@ -12,14 +12,14 @@
 }
 
 @theme inline {
-  --color-ink: var(--ink);
-  --color-mid: var(--mid);
-  --color-soft: var(--soft);
-  --color-mist: var(--mist);
-  --color-base: var(--base);
-  --color-peach: var(--peach);
-  --color-paper: var(--paper);
-  --color-white: var(--white);
+  --color-ink: #1c2e3a;
+  --color-mid: #2c4556;
+  --color-soft: #5a7a8f;
+  --color-mist: #e8ecef;
+  --color-base: #ededed;
+  --color-peach: #f3d7bd;
+  --color-paper: #f6f3ef;
+  --color-white: #fbfbfb;
   --font-sans: var(--font-montserrat);
   --font-display: var(--font-playfair);
 }
@@ -54,7 +54,7 @@ details > summary::-webkit-details-marker {
 .prose-article {
   font-size: 1.125rem;
   line-height: 1.85;
-  color: color-mix(in srgb, var(--ink) 80%, transparent);
+  color: var(--ink);
 }
 
 .prose-article h2,

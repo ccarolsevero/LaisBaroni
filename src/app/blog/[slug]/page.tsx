@@ -50,7 +50,7 @@ export default async function BlogPostPage({
         <h1 className="font-display mt-4 text-3xl leading-[1.2] font-medium sm:text-4xl">
           {post.title}
         </h1>
-        <p className="mt-8 text-xl leading-relaxed text-mid">{post.excerpt}</p>
+        <p className="mt-8 text-xl leading-relaxed text-ink">{post.excerpt}</p>
       </Container>
 
       {post.image ? (

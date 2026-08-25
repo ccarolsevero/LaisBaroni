@@ -41,7 +41,7 @@ export function EditorialGrid() {
           <p className="font-display text-[1.85rem] leading-[1.2] font-medium">
             Você se distrai muito. Isso significa TDAH?
           </p>
-          <span className="mt-5 inline-flex text-ink/70 transition group-hover:translate-x-1">
+          <span className="mt-5 inline-flex text-ink transition group-hover:translate-x-1">
             <IconArrow />
           </span>
         </div>
@@ -51,7 +51,7 @@ export function EditorialGrid() {
         <LineDesk className="pointer-events-none absolute top-8 right-4 h-36 w-36 text-ink/15" />
         <LineLeaves className="pointer-events-none absolute -bottom-4 -left-2 h-28 w-28 text-ink/20" />
         <p className="font-display text-2xl font-medium text-ink">Laís Baroni</p>
-        <p className="mt-1 text-sm tracking-[0.12em] text-ink/70 uppercase">
+        <p className="mt-1 text-sm tracking-[0.12em] text-ink uppercase">
           Psicóloga e neuropsicóloga
         </p>
       </div>
@@ -122,7 +122,7 @@ export function EditorialGrid() {
       <div className="relative flex min-h-[280px] flex-col justify-end overflow-hidden rounded-2xl bg-peach/80 p-7 sm:min-h-[320px]">
         <LineSun className="pointer-events-none absolute top-8 left-8 h-24 w-24 text-ink/20" />
         <p className="font-display text-2xl font-medium text-ink">Presença</p>
-        <p className="mt-1 text-sm tracking-[0.12em] text-ink/70 uppercase">
+        <p className="mt-1 text-sm tracking-[0.12em] text-ink uppercase">
           Atendimento presencial e online
         </p>
       </div>
@@ -138,7 +138,7 @@ export function EditorialGrid() {
             Avaliar é mais do que aplicar testes. É integrar história,
             comportamento e funcionamento cognitivo.
           </p>
-          <span className="mt-5 inline-flex text-ink/70 transition group-hover:translate-x-1">
+          <span className="mt-5 inline-flex text-ink transition group-hover:translate-x-1">
             <IconArrow />
           </span>
         </div>

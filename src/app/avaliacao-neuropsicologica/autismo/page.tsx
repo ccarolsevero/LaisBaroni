@@ -133,7 +133,7 @@ export default function AvaliacaoAutismoPage() {
       <section className="bg-white py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading title="“Eu me identifiquei com vários sinais. Isso significa que sou autista?”" />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
             <p>
               Se reconhecer em algumas características pode despertar uma pergunta.
               Não responde a ela.
@@ -157,7 +157,7 @@ export default function AvaliacaoAutismoPage() {
             eyebrow="O que pode ser investigado?"
             title="Avaliar significa compreender o funcionamento como um todo."
           />
-          <p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-ink sm:text-base">
             De acordo com a necessidade de cada caso, podem ser considerados aspectos
             relacionados a:
           </p>
@@ -168,7 +168,7 @@ export default function AvaliacaoAutismoPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-ink sm:text-base">
             Essas informações são interpretadas junto à história e ao contexto de
             cada pessoa.
           </p>
@@ -181,13 +181,13 @@ export default function AvaliacaoAutismoPage() {
             eyebrow="Infância e vida adulta"
             title="Na infância e na vida adulta, a investigação precisa olhar para histórias diferentes"
           />
-          <p className="mt-6 max-w-3xl text-lg text-mid">
+          <p className="mt-6 max-w-3xl text-lg text-ink">
             A hipótese pode ser a mesma. O caminho até ela não é.
           </p>
           <div className="mt-10 grid gap-3 lg:grid-cols-2">
             <article className="rounded-2xl bg-white p-8">
               <h3 className="font-display text-2xl font-medium">Na infância</h3>
-              <p className="mt-4 leading-relaxed text-mid">
+              <p className="mt-4 leading-relaxed text-ink">
                 A história do desenvolvimento e informações da família e de outros
                 contextos relevantes ajudam a compreender as características
                 observadas.
@@ -195,7 +195,7 @@ export default function AvaliacaoAutismoPage() {
             </article>
             <article className="rounded-2xl bg-white p-8">
               <h3 className="font-display text-2xl font-medium">Na vida adulta</h3>
-              <p className="mt-4 leading-relaxed text-mid">
+              <p className="mt-4 leading-relaxed text-ink">
                 Olhar para experiências e características presentes ao longo da vida
                 ganha uma importância especial, principalmente quando nunca houve uma
                 investigação anterior.
@@ -221,7 +221,7 @@ export default function AvaliacaoAutismoPage() {
             eyebrow="Como funciona a avaliação?"
             title="A avaliação não começa perguntando “onde estão os sinais de Autismo?”. Começa conhecendo a pessoa."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
             <p>
               O processo parte da queixa, da história e das questões que motivaram a
               busca.

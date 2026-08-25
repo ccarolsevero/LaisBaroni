@@ -18,8 +18,8 @@ function DesktopItem({ item, pathname }: { item: NavItem; pathname: string }) {
     return (
       <Link
         href={item.href}
-        className={`whitespace-nowrap text-[13px] transition-colors ${
-          active ? "text-ink" : "text-mid hover:text-ink"
+        className={`whitespace-nowrap text-[13px] font-medium transition-colors ${
+          active ? "text-ink" : "text-ink hover:text-ink"
         }`}
       >
         {item.label}
@@ -31,8 +31,8 @@ function DesktopItem({ item, pathname }: { item: NavItem; pathname: string }) {
     <div className="group relative">
       <Link
         href={item.href}
-        className={`inline-flex items-center gap-1 whitespace-nowrap text-[13px] transition-colors ${
-          active ? "text-ink" : "text-mid hover:text-ink"
+        className={`inline-flex items-center gap-1 whitespace-nowrap text-[13px] font-medium transition-colors ${
+          active ? "text-ink" : "text-ink hover:text-ink"
         }`}
       >
         {item.label}
@@ -47,7 +47,7 @@ function DesktopItem({ item, pathname }: { item: NavItem; pathname: string }) {
               className={`block rounded-xl px-4 py-2.5 text-[13px] ${
                 pathname === child.href
                   ? "bg-mist text-ink"
-                  : "text-mid hover:bg-mist hover:text-ink"
+                  : "text-ink hover:bg-mist hover:text-ink"
               }`}
             >
               {child.label}
@@ -75,7 +75,7 @@ export function Header() {
             <span className="font-display block text-[1.2rem] font-medium text-ink">
               {site.name}
             </span>
-            <span className="hidden text-[10px] tracking-[0.14em] text-mid uppercase xl:block">
+            <span className="hidden text-[10px] font-medium tracking-[0.14em] text-ink uppercase xl:block">
               {site.role}
             </span>
           </span>

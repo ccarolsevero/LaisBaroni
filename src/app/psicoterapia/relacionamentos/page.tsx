@@ -88,7 +88,7 @@ export default function PsicoterapiaRelacionamentosPage() {
             eyebrow="Quando o relacionamento muda, mas o padrão continua"
             title="Talvez não seja apenas sobre escolher “a pessoa errada”."
           />
-          <div className="space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <div className="space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
             <p>Você muda de relacionamento, mas algumas sensações permanecem.</p>
             <p>
               Pode ser difícil dizer não. Você se responsabiliza demais pelo outro.
@@ -125,7 +125,7 @@ export default function PsicoterapiaRelacionamentosPage() {
               </blockquote>
             ))}
           </div>
-          <div className="mt-10 max-w-3xl space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <div className="mt-10 max-w-3xl space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
             <p>Essas experiências podem ter histórias muito diferentes.</p>
             <p>
               A psicoterapia permite compreender o que essas formas de se relacionar
@@ -141,7 +141,7 @@ export default function PsicoterapiaRelacionamentosPage() {
             eyebrow="Terapia do Esquema e relacionamentos"
             title="Alguns padrões começam muito antes do relacionamento em que você está hoje."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
             <p>
               Ao longo da vida, construímos formas de compreender a nós mesmos, aos
               outros e às relações.
@@ -174,7 +174,7 @@ export default function PsicoterapiaRelacionamentosPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-ink sm:text-base">
             Não se trata de encaixar a pessoa em um padrão, mas de compreender como
             ele aparece e qual função teve — ou ainda tem — em sua história.
           </p>
@@ -187,7 +187,7 @@ export default function PsicoterapiaRelacionamentosPage() {
             eyebrow="Como funciona a psicoterapia?"
             title="O objetivo não é ensinar você a “escolher melhor”. É compreender como você participa das relações que constrói."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
             <p>
               O processo começa pela sua história, pelas relações que fazem parte
               dela e pelas questões que estão trazendo sofrimento ou despertando

@@ -77,7 +77,7 @@ export default function AvaliacaoInfantilPage() {
             eyebrow="O que leva uma família a buscar uma avaliação?"
             title="Às vezes, a dúvida começa com uma frase simples: “Por que isso está sendo tão difícil para ele?”"
           />
-          <div className="space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <div className="space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
             <p>
               A escola percebe uma dificuldade. A criança não consegue acompanhar
               algumas atividades como esperado. Manter a atenção parece exigir um
@@ -96,7 +96,7 @@ export default function AvaliacaoInfantilPage() {
             eyebrow="O que a avaliação pode investigar?"
             title="Não é apenas sobre descobrir uma dificuldade. É sobre compreender como aquela criança funciona."
           />
-          <p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-ink sm:text-base">
             De acordo com a necessidade de cada caso, a avaliação pode investigar
             aspectos como:
           </p>
@@ -107,7 +107,7 @@ export default function AvaliacaoInfantilPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-ink sm:text-base">
             Essas informações são analisadas junto à história de desenvolvimento,
             contexto e queixa que motivou a avaliação.
           </p>
@@ -117,7 +117,7 @@ export default function AvaliacaoInfantilPage() {
       <section className="bg-mist py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading title="“Meu filho tem TDAH? Autismo? É uma dificuldade de aprendizagem?”" />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
             <p>
               A avaliação não deveria começar pela resposta. Deveria começar pela
               investigação.
@@ -144,7 +144,7 @@ export default function AvaliacaoInfantilPage() {
             eyebrow="Como funciona a avaliação neuropsicológica infantil?"
             title="A criança não chega para “passar em uma prova”."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
             <p>
               O processo começa pela compreensão da queixa e da história da criança,
               incluindo informações relevantes sobre seu desenvolvimento e cotidiano.

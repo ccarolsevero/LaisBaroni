@@ -58,7 +58,7 @@ export default function Home() {
               Avaliação neuropsicológica e psicoterapia para compreender além do
               que aparece à primeira vista.
             </h1>
-            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
+            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-ink sm:text-base">
               Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação
               profissional e clínica desde 2009. Meu trabalho une experiência
               clínica, conhecimento técnico e um olhar individualizado para
@@ -74,7 +74,7 @@ export default function Home() {
                 </span>
               ))}
             </div>
-            <p className="mt-5 text-sm text-mid">{site.services.join(" • ")}</p>
+            <p className="mt-5 text-sm text-ink">{site.services.join(" • ")}</p>
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
               <ButtonLink href="#atuacao" variant="primary">
                 Conheça meu trabalho
@@ -158,7 +158,7 @@ export default function Home() {
               eyebrow="Sobre Laís Baroni"
               title="Uma trajetória construída entre ciência, experiência clínica e um olhar que não se limita ao sintoma."
             />
-            <div className="mt-6 space-y-4 text-[15px] leading-relaxed text-ink/80 sm:text-base">
+            <div className="mt-6 space-y-4 text-[15px] leading-relaxed text-ink sm:text-base">
               <p>
                 Sou psicóloga e neuropsicóloga, com atuação profissional e clínica
                 desde 2009. Tenho formação em Neuropsicologia e Psicopatologia no
@@ -185,7 +185,7 @@ export default function Home() {
             eyebrow="Um pouco sobre a forma como trabalho"
             title="A mesma queixa pode contar histórias completamente diferentes."
           />
-          <p className="mx-auto mt-6 max-w-2xl text-center text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <p className="mx-auto mt-6 max-w-2xl text-center text-[15px] leading-relaxed text-ink sm:text-base">
             Dificuldade de concentração, esquecimentos ou um comportamento isolado
             não contam a história inteira. Por isso, o trabalho começa por uma
             pergunta:
@@ -196,7 +196,7 @@ export default function Home() {
               O que precisamos compreender melhor aqui?
             </p>
           </blockquote>
-          <p className="mx-auto mt-6 max-w-2xl text-center text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <p className="mx-auto mt-6 max-w-2xl text-center text-[15px] leading-relaxed text-ink sm:text-base">
             É a partir dessa compreensão que conduzo avaliação, psicoterapia e
             supervisão clínica.
           </p>

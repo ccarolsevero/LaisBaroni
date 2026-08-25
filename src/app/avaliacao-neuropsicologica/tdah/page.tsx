@@ -129,7 +129,7 @@ export default function AvaliacaoTdahPage() {
       <section className="bg-white py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading title="Por que não basta identificar os sintomas?" />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
             <p>Porque dificuldade de atenção não é sinônimo de TDAH.</p>
             <p>
               Na criança ou no adulto, características parecidas podem aparecer por
@@ -158,7 +158,7 @@ export default function AvaliacaoTdahPage() {
             eyebrow="O que pode ser investigado?"
             title="O diagnóstico não está no resultado de um único teste."
           />
-          <p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-ink sm:text-base">
             De acordo com cada caso, podem ser investigados aspectos como:
           </p>
           <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -168,7 +168,7 @@ export default function AvaliacaoTdahPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed text-ink sm:text-base">
             Os resultados são interpretados junto à história, ao contexto e às demais
             informações obtidas durante a avaliação.
           </p>
@@ -181,21 +181,21 @@ export default function AvaliacaoTdahPage() {
             eyebrow="Infância e vida adulta"
             title="Na infância e na vida adulta, o olhar não é o mesmo"
           />
-          <p className="mt-6 max-w-3xl text-lg text-mid">
+          <p className="mt-6 max-w-3xl text-lg text-ink">
             Crianças e adultos podem chegar com a mesma hipótese — mas a investigação
             precisa considerar momentos de vida diferentes.
           </p>
           <div className="mt-10 grid gap-3 lg:grid-cols-2">
             <article className="rounded-2xl bg-white p-8">
               <h3 className="font-display text-2xl font-medium">Na infância</h3>
-              <p className="mt-4 leading-relaxed text-mid">
+              <p className="mt-4 leading-relaxed text-ink">
                 Informações sobre desenvolvimento, rotina familiar e contexto escolar
                 podem ser importantes para compreender as dificuldades apresentadas.
               </p>
             </article>
             <article className="rounded-2xl bg-white p-8">
               <h3 className="font-display text-2xl font-medium">Na vida adulta</h3>
-              <p className="mt-4 leading-relaxed text-mid">
+              <p className="mt-4 leading-relaxed text-ink">
                 A investigação considera o funcionamento atual e também a trajetória
                 da pessoa, inclusive dificuldades que podem estar presentes desde
                 fases anteriores da vida.
@@ -221,7 +221,7 @@ export default function AvaliacaoTdahPage() {
             eyebrow="Como funciona a avaliação?"
             title="Você não chega para provar que é TDAH. Seu filho também não."
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
             <p>
               O processo começa pela compreensão da queixa, da história e da pergunta
               que motivou a avaliação.

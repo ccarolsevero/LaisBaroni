@@ -16,15 +16,15 @@ export function ArticleCard({ post }: { post: Post }) {
         </span>
       </div>
       <div className="flex flex-1 flex-col p-6">
-        <p className="text-[10px] font-medium tracking-[0.16em] text-mid uppercase">
+        <p className="text-[10px] font-semibold tracking-[0.16em] text-ink uppercase">
           {category}
         </p>
-        <h3 className="font-display mt-3 text-[1.45rem] leading-snug font-medium">
+        <h3 className="font-display mt-3 text-[1.45rem] leading-snug font-medium text-ink">
           <Link href={`/blog/${post.slug}`} className="hover:text-mid">
             {post.title}
           </Link>
         </h3>
-        <p className="mt-3 flex-1 text-sm leading-relaxed text-mid">{post.excerpt}</p>
+        <p className="mt-3 flex-1 text-sm leading-relaxed text-ink">{post.excerpt}</p>
         <Link
           href={`/blog/${post.slug}`}
           className="mt-5 inline-flex items-center gap-2 text-sm text-ink"

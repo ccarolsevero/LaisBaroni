@@ -30,7 +30,7 @@ export function Pill({
 
 export function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
-    <p className="text-[11px] font-medium tracking-[0.2em] text-ink/70 uppercase">
+    <p className="text-[11px] font-semibold tracking-[0.18em] text-ink uppercase">
       {children}
     </p>
   );
@@ -51,12 +51,12 @@ export function SectionHeading({
     <div className={`max-w-3xl ${align === "center" ? "mx-auto text-center" : ""}`}>
       {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
       {title ? (
-        <h2 className={`font-display text-[1.85rem] leading-[1.2] font-medium text-balance sm:text-4xl ${eyebrow ? "mt-3" : ""}`}>
+        <h2 className={`font-display text-[1.85rem] leading-[1.2] font-medium text-balance text-ink sm:text-4xl ${eyebrow ? "mt-3" : ""}`}>
           {title}
         </h2>
       ) : null}
       {description ? (
-        <p className="mt-4 text-[15px] leading-relaxed text-ink/80 sm:text-base">{description}</p>
+        <p className="mt-4 text-[15px] leading-relaxed text-ink sm:text-base">{description}</p>
       ) : null}
     </div>
   );

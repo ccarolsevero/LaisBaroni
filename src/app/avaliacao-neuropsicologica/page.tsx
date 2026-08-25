@@ -146,7 +146,7 @@ export default function AvaliacaoPage() {
             eyebrow="Quando vale investigar?"
             title="Nem toda dificuldade significa um diagnóstico. Mas algumas perguntas merecem ser investigadas."
           />
-          <div className="space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <div className="space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
             <p>
               Esquecimentos frequentes, dificuldade para manter a atenção, organizar
               tarefas, aprender ou lidar com determinadas situações podem despertar
@@ -178,7 +178,7 @@ export default function AvaliacaoPage() {
             eyebrow="O que é a avaliação neuropsicológica?"
             title="Um teste mostra uma parte. Uma avaliação precisa compreender o conjunto."
           />
-          <div className="mt-8 max-w-3xl space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <div className="mt-8 max-w-3xl space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
             <p>
               É um processo clínico que investiga aspectos como atenção, memória,
               linguagem, funções executivas e aprendizagem, de acordo com a
@@ -217,7 +217,7 @@ export default function AvaliacaoPage() {
               </blockquote>
             ))}
           </div>
-          <div className="mt-10 max-w-3xl space-y-5 text-[15px] leading-relaxed text-ink/80 sm:text-base">
+          <div className="mt-10 max-w-3xl space-y-5 text-[15px] leading-relaxed text-ink sm:text-base">
             <p>Essas frases podem ser o começo de uma investigação — não uma conclusão.</p>
             <p>
               Dificuldades de memória, atenção, organização ou raciocínio podem ter
@@ -280,7 +280,7 @@ export default function AvaliacaoPage() {
             {processo.map((text, index) => (
               <article key={text} className="rounded-2xl bg-mist p-7">
                 <p className="font-display text-3xl text-mid">0{index + 1}</p>
-                <p className="mt-4 leading-relaxed text-ink/80">{text}</p>
+                <p className="mt-4 leading-relaxed text-ink">{text}</p>
               </article>
             ))}
           </div>
