@@ -3,6 +3,7 @@ import { ContactBand } from "@/components/contact-band";
 import { FaqList } from "@/components/faq-list";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
+import { photos } from "@/lib/photos";
 import { site, whatsappUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -47,6 +48,7 @@ export default function SupervisaoPage() {
           site.pills.supervision,
           "TCC • Terapia do Esquema • ACT • Psicopatologia • Neuropsicologia",
         ]}
+        image={photos.supervisao}
         primary={{
           href: whatsappUrl(infoMessage),
           label: "Quero informações sobre supervisão",

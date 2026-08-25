@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ButtonLink } from "@/components/button-link";
 import { ContactBand } from "@/components/contact-band";
 import { EditorialGrid } from "@/components/editorial-grid";
@@ -10,6 +11,7 @@ import {
 } from "@/components/icons";
 import { LineMarks } from "@/components/illustrations";
 import { Container, Pill, SectionHeading } from "@/components/ui";
+import { photos } from "@/lib/photos";
 import { site, whatsappUrl } from "@/lib/site";
 
 const areas = [
@@ -86,16 +88,24 @@ export default function Home() {
             </div>
           </div>
 
-          <aside className="relative overflow-hidden rounded-2xl bg-ink p-8 text-white sm:p-10">
-            <LineMarks className="mb-6 h-12 w-16 text-peach" />
-            <p className="font-display text-[1.85rem] leading-snug font-medium">
-              A experiência clínica não é sobre saber tudo. É sobre fazer melhores
-              perguntas.
-            </p>
-            <div className="mt-10 space-y-1 text-sm text-mist">
-              <p className="tracking-[0.16em] text-peach uppercase">{site.crp}</p>
-              <p>{site.modality}</p>
-              <p>{site.address}</p>
+          <aside className="relative mx-auto aspect-[3/4] w-full max-w-md overflow-hidden rounded-2xl bg-ink lg:mx-0 lg:aspect-auto lg:min-h-[520px] lg:max-w-none">
+            <Image
+              src={photos.heroHome.src}
+              alt={photos.heroHome.alt}
+              fill
+              className="object-cover object-top"
+              sizes="(max-width: 1024px) 90vw, 40vw"
+              priority
+            />
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/90 via-ink/55 to-transparent p-6 pt-20 text-white sm:p-8">
+              <LineMarks className="mb-3 h-8 w-12 text-peach" />
+              <p className="font-display text-xl leading-snug font-medium sm:text-2xl">
+                A experiência clínica não é sobre saber tudo. É sobre fazer
+                melhores perguntas.
+              </p>
+              <p className="mt-4 text-sm tracking-[0.14em] text-peach uppercase">
+                {site.crp}
+              </p>
             </div>
           </aside>
         </Container>
@@ -140,18 +150,15 @@ export default function Home() {
       </section>
 
       <section className="bg-white py-12 sm:py-16">
-        <Container className="grid gap-12 lg:grid-cols-[0.9fr_1.2fr] lg:items-center">
-          <div className="rounded-2xl bg-soft p-10 text-ink">
-            <p className="text-[10px] tracking-[0.18em] uppercase opacity-70">
-              Desde {site.since}
-            </p>
-            <p className="font-display mt-4 text-5xl leading-none font-medium">
-              Quase duas décadas
-            </p>
-            <p className="mt-5 text-base leading-relaxed opacity-85">
-              de atuação clínica, unindo ciência e um olhar que não se limita ao
-              sintoma.
-            </p>
+        <Container className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+          <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-2xl lg:mx-0 lg:max-w-none">
+            <Image
+              src={photos.consultorio.src}
+              alt={photos.consultorio.alt}
+              fill
+              className="object-cover object-[center_20%]"
+              sizes="(max-width: 1024px) 90vw, 40vw"
+            />
           </div>
           <div>
             <SectionHeading

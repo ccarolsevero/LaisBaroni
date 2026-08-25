@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { ButtonLink } from "@/components/button-link";
 import { ContactBand } from "@/components/contact-band";
 import {
@@ -9,6 +10,7 @@ import {
 } from "@/components/icons";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
+import { photos } from "@/lib/photos";
 import { site, whatsappUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -64,6 +66,7 @@ export default function SobrePage() {
         description="Sou Laís Beringhs Baroni, psicóloga e neuropsicóloga, com atuação profissional e clínica desde 2009."
         extra="Minha trajetória foi construída entre clínica, estudo e diferentes formas de compreender o funcionamento humano — sempre com o compromisso de olhar para cada pessoa dentro da sua história e do seu contexto."
         pills={[...site.credentials]}
+        image={photos.sobre}
         primary={{ href: "/#atuacao", label: "Conheça minhas áreas de atuação" }}
         secondary={{
           href: whatsappUrl(),
@@ -73,29 +76,40 @@ export default function SobrePage() {
       />
 
       <section className="bg-base py-12 sm:py-16">
-        <Container className="grid gap-12 lg:grid-cols-2 lg:items-start">
-          <SectionHeading
-            eyebrow="Minha trajetória"
-            title="A experiência não trouxe respostas prontas. Trouxe perguntas melhores."
-          />
-          <div className="space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
-            <p>
-              Concluí a graduação em Psicologia em dezembro de 2008 e atuo
-              profissional e clinicamente desde 2009. Em março de 2020, iniciei o
-              consultório particular.
-            </p>
-            <p>
-              Ao longo de aproximadamente seis anos no Instituto de Psiquiatria da
-              USP (IPq-USP), reuni as especializações em Neuropsicologia e
-              Psicopatologia, atuei como monitora e colaboradora, tive experiência
-              em supervisão clínica e realizei a coleta de dados da pesquisa de
-              mestrado.
-            </p>
-            <p>
-              Cada uma dessas vivências ampliou meu olhar sobre aquilo que encontro
-              na prática: aspectos cognitivos, emocionais, comportamentais e
-              relacionais que não podem ser compreendidos de forma isolada.
-            </p>
+        <Container className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
+          <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden rounded-2xl lg:mx-0 lg:max-w-none">
+            <Image
+              src={photos.trajetoria.src}
+              alt={photos.trajetoria.alt}
+              fill
+              className="object-cover object-top"
+              sizes="(max-width: 1024px) 80vw, 35vw"
+            />
+          </div>
+          <div>
+            <SectionHeading
+              eyebrow="Minha trajetória"
+              title="A experiência não trouxe respostas prontas. Trouxe perguntas melhores."
+            />
+            <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
+              <p>
+                Concluí a graduação em Psicologia em dezembro de 2008 e atuo
+                profissional e clinicamente desde 2009. Em março de 2020, iniciei o
+                consultório particular.
+              </p>
+              <p>
+                Ao longo de aproximadamente seis anos no Instituto de Psiquiatria da
+                USP (IPq-USP), reuni as especializações em Neuropsicologia e
+                Psicopatologia, atuei como monitora e colaboradora, tive experiência
+                em supervisão clínica e realizei a coleta de dados da pesquisa de
+                mestrado.
+              </p>
+              <p>
+                Cada uma dessas vivências ampliou meu olhar sobre aquilo que encontro
+                na prática: aspectos cognitivos, emocionais, comportamentais e
+                relacionais que não podem ser compreendidos de forma isolada.
+              </p>
+            </div>
           </div>
         </Container>
       </section>

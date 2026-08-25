@@ -11,6 +11,7 @@ import {
 } from "@/components/icons";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
+import { photos } from "@/lib/photos";
 import { site, whatsappUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -104,6 +105,7 @@ export default function PsicoterapiaPage() {
           site.pills.therapy,
           "TCC • Terapia do Esquema • ACT • Psicopatologia",
         ]}
+        image={photos.psicoterapia}
         primary={{
           href: whatsappUrl(infoMessage),
           label: "Quero informações sobre psicoterapia",

@@ -13,6 +13,7 @@ import {
 import { LineMarks } from "@/components/illustrations";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
+import { photos } from "@/lib/photos";
 import { site, whatsappUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -128,6 +129,7 @@ export default function AvaliacaoPage() {
         title="Quando as dificuldades começam a levantar perguntas, uma avaliação cuidadosa pode ajudar a encontrar respostas."
         description="Dificuldades de atenção, memória, aprendizagem, organização ou comportamento podem ter diferentes explicações. A avaliação neuropsicológica ajuda a compreender o que pode estar por trás delas, considerando o funcionamento, a história e o contexto de cada pessoa."
         note="Avaliação neuropsicológica infantil, adulta e em idosos"
+        image={photos.avaliacao}
         primary={{
           href: whatsappUrl(infoMessage),
           label: "Quero informações sobre a avaliação",
