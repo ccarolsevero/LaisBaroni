@@ -38,7 +38,7 @@ export function PageHero({
       <span className="inline-flex rounded-full bg-peach px-3.5 py-1.5 text-[12px] font-medium tracking-[0.08em] text-ink uppercase">
         {eyebrow}
       </span>
-      <h1 className="font-display mt-5 text-[2rem] leading-[1.18] font-medium text-balance sm:text-5xl">
+      <h1 className="font-display mt-5 text-[2rem] leading-[1.18] font-medium break-words lg:text-balance sm:text-5xl">
         {title}
       </h1>
       <p className="mt-5 text-[15px] leading-relaxed text-white/90 sm:text-base">
@@ -72,22 +72,24 @@ export function PageHero({
 
   if (image) {
     return (
-      <section className="relative min-h-[68vh] overflow-hidden bg-ink lg:min-h-[76vh]">
-        <Image
-          src={image.src}
-          alt={image.alt}
-          fill
-          priority
-          quality={95}
-          unoptimized={image.unoptimized}
-          className={
-            image.className ??
-            "object-contain object-top sm:object-cover sm:object-[72%_center]"
-          }
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/55 to-ink/15 sm:via-ink/45 sm:to-ink/10" />
-        <Container className="relative flex min-h-[68vh] flex-col justify-end py-14 lg:min-h-[76vh] lg:justify-center lg:py-20">
+      <section className="relative bg-ink lg:min-h-[76vh]">
+        <div className="relative aspect-[4/3] w-full overflow-hidden lg:absolute lg:inset-0 lg:aspect-auto lg:h-full">
+          <Image
+            src={image.src}
+            alt={image.alt}
+            fill
+            priority
+            quality={95}
+            unoptimized={image.unoptimized}
+            className={
+              image.className ??
+              "object-cover object-center lg:object-[72%_center]"
+            }
+            sizes="100vw"
+          />
+        </div>
+        <div className="pointer-events-none absolute inset-0 hidden bg-gradient-to-r from-ink/90 via-ink/55 to-ink/15 lg:block" />
+        <Container className="relative py-10 lg:flex lg:min-h-[76vh] lg:flex-col lg:justify-center lg:py-20">
           <div className="max-w-xl text-white lg:max-w-2xl">{copy}</div>
         </Container>
       </section>

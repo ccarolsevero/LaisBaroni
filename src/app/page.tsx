@@ -50,20 +50,22 @@ const areas = [
 export default function Home() {
   return (
     <>
-      <section className="relative min-h-[78vh] overflow-hidden bg-ink lg:min-h-[88vh]">
-        <Image
-          src={photos.heroHome.src}
-          alt={photos.heroHome.alt}
-          fill
-          priority
-          quality={95}
-          className={photos.heroHome.className}
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/55 to-ink/15 sm:via-ink/45 sm:to-ink/10" />
-        <Container className="relative flex min-h-[78vh] flex-col justify-end py-14 lg:min-h-[88vh] lg:justify-center lg:py-20">
+      <section className="relative bg-ink lg:min-h-[88vh]">
+        <div className="relative aspect-[4/3] w-full overflow-hidden lg:absolute lg:inset-0 lg:aspect-auto lg:h-full">
+          <Image
+            src={photos.heroHome.src}
+            alt={photos.heroHome.alt}
+            fill
+            priority
+            quality={95}
+            className={photos.heroHome.className}
+            sizes="100vw"
+          />
+        </div>
+        <div className="pointer-events-none absolute inset-0 hidden bg-gradient-to-r from-ink/90 via-ink/45 to-ink/10 lg:block" />
+        <Container className="relative py-10 lg:flex lg:min-h-[88vh] lg:flex-col lg:justify-center lg:py-20">
           <div className="max-w-2xl text-white">
-            <h1 className="font-display text-[2rem] leading-[1.15] font-medium text-balance sm:text-5xl">
+            <h1 className="font-display text-[2rem] leading-[1.15] font-medium break-words lg:text-balance sm:text-5xl">
               Avaliação neuropsicológica e psicoterapia para compreender além do
               que aparece à primeira vista
             </h1>
@@ -178,18 +180,18 @@ export default function Home() {
             eyebrow="Um pouco sobre a forma como trabalho"
             title="A mesma queixa pode contar histórias completamente diferentes"
           />
-          <p className="mx-auto mt-6 max-w-2xl text-center text-[15px] leading-relaxed hero-copy sm:text-base">
+          <p className="mt-6 max-w-2xl text-left text-[15px] leading-relaxed hero-copy sm:mx-auto sm:text-center sm:text-base">
             Dificuldade de concentração, esquecimentos ou um comportamento isolado
             não contam a história inteira. Por isso, o trabalho começa por uma
             pergunta:
           </p>
-          <blockquote className="mt-8 text-center">
-            <LineMarks className="mx-auto mb-3 h-8 w-12 text-ink/40" />
+          <blockquote className="mt-8 text-left sm:text-center">
+            <LineMarks className="mb-3 h-8 w-12 text-ink/40 sm:mx-auto" />
             <p className="font-display text-3xl leading-snug font-medium text-ink sm:text-4xl">
               O que precisamos compreender melhor aqui?
             </p>
           </blockquote>
-          <p className="mx-auto mt-6 max-w-2xl text-center text-[15px] leading-relaxed hero-copy sm:text-base">
+          <p className="mt-6 max-w-2xl text-left text-[15px] leading-relaxed hero-copy sm:mx-auto sm:text-center sm:text-base">
             É a partir dessa compreensão que conduzo avaliação, psicoterapia e
             supervisão clínica.
           </p>
