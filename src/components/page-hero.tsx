@@ -42,7 +42,9 @@ export function PageHero({
         <div className="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/55 to-ink/15 sm:via-ink/45 sm:to-ink/10" />
         <Container className="relative flex min-h-[68vh] flex-col justify-end py-14 lg:min-h-[76vh] lg:justify-center lg:py-20">
           <div className="max-w-xl text-white lg:max-w-2xl">
-            <Pill className="bg-white/15 text-white">{eyebrow}</Pill>
+            <span className="inline-flex rounded-full bg-peach px-3.5 py-1.5 text-[12px] font-medium tracking-[0.08em] text-ink uppercase">
+              {eyebrow}
+            </span>
             <h1 className="font-display mt-5 text-[2rem] leading-[1.18] font-medium text-balance sm:text-5xl">
               {title}
             </h1>
@@ -55,7 +57,7 @@ export function PageHero({
               </p>
             ) : null}
             {note ? (
-              <p className="mt-5 inline-flex rounded-full bg-white/15 px-4 py-2 text-sm text-white">
+              <p className="mt-5 inline-flex rounded-full bg-peach px-4 py-2 text-sm text-ink">
                 {note}
               </p>
             ) : null}
@@ -64,7 +66,7 @@ export function PageHero({
                 {pills.map((pill) => (
                   <span
                     key={pill}
-                    className="rounded-full bg-white/15 px-3.5 py-1.5 text-[11px] tracking-[0.06em] text-white"
+                    className="rounded-full bg-peach px-3.5 py-1.5 text-[12px] leading-snug text-ink"
                   >
                     {pill}
                   </span>

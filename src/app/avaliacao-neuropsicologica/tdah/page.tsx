@@ -116,7 +116,7 @@ export default function AvaliacaoTdahPage() {
                 </p>
                 <p>
                   Na vida adulta, essas dificuldades podem começar a gerar novas
-                  perguntas — inclusive sobre a possibilidade de TDAH.
+                  perguntas, inclusive sobre a possibilidade de TDAH.
                 </p>
                 <p>
                   A investigação considera não apenas como você funciona hoje, mas
@@ -184,7 +184,7 @@ export default function AvaliacaoTdahPage() {
             title="Na infância e na vida adulta, o olhar não é o mesmo"
           />
           <p className="mt-6 max-w-3xl text-lg text-ink">
-            Crianças e adultos podem chegar com a mesma hipótese — mas a investigação
+            Crianças e adultos podem chegar com a mesma hipótese, mas a investigação
             precisa considerar momentos de vida diferentes.
           </p>
           <div className="mt-10 grid gap-3 lg:grid-cols-2">

@@ -17,7 +17,7 @@ import { site, whatsappUrl } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Psicoterapia Individual",
   description:
-    "Psicoterapia para compreender o que você está vivendo — e o que talvez continue se repetindo.",
+    "Psicoterapia para compreender o que você está vivendo e o que talvez continue se repetindo.",
 };
 
 const infoMessage = "Olá, Laís. Gostaria de informações sobre psicoterapia.";
@@ -98,7 +98,7 @@ export default function PsicoterapiaPage() {
     <>
       <PageHero
         eyebrow="Psicoterapia individual"
-        title="Psicoterapia para compreender o que você está vivendo — e o que talvez continue se repetindo."
+        title="Psicoterapia para compreender o que você está vivendo e o que talvez continue se repetindo."
         description="Nem sempre quem procura terapia consegue dar um nome exato ao que está sentindo. Pode ser ansiedade, sobrecarga, dificuldades nos relacionamentos, um momento de mudança ou simplesmente o desejo de se conhecer melhor."
         extra="A psicoterapia é um espaço para compreender essas experiências dentro da sua história e construir novas formas de lidar com elas."
         pills={[
@@ -180,7 +180,7 @@ export default function PsicoterapiaPage() {
               A psicoterapia considera a história, o contexto, emoções, pensamentos,
               comportamentos, relações e necessidades individuais. A partir dessa
               compreensão, são escolhidas intervenções que façam sentido para cada
-              caso e momento do processo — ajudando a ampliar formas de lidar com
+              caso e momento do processo, ajudando a ampliar formas de lidar com
               pensamentos e emoções, reduzir estratégias que limitam a vida e
               aproximar as ações de valores e objetivos pessoais.
             </p>

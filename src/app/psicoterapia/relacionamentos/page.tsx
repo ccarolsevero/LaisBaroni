@@ -104,7 +104,7 @@ export default function PsicoterapiaRelacionamentosPage() {
             </p>
             <p>
               Quando uma situação se repete, pode valer a pena olhar não apenas para
-              quem está do outro lado — mas para o padrão que se constrói na relação.
+              quem está do outro lado, mas para o padrão que se constrói na relação.
             </p>
           </div>
         </Container>
@@ -179,7 +179,7 @@ export default function PsicoterapiaRelacionamentosPage() {
           </ul>
           <p className="mt-10 max-w-3xl text-[15px] leading-relaxed hero-copy sm:text-base">
             Não se trata de encaixar a pessoa em um padrão, mas de compreender como
-            ele aparece e qual função teve — ou ainda tem — em sua história.
+            ele aparece e qual função teve, ou ainda tem, em sua história.
           </p>
         </Container>
       </section>

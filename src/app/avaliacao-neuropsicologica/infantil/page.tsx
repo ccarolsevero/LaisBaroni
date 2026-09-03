@@ -125,7 +125,7 @@ export default function AvaliacaoInfantilPage() {
               investigação.
             </p>
             <p>
-              É comum que a família chegue à avaliação já com uma hipótese —
+              É comum que a família chegue à avaliação já com uma hipótese,
               levantada pela escola, por outro profissional ou pelas próprias
               observações.
             </p>

@@ -103,7 +103,7 @@ export default function AvaliacaoAutismoPage() {
                 <p>
                   Dificuldades nas interações, particularidades na comunicação,
                   comportamentos ou aspectos do desenvolvimento podem levantar
-                  perguntas — mas uma característica isolada não define Autismo.
+                  perguntas, mas uma característica isolada não define Autismo.
                 </p>
                 <p>A avaliação ajuda a compreender o conjunto.</p>
               </div>

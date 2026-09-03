@@ -73,7 +73,7 @@ const tipos = [
     tone: "bg-soft text-ink",
     title: "Avaliação Neuropsicológica e Autismo",
     paragraphs: [
-      "Quando algumas características começam a fazer mais sentido — e também a trazer novas perguntas.",
+      "Quando algumas características começam a fazer mais sentido e também a trazer novas perguntas.",
       "A avaliação permite investigar essas questões considerando a história, o desenvolvimento e o contexto de cada pessoa.",
     ],
     cta: "Saiba mais sobre avaliação e Autismo",
@@ -156,14 +156,14 @@ export default function AvaliacaoPage() {
               dúvidas.
             </p>
             <p>
-              Isso pode acontecer na infância, aparecer — ou ganhar outro peso — na
+              Isso pode acontecer na infância, aparecer, ou ganhar outro peso, na
               vida adulta, ou surgir no envelhecimento, quando mudanças cognitivas
               começam a interferir na autonomia e nas atividades cotidianas.
             </p>
             <p>
               A avaliação também pode ser útil quando existe discrepância entre o
               funcionamento cognitivo esperado e o desempenho da pessoa na vida
-              cotidiana — por exemplo, quando suas capacidades não se traduzem de
+              cotidiana, por exemplo, quando suas capacidades não se traduzem de
               modo consistente no estudo, no trabalho, na organização da rotina ou
               na autonomia.
             </p>
@@ -195,7 +195,7 @@ export default function AvaliacaoPage() {
             </p>
             <p>
               Ela ajuda a entender não só as dificuldades, mas também o que a pessoa
-              preserva e consegue fazer bem — e de que forma memória, atenção,
+              preserva e consegue fazer bem e de que forma memória, atenção,
               raciocínio, organização e outras habilidades aparecem no dia a dia.
             </p>
           </div>
@@ -221,7 +221,7 @@ export default function AvaliacaoPage() {
             ))}
           </div>
           <div className="mt-10 max-w-3xl space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
-            <p>Essas frases podem ser o começo de uma investigação — não uma conclusão.</p>
+            <p>Essas frases podem ser o começo de uma investigação, não uma conclusão.</p>
             <p>
               Dificuldades de memória, atenção, organização ou raciocínio podem ter
               diferentes causas. A Avaliação Neuropsicológica integra história
@@ -304,7 +304,7 @@ export default function AvaliacaoPage() {
           </p>
           <h2 className="font-display mt-4 text-3xl leading-[1.2] font-medium sm:text-4xl">
             Experiência clínica faz diferença quando o resultado precisa ser
-            interpretado — e não apenas calculado.
+            interpretado, não apenas calculado.
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>

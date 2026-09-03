@@ -23,10 +23,10 @@ const formacao = [
   "Graduação em Psicologia concluída em dezembro de 2008",
   "Atuação profissional e clínica desde 2009",
   `Consultório particular desde ${site.privatePracticeSince}`,
-  "Especializações em Neuropsicologia e Psicopatologia — IPq-USP",
-  "Formações em TCC e Terapia do Esquema — CETCC",
-  "Formação em Reabilitação Cognitiva — INESP",
-  "Pesquisa de Mestrado em Psicologia — IP-USP (ingresso em 2019)",
+  "Especializações em Neuropsicologia e Psicopatologia, IPq-USP",
+  "Formações em TCC e Terapia do Esquema, CETCC",
+  "Formação em Reabilitação Cognitiva, INESP",
+  "Pesquisa de Mestrado em Psicologia, IP-USP (ingresso em 2019)",
   site.crp,
 ];
 
@@ -64,7 +64,7 @@ export default function SobrePage() {
         eyebrow="Sobre Laís Baroni"
         title="Quase duas décadas de clínica ensinam que compreender uma pessoa exige mais do que encontrar um nome para o que ela sente."
         description="Sou Laís Beringhs Baroni, psicóloga e neuropsicóloga, com atuação profissional e clínica desde 2009."
-        extra="Minha trajetória foi construída entre clínica, estudo e diferentes formas de compreender o funcionamento humano — sempre com o compromisso de olhar para cada pessoa dentro da sua história e do seu contexto."
+        extra="Minha trajetória foi construída entre clínica, estudo e diferentes formas de compreender o funcionamento humano, sempre com o compromisso de olhar para cada pessoa dentro da sua história e do seu contexto."
         pills={[...site.credentials]}
         image={photos.sobre}
         primary={{ href: "/#atuacao", label: "Conheça minhas áreas de atuação" }}
@@ -146,8 +146,8 @@ export default function SobrePage() {
             </p>
             <p>
               A pesquisa investigou impulsividade e funcionamento executivo em
-              pacientes com epilepsia — incluindo tomada de decisão, controle
-              inibitório, planejamento e flexibilidade cognitiva —, na área temática
+              pacientes com epilepsia, incluindo tomada de decisão, controle
+              inibitório, planejamento e flexibilidade cognitiva, na área temática
               de Neuropsicologia, Epilepsia, Impulsividade e Funções Executivas.
             </p>
             <p>

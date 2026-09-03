@@ -41,7 +41,7 @@ const faqs = [
   {
     question: "E Autismo em adultos?",
     answer:
-      "Dúvidas relacionadas ao funcionamento e à história de desenvolvimento também podem levar adultos a buscar uma avaliação. A investigação considera o conjunto das informações, e não características isoladas.",
+      "Dúvidas relacionadas ao funcionamento e à história de desenvolvimento também podem levar adultos a buscar uma avaliação. A investigação considera o conjunto das informações, não características isoladas.",
   },
   {
     question: "Fazer testes online é a mesma coisa?",
@@ -103,7 +103,7 @@ export default function AvaliacaoAdultosPage() {
             </p>
             <p>
               A avaliação também pode ser útil quando há descompasso entre o potencial
-              cognitivo e o impacto que suas dificuldades têm na funcionalidade — nos
+              cognitivo e o impacto que suas dificuldades têm na funcionalidade, nos
               estudos, no trabalho, na organização da rotina e/ou na autonomia. A
               investigação ajuda a compreender quais processos podem estar
               contribuindo para essa diferença e como eles repercutem na vida

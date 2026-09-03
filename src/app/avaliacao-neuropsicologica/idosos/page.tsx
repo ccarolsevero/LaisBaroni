@@ -33,7 +33,7 @@ const faqs = [
   {
     question: "A avaliação só identifica dificuldades?",
     answer:
-      "Não. A avaliação ajuda a entender não só as dificuldades, mas também o que a pessoa preserva e consegue fazer bem — e como essas habilidades aparecem no dia a dia.",
+      "Não. A avaliação ajuda a entender não só as dificuldades, mas também o que a pessoa preserva e consegue fazer bem, e como essas habilidades aparecem no dia a dia.",
   },
   {
     question: "Preciso ter um diagnóstico prévio para procurar a avaliação?",
@@ -72,10 +72,10 @@ export default function AvaliacaoIdososPage() {
           />
           <div className="space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              Alterações de memória, atenção, linguagem, organização ou raciocínio —
+              Alterações de memória, atenção, linguagem, organização ou raciocínio,
               sobretudo quando representam uma mudança em relação ao funcionamento
               habitual ou começam a interferir na autonomia e nas atividades
-              cotidianas — podem indicar a necessidade de uma avaliação mais
+              cotidianas, podem indicar a necessidade de uma avaliação mais
               detalhada.
             </p>
             <p>
@@ -92,7 +92,7 @@ export default function AvaliacaoIdososPage() {
         <Container>
           <SectionHeading
             eyebrow="O que a avaliação pode investigar?"
-            title="Compreender o perfil cognitivo atual — incluindo o que está preservado."
+            title="Compreender o perfil cognitivo atual, incluindo o que está preservado."
           />
           <ul className="mt-12 grid gap-3 sm:grid-cols-2">
             {indicacoes.map((item) => (
@@ -105,7 +105,7 @@ export default function AvaliacaoIdososPage() {
             <p>
               Nem toda queixa de memória indica demência. Diferentes fatores
               influenciam o funcionamento cognitivo, e a avaliação busca
-              compreender o conjunto — sem reduzir o envelhecimento a um único
+              compreender o conjunto, sem reduzir o envelhecimento a um único
               diagnóstico.
             </p>
           </div>
@@ -134,7 +134,7 @@ export default function AvaliacaoIdososPage() {
             <LineMarks className="mb-4 h-10 w-14 text-ink/35" />
             <p className="font-display text-3xl leading-snug font-medium text-ink">
               Investigar com cuidado é diferente de alarmar. A avaliação existe para
-              compreender — não para reduzir a pessoa a uma queixa.
+              compreender, não para reduzir a pessoa a uma queixa.
             </p>
           </blockquote>
         </Container>
@@ -147,7 +147,7 @@ export default function AvaliacaoIdososPage() {
           </p>
           <h2 className="font-display mt-4 text-3xl leading-[1.2] font-medium sm:text-4xl">
             Experiência clínica faz diferença quando o resultado precisa ser
-            interpretado — e não apenas calculado.
+            interpretado, não apenas calculado.
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
@@ -181,7 +181,7 @@ export default function AvaliacaoIdososPage() {
       </section>
 
       <ContactBand
-        title="Mudanças cognitivas merecem compreensão — não conclusões apressadas."
+        title="Mudanças cognitivas merecem compreensão, não conclusões apressadas."
         description="Se você ou alguém próximo está percebendo alterações que gostaria de compreender melhor, entre em contato para receber informações sobre a avaliação neuropsicológica em idosos."
         primary={{
           href: whatsappUrl(infoMessage),

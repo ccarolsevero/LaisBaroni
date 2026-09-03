@@ -77,7 +77,7 @@ export default function Home() {
               {site.credentials.map((item) => (
                 <span
                   key={item}
-                  className="rounded-full bg-white/15 px-3.5 py-1.5 text-[11px] tracking-[0.08em] text-white uppercase"
+                  className="rounded-full bg-peach px-3.5 py-1.5 text-[12px] leading-snug text-ink"
                 >
                   {item}
                 </span>

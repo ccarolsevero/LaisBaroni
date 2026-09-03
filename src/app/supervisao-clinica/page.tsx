@@ -43,7 +43,7 @@ export default function SupervisaoPage() {
         eyebrow="Supervisão clínica"
         title="Alguns casos não pedem uma resposta rápida. Pedem um olhar clínico mais aprofundado."
         description="A supervisão clínica é um espaço para pensar casos, ampliar hipóteses, discutir intervenções e compreender os impasses que surgem ao longo da prática profissional."
-        extra="Um trabalho construído a partir da experiência clínica, do conhecimento teórico e das particularidades de cada caso — com o objetivo de desenvolver autonomia e raciocínio clínico do terapeuta, e não apenas escolher técnicas para uma sessão."
+        extra="Um trabalho construído a partir da experiência clínica, do conhecimento teórico e das particularidades de cada caso, com o objetivo de desenvolver autonomia e raciocínio clínico do terapeuta, não apenas escolher técnicas para uma sessão."
         pills={[
           site.pills.supervision,
           "TCC • Terapia do Esquema • ACT • Psicopatologia • Neuropsicologia",
@@ -146,7 +146,7 @@ export default function SupervisaoPage() {
             <p>
               Minha trajetória clínica reúne referências da Terapia
               Cognitivo-Comportamental, Terapia do Esquema, ACT, Psicopatologia e
-              Neuropsicologia — respeitando a natureza de cada formação.
+              Neuropsicologia, respeitando a natureza de cada formação.
             </p>
             <p>
               Esse repertório contribui para uma discussão que não olha apenas para
@@ -203,8 +203,8 @@ export default function SupervisaoPage() {
             </p>
             <p>
               A supervisão pode envolver compreensão do caso, dúvidas sobre condução,
-              formulação de hipóteses e discussão de estratégias e intervenções — com
-              foco no desenvolvimento do raciocínio clínico, e não apenas em
+              formulação de hipóteses e discussão de estratégias e intervenções, com
+              foco no desenvolvimento do raciocínio clínico, não apenas em
               respostas prontas sobre a próxima sessão.
             </p>
             <p>

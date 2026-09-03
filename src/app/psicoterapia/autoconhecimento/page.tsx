@@ -135,7 +135,7 @@ export default function PsicoterapiaAutoconhecimentoPage() {
             </p>
             <p>
               Na psicoterapia, podemos olhar para essas formas de funcionamento com
-              mais profundidade — inclusive para aquilo que faz sentido manter e
+              mais profundidade, inclusive para aquilo que faz sentido manter e
               aquilo que já não funciona da mesma maneira.
             </p>
           </div>
@@ -189,7 +189,7 @@ export default function PsicoterapiaAutoconhecimentoPage() {
             <p>
               Ao longo de quase duas décadas de clínica, construí um trabalho que
               busca compreender cada pessoa para além da dificuldade que a trouxe à
-              terapia — considerando sua história, seus recursos, relações e
+              terapia, considerando sua história, seus recursos, relações e
               necessidades.
             </p>
           </div>

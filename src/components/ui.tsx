@@ -21,7 +21,7 @@ export function Pill({
 }) {
   return (
     <span
-      className={`inline-flex rounded-full bg-white/75 px-3.5 py-1 text-[10px] font-medium tracking-[0.16em] text-ink uppercase ${className}`}
+      className={`inline-flex rounded-full bg-white/75 px-3.5 py-1.5 text-[11px] font-medium tracking-[0.08em] text-ink uppercase ${className}`}
     >
       {children}
     </span>
