@@ -4,15 +4,13 @@ import { FaqList } from "@/components/faq-list";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
 import { photos } from "@/lib/photos";
-import { site, whatsappUrl } from "@/lib/site";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Supervisão Clínica",
   description:
     "Alguns casos não pedem uma resposta rápida. Pedem um olhar clínico mais aprofundado.",
 };
-
-const infoMessage = "Olá, Laís. Gostaria de informações sobre supervisão clínica.";
 
 const temas = [
   "Formulação de caso e raciocínio clínico",
@@ -41,7 +39,7 @@ export default function SupervisaoPage() {
     <>
       <PageHero
         eyebrow="Supervisão clínica"
-        title="Alguns casos não pedem uma resposta rápida. Pedem um olhar clínico mais aprofundado."
+        title="Alguns casos não pedem uma resposta rápida. Pedem um olhar clínico mais aprofundado"
         description="A supervisão clínica é um espaço para pensar casos, ampliar hipóteses, discutir intervenções e compreender os impasses que surgem ao longo da prática profissional."
         extra="Um trabalho construído a partir da experiência clínica, do conhecimento teórico e das particularidades de cada caso, com o objetivo de desenvolver autonomia e raciocínio clínico do terapeuta, não apenas escolher técnicas para uma sessão."
         pills={[
@@ -50,23 +48,13 @@ export default function SupervisaoPage() {
           site.pills.mestrado,
         ]}
         image={photos.supervisao}
-        primary={{
-          href: whatsappUrl(infoMessage),
-          label: "Quero informações sobre supervisão",
-          external: true,
-        }}
-        secondary={{
-          href: whatsappUrl(),
-          label: "Fale comigo pelo WhatsApp",
-          external: true,
-        }}
       />
 
       <section className="bg-base py-12 sm:py-16">
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-start">
           <SectionHeading
             eyebrow="Para quem é a supervisão?"
-            title="Você não precisa estar “sem saber o que fazer” para levar um caso à supervisão."
+            title="Você não precisa estar “sem saber o que fazer” para levar um caso à supervisão"
           />
           <div className="space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
@@ -86,7 +74,7 @@ export default function SupervisaoPage() {
         <Container>
           <SectionHeading
             eyebrow="O que pode ser trabalhado na supervisão?"
-            title="Às vezes, a dificuldade não está em conhecer a teoria. Está em saber o que fazer com ela diante daquela pessoa."
+            title="Às vezes, a dificuldade não está em conhecer a teoria. Está em saber o que fazer com ela diante daquela pessoa"
           />
           <p className="mt-8 text-base text-ink">A supervisão pode envolver:</p>
           <ul className="mt-8 grid gap-3 sm:grid-cols-2">
@@ -119,7 +107,7 @@ export default function SupervisaoPage() {
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Da teoria para o caso real"
-            title="Porque nenhum paciente chega à sessão exatamente como aparece nos livros."
+            title="Porque nenhum paciente chega à sessão exatamente como aparece nos livros"
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
@@ -140,7 +128,7 @@ export default function SupervisaoPage() {
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Qual é o olhar que orienta a supervisão?"
-            title="Compreender o sintoma é importante. Compreender a pessoa que apresenta esse sintoma é ainda mais."
+            title="Compreender o sintoma é importante. Compreender a pessoa que apresenta esse sintoma é ainda mais"
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
@@ -194,7 +182,7 @@ export default function SupervisaoPage() {
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Como funciona?"
-            title="Um espaço para levar casos reais e pensar a clínica com profundidade."
+            title="Um espaço para levar casos reais e pensar a clínica com profundidade"
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
@@ -224,14 +212,9 @@ export default function SupervisaoPage() {
       </section>
 
       <ContactBand
-        title="Quando um caso faz você pensar mais, ele também pode fazer sua clínica crescer."
+        title="Quando um caso faz você pensar mais, ele também pode fazer sua clínica crescer"
         description="Se você deseja discutir casos e aprofundar seu raciocínio clínico, entre em contato para receber informações sobre a supervisão."
         modality=""
-        primary={{
-          href: whatsappUrl(infoMessage),
-          label: "Quero informações sobre supervisão",
-          external: true,
-        }}
       />
     </>
   );

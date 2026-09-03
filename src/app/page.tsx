@@ -57,7 +57,7 @@ export default function Home() {
           fill
           priority
           quality={95}
-          className="object-cover object-[70%_top] sm:object-[72%_center]"
+          className={photos.heroHome.className}
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/55 to-ink/15 sm:via-ink/45 sm:to-ink/10" />
@@ -65,7 +65,7 @@ export default function Home() {
           <div className="max-w-2xl text-white">
             <h1 className="font-display text-[2rem] leading-[1.15] font-medium text-balance sm:text-5xl">
               Avaliação neuropsicológica e psicoterapia para compreender além do
-              que aparece à primeira vista.
+              que aparece à primeira vista
             </h1>
             <p className="mt-5 text-[15px] leading-relaxed text-white/90 sm:text-base">
               Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação
@@ -86,16 +86,8 @@ export default function Home() {
             <p className="mt-5 text-sm text-white/80">
               {site.services.join(" • ")}
             </p>
-            <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-              <ButtonLink href="#atuacao" variant="peach">
-                Conheça meu trabalho
-              </ButtonLink>
-              <ButtonLink
-                href={whatsappUrl()}
-                variant="ghost"
-                external
-                className="ring-white/40"
-              >
+            <div className="mt-10">
+              <ButtonLink href={whatsappUrl()} variant="peach" external>
                 <IconWhatsApp />
                 Fale comigo pelo WhatsApp
               </ButtonLink>
@@ -108,7 +100,7 @@ export default function Home() {
         <Container>
           <SectionHeading
             eyebrow="Áreas de atuação"
-            title="Diferentes caminhos para diferentes necessidades."
+            title="Diferentes caminhos para diferentes necessidades"
             description="Meu trabalho acontece em três frentes, cada uma com objetivos e processos próprios."
           />
           <div className="mt-12 grid gap-3 lg:grid-cols-3">
@@ -150,14 +142,14 @@ export default function Home() {
               alt={photos.homeSobre.alt}
               fill
               quality={90}
-              className="object-cover object-[center_15%]"
+              className="object-contain object-center sm:object-cover sm:object-[center_15%]"
               sizes="(max-width: 1024px) 90vw, 40vw"
             />
           </div>
           <div>
             <SectionHeading
               eyebrow="Sobre Laís Baroni"
-              title="Uma trajetória construída entre ciência, experiência clínica e um olhar que não se limita ao sintoma."
+              title="Uma trajetória construída entre ciência, experiência clínica e um olhar que não se limita ao sintoma"
             />
             <div className="mt-6 space-y-4 text-[15px] leading-relaxed hero-copy sm:text-base">
               <p>
@@ -184,7 +176,7 @@ export default function Home() {
           <SectionHeading
             align="center"
             eyebrow="Um pouco sobre a forma como trabalho"
-            title="A mesma queixa pode contar histórias completamente diferentes."
+            title="A mesma queixa pode contar histórias completamente diferentes"
           />
           <p className="mx-auto mt-6 max-w-2xl text-center text-[15px] leading-relaxed hero-copy sm:text-base">
             Dificuldade de concentração, esquecimentos ou um comportamento isolado
@@ -208,8 +200,8 @@ export default function Home() {
         <Container>
           <SectionHeading
             eyebrow="Blog"
-            title="Psicologia para quem quer compreender além das respostas rápidas."
-            description="No blog, compartilho reflexões e conteúdos sobre Neuropsicologia, avaliação neuropsicológica, relações, padrões emocionais, psicopatologia e prática clínica, traduzindo assuntos complexos para uma linguagem mais próxima da vida real."
+            title="Psicologia para quem quer compreender além das respostas rápidas"
+            description="No blog, compartilho reflexões e conteúdos sobre neuropsicologia, avaliação neuropsicológica, relações, padrões emocionais, psicopatologia e prática clínica, traduzindo assuntos complexos para uma linguagem mais próxima da vida real."
           />
           <div className="mt-12">
             <EditorialGrid />

@@ -21,10 +21,10 @@ export const site = {
     "Supervisão Clínica",
   ] as const,
   credentials: [
-    "Neuropsicologia e Psicopatologia, IPq-USP",
-    "TCC e Terapia do Esquema, CETCC",
-    "Reabilitação Cognitiva, INESP",
-    "Pesquisa de Mestrado em Psicologia, IPq-USP",
+    "Neuropsicologia e Psicopatologia — IPq-USP",
+    "TCC e Terapia do Esquema — CETCC",
+    "Reabilitação Cognitiva — INESP",
+    "Pesquisa de Mestrado em Psicologia — IPq-USP",
   ] as const,
   pills: {
     neuro:
@@ -33,13 +33,13 @@ export const site = {
       "Laís Baroni | Psicóloga e Neuropsicóloga | Atuação clínica desde 2009",
     supervision:
       "Laís Baroni | Psicóloga e Neuropsicóloga | Atuação clínica desde 2009",
-    mestrado: "Pesquisa de Mestrado em Psicologia, IPq-USP",
+    mestrado: "Pesquisa de Mestrado em Psicologia — IPq-USP",
   },
   credentialLines: {
     neuro:
-      "Neuropsicologia e Psicopatologia, IPq-USP • TCC e Terapia do Esquema, CETCC • Reabilitação Cognitiva, INESP • Atuação clínica desde 2009",
+      "Neuropsicologia e Psicopatologia — IPq-USP • TCC e Terapia do Esquema — CETCC • Reabilitação Cognitiva — INESP • Atuação clínica desde 2009",
     therapy:
-      "Atuação clínica desde 2009 • Neuropsicologia e Psicopatologia, IPq-USP • TCC • Terapia do Esquema • ACT • Pesquisa de Mestrado em Psicologia, USP",
+      "Atuação clínica desde 2009 • Neuropsicologia e Psicopatologia — IPq-USP • TCC • Terapia do Esquema • ACT • Pesquisa de Mestrado em Psicologia — USP",
     supervision:
       "Atuação clínica desde 2009 • TCC • Terapia do Esquema • ACT • Psicopatologia • Neuropsicologia",
   },

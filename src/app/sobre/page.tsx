@@ -11,7 +11,7 @@ import {
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
 import { photos } from "@/lib/photos";
-import { site, whatsappUrl } from "@/lib/site";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Sobre a Laís",
@@ -23,10 +23,10 @@ const formacao = [
   "Graduação em Psicologia concluída em dezembro de 2008",
   "Atuação profissional e clínica desde 2009",
   `Consultório particular desde ${site.privatePracticeSince}`,
-  "Especializações em Neuropsicologia e Psicopatologia, IPq-USP",
-  "Formações em TCC e Terapia do Esquema, CETCC",
-  "Formação em Reabilitação Cognitiva, INESP",
-  "Pesquisa de Mestrado em Psicologia, IP-USP (ingresso em 2019)",
+  "Especializações em Neuropsicologia e Psicopatologia — IPq-USP",
+  "Formações em TCC e Terapia do Esquema — CETCC",
+  "Formação em Reabilitação Cognitiva — INESP",
+  "Pesquisa de Mestrado em Psicologia — IP-USP (ingresso em 2019)",
   site.crp,
 ];
 
@@ -62,34 +62,28 @@ export default function SobrePage() {
     <>
       <PageHero
         eyebrow="Sobre Laís Baroni"
-        title="Quase duas décadas de clínica ensinam que compreender uma pessoa exige mais do que encontrar um nome para o que ela sente."
+        title="Quase duas décadas de clínica ensinam que compreender uma pessoa exige mais do que encontrar um nome para o que ela sente"
         description="Sou Laís Beringhs Baroni, psicóloga e neuropsicóloga, com atuação profissional e clínica desde 2009."
         extra="Minha trajetória foi construída entre clínica, estudo e diferentes formas de compreender o funcionamento humano, sempre com o compromisso de olhar para cada pessoa dentro da sua história e do seu contexto."
         pills={[...site.credentials]}
         image={photos.sobre}
-        primary={{ href: "/#atuacao", label: "Conheça minhas áreas de atuação" }}
-        secondary={{
-          href: whatsappUrl(),
-          label: "Fale comigo pelo WhatsApp",
-          external: true,
-        }}
       />
 
       <section className="bg-base py-12 sm:py-16">
         <Container className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
-          <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden rounded-2xl lg:mx-0 lg:max-w-none">
+          <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden rounded-2xl bg-soft lg:mx-0 lg:max-w-none">
             <Image
               src={photos.trajetoria.src}
               alt={photos.trajetoria.alt}
               fill
-              className="object-cover object-top"
+              className="object-contain object-center sm:object-cover sm:object-top"
               sizes="(max-width: 1024px) 80vw, 35vw"
             />
           </div>
           <div>
             <SectionHeading
               eyebrow="Minha trajetória"
-              title="A experiência não trouxe respostas prontas. Trouxe perguntas melhores."
+              title="A experiência não trouxe respostas prontas. Trouxe perguntas melhores"
             />
             <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
               <p>
@@ -118,7 +112,7 @@ export default function SobrePage() {
         <Container>
           <SectionHeading
             eyebrow="Formação e experiência"
-            title="Conhecimento técnico importa. Saber integrá-lo à realidade de cada pessoa também."
+            title="Conhecimento técnico importa. Saber integrá-lo à realidade de cada pessoa também"
           />
           <ul className="mt-12 grid gap-3 sm:grid-cols-2">
             {formacao.map((item) => (
@@ -162,7 +156,7 @@ export default function SobrePage() {
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Docência e supervisão"
-            title="Ensinar e supervisionar também fazem parte da minha prática."
+            title="Ensinar e supervisionar também fazem parte da minha prática"
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
@@ -188,7 +182,7 @@ export default function SobrePage() {
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="A forma de trabalhar"
-            title="Uma mesma dificuldade pode contar histórias completamente diferentes."
+            title="Uma mesma dificuldade pode contar histórias completamente diferentes"
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
@@ -248,7 +242,7 @@ export default function SobrePage() {
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="O que orienta meu trabalho"
-            title="Técnica para investigar. Experiência para interpretar. Escuta para compreender quem está por trás da queixa."
+            title="Técnica para investigar. Experiência para interpretar. Escuta para compreender quem está por trás da queixa"
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>Não acredito em uma forma única de compreender pessoas diferentes.</p>
@@ -265,9 +259,8 @@ export default function SobrePage() {
       </section>
 
       <ContactBand
-        title="Se você chegou até aqui para conhecer quem estará do outro lado, agora conhece um pouco da trajetória que sustenta meu trabalho."
+        title="Se você chegou até aqui para conhecer quem estará do outro lado, agora conhece um pouco da trajetória que sustenta meu trabalho"
         description="Entre em contato para saber mais sobre avaliação neuropsicológica, psicoterapia individual ou supervisão clínica."
-        primary={{ href: "/#atuacao", label: "Conheça minhas áreas de atuação" }}
       />
     </>
   );

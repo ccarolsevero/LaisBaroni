@@ -4,15 +4,13 @@ import { FaqList } from "@/components/faq-list";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
 import { photos } from "@/lib/photos";
-import { site, whatsappUrl } from "@/lib/site";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Psicoterapia para Autoconhecimento e Desenvolvimento Emocional",
   description:
     "Você não precisa estar em crise para querer se compreender melhor.",
 };
-
-const infoMessage = "Olá, Laís. Gostaria de começar a psicoterapia.";
 
 const perguntas = [
   "Por que algumas situações mexem tanto comigo?",
@@ -50,7 +48,7 @@ export default function PsicoterapiaAutoconhecimentoPage() {
     <>
       <PageHero
         eyebrow="Autoconhecimento e desenvolvimento emocional"
-        title="Você não precisa estar em crise para querer se compreender melhor."
+        title="Você não precisa estar em crise para querer se compreender melhor"
         description="Talvez não exista um grande problema para resolver. Mas existem escolhas que você gostaria de entender, emoções que nem sempre consegue nomear ou aspectos da sua história que deseja olhar com mais cuidado."
         extra="A psicoterapia também pode ser um espaço de autoconhecimento e desenvolvimento emocional."
         pills={[
@@ -59,16 +57,6 @@ export default function PsicoterapiaAutoconhecimentoPage() {
           site.pills.mestrado,
         ]}
         image={photos.psicoterapia}
-        primary={{
-          href: whatsappUrl(infoMessage),
-          label: "Quero começar a psicoterapia",
-          external: true,
-        }}
-        secondary={{
-          href: whatsappUrl(),
-          label: "Fale comigo pelo WhatsApp",
-          external: true,
-        }}
       />
 
       <section className="bg-base py-12 sm:py-16">
@@ -99,7 +87,7 @@ export default function PsicoterapiaAutoconhecimentoPage() {
         <Container>
           <SectionHeading
             eyebrow="O que pode ser trabalhado na psicoterapia?"
-            title="Algumas perguntas não surgem porque algo está errado. Surgem porque você começou a olhar para si com mais atenção."
+            title="Algumas perguntas não surgem porque algo está errado. Surgem porque você começou a olhar para si com mais atenção"
           />
           <p className="mt-8 text-base text-ink">
             A psicoterapia pode abrir espaço para questões como:
@@ -146,7 +134,7 @@ export default function PsicoterapiaAutoconhecimentoPage() {
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Como eu trabalho"
-            title="Sua história não cabe em uma fórmula pronta."
+            title="Sua história não cabe em uma fórmula pronta"
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
@@ -209,13 +197,8 @@ export default function PsicoterapiaAutoconhecimentoPage() {
       </section>
 
       <ContactBand
-        title="Talvez você não esteja procurando uma resposta. Talvez queira começar a fazer perguntas melhores sobre si."
+        title="Talvez você não esteja procurando uma resposta. Talvez queira começar a fazer perguntas melhores sobre si"
         description="Se você deseja iniciar um processo de psicoterapia voltado também ao autoconhecimento e desenvolvimento emocional, entre em contato para receber mais informações."
-        primary={{
-          href: whatsappUrl(infoMessage),
-          label: "Quero começar a psicoterapia",
-          external: true,
-        }}
       />
     </>
   );

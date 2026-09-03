@@ -4,15 +4,13 @@ import { FaqList } from "@/components/faq-list";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
 import { photos } from "@/lib/photos";
-import { site, whatsappUrl } from "@/lib/site";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Psicoterapia para Ansiedade, Estresse e Sofrimento Emocional",
   description:
     "Quando a mente não desliga e até o que parecia simples começa a exigir demais.",
 };
-
-const infoMessage = "Olá, Laís. Gostaria de informações sobre psicoterapia.";
 
 const motivos = [
   "Preocupação difícil de controlar",
@@ -58,7 +56,7 @@ export default function PsicoterapiaAnsiedadePage() {
     <>
       <PageHero
         eyebrow="Ansiedade, estresse e sofrimento emocional"
-        title="Quando a mente não desliga e até o que parecia simples começa a exigir demais."
+        title="Quando a mente não desliga e até o que parecia simples começa a exigir demais"
         description="Preocupações constantes, ansiedade, estresse, sobrecarga ou mudanças no humor podem começar a ocupar espaço demais na rotina, nas relações e na forma como você se sente."
         extra="Na psicoterapia, buscamos compreender o que está acontecendo, o que mantém esse sofrimento e como ele se relaciona com a sua história e com o momento que você está vivendo."
         pills={[
@@ -67,23 +65,13 @@ export default function PsicoterapiaAnsiedadePage() {
           site.pills.mestrado,
         ]}
         image={photos.psicoterapia}
-        primary={{
-          href: whatsappUrl(infoMessage),
-          label: "Quero informações sobre psicoterapia",
-          external: true,
-        }}
-        secondary={{
-          href: whatsappUrl(),
-          label: "Fale comigo pelo WhatsApp",
-          external: true,
-        }}
       />
 
       <section className="bg-base py-12 sm:py-16">
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-start">
           <SectionHeading
             eyebrow="Quando o sofrimento começa a ocupar espaço demais"
-            title="Nem sempre é fácil perceber quando “estou dando conta” virou “estou apenas tentando aguentar”."
+            title="Nem sempre é fácil perceber quando “estou dando conta” virou “estou apenas tentando aguentar”"
           />
           <div className="space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
@@ -132,7 +120,7 @@ export default function PsicoterapiaAnsiedadePage() {
         <Container>
           <SectionHeading
             eyebrow="O que pode levar alguém a procurar psicoterapia?"
-            title="Às vezes, o corpo e a rotina começam a mostrar que alguma coisa precisa de atenção."
+            title="Às vezes, o corpo e a rotina começam a mostrar que alguma coisa precisa de atenção"
           />
           <p className="mt-8 text-base text-ink">A busca pode acontecer diante de:</p>
           <ul className="mt-8 grid gap-3 sm:grid-cols-2">
@@ -153,7 +141,7 @@ export default function PsicoterapiaAnsiedadePage() {
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Como a psicoterapia pode ajudar?"
-            title="O objetivo não é simplesmente aprender a “controlar a ansiedade”."
+            title="O objetivo não é simplesmente aprender a “controlar a ansiedade”"
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
@@ -216,13 +204,8 @@ export default function PsicoterapiaAnsiedadePage() {
       </section>
 
       <ContactBand
-        title="Você não precisa esperar ficar insustentável para começar a cuidar do que está acontecendo."
+        title="Você não precisa esperar ficar insustentável para começar a cuidar do que está acontecendo"
         description="Se ansiedade, estresse, sobrecarga ou outras dificuldades emocionais estão ocupando espaço demais na sua vida, entre em contato para saber mais sobre a psicoterapia."
-        primary={{
-          href: whatsappUrl(infoMessage),
-          label: "Quero informações sobre psicoterapia",
-          external: true,
-        }}
       />
     </>
   );

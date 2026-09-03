@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { whatsappUrl } from "@/lib/site";
 import { ButtonLink } from "./button-link";
 import { Container, Pill } from "./ui";
 import { IconWhatsApp } from "./icons";
@@ -10,8 +11,6 @@ export function PageHero({
   extra,
   note,
   pills,
-  primary,
-  secondary,
   image,
 }: {
   eyebrow: string;
@@ -20,10 +19,57 @@ export function PageHero({
   extra?: string;
   note?: string;
   pills?: string[];
-  primary?: { href: string; label: string; external?: boolean };
-  secondary?: { href: string; label: string; external?: boolean };
-  image?: { src: string; alt: string; className?: string };
+  image?: {
+    src: string;
+    alt: string;
+    className?: string;
+    unoptimized?: boolean;
+  };
 }) {
+  const cta = (
+    <ButtonLink href={whatsappUrl()} variant={image ? "peach" : "primary"} external>
+      <IconWhatsApp />
+      Fale comigo pelo WhatsApp
+    </ButtonLink>
+  );
+
+  const copy = (
+    <>
+      <span className="inline-flex rounded-full bg-peach px-3.5 py-1.5 text-[12px] font-medium tracking-[0.08em] text-ink uppercase">
+        {eyebrow}
+      </span>
+      <h1 className="font-display mt-5 text-[2rem] leading-[1.18] font-medium text-balance sm:text-5xl">
+        {title}
+      </h1>
+      <p className="mt-5 text-[15px] leading-relaxed text-white/90 sm:text-base">
+        {description}
+      </p>
+      {extra ? (
+        <p className="mt-3 text-[15px] leading-relaxed text-white/85 sm:text-base">
+          {extra}
+        </p>
+      ) : null}
+      {note ? (
+        <p className="mt-5 inline-flex rounded-full bg-peach px-4 py-2 text-sm text-ink">
+          {note}
+        </p>
+      ) : null}
+      {pills?.length ? (
+        <div className="mt-6 flex flex-wrap gap-2">
+          {pills.map((pill) => (
+            <span
+              key={pill}
+              className="rounded-full bg-peach px-3.5 py-1.5 text-[12px] leading-snug text-ink"
+            >
+              {pill}
+            </span>
+          ))}
+        </div>
+      ) : null}
+      <div className="mt-10">{cta}</div>
+    </>
+  );
+
   if (image) {
     return (
       <section className="relative min-h-[68vh] overflow-hidden bg-ink lg:min-h-[76vh]">
@@ -33,65 +79,16 @@ export function PageHero({
           fill
           priority
           quality={95}
+          unoptimized={image.unoptimized}
           className={
             image.className ??
-            "object-cover object-[70%_top] sm:object-[72%_center]"
+            "object-contain object-top sm:object-cover sm:object-[72%_center]"
           }
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/55 to-ink/15 sm:via-ink/45 sm:to-ink/10" />
         <Container className="relative flex min-h-[68vh] flex-col justify-end py-14 lg:min-h-[76vh] lg:justify-center lg:py-20">
-          <div className="max-w-xl text-white lg:max-w-2xl">
-            <span className="inline-flex rounded-full bg-peach px-3.5 py-1.5 text-[12px] font-medium tracking-[0.08em] text-ink uppercase">
-              {eyebrow}
-            </span>
-            <h1 className="font-display mt-5 text-[2rem] leading-[1.18] font-medium text-balance sm:text-5xl">
-              {title}
-            </h1>
-            <p className="mt-5 text-[15px] leading-relaxed text-white/90 sm:text-base">
-              {description}
-            </p>
-            {extra ? (
-              <p className="mt-3 text-[15px] leading-relaxed text-white/85 sm:text-base">
-                {extra}
-              </p>
-            ) : null}
-            {note ? (
-              <p className="mt-5 inline-flex rounded-full bg-peach px-4 py-2 text-sm text-ink">
-                {note}
-              </p>
-            ) : null}
-            {pills?.length ? (
-              <div className="mt-6 flex flex-wrap gap-2">
-                {pills.map((pill) => (
-                  <span
-                    key={pill}
-                    className="rounded-full bg-peach px-3.5 py-1.5 text-[12px] leading-snug text-ink"
-                  >
-                    {pill}
-                  </span>
-                ))}
-              </div>
-            ) : null}
-            <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-              {primary ? (
-                <ButtonLink href={primary.href} variant="peach" external={primary.external}>
-                  {primary.label}
-                </ButtonLink>
-              ) : null}
-              {secondary ? (
-                <ButtonLink
-                  href={secondary.href}
-                  variant="ghost"
-                  external={secondary.external}
-                  className="ring-white/40"
-                >
-                  <IconWhatsApp />
-                  {secondary.label}
-                </ButtonLink>
-              ) : null}
-            </div>
-          </div>
+          <div className="max-w-xl text-white lg:max-w-2xl">{copy}</div>
         </Container>
       </section>
     );
@@ -131,19 +128,7 @@ export function PageHero({
             ))}
           </div>
         ) : null}
-        <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-          {primary ? (
-            <ButtonLink href={primary.href} variant="primary" external={primary.external}>
-              {primary.label}
-            </ButtonLink>
-          ) : null}
-          {secondary ? (
-            <ButtonLink href={secondary.href} variant="secondary" external={secondary.external}>
-              <IconWhatsApp />
-              {secondary.label}
-            </ButtonLink>
-          ) : null}
-        </div>
+        <div className="mt-10">{cta}</div>
       </Container>
     </section>
   );

@@ -7,16 +7,13 @@ import { LineMarks } from "@/components/illustrations";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
 import { photos } from "@/lib/photos";
-import { site, whatsappUrl } from "@/lib/site";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Avaliação Neuropsicológica para TDAH",
   description:
     "Quando a dúvida é TDAH, reconhecer alguns sinais não basta. É preciso entender o que está por trás deles.",
 };
-
-const infoMessage =
-  "Olá, Laís. Gostaria de informações sobre a avaliação para TDAH.";
 
 const aspectos = [
   "Atenção",
@@ -55,30 +52,20 @@ export default function AvaliacaoTdahPage() {
     <>
       <PageHero
         eyebrow="Avaliação para TDAH"
-        title="Quando a dúvida é TDAH, reconhecer alguns sinais não basta. É preciso entender o que está por trás deles."
+        title="Quando a dúvida é TDAH, reconhecer alguns sinais não basta. É preciso entender o que está por trás deles"
         description="Dificuldades de atenção, organização, impulsividade ou comportamento podem levantar a hipótese de TDAH tanto na infância quanto na vida adulta."
         extra="A avaliação neuropsicológica contribui para investigar essas dificuldades considerando como elas aparecem, a história da pessoa e outros aspectos importantes do seu funcionamento."
         pills={[
           ...site.credentials,
         ]}
         image={photos.avaliacao}
-        primary={{
-          href: whatsappUrl(infoMessage),
-          label: "Quero informações sobre a avaliação",
-          external: true,
-        }}
-        secondary={{
-          href: whatsappUrl(),
-          label: "Fale comigo pelo WhatsApp",
-          external: true,
-        }}
       />
 
       <section className="bg-base py-12 sm:py-16">
         <Container>
           <SectionHeading
             eyebrow="Para quem é a avaliação?"
-            title="A dúvida sobre TDAH pode aparecer em momentos muito diferentes da vida."
+            title="A dúvida sobre TDAH pode aparecer em momentos muito diferentes da vida"
           />
           <div className="mt-12 grid gap-3 lg:grid-cols-2">
             <article className="rounded-2xl bg-soft p-8 text-ink">
@@ -158,7 +145,7 @@ export default function AvaliacaoTdahPage() {
         <Container>
           <SectionHeading
             eyebrow="O que pode ser investigado?"
-            title="O diagnóstico não está no resultado de um único teste."
+            title="O diagnóstico não está no resultado de um único teste"
           />
           <p className="mt-8 max-w-3xl text-[15px] leading-relaxed hero-copy sm:text-base">
             De acordo com cada caso, podem ser investigados aspectos como:
@@ -221,7 +208,7 @@ export default function AvaliacaoTdahPage() {
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Como funciona a avaliação?"
-            title="Você não chega para provar que é TDAH. Seu filho também não."
+            title="Você não chega para provar que é TDAH. Seu filho também não"
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
@@ -289,13 +276,8 @@ export default function AvaliacaoTdahPage() {
       </section>
 
       <ContactBand
-        title="Se a pergunta é “será que é TDAH?”, você não precisa chegar com a resposta."
+        title="Se a pergunta é “será que é TDAH?”, você não precisa chegar com a resposta"
         description="Se a dúvida é sobre você ou seu filho, entre em contato para saber mais sobre a avaliação neuropsicológica."
-        primary={{
-          href: whatsappUrl(infoMessage),
-          label: "Quero informações sobre a avaliação para TDAH",
-          external: true,
-        }}
       />
     </>
   );

@@ -5,16 +5,13 @@ import { LineMarks } from "@/components/illustrations";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
 import { photos } from "@/lib/photos";
-import { site, whatsappUrl } from "@/lib/site";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Avaliação Neuropsicológica em Idosos",
   description:
     "Quando mudanças de memória, atenção ou organização começam a interferir na autonomia, uma avaliação cuidadosa pode ajudar a compreender o que está acontecendo.",
 };
-
-const infoMessage =
-  "Olá, Laís. Gostaria de informações sobre a avaliação neuropsicológica em idosos.";
 
 const indicacoes = [
   "Alterações de memória, atenção, linguagem, organização ou raciocínio",
@@ -47,28 +44,18 @@ export default function AvaliacaoIdososPage() {
     <>
       <PageHero
         eyebrow="Avaliação neuropsicológica em idosos"
-        title="Quando mudanças cognitivas começam a levantar perguntas, investigar com cuidado faz diferença."
+        title="Quando mudanças cognitivas começam a levantar perguntas, investigar com cuidado faz diferença"
         description="Ao longo do envelhecimento, algumas mudanças cognitivas podem ocorrer de forma esperada, enquanto outras merecem investigação mais cuidadosa."
         extra="A Avaliação Neuropsicológica contribui para compreender o perfil cognitivo atual, identificar capacidades preservadas e dificuldades, e auxiliar na investigação de alterações associadas ao envelhecimento."
         pills={[...site.credentials]}
         image={photos.avaliacao}
-        primary={{
-          href: whatsappUrl(infoMessage),
-          label: "Quero informações sobre a avaliação",
-          external: true,
-        }}
-        secondary={{
-          href: whatsappUrl(),
-          label: "Fale comigo pelo WhatsApp",
-          external: true,
-        }}
       />
 
       <section className="bg-base py-12 sm:py-16">
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-start">
           <SectionHeading
             eyebrow="Quando vale investigar?"
-            title="Mudanças que interferem na autonomia merecem um olhar mais atento."
+            title="Mudanças que interferem na autonomia merecem um olhar mais atento"
           />
           <div className="space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
@@ -92,7 +79,7 @@ export default function AvaliacaoIdososPage() {
         <Container>
           <SectionHeading
             eyebrow="O que a avaliação pode investigar?"
-            title="Compreender o perfil cognitivo atual, incluindo o que está preservado."
+            title="Compreender o perfil cognitivo atual, incluindo o que está preservado"
           />
           <ul className="mt-12 grid gap-3 sm:grid-cols-2">
             {indicacoes.map((item) => (
@@ -116,7 +103,7 @@ export default function AvaliacaoIdososPage() {
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Como funciona?"
-            title="A avaliação não se resume à aplicação de testes."
+            title="A avaliação não se resume à aplicação de testes"
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
@@ -181,13 +168,8 @@ export default function AvaliacaoIdososPage() {
       </section>
 
       <ContactBand
-        title="Mudanças cognitivas merecem compreensão, não conclusões apressadas."
+        title="Mudanças cognitivas merecem compreensão, não conclusões apressadas"
         description="Se você ou alguém próximo está percebendo alterações que gostaria de compreender melhor, entre em contato para receber informações sobre a avaliação neuropsicológica em idosos."
-        primary={{
-          href: whatsappUrl(infoMessage),
-          label: "Quero informações sobre a avaliação",
-          external: true,
-        }}
       />
     </>
   );

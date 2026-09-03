@@ -5,16 +5,13 @@ import { LineMarks } from "@/components/illustrations";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
 import { photos } from "@/lib/photos";
-import { site, whatsappUrl } from "@/lib/site";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Avaliação Neuropsicológica Infantil",
   description:
     "Quando uma dificuldade começa a chamar atenção, entender o que está por trás dela pode fazer toda a diferença.",
 };
-
-const infoMessage =
-  "Olá, Laís. Gostaria de informações sobre a avaliação neuropsicológica infantil.";
 
 const aspectos = [
   "Atenção",
@@ -54,23 +51,13 @@ export default function AvaliacaoInfantilPage() {
     <>
       <PageHero
         eyebrow="Avaliação neuropsicológica infantil"
-        title="Quando uma dificuldade começa a chamar atenção, entender o que está por trás dela pode fazer toda a diferença."
+        title="Quando uma dificuldade começa a chamar atenção, entender o que está por trás dela pode fazer toda a diferença"
         description="Dificuldades na aprendizagem, atenção, comportamento ou desenvolvimento podem gerar muitas dúvidas para a família."
         extra="A avaliação neuropsicológica infantil ajuda a investigar como a criança funciona em diferentes aspectos, considerando seus recursos, dificuldades, história e contexto."
         pills={[
           ...site.credentials,
         ]}
         image={photos.infantil}
-        primary={{
-          href: whatsappUrl(infoMessage),
-          label: "Quero informações sobre a avaliação infantil",
-          external: true,
-        }}
-        secondary={{
-          href: whatsappUrl(),
-          label: "Fale comigo pelo WhatsApp",
-          external: true,
-        }}
       />
 
       <section className="bg-base py-12 sm:py-16">
@@ -96,7 +83,7 @@ export default function AvaliacaoInfantilPage() {
         <Container>
           <SectionHeading
             eyebrow="O que a avaliação pode investigar?"
-            title="Não é apenas sobre descobrir uma dificuldade. É sobre compreender como aquela criança funciona."
+            title="Não é apenas sobre descobrir uma dificuldade. É sobre compreender como aquela criança funciona"
           />
           <p className="mt-8 max-w-3xl text-[15px] leading-relaxed hero-copy sm:text-base">
             De acordo com a necessidade de cada caso, a avaliação pode investigar
@@ -144,7 +131,7 @@ export default function AvaliacaoInfantilPage() {
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Como funciona a avaliação neuropsicológica infantil?"
-            title="A criança não chega para “passar em uma prova”."
+            title="A criança não chega para “passar em uma prova”"
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
@@ -212,13 +199,8 @@ export default function AvaliacaoInfantilPage() {
       </section>
 
       <ContactBand
-        title="Se alguma coisa no desenvolvimento, na aprendizagem ou no comportamento do seu filho está gerando dúvidas, vale compreender melhor antes de tirar conclusões."
+        title="Se alguma coisa no desenvolvimento, na aprendizagem ou no comportamento do seu filho está gerando dúvidas, vale compreender melhor antes de tirar conclusões"
         description="Entre em contato para receber informações sobre a avaliação neuropsicológica infantil."
-        primary={{
-          href: whatsappUrl(infoMessage),
-          label: "Quero informações sobre a avaliação infantil",
-          external: true,
-        }}
       />
     </>
   );

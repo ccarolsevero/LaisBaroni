@@ -4,15 +4,13 @@ import { Container } from "./ui";
 import { IconWhatsApp } from "./icons";
 
 export function ContactBand({
-  title = "Se você está buscando compreender algo melhor, podemos começar por uma conversa.",
+  title = "Se você está buscando compreender algo melhor, podemos começar por uma conversa",
   description = "Entre em contato para saber mais sobre avaliação neuropsicológica, psicoterapia individual ou supervisão clínica.",
   modality = site.modality,
-  primary,
 }: {
   title?: string;
   description?: string;
   modality?: string;
-  primary?: { href: string; label: string; external?: boolean };
 }) {
   return (
     <section className="bg-ink text-white">
@@ -28,11 +26,6 @@ export function ContactBand({
           {modality ? <p className="mt-4 text-soft">{modality}</p> : null}
         </div>
         <div className="flex flex-col gap-3 md:items-end">
-          {primary ? (
-            <ButtonLink href={primary.href} variant="peach" external={primary.external}>
-              {primary.label}
-            </ButtonLink>
-          ) : null}
           <ButtonLink href={whatsappUrl()} variant="ghost" external>
             <IconWhatsApp />
             Fale comigo pelo WhatsApp

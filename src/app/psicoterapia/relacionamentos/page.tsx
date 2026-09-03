@@ -4,15 +4,13 @@ import { FaqList } from "@/components/faq-list";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
 import { photos } from "@/lib/photos";
-import { site, whatsappUrl } from "@/lib/site";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Psicoterapia para Relacionamentos e Padrões Emocionais",
   description:
     "As pessoas mudam. Mas por que algumas histórias parecem sempre terminar do mesmo jeito?",
 };
-
-const infoMessage = "Olá, Laís. Gostaria de informações sobre psicoterapia.";
 
 const quotes = [
   "Eu sei que essa relação me faz mal, mas não consigo sair.",
@@ -73,23 +71,13 @@ export default function PsicoterapiaRelacionamentosPage() {
           site.pills.mestrado,
         ]}
         image={photos.psicoterapia}
-        primary={{
-          href: whatsappUrl(infoMessage),
-          label: "Quero informações sobre psicoterapia",
-          external: true,
-        }}
-        secondary={{
-          href: whatsappUrl(),
-          label: "Fale comigo pelo WhatsApp",
-          external: true,
-        }}
       />
 
       <section className="bg-base py-12 sm:py-16">
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-start">
           <SectionHeading
             eyebrow="Quando o relacionamento muda, mas o padrão continua"
-            title="Talvez não seja apenas sobre escolher “a pessoa errada”."
+            title="Talvez não seja apenas sobre escolher “a pessoa errada”"
           />
           <div className="space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>Você muda de relacionamento, mas algumas sensações permanecem.</p>
@@ -142,7 +130,7 @@ export default function PsicoterapiaRelacionamentosPage() {
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Terapia do Esquema e relacionamentos"
-            title="Alguns padrões começam muito antes do relacionamento em que você está hoje."
+            title="Alguns padrões começam muito antes do relacionamento em que você está hoje"
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
@@ -188,7 +176,7 @@ export default function PsicoterapiaRelacionamentosPage() {
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Como funciona a psicoterapia?"
-            title="O objetivo não é ensinar você a “escolher melhor”. É compreender como você participa das relações que constrói."
+            title="O objetivo não é ensinar você a “escolher melhor”. É compreender como você participa das relações que constrói"
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
@@ -248,13 +236,8 @@ export default function PsicoterapiaRelacionamentosPage() {
       </section>
 
       <ContactBand
-        title="Talvez você já tenha percebido o que se repete. Agora pode ser hora de compreender por quê."
+        title="Talvez você já tenha percebido o que se repete. Agora pode ser hora de compreender por quê"
         description="Se relacionamentos, limites ou padrões emocionais têm gerado sofrimento ou questionamentos, entre em contato para saber mais sobre a psicoterapia."
-        primary={{
-          href: whatsappUrl(infoMessage),
-          label: "Quero informações sobre psicoterapia",
-          external: true,
-        }}
       />
     </>
   );

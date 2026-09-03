@@ -23,9 +23,9 @@ export default async function BlogPage() {
     <>
       <PageHero
         eyebrow="Blog"
-        title="Psicologia para compreender além das respostas rápidas."
+        title="Psicologia para compreender além das respostas rápidas"
         description="Conteúdos sobre Neuropsicologia, saúde emocional, relações e padrões de comportamento, traduzindo temas complexos para uma linguagem mais próxima da vida real."
-        image={photos.consultorio}
+        image={photos.blog}
       />
 
       <section className="bg-base py-12 sm:py-16">

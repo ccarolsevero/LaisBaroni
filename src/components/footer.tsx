@@ -27,9 +27,23 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10">
-        <p className="mx-auto max-w-6xl px-5 py-4 text-sm text-soft sm:px-8">
-          © {new Date().getFullYear()} {site.fullName}. Todos os direitos reservados.
-        </p>
+        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-4 text-sm text-soft sm:flex-row sm:items-center sm:justify-between sm:px-8">
+          <p>
+            © {new Date().getFullYear()} {site.fullName}. Todos os direitos
+            reservados.
+          </p>
+          <p>
+            Feito por{" "}
+            <a
+              href="https://www.atmosferapsi.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-mist underline underline-offset-[3px] transition-colors hover:text-white"
+            >
+              AtmosferaPsi
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );

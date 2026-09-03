@@ -38,8 +38,7 @@ export default async function BlogCategoryPage({
         eyebrow="Blog"
         title={category.label}
         description={category.description}
-        image={photos.consultorio}
-        primary={{ href: "/blog", label: "Ver todos os conteúdos" }}
+        image={photos.blog}
       />
       <section className="bg-white py-12 sm:py-16">
         <Container>

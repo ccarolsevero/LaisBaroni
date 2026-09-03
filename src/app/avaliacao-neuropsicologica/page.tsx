@@ -14,16 +14,13 @@ import { LineMarks } from "@/components/illustrations";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
 import { photos } from "@/lib/photos";
-import { site, whatsappUrl } from "@/lib/site";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Avaliação Neuropsicológica",
   description:
     "Quando as dificuldades começam a levantar perguntas, uma avaliação cuidadosa pode ajudar a encontrar respostas.",
 };
-
-const infoMessage =
-  "Olá, Laís. Gostaria de informações sobre a avaliação neuropsicológica.";
 
 const tipos = [
   {
@@ -126,28 +123,18 @@ export default function AvaliacaoPage() {
     <>
       <PageHero
         eyebrow="Avaliação Neuropsicológica"
-        title="Quando as dificuldades começam a levantar perguntas, uma avaliação cuidadosa pode ajudar a encontrar respostas."
+        title="Quando as dificuldades começam a levantar perguntas, uma avaliação cuidadosa pode ajudar a encontrar respostas"
         description="Dificuldades de atenção, memória, aprendizagem, organização ou comportamento podem ter diferentes explicações. A avaliação neuropsicológica ajuda a compreender o que pode estar por trás delas, considerando o funcionamento, a história e o contexto de cada pessoa."
         note="Avaliação neuropsicológica infantil, adulta e em idosos"
         pills={[...site.credentials]}
         image={photos.avaliacao}
-        primary={{
-          href: whatsappUrl(infoMessage),
-          label: "Quero informações sobre a avaliação",
-          external: true,
-        }}
-        secondary={{
-          href: whatsappUrl(),
-          label: "Fale comigo pelo WhatsApp",
-          external: true,
-        }}
       />
 
       <section className="bg-base py-12 sm:py-16">
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-start">
           <SectionHeading
             eyebrow="Quando vale investigar?"
-            title="Nem toda dificuldade significa um diagnóstico. Mas algumas perguntas merecem ser investigadas."
+            title="Nem toda dificuldade significa um diagnóstico. Mas algumas perguntas merecem ser investigadas"
           />
           <div className="space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
@@ -179,7 +166,7 @@ export default function AvaliacaoPage() {
         <Container>
           <SectionHeading
             eyebrow="O que é a avaliação neuropsicológica?"
-            title="Um teste mostra uma parte. Uma avaliação precisa compreender o conjunto."
+            title="Um teste mostra uma parte. Uma avaliação precisa compreender o conjunto"
           />
           <div className="mt-8 max-w-3xl space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
@@ -277,7 +264,7 @@ export default function AvaliacaoPage() {
         <Container>
           <SectionHeading
             eyebrow="Como funciona?"
-            title="Avaliar não é fazer uma sequência de testes e esperar que eles deem uma resposta."
+            title="Avaliar não é fazer uma sequência de testes e esperar que eles deem uma resposta"
           />
           <div className="mt-12 grid gap-3 md:grid-cols-3">
             {processo.map((text, index) => (
@@ -342,13 +329,8 @@ export default function AvaliacaoPage() {
       </section>
 
       <ContactBand
-        title="Talvez você ainda não saiba qual é a resposta. A avaliação existe justamente para investigar a pergunta."
+        title="Talvez você ainda não saiba qual é a resposta. A avaliação existe justamente para investigar a pergunta"
         description="Entre em contato para saber mais sobre a avaliação neuropsicológica."
-        primary={{
-          href: whatsappUrl(infoMessage),
-          label: "Quero informações sobre a avaliação",
-          external: true,
-        }}
       />
     </>
   );

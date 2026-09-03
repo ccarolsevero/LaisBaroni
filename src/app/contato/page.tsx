@@ -20,11 +20,6 @@ export default function ContatoPage() {
         title="Vamos conversar?"
         description="Para informações, dúvidas ou agendamentos, entre em contato pelo WhatsApp."
         image={photos.heroHome}
-        primary={{
-          href: whatsappUrl(),
-          label: "Fale comigo pelo WhatsApp",
-          external: true,
-        }}
       />
 
       <section className="bg-base py-12 sm:py-16">

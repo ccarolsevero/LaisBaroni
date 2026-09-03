@@ -7,16 +7,13 @@ import { LineMarks } from "@/components/illustrations";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
 import { photos } from "@/lib/photos";
-import { site, whatsappUrl } from "@/lib/site";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Avaliação Neuropsicológica para Autismo / TEA",
   description:
     "Quando algumas características começam a chamar atenção, compreender a história por trás delas é mais importante do que procurar respostas em uma lista de sinais.",
 };
-
-const infoMessage =
-  "Olá, Laís. Gostaria de informações sobre a avaliação para Autismo.";
 
 const aspectos = [
   "Comunicação",
@@ -62,30 +59,20 @@ export default function AvaliacaoAutismoPage() {
     <>
       <PageHero
         eyebrow="Avaliação para Autismo / TEA"
-        title="Quando algumas características começam a chamar atenção, compreender a história por trás delas é mais importante do que procurar respostas em uma lista de sinais."
+        title="Quando algumas características começam a chamar atenção, compreender a história por trás delas é mais importante do que procurar respostas em uma lista de sinais"
         description="Dúvidas relacionadas à comunicação, interação social, comportamento, interesses ou desenvolvimento podem levar à investigação de Transtorno do Espectro Autista (TEA) na infância ou na vida adulta."
         extra="A avaliação contribui para compreender essas características dentro da história, do desenvolvimento e do funcionamento de cada pessoa."
         pills={[
           ...site.credentials,
         ]}
         image={photos.avaliacao}
-        primary={{
-          href: whatsappUrl(infoMessage),
-          label: "Quero informações sobre a avaliação",
-          external: true,
-        }}
-        secondary={{
-          href: whatsappUrl(),
-          label: "Fale comigo pelo WhatsApp",
-          external: true,
-        }}
       />
 
       <section className="bg-base py-12 sm:py-16">
         <Container>
           <SectionHeading
             eyebrow="Para quem é a avaliação?"
-            title="A dúvida sobre Autismo pode surgir em diferentes momentos da vida."
+            title="A dúvida sobre Autismo pode surgir em diferentes momentos da vida"
           />
           <div className="mt-12 grid gap-3 lg:grid-cols-2">
             <article className="rounded-2xl bg-soft p-8 text-ink">
@@ -157,7 +144,7 @@ export default function AvaliacaoAutismoPage() {
         <Container>
           <SectionHeading
             eyebrow="O que pode ser investigado?"
-            title="Avaliar significa compreender o funcionamento como um todo."
+            title="Avaliar significa compreender o funcionamento como um todo"
           />
           <p className="mt-8 max-w-3xl text-[15px] leading-relaxed hero-copy sm:text-base">
             De acordo com a necessidade de cada caso, podem ser considerados aspectos
@@ -221,7 +208,7 @@ export default function AvaliacaoAutismoPage() {
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Como funciona a avaliação?"
-            title="A avaliação não começa perguntando “onde estão os sinais de Autismo?”. Começa conhecendo a pessoa."
+            title="A avaliação não começa perguntando “onde estão os sinais de Autismo?”. Começa conhecendo a pessoa"
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
@@ -289,13 +276,8 @@ export default function AvaliacaoAutismoPage() {
       </section>
 
       <ContactBand
-        title="Quando existe uma dúvida sobre Autismo, o caminho não precisa começar pela certeza. Pode começar pela investigação."
+        title="Quando existe uma dúvida sobre Autismo, o caminho não precisa começar pela certeza. Pode começar pela investigação"
         description="Se a dúvida é sobre você ou seu filho, entre em contato para receber informações sobre a avaliação."
-        primary={{
-          href: whatsappUrl("Olá, Laís. Gostaria de informações sobre a avaliação para Autismo."),
-          label: "Quero informações sobre a avaliação para Autismo",
-          external: true,
-        }}
       />
     </>
   );

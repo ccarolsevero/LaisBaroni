@@ -6,16 +6,13 @@ import { IconArrow } from "@/components/icons";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
 import { photos } from "@/lib/photos";
-import { site, whatsappUrl } from "@/lib/site";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Psicoterapia Infantil",
   description:
     "Quando seu filho ainda não consegue explicar o que está sentindo, algumas mudanças podem começar a falar por ele.",
 };
-
-const infoMessage =
-  "Olá, Laís. Gostaria de informações sobre psicoterapia infantil.";
 
 const motivos = [
   "Medos e inseguranças",
@@ -56,7 +53,7 @@ export default function PsicoterapiaInfantilPage() {
     <>
       <PageHero
         eyebrow="Psicoterapia infantil"
-        title="Quando seu filho ainda não consegue explicar o que está sentindo, algumas mudanças podem começar a falar por ele."
+        title="Quando seu filho ainda não consegue explicar o que está sentindo, algumas mudanças podem começar a falar por ele"
         description="Mudanças no comportamento, dificuldades emocionais, medos, conflitos ou situações que começam a afetar a rotina da criança podem gerar dúvidas nos responsáveis."
         extra="A psicoterapia infantil oferece um espaço adequado à idade e ao momento de desenvolvimento da criança para compreender e trabalhar aquilo que ela está vivendo."
         pills={[
@@ -65,23 +62,13 @@ export default function PsicoterapiaInfantilPage() {
           site.pills.mestrado,
         ]}
         image={photos.infantil}
-        primary={{
-          href: whatsappUrl(infoMessage),
-          label: "Quero informações sobre psicoterapia infantil",
-          external: true,
-        }}
-        secondary={{
-          href: whatsappUrl(),
-          label: "Fale comigo pelo WhatsApp",
-          external: true,
-        }}
       />
 
       <section className="bg-base py-12 sm:py-16">
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-start">
           <SectionHeading
             eyebrow="Quando procurar"
-            title="Nem toda mudança significa que existe um problema. Mas algumas mudanças merecem ser compreendidas."
+            title="Nem toda mudança significa que existe um problema. Mas algumas mudanças merecem ser compreendidas"
           />
           <div className="space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
@@ -174,7 +161,7 @@ export default function PsicoterapiaInfantilPage() {
           </article>
         </Container>
         <Container className="mt-10">
-          <SectionHeading title="Às vezes, a dúvida dos pais começa justamente aqui." />
+          <SectionHeading title="Às vezes, a dúvida dos pais começa justamente aqui" />
           <p className="mt-6 max-w-3xl text-[15px] leading-relaxed hero-copy sm:text-base">
             Se houver dúvida sobre qual caminho faz mais sentido, ela pode ser
             compreendida a partir da demanda apresentada.
@@ -194,7 +181,7 @@ export default function PsicoterapiaInfantilPage() {
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Como funciona a psicoterapia infantil?"
-            title="Para compreender uma criança, também é preciso conhecer o contexto em que ela vive."
+            title="Para compreender uma criança, também é preciso conhecer o contexto em que ela vive"
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
@@ -254,14 +241,9 @@ export default function PsicoterapiaInfantilPage() {
       </section>
 
       <ContactBand
-        title="Seu filho não precisa saber explicar perfeitamente o que está acontecendo para que vocês possam começar a compreender."
+        title="Seu filho não precisa saber explicar perfeitamente o que está acontecendo para que vocês possam começar a compreender"
         description="Se você percebe mudanças ou dificuldades emocionais, comportamentais ou relacionais, entre em contato para saber mais sobre a psicoterapia infantil."
         modality="Atendimento presencial e online, conforme adequação ao atendimento."
-        primary={{
-          href: whatsappUrl(infoMessage),
-          label: "Quero informações sobre psicoterapia infantil",
-          external: true,
-        }}
       />
     </>
   );

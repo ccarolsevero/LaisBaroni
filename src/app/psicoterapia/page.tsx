@@ -12,15 +12,13 @@ import {
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
 import { photos } from "@/lib/photos";
-import { site, whatsappUrl } from "@/lib/site";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Psicoterapia Individual",
   description:
     "Psicoterapia para compreender o que você está vivendo e o que talvez continue se repetindo.",
 };
-
-const infoMessage = "Olá, Laís. Gostaria de informações sobre psicoterapia.";
 
 const caminhos = [
   {
@@ -98,7 +96,7 @@ export default function PsicoterapiaPage() {
     <>
       <PageHero
         eyebrow="Psicoterapia individual"
-        title="Psicoterapia para compreender o que você está vivendo e o que talvez continue se repetindo."
+        title="Psicoterapia para compreender o que você está vivendo e o que talvez continue se repetindo"
         description="Nem sempre quem procura terapia consegue dar um nome exato ao que está sentindo. Pode ser ansiedade, sobrecarga, dificuldades nos relacionamentos, um momento de mudança ou simplesmente o desejo de se conhecer melhor."
         extra="A psicoterapia é um espaço para compreender essas experiências dentro da sua história e construir novas formas de lidar com elas."
         pills={[
@@ -107,23 +105,13 @@ export default function PsicoterapiaPage() {
           site.pills.mestrado,
         ]}
         image={photos.psicoterapia}
-        primary={{
-          href: whatsappUrl(infoMessage),
-          label: "Quero informações sobre psicoterapia",
-          external: true,
-        }}
-        secondary={{
-          href: whatsappUrl(),
-          label: "Fale comigo pelo WhatsApp",
-          external: true,
-        }}
       />
 
       <section className="bg-base py-12 sm:py-16">
         <Container>
           <SectionHeading
             eyebrow="O que trouxe você até a psicoterapia?"
-            title="Pessoas chegam à terapia por motivos diferentes. E nem sempre é preciso estar em crise para começar."
+            title="Pessoas chegam à terapia por motivos diferentes. E nem sempre é preciso estar em crise para começar"
           />
           <div className="mt-12 grid gap-3 lg:grid-cols-2">
             {caminhos.map((item) => (
@@ -161,7 +149,7 @@ export default function PsicoterapiaPage() {
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Como eu trabalho"
-            title="Entender o que acontece é importante. Entender por que continua acontecendo pode mudar o caminho da terapia."
+            title="Entender o que acontece é importante. Entender por que continua acontecendo pode mudar o caminho da terapia"
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
@@ -193,7 +181,7 @@ export default function PsicoterapiaPage() {
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Terapia do Esquema"
-            title="Algumas histórias mudam de personagem, mas parecem repetir o mesmo roteiro."
+            title="Algumas histórias mudam de personagem, mas parecem repetir o mesmo roteiro"
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
@@ -218,7 +206,7 @@ export default function PsicoterapiaPage() {
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Como funciona a psicoterapia?"
-            title="A terapia começa pela sua história, não por uma resposta pronta."
+            title="A terapia começa pela sua história, não por uma resposta pronta"
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
@@ -279,13 +267,8 @@ export default function PsicoterapiaPage() {
       </section>
 
       <ContactBand
-        title="Você não precisa saber exatamente o que está acontecendo para começar a falar sobre isso."
+        title="Você não precisa saber exatamente o que está acontecendo para começar a falar sobre isso"
         description="Se você está considerando iniciar psicoterapia para você ou buscando atendimento para seu filho, entre em contato para receber mais informações."
-        primary={{
-          href: whatsappUrl(infoMessage),
-          label: "Quero informações sobre psicoterapia",
-          external: true,
-        }}
       />
     </>
   );
