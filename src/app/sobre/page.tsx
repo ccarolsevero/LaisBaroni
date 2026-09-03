@@ -112,7 +112,13 @@ export default function SobrePage() {
         <Container>
           <SectionHeading
             eyebrow="Formação e experiência"
-            title="Conhecimento técnico importa. Saber integrá-lo à realidade de cada pessoa também"
+            title={
+              <>
+                Conhecimento técnico importa. Saber{" "}
+                <span className="whitespace-nowrap">integrá-lo</span> à
+                realidade de cada pessoa também
+              </>
+            }
           />
           <ul className="mt-12 grid gap-3 sm:grid-cols-2">
             {formacao.map((item) => (

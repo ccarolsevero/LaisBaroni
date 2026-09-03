@@ -7,7 +7,7 @@ export const photos = {
   sobre: {
     src: "/photos/hero-sobre-mim-wide.jpg",
     alt: "Laís Baroni no consultório",
-    className: "object-cover object-center lg:object-[75%_center]",
+    className: "object-cover object-[82%_center] lg:object-[75%_center]",
   },
   homeSobre: {
     src: "/photos/retrato-sobre-v2.jpg",
@@ -31,7 +31,7 @@ export const photos = {
   avaliacao: {
     src: "/photos/hero-avaliacao-consultorio.jpg",
     alt: "Laís Baroni no consultório",
-    className: "object-cover object-center lg:object-[78%_center]",
+    className: "object-cover object-[88%_center] lg:object-[78%_center]",
     unoptimized: true,
   },
   infantil: {
@@ -47,6 +47,6 @@ export const photos = {
   supervisao: {
     src: "/photos/hero-supervisao-wide.jpg",
     alt: "Laís Baroni em seu espaço de trabalho clínico",
-    className: "object-cover object-center lg:object-[75%_center]",
+    className: "object-cover object-[82%_center] lg:object-[75%_center]",
   },
 } as const;

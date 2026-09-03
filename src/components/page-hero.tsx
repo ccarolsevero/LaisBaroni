@@ -35,7 +35,7 @@ export function PageHero({
 
   const copy = (
     <>
-      <span className="inline-flex rounded-full bg-peach px-3.5 py-1.5 text-[12px] font-medium tracking-[0.08em] text-ink uppercase">
+      <span className="inline-flex max-w-full whitespace-nowrap rounded-full bg-peach px-2.5 py-1 text-[10px] font-medium tracking-[0.04em] text-ink uppercase sm:px-3.5 sm:py-1.5 sm:text-[12px] sm:tracking-[0.08em]">
         {eyebrow}
       </span>
       <h1 className="font-display mt-5 text-[2rem] leading-[1.18] font-medium break-words lg:text-balance sm:text-5xl">
@@ -55,11 +55,11 @@ export function PageHero({
         </p>
       ) : null}
       {pills?.length ? (
-        <div className="mt-6 flex flex-wrap gap-2">
+        <div className="mt-6 flex flex-col items-start gap-2 sm:flex-row sm:flex-wrap">
           {pills.map((pill) => (
             <span
               key={pill}
-              className="rounded-full bg-peach px-3.5 py-1.5 text-[12px] leading-snug text-ink"
+              className="max-w-full whitespace-nowrap rounded-full bg-peach px-2.5 py-1 text-[10px] leading-none text-ink sm:px-3.5 sm:py-1.5 sm:text-[12px] sm:leading-snug"
             >
               {pill}
             </span>
@@ -119,7 +119,7 @@ export function PageHero({
           </p>
         ) : null}
         {pills?.length ? (
-          <div className="mt-6 flex flex-wrap gap-2">
+          <div className="mt-6 flex flex-col items-start gap-2 sm:flex-row sm:flex-wrap">
             {pills.map((pill) => (
               <span
                 key={pill}
