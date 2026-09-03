@@ -48,7 +48,7 @@ export function SectionHeading({
   align?: "left" | "center";
 }) {
   return (
-    <div className={`max-w-3xl ${align === "center" ? "text-left sm:mx-auto sm:text-center" : ""}`}>
+    <div className={`max-w-3xl ${align === "center" ? "mx-auto text-center" : "text-left"}`}>
       {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
       {title ? (
         <h2 className={`font-display text-[1.85rem] leading-[1.2] font-medium text-balance sm:text-4xl ${eyebrow ? "mt-3" : ""}`}>

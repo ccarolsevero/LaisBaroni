@@ -176,22 +176,21 @@ export default function Home() {
       <section className="bg-peach py-12 sm:py-16">
         <Container className="max-w-4xl">
           <SectionHeading
-            align="center"
             eyebrow="Um pouco sobre a forma como trabalho"
             title="A mesma queixa pode contar histórias completamente diferentes"
           />
-          <p className="mt-6 max-w-2xl text-left text-[15px] leading-relaxed hero-copy sm:mx-auto sm:text-center sm:text-base">
+          <p className="mt-6 max-w-2xl text-[15px] leading-relaxed hero-copy sm:text-base">
             Dificuldade de concentração, esquecimentos ou um comportamento isolado
             não contam a história inteira. Por isso, o trabalho começa por uma
             pergunta:
           </p>
-          <blockquote className="mt-8 text-left sm:text-center">
-            <LineMarks className="mb-3 h-8 w-12 text-ink/40 sm:mx-auto" />
+          <blockquote className="mt-8">
+            <LineMarks className="mb-3 h-8 w-12 text-ink/40" />
             <p className="font-display text-3xl leading-snug font-medium text-ink sm:text-4xl">
               O que precisamos compreender melhor aqui?
             </p>
           </blockquote>
-          <p className="mt-6 max-w-2xl text-left text-[15px] leading-relaxed hero-copy sm:mx-auto sm:text-center sm:text-base">
+          <p className="mt-6 max-w-2xl text-[15px] leading-relaxed hero-copy sm:text-base">
             É a partir dessa compreensão que conduzo avaliação, psicoterapia e
             supervisão clínica.
           </p>
