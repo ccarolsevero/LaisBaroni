@@ -24,6 +24,7 @@ export const site = {
     "Neuropsicologia e Psicopatologia — IPq-USP",
     "TCC e Terapia do Esquema — CETCC",
     "Reabilitação Cognitiva — INESP",
+    "Pesquisa de Mestrado em Psicologia — IPq-USP",
   ] as const,
   pills: {
     neuro:
@@ -32,6 +33,7 @@ export const site = {
       "Laís Baroni | Psicóloga e Neuropsicóloga | Atuação clínica desde 2009",
     supervision:
       "Laís Baroni | Psicóloga e Neuropsicóloga | Atuação clínica desde 2009",
+    mestrado: "Pesquisa de Mestrado em Psicologia — IPq-USP",
   },
   credentialLines: {
     neuro:
@@ -42,8 +44,8 @@ export const site = {
       "Atuação clínica desde 2009 • TCC • Terapia do Esquema • ACT • Psicopatologia • Neuropsicologia",
   },
   whatsapp: {
-    number: process.env.NEXT_PUBLIC_WHATSAPP ?? "5511999999999",
-    display: process.env.NEXT_PUBLIC_WHATSAPP_DISPLAY ?? "[inserir número]",
+    number: "5511989678203",
+    display: "(11) 98967-8203",
     defaultMessage:
       "Olá, Laís. Gostaria de saber mais sobre avaliação neuropsicológica, psicoterapia ou supervisão clínica.",
   },

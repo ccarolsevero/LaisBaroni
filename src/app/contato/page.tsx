@@ -59,18 +59,6 @@ export default function ContatoPage() {
                   {site.whatsapp.display}
                 </a>
               </li>
-              <li>
-                <p className="text-[10px] tracking-[0.16em] text-peach uppercase">
-                  E-mail
-                </p>
-                {site.email.includes("[") ? (
-                  <p className="mt-1 text-mist">{site.email}</p>
-                ) : (
-                  <a href={`mailto:${site.email}`} className="mt-1 block hover:text-peach">
-                    {site.email}
-                  </a>
-                )}
-              </li>
             </ul>
 
             <ButtonLink href={whatsappUrl()} variant="peach" external className="mt-10">

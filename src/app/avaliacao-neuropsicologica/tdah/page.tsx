@@ -59,7 +59,7 @@ export default function AvaliacaoTdahPage() {
         description="Dificuldades de atenção, organização, impulsividade ou comportamento podem levantar a hipótese de TDAH tanto na infância quanto na vida adulta."
         extra="A avaliação neuropsicológica contribui para investigar essas dificuldades considerando como elas aparecem, a história da pessoa e outros aspectos importantes do seu funcionamento."
         pills={[
-          site.pills.neuro,
+          ...site.credentials,
         ]}
         image={photos.avaliacao}
         primary={{

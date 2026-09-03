@@ -104,6 +104,7 @@ export default function PsicoterapiaPage() {
         pills={[
           site.pills.therapy,
           "TCC • Terapia do Esquema • ACT • Psicopatologia",
+          site.pills.mestrado,
         ]}
         image={photos.psicoterapia}
         primary={{

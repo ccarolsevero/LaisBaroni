@@ -66,7 +66,7 @@ export default function AvaliacaoAutismoPage() {
         description="Dúvidas relacionadas à comunicação, interação social, comportamento, interesses ou desenvolvimento podem levar à investigação de Transtorno do Espectro Autista (TEA) na infância ou na vida adulta."
         extra="A avaliação contribui para compreender essas características dentro da história, do desenvolvimento e do funcionamento de cada pessoa."
         pills={[
-          site.pills.neuro,
+          ...site.credentials,
         ]}
         image={photos.avaliacao}
         primary={{

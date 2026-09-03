@@ -58,7 +58,7 @@ export default function AvaliacaoInfantilPage() {
         description="Dificuldades na aprendizagem, atenção, comportamento ou desenvolvimento podem gerar muitas dúvidas para a família."
         extra="A avaliação neuropsicológica infantil ajuda a investigar como a criança funciona em diferentes aspectos, considerando seus recursos, dificuldades, história e contexto."
         pills={[
-          site.pills.neuro,
+          ...site.credentials,
         ]}
         image={photos.infantil}
         primary={{

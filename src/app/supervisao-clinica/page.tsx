@@ -47,6 +47,7 @@ export default function SupervisaoPage() {
         pills={[
           site.pills.supervision,
           "TCC • Terapia do Esquema • ACT • Psicopatologia • Neuropsicologia",
+          site.pills.mestrado,
         ]}
         image={photos.supervisao}
         primary={{

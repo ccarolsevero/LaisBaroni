@@ -64,6 +64,7 @@ export default function PsicoterapiaAnsiedadePage() {
         pills={[
           site.pills.therapy,
           "TCC • Terapia do Esquema • Psicopatologia",
+          site.pills.mestrado,
         ]}
         image={photos.psicoterapia}
         primary={{

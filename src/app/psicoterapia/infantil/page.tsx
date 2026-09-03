@@ -62,6 +62,7 @@ export default function PsicoterapiaInfantilPage() {
         pills={[
           site.pills.therapy,
           "TCC • Terapia do Esquema • Psicopatologia",
+          site.pills.mestrado,
         ]}
         image={photos.infantil}
         primary={{

@@ -64,7 +64,7 @@ export default function AvaliacaoAdultosPage() {
         description="Dificuldades de atenção, memória, organização ou funcionamento no dia a dia podem ter diferentes explicações."
         extra="A avaliação neuropsicológica em adultos ajuda a investigar essas questões de forma cuidadosa, considerando seu funcionamento cognitivo, sua história e o contexto em que essas dificuldades aparecem."
         pills={[
-          site.pills.neuro,
+          ...site.credentials,
         ]}
         image={photos.avaliacao}
         primary={{

@@ -50,7 +50,7 @@ export default function AvaliacaoIdososPage() {
         title="Quando mudanças cognitivas começam a levantar perguntas, investigar com cuidado faz diferença."
         description="Ao longo do envelhecimento, algumas mudanças cognitivas podem ocorrer de forma esperada, enquanto outras merecem investigação mais cuidadosa."
         extra="A Avaliação Neuropsicológica contribui para compreender o perfil cognitivo atual, identificar capacidades preservadas e dificuldades, e auxiliar na investigação de alterações associadas ao envelhecimento."
-        pills={[site.pills.neuro]}
+        pills={[...site.credentials]}
         image={photos.avaliacao}
         primary={{
           href: whatsappUrl(infoMessage),

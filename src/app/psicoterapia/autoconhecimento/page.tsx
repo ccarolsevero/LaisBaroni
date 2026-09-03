@@ -56,6 +56,7 @@ export default function PsicoterapiaAutoconhecimentoPage() {
         pills={[
           site.pills.therapy,
           "TCC • Terapia do Esquema • Psicopatologia",
+          site.pills.mestrado,
         ]}
         image={photos.psicoterapia}
         primary={{
