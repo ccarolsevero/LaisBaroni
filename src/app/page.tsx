@@ -1,7 +1,9 @@
+import type { ComponentProps } from "react";
 import Image from "next/image";
 import { ButtonLink } from "@/components/button-link";
 import { ContactBand } from "@/components/contact-band";
 import { EditorialGrid } from "@/components/editorial-grid";
+import { HeroImage } from "@/components/page-hero";
 import {
   IconArrow,
   IconBrain,
@@ -13,6 +15,14 @@ import { LineMarks } from "@/components/illustrations";
 import { Container, SectionHeading } from "@/components/ui";
 import { photos } from "@/lib/photos";
 import { site, whatsappUrl } from "@/lib/site";
+
+function HomeHeading(props: ComponentProps<typeof SectionHeading>) {
+  return (
+    <div className="text-left [&_h2]:break-words [&_h2]:[text-wrap:auto] lg:[&_h2]:[text-wrap:balance]">
+      <SectionHeading {...props} />
+    </div>
+  );
+}
 
 const areas = [
   {
@@ -51,17 +61,7 @@ export default function Home() {
   return (
     <>
       <section className="relative bg-ink lg:min-h-[88vh]">
-        <div className="relative aspect-[4/3] w-full overflow-hidden lg:absolute lg:inset-0 lg:aspect-auto lg:h-full">
-          <Image
-            src={photos.heroHome.src}
-            alt={photos.heroHome.alt}
-            fill
-            priority
-            quality={95}
-            className={photos.heroHome.className}
-            sizes="100vw"
-          />
-        </div>
+        <HeroImage image={photos.heroHome} />
         <div className="pointer-events-none absolute inset-0 hidden bg-gradient-to-r from-ink/90 via-ink/45 to-ink/10 lg:block" />
         <Container className="relative py-10 lg:flex lg:min-h-[88vh] lg:flex-col lg:justify-center lg:py-20">
           <div className="max-w-2xl text-white">
@@ -99,8 +99,8 @@ export default function Home() {
       </section>
 
       <section id="atuacao" className="bg-base py-12 sm:py-16">
-        <Container>
-          <SectionHeading
+        <Container className="text-left">
+          <HomeHeading
             eyebrow="Áreas de atuação"
             title="Diferentes caminhos para diferentes necessidades"
             description="Meu trabalho acontece em três frentes, cada uma com objetivos e processos próprios."
@@ -109,7 +109,7 @@ export default function Home() {
             {areas.map((area) => (
               <article
                 key={area.href}
-                className={`flex flex-col rounded-2xl p-8 ${area.tone}`}
+                className={`flex flex-col items-start text-left rounded-2xl p-8 ${area.tone}`}
               >
                 <span className="grid h-11 w-11 place-items-center rounded-full bg-white/20">
                   <area.icon className="h-6 w-6" />
@@ -125,7 +125,7 @@ export default function Home() {
                 <ButtonLink
                   href={area.href}
                   variant={area.href === "/psicoterapia" || area.href === "/supervisao-clinica" ? "ghost" : "secondary"}
-                  className="mt-8 self-start bg-white/15"
+                  className="mt-8 self-start justify-start text-left bg-white/15"
                 >
                   {area.cta}
                   <IconArrow />
@@ -148,8 +148,8 @@ export default function Home() {
               sizes="(max-width: 1024px) 90vw, 40vw"
             />
           </div>
-          <div>
-            <SectionHeading
+          <div className="text-left">
+            <HomeHeading
               eyebrow="Sobre Laís Baroni"
               title="Uma trajetória construída entre ciência, experiência clínica e um olhar que não se limita ao sintoma"
             />
@@ -174,23 +174,23 @@ export default function Home() {
       </section>
 
       <section className="bg-peach py-12 sm:py-16">
-        <Container className="max-w-4xl">
-          <SectionHeading
+        <Container className="max-w-4xl text-left">
+          <HomeHeading
             eyebrow="Um pouco sobre a forma como trabalho"
             title="A mesma queixa pode contar histórias completamente diferentes"
           />
-          <p className="mt-6 max-w-2xl text-[15px] leading-relaxed hero-copy sm:text-base">
+          <p className="mt-6 max-w-2xl text-left text-[15px] leading-relaxed hero-copy sm:text-base">
             Dificuldade de concentração, esquecimentos ou um comportamento isolado
             não contam a história inteira. Por isso, o trabalho começa por uma
             pergunta:
           </p>
-          <blockquote className="mt-8">
+          <blockquote className="mt-8 text-left">
             <LineMarks className="mb-3 h-8 w-12 text-ink/40" />
             <p className="font-display text-3xl leading-snug font-medium text-ink sm:text-4xl">
               O que precisamos compreender melhor aqui?
             </p>
           </blockquote>
-          <p className="mt-6 max-w-2xl text-[15px] leading-relaxed hero-copy sm:text-base">
+          <p className="mt-6 max-w-2xl text-left text-[15px] leading-relaxed hero-copy sm:text-base">
             É a partir dessa compreensão que conduzo avaliação, psicoterapia e
             supervisão clínica.
           </p>
@@ -198,8 +198,8 @@ export default function Home() {
       </section>
 
       <section className="bg-base py-12 sm:py-16">
-        <Container>
-          <SectionHeading
+        <Container className="text-left">
+          <HomeHeading
             eyebrow="Blog"
             title="Psicologia para quem quer compreender além das respostas rápidas"
             description="No blog, compartilho reflexões e conteúdos sobre neuropsicologia, avaliação neuropsicológica, relações, padrões emocionais, psicopatologia e prática clínica, traduzindo assuntos complexos para uma linguagem mais próxima da vida real."
@@ -216,7 +216,9 @@ export default function Home() {
         </Container>
       </section>
 
-      <ContactBand />
+      <div className="[&_h2]:break-words [&_h2]:[text-wrap:auto] lg:[&_h2]:[text-wrap:balance]">
+        <ContactBand />
+      </div>
     </>
   );
 }

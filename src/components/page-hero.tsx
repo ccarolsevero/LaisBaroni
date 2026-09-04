@@ -4,6 +4,40 @@ import { ButtonLink } from "./button-link";
 import { Container, Pill } from "./ui";
 import { IconWhatsApp } from "./icons";
 
+export type HeroPhoto = {
+  src: string;
+  alt: string;
+  className?: string;
+  unoptimized?: boolean;
+  /** Mobile frame. Taller crops more from the left. */
+  frameClassName?: string;
+};
+
+export function HeroImage({
+  image,
+  className = "",
+}: {
+  image: HeroPhoto;
+  className?: string;
+}) {
+  return (
+    <div
+      className={`relative w-full overflow-hidden bg-ink ${image.frameClassName ?? "aspect-[4/5]"} lg:absolute lg:inset-0 lg:aspect-auto lg:h-full ${className}`}
+    >
+      <Image
+        src={image.src}
+        alt={image.alt}
+        fill
+        priority
+        quality={95}
+        unoptimized={image.unoptimized}
+        className={`absolute inset-0 h-full w-full object-cover ${image.className ?? "object-right lg:object-[72%_center]"}`}
+        sizes="100vw"
+      />
+    </div>
+  );
+}
+
 export function PageHero({
   eyebrow,
   title,
@@ -19,12 +53,7 @@ export function PageHero({
   extra?: string;
   note?: string;
   pills?: string[];
-  image?: {
-    src: string;
-    alt: string;
-    className?: string;
-    unoptimized?: boolean;
-  };
+  image?: HeroPhoto;
 }) {
   const cta = (
     <ButtonLink href={whatsappUrl()} variant={image ? "peach" : "primary"} external>
@@ -73,21 +102,7 @@ export function PageHero({
   if (image) {
     return (
       <section className="relative bg-ink lg:min-h-[76vh]">
-        <div className="relative aspect-[4/3] w-full overflow-hidden lg:absolute lg:inset-0 lg:aspect-auto lg:h-full">
-          <Image
-            src={image.src}
-            alt={image.alt}
-            fill
-            priority
-            quality={95}
-            unoptimized={image.unoptimized}
-            className={
-              image.className ??
-              "object-cover object-center lg:object-[72%_center]"
-            }
-            sizes="100vw"
-          />
-        </div>
+        <HeroImage image={image} />
         <div className="pointer-events-none absolute inset-0 hidden bg-gradient-to-r from-ink/90 via-ink/55 to-ink/15 lg:block" />
         <Container className="relative py-10 lg:flex lg:min-h-[76vh] lg:flex-col lg:justify-center lg:py-20">
           <div className="max-w-xl text-white lg:max-w-2xl">{copy}</div>
