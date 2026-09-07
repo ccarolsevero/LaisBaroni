@@ -1,10 +1,11 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { AdminTextEditor } from "@/components/admin-text-editor";
 import { categories, type CategorySlug } from "@/lib/blog";
 import { contentToEditorHtml, htmlToPlainText } from "@/lib/content-html";
+import { mediaUrl } from "@/lib/media";
 import type { Post } from "@/lib/posts";
 
 type Props = {
@@ -22,12 +23,18 @@ export function AdminPostForm({ mode, initial, initialCategory }: Props) {
   const [date, setDate] = useState(initial?.date ?? new Date().toISOString().slice(0, 10));
   const [excerpt, setExcerpt] = useState(initial?.excerpt ?? "");
   const [image, setImage] = useState(initial?.image ?? "");
+  const [imageFile, setImageFile] = useState<File | null>(null);
   const [category, setCategory] = useState<CategorySlug>(
     initial?.category ?? initialCategory ?? categories[0].slug,
   );
   const [content, setContent] = useState(() => contentToEditorHtml(initial?.content ?? ""));
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+
+  const preview = useMemo(() => {
+    if (imageFile) return URL.createObjectURL(imageFile);
+    return mediaUrl(image);
+  }, [image, imageFile]);
 
   async function onSubmit(event: FormEvent) {
     event.preventDefault();
@@ -39,7 +46,24 @@ export function AdminPostForm({ mode, initial, initialCategory }: Props) {
     setLoading(true);
     setError("");
 
-    const payload = { title, date, excerpt, image, category, published: true, content };
+    let imageUrl = image;
+    if (imageFile) {
+      const upload = new FormData();
+      upload.append("file", imageFile);
+      const uploaded = await fetch("/api/admin/upload", {
+        method: "POST",
+        body: upload,
+      });
+      const uploadedData = await uploaded.json().catch(() => ({}));
+      if (!uploaded.ok) {
+        setLoading(false);
+        setError(uploadedData.error || "Não foi possível enviar a imagem.");
+        return;
+      }
+      imageUrl = String(uploadedData.url || "");
+    }
+
+    const payload = { title, date, excerpt, image: imageUrl, category, published: true, content };
     const url =
       mode === "create" ? "/api/admin/posts" : `/api/admin/posts/${initial!.slug}`;
     const method = mode === "create" ? "POST" : "PUT";
@@ -127,18 +151,47 @@ export function AdminPostForm({ mode, initial, initialCategory }: Props) {
         </span>
       </label>
 
-      <label className="block">
-        <span className="text-sm text-mid">URL da imagem (opcional)</span>
-        <input
-          value={image}
-          onChange={(e) => setImage(e.target.value)}
-          placeholder="https://..."
-          className={fieldClass}
-        />
-        <span className="mt-1 block text-[12px] text-mid">
-          Se ficar em branco, o card usa o bloco de cor da categoria, como nos artigos atuais.
-        </span>
-      </label>
+      <div>
+        <p className="text-sm text-mid">Imagem (opcional)</p>
+        <label className={`${fieldClass} flex cursor-pointer flex-col items-start gap-3`}>
+          <span className="rounded-full bg-ink px-4 py-2 text-[13px] font-medium text-white">
+            Escolher do computador
+          </span>
+          <span className="text-[13px] text-mid">
+            {imageFile?.name || (image ? "Imagem selecionada" : "Nenhuma imagem escolhida")}
+          </span>
+          <input
+            type="file"
+            accept="image/jpeg,image/png,image/webp,image/gif"
+            className="sr-only"
+            onChange={(event) => {
+              const file = event.target.files?.[0] ?? null;
+              setImageFile(file);
+              if (file) setImage("");
+            }}
+          />
+        </label>
+        {preview ? (
+          <div className="mt-3 overflow-hidden rounded-2xl bg-mist">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={preview} alt="" className="h-48 w-full object-cover" />
+            <button
+              type="button"
+              onClick={() => {
+                setImage("");
+                setImageFile(null);
+              }}
+              className="px-4 py-2 text-[13px] text-mid hover:text-ink"
+            >
+              Remover imagem
+            </button>
+          </div>
+        ) : (
+          <span className="mt-1 block text-[12px] text-mid">
+            Se não escolher, o card usa a cor da categoria.
+          </span>
+        )}
+      </div>
 
       <div>
         <p className="text-sm text-mid">Texto do artigo</p>

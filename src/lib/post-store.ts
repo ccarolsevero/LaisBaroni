@@ -131,28 +131,28 @@ export async function loadStoredPosts(): Promise<StoredPost[]> {
   return readLocalPosts() ?? [];
 }
 
-async function githubFileSha(token: string) {
+async function githubFileSha(repoPath: string, token: string) {
   const res = await fetch(
-    `https://api.github.com/repos/${githubRepo()}/contents/${GITHUB_PATH}?ref=${encodeURIComponent(githubBranch())}`,
+    `https://api.github.com/repos/${githubRepo()}/contents/${repoPath}?ref=${encodeURIComponent(githubBranch())}`,
     { headers: githubHeaders(token), cache: "no-store" },
   );
   if (res.status === 404) return undefined;
   if (!res.ok) {
-    throw new Error("Não foi possível ler o JSON dos artigos no GitHub.");
+    throw new Error("Não foi possível ler o arquivo no GitHub.");
   }
   const data = (await res.json()) as { sha?: string };
   return data.sha;
 }
 
-async function commitToGitHub(json: string) {
+async function commitGithubFile(repoPath: string, contentBase64: string, message: string) {
   const token = githubToken();
   if (!token) {
     throw new Error("BLOG_GITHUB_TOKEN não configurado.");
   }
 
-  const sha = await githubFileSha(token);
+  const sha = await githubFileSha(repoPath, token);
   const res = await fetch(
-    `https://api.github.com/repos/${githubRepo()}/contents/${GITHUB_PATH}`,
+    `https://api.github.com/repos/${githubRepo()}/contents/${repoPath}`,
     {
       method: "PUT",
       headers: {
@@ -160,8 +160,8 @@ async function commitToGitHub(json: string) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        message: "Atualiza artigos do blog",
-        content: Buffer.from(json).toString("base64"),
+        message,
+        content: contentBase64,
         branch: githubBranch(),
         ...(sha ? { sha } : {}),
       }),
@@ -172,9 +172,28 @@ async function commitToGitHub(json: string) {
     const detail = await res.text().catch(() => "");
     throw new Error(
       res.status === 401 || res.status === 403
-        ? "O token do GitHub não tem permissão para gravar os artigos."
-        : `Não foi possível gravar o JSON no GitHub.${detail ? ` ${detail.slice(0, 180)}` : ""}`,
+        ? "O token do GitHub não tem permissão para gravar os arquivos."
+        : `Não foi possível gravar no GitHub.${detail ? ` ${detail.slice(0, 180)}` : ""}`,
     );
+  }
+}
+
+export async function persistPublicFile(repoPath: string, bytes: Buffer, message: string) {
+  try {
+    const localPath = path.join(process.cwd(), repoPath);
+    fs.mkdirSync(path.dirname(localPath), { recursive: true });
+    fs.writeFileSync(localPath, bytes);
+  } catch {
+    // No Vercel o disco da função é temporário; o que permanece é o GitHub.
+  }
+
+  if (githubToken()) {
+    await commitGithubFile(repoPath, bytes.toString("base64"), message);
+    return;
+  }
+
+  if (process.env.VERCEL) {
+    throw new Error("Para a imagem permanecer no ar, configure BLOG_GITHUB_TOKEN.");
   }
 }
 
@@ -189,7 +208,11 @@ export async function persistStoredPosts(posts: StoredPost[]) {
   }
 
   if (githubToken()) {
-    await commitToGitHub(json);
+    await commitGithubFile(
+      GITHUB_PATH,
+      Buffer.from(json).toString("base64"),
+      "Atualiza artigos do blog",
+    );
     return;
   }
 

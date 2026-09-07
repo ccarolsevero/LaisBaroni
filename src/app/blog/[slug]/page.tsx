@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { Container } from "@/components/ui";
 import { getCategoryLabel } from "@/lib/blog";
 import { looksLikeHtml } from "@/lib/content-html";
+import { mediaUrl } from "@/lib/media";
 import { getAllPosts, getPostBySlug, markdownToHtml } from "@/lib/posts";
 
 export const dynamic = "force-dynamic";
@@ -34,6 +35,8 @@ export default async function BlogPostPage({
     ? post.content
     : await markdownToHtml(post.content);
 
+  const cover = mediaUrl(post.image);
+
   return (
     <article className="bg-base">
       <Container className="max-w-3xl py-12 sm:py-16">
@@ -56,11 +59,11 @@ export default async function BlogPostPage({
         <p className="mt-8 text-xl leading-relaxed hero-copy">{post.excerpt}</p>
       </Container>
 
-      {post.image ? (
+      {cover ? (
         <div className="relative mx-auto h-[42vh] min-h-[240px] w-full max-w-5xl overflow-hidden px-5 sm:px-8">
           <div className="relative h-full overflow-hidden rounded-2xl">
             <Image
-              src={post.image}
+              src={cover}
               alt=""
               fill
               className="object-cover"
