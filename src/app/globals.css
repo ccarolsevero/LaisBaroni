@@ -76,9 +76,22 @@ details > summary::-webkit-details-marker {
   margin-bottom: 1.15rem;
 }
 
+.prose-article strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+
 .prose-article ul,
 .prose-article ol {
   margin: 0 0 1.15rem 1.25rem;
+}
+
+.prose-article ul {
+  list-style: disc;
+}
+
+.prose-article ol {
+  list-style: decimal;
 }
 
 .prose-article li {

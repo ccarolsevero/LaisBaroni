@@ -69,8 +69,7 @@ export default async function AdminBlogPage() {
                       <div>
                         <p className="font-display text-xl text-ink">{post.title}</p>
                         <p className="mt-1 text-sm text-mid">
-                          {post.date} · {post.published ? "Publicado" : "Rascunho"} · /
-                          {post.slug}
+                          {post.date} · {post.published ? "Publicado" : "Rascunho"}
                         </p>
                       </div>
                       <div className="flex gap-4">

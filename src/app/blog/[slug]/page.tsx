@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/ui";
 import { getCategoryLabel } from "@/lib/blog";
+import { looksLikeHtml } from "@/lib/content-html";
 import { getAllPosts, getPostBySlug, markdownToHtml } from "@/lib/posts";
 
 export const dynamic = "force-dynamic";
@@ -29,7 +30,9 @@ export default async function BlogPostPage({
   const post = await getPostBySlug(slug);
   if (!post || !post.published) notFound();
 
-  const contentHtml = await markdownToHtml(post.content);
+  const contentHtml = looksLikeHtml(post.content)
+    ? post.content
+    : await markdownToHtml(post.content);
 
   return (
     <article className="bg-base">
