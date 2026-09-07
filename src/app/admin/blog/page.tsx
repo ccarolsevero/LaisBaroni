@@ -68,19 +68,15 @@ export default async function AdminBlogPage() {
                     >
                       <div>
                         <p className="font-display text-xl text-ink">{post.title}</p>
-                        <p className="mt-1 text-sm text-mid">
-                          {post.date} · {post.published ? "Publicado" : "Rascunho"}
-                        </p>
+                        <p className="mt-1 text-sm text-mid">{post.date}</p>
                       </div>
                       <div className="flex gap-4">
-                        {post.published ? (
-                          <Link
-                            href={`/blog/${post.slug}`}
-                            className="text-sm text-mid hover:text-ink"
-                          >
-                            Ver
-                          </Link>
-                        ) : null}
+                        <Link
+                          href={`/blog/${post.slug}`}
+                          className="text-sm text-mid hover:text-ink"
+                        >
+                          Ver
+                        </Link>
                         <Link
                           href={`/admin/posts/${post.slug}`}
                           className="text-sm font-medium text-ink hover:text-mid"

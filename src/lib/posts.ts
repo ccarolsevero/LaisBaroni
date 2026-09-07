@@ -174,7 +174,7 @@ export async function savePost(input: PostInput, previousSlug?: string) {
     excerpt: input.excerpt || "",
     image: input.image?.trim() ? input.image.trim() : undefined,
     category,
-    published: Boolean(input.published),
+    published: true,
     content: input.content.trim(),
   };
 

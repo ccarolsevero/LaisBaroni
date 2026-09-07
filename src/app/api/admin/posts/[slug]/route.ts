@@ -46,7 +46,7 @@ export async function PUT(
         excerpt: String(body.excerpt || ""),
         image: body.image ? String(body.image) : undefined,
         category: String(body.category || existing.category),
-        published: Boolean(body.published),
+        published: true,
         content: String(body.content),
       },
       slug,

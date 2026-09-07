@@ -25,7 +25,6 @@ export function AdminPostForm({ mode, initial, initialCategory }: Props) {
   const [category, setCategory] = useState<CategorySlug>(
     initial?.category ?? initialCategory ?? categories[0].slug,
   );
-  const [published, setPublished] = useState(initial?.published ?? true);
   const [content, setContent] = useState(() => contentToEditorHtml(initial?.content ?? ""));
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -40,7 +39,7 @@ export function AdminPostForm({ mode, initial, initialCategory }: Props) {
     setLoading(true);
     setError("");
 
-    const payload = { title, date, excerpt, image, category, published, content };
+    const payload = { title, date, excerpt, image, category, published: true, content };
     const url =
       mode === "create" ? "/api/admin/posts" : `/api/admin/posts/${initial!.slug}`;
     const method = mode === "create" ? "POST" : "PUT";
@@ -141,16 +140,6 @@ export function AdminPostForm({ mode, initial, initialCategory }: Props) {
         </span>
       </label>
 
-      <label className="flex items-center gap-3">
-        <input
-          type="checkbox"
-          checked={published}
-          onChange={(e) => setPublished(e.target.checked)}
-          className="size-4 accent-ink"
-        />
-        <span className="text-sm text-ink">Mostrar este texto no blog</span>
-      </label>
-
       <div>
         <p className="text-sm text-mid">Texto do artigo</p>
         <AdminTextEditor value={content} onChange={setContent} />
@@ -164,7 +153,7 @@ export function AdminPostForm({ mode, initial, initialCategory }: Props) {
           disabled={loading}
           className="rounded-full bg-ink px-6 py-3 text-[13px] font-medium tracking-[0.04em] text-white transition hover:bg-mid disabled:opacity-60"
         >
-          {loading ? "Salvando..." : "Salvar artigo"}
+          {loading ? "Publicando..." : "Confirmar texto"}
         </button>
         {mode === "edit" ? (
           <button

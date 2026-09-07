@@ -29,7 +29,7 @@ export async function POST(request: Request) {
       excerpt: String(body.excerpt || ""),
       image: body.image ? String(body.image) : undefined,
       category: String(body.category || ""),
-      published: Boolean(body.published),
+      published: true,
       content: String(body.content),
     });
     return NextResponse.json({ post }, { status: 201 });
