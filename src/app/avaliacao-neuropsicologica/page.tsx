@@ -60,7 +60,6 @@ const tipos = [
     title: "Avaliação Neuropsicológica para TDAH",
     paragraphs: [
       "Quando a dúvida é TDAH, reconhecer alguns sinais não basta. É preciso entender o que está por trás deles.",
-      "A avaliação investiga essas dificuldades considerando como elas aparecem, a história e o funcionamento de cada pessoa.",
     ],
     cta: "Saiba mais sobre avaliação para TDAH",
   },
@@ -71,7 +70,6 @@ const tipos = [
     title: "Avaliação Neuropsicológica e Autismo",
     paragraphs: [
       "Quando algumas características começam a fazer mais sentido e também a trazer novas perguntas.",
-      "A avaliação permite investigar essas questões considerando a história, o desenvolvimento e o contexto de cada pessoa.",
     ],
     cta: "Saiba mais sobre avaliação e Autismo",
   },
@@ -85,9 +83,9 @@ const quotes = [
 ];
 
 const processo = [
-  "O processo começa pela compreensão da queixa, da história e da pergunta que motivou a avaliação.",
-  "A partir disso, são selecionados procedimentos e instrumentos adequados à investigação. Depois, as informações são analisadas em conjunto.",
-  "Ao final, acontece a devolutiva, com a apresentação e discussão dos resultados e possíveis orientações.",
+  "Começa pela queixa, pela história e pela pergunta que motivou a avaliação.",
+  "Em seguida, selecionamos os procedimentos adequados e analisamos as informações em conjunto.",
+  "Ao final, a devolutiva apresenta os resultados e possíveis orientações.",
 ];
 
 const faqs = [
@@ -124,7 +122,7 @@ export default function AvaliacaoPage() {
       <PageHero
         eyebrow="Avaliação Neuropsicológica"
         title="Quando as dificuldades começam a levantar perguntas, uma avaliação cuidadosa pode ajudar a encontrar respostas"
-        description="Dificuldades de atenção, memória, aprendizagem, organização ou comportamento podem ter diferentes explicações. A avaliação neuropsicológica ajuda a compreender o que pode estar por trás delas, considerando o funcionamento, a história e o contexto de cada pessoa."
+        description="Dificuldades de atenção, memória, aprendizagem ou comportamento podem ter explicações diferentes. A avaliação ajuda a compreender o que pode estar por trás delas."
         note="Avaliação neuropsicológica infantil, adulta e em idosos"
         pills={[...site.credentials]}
         image={photos.avaliacao}
@@ -138,25 +136,15 @@ export default function AvaliacaoPage() {
           />
           <div className="space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              Esquecimentos frequentes, dificuldade para manter a atenção, organizar
-              tarefas, aprender ou lidar com determinadas situações podem despertar
-              dúvidas.
+              Esquecimentos, dificuldade de atenção, organização ou aprendizagem
+              podem despertar dúvidas na infância, na vida adulta ou no
+              envelhecimento.
             </p>
             <p>
-              Isso pode acontecer na infância, aparecer, ou ganhar outro peso, na
-              vida adulta, ou surgir no envelhecimento, quando mudanças cognitivas
-              começam a interferir na autonomia e nas atividades cotidianas.
-            </p>
-            <p>
-              A avaliação também pode ser útil quando existe discrepância entre o
-              funcionamento cognitivo esperado e o desempenho da pessoa na vida
-              cotidiana, por exemplo, quando suas capacidades não se traduzem de
-              modo consistente no estudo, no trabalho, na organização da rotina ou
-              na autonomia.
-            </p>
-            <p>
-              A avaliação não parte de um diagnóstico pronto. Ela investiga o que
-              pode estar por trás daquilo que está sendo observado.
+              Também vale investigar quando o potencial cognitivo não se traduz no
+              estudo, no trabalho ou na autonomia. A avaliação não parte de um
+              diagnóstico pronto: ela investiga o que pode estar por trás do que
+              está sendo observado.
             </p>
           </div>
         </Container>
@@ -170,20 +158,13 @@ export default function AvaliacaoPage() {
           />
           <div className="mt-8 max-w-3xl space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              É um processo clínico que investiga aspectos como atenção, memória,
-              linguagem, funções executivas e aprendizagem, de acordo com a
-              necessidade de cada pessoa.
+              É um processo clínico que investiga atenção, memória, linguagem,
+              funções executivas e aprendizagem, conforme cada caso.
             </p>
             <p>
-              A avaliação não se resume à aplicação de testes. A compreensão
-              integra história clínica, observação, dados quantitativos e
-              qualitativos, funções preservadas e comprometidas, hipóteses clínicas
-              e impacto funcional.
-            </p>
-            <p>
-              Ela ajuda a entender não só as dificuldades, mas também o que a pessoa
-              preserva e consegue fazer bem e de que forma memória, atenção,
-              raciocínio, organização e outras habilidades aparecem no dia a dia.
+              Não se resume a testes. Integra história, observação, funções
+              preservadas e comprometidas, e o impacto no dia a dia. Ajuda a
+              entender as dificuldades e também o que a pessoa consegue fazer bem.
             </p>
           </div>
         </Container>
@@ -208,13 +189,11 @@ export default function AvaliacaoPage() {
             ))}
           </div>
           <div className="mt-10 max-w-3xl space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
-            <p>Essas frases podem ser o começo de uma investigação, não uma conclusão.</p>
             <p>
-              Dificuldades de memória, atenção, organização ou raciocínio podem ter
-              diferentes causas. A Avaliação Neuropsicológica integra história
-              clínica, funcionamento cotidiano, observação e instrumentos para
-              compreender essas mudanças. Quando pertinentes, informações de outros
-              profissionais podem enriquecer a análise do caso.
+              Essas frases podem ser o começo de uma investigação, não uma
+              conclusão. Memória, atenção ou organização podem ter causas
+              diferentes. A avaliação integra história, cotidiano e instrumentos
+              para compreender o que mudou.
             </p>
           </div>
         </Container>
@@ -295,19 +274,14 @@ export default function AvaliacaoPage() {
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
-              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação profissional
-              e clínica desde 2009.
+              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação clínica
+              desde 2009. Formação em Neuropsicologia e Psicopatologia no IPq-USP,
+              TCC e Terapia do Esquema no CETCC, e Reabilitação Cognitiva no INESP.
+              Também desenvolvo pesquisa de mestrado em Psicologia na USP.
             </p>
             <p>
-              Tenho formação em Neuropsicologia e Psicopatologia no IPq-USP, em TCC
-              e Terapia do Esquema pelo CETCC, e em Reabilitação Cognitiva pelo
-              INESP. Também desenvolvo Pesquisa de Mestrado em Psicologia no
-              Instituto de Psicologia da USP (IP-USP), com ingresso em 2019.
-            </p>
-            <p>
-              Minha experiência clínica e acadêmica orienta um trabalho que
-              considera os resultados dos instrumentos dentro da história e do
-              contexto de cada pessoa.
+              Essa trajetória orienta um trabalho que lê os resultados dentro da
+              história e do contexto de cada pessoa.
             </p>
           </div>
           <p className="mt-6 text-sm tracking-wide text-peach">

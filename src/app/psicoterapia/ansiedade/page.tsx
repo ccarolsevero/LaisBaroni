@@ -58,7 +58,7 @@ export default function PsicoterapiaAnsiedadePage() {
         eyebrow="Ansiedade, estresse e sofrimento emocional"
         title="Quando a mente não desliga e até o que parecia simples começa a exigir demais"
         description="Preocupações constantes, ansiedade, estresse, sobrecarga ou mudanças no humor podem começar a ocupar espaço demais na rotina, nas relações e na forma como você se sente."
-        extra="Na psicoterapia, buscamos compreender o que está acontecendo, o que mantém esse sofrimento e como ele se relaciona com a sua história e com o momento que você está vivendo."
+        extra="Na psicoterapia, compreendemos o que está acontecendo, o que mantém esse sofrimento e como ele se relaciona com a sua história."
         pills={[
           site.pills.therapy,
           "TCC • Terapia do Esquema • Psicopatologia",
@@ -75,17 +75,14 @@ export default function PsicoterapiaAnsiedadePage() {
           />
           <div className="space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              Talvez seja difícil desacelerar. A preocupação esteja sempre presente.
-              O corpo permaneça em alerta. Ou você perceba irritabilidade, cansaço,
-              desânimo ou uma sensação constante de sobrecarga.
+              Talvez seja difícil desacelerar. A preocupação está sempre presente,
+              o corpo permanece em alerta, ou aparecem irritabilidade, cansaço e
+              sobrecarga. Em outros momentos, o sofrimento vem em crises ou
+              começa a interferir na rotina e nas relações.
             </p>
             <p>
-              Em outros momentos, o sofrimento aparece em forma de crises de
-              ansiedade ou começa a interferir na rotina, no trabalho e nas relações.
-            </p>
-            <p>
-              Você não precisa conseguir nomear exatamente o que está acontecendo
-              para procurar ajuda.
+              Você não precisa nomear exatamente o que está acontecendo para
+              procurar ajuda.
             </p>
           </div>
         </Container>
@@ -96,21 +93,13 @@ export default function PsicoterapiaAnsiedadePage() {
           <SectionHeading title="“Mas será que o que eu sinto é ansiedade?”" />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              Antes de procurar um rótulo, é importante compreender o que você está
-              vivendo.
+              Antes de procurar um rótulo, importa compreender o que você está
+              vivendo. Ansiedade faz parte da experiência humana; o que merece
+              atenção é intensidade, frequência e impacto.
             </p>
             <p>
-              Ansiedade faz parte da experiência humana. O que merece atenção é como
-              ela aparece, sua intensidade, frequência e o impacto que provoca na
-              vida de cada pessoa.
-            </p>
-            <p>
-              Da mesma forma, estresse, alterações de humor e sofrimento emocional
-              podem ter contextos e significados diferentes.
-            </p>
-            <p>
-              Na psicoterapia, o ponto de partida não precisa ser uma conclusão. Pode
-              ser justamente a necessidade de entender melhor o que está acontecendo.
+              Na psicoterapia, o ponto de partida não precisa ser uma conclusão.
+              Pode ser a necessidade de entender melhor o que está acontecendo.
             </p>
           </div>
         </Container>
@@ -145,20 +134,14 @@ export default function PsicoterapiaAnsiedadePage() {
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              Meu trabalho clínico é orientado principalmente pela Terapia
-              Cognitivo-Comportamental (TCC) e pela Terapia do Esquema.
+              Meu trabalho é orientado principalmente pela TCC e pela Terapia do
+              Esquema. Ao longo do processo, compreendemos pensamentos, emoções,
+              formas de enfrentamento e padrões ligados ao sofrimento atual.
             </p>
             <p>
-              Ao longo do processo, podemos compreender pensamentos, emoções,
-              comportamentos, formas de enfrentamento e padrões relacionados ao
-              sofrimento atual.
+              Isso permite olhar não só o que você sente, mas o contexto em que
+              essas experiências aparecem. Atendimento presencial e online.
             </p>
-            <p>
-              Isso permite olhar não apenas para o que você sente, mas também para o
-              contexto em que essas experiências aparecem e para as formas como você
-              aprendeu a lidar com elas.
-            </p>
-            <p>Atendimento presencial e online.</p>
           </div>
         </Container>
       </section>
@@ -174,18 +157,14 @@ export default function PsicoterapiaAnsiedadePage() {
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
-              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação profissional e clínica desde 2009.
+              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação clínica
+              desde 2009. Formação em Neuropsicologia e Psicopatologia no IPq-USP,
+              TCC e Terapia do Esquema no CETCC, e Reabilitação Cognitiva no INESP.
+              A ACT integra meus estudos clínicos.
             </p>
             <p>
-              Tenho formação em Neuropsicologia e Psicopatologia no IPq-USP, em TCC
-              e Terapia do Esquema pelo CETCC, e em Reabilitação Cognitiva pelo
-              INESP. A ACT integra meus estudos e conhecimentos clínicos.
-            </p>
-
-            <p>
-              Essa trajetória orienta uma prática que busca compreender sintomas e
-              dificuldades sem separá-los da história, do contexto e das
-              particularidades de cada pessoa.
+              Essa trajetória orienta uma prática que busca compreender sintomas
+              sem separá-los da história e das particularidades de cada pessoa.
             </p>
           </div>
           <p className="mt-6 text-sm tracking-wide text-peach">

@@ -55,7 +55,7 @@ export default function PsicoterapiaInfantilPage() {
         eyebrow="Psicoterapia infantil"
         title="Quando seu filho ainda não consegue explicar o que está sentindo, algumas mudanças podem começar a falar por ele"
         description="Mudanças no comportamento, dificuldades emocionais, medos, conflitos ou situações que começam a afetar a rotina da criança podem gerar dúvidas nos responsáveis."
-        extra="A psicoterapia infantil oferece um espaço adequado à idade e ao momento de desenvolvimento da criança para compreender e trabalhar aquilo que ela está vivendo."
+        extra="A psicoterapia infantil oferece um espaço adequado à idade para compreender e trabalhar o que a criança está vivendo."
         pills={[
           site.pills.therapy,
           "TCC • Terapia do Esquema • Psicopatologia",
@@ -72,14 +72,10 @@ export default function PsicoterapiaInfantilPage() {
           />
           <div className="space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              Às vezes, os responsáveis percebem que a criança está diferente, mas
-              não conseguem entender exatamente o motivo.
-            </p>
-            <p>
-              A busca por psicoterapia pode acontecer diante de mudanças emocionais
-              ou comportamentais, medos, dificuldades nas relações, situações
-              familiares importantes ou questões que começam a interferir no
-              cotidiano da criança.
+              Às vezes os responsáveis percebem que a criança está diferente, mas
+              não entendem o motivo. A busca pode acontecer diante de mudanças
+              emocionais, medos, dificuldades nas relações ou questões que
+              interferem no cotidiano.
             </p>
             <p>
               O primeiro passo não é encontrar um rótulo. É compreender o que ela
@@ -94,18 +90,13 @@ export default function PsicoterapiaInfantilPage() {
           <SectionHeading title="“Meu filho não fala sobre o que está acontecendo.”" />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              Crianças nem sempre expressam o que sentem da mesma maneira que os
-              adultos.
+              Crianças nem sempre expressam o que sentem como os adultos.
+              Dependendo da idade, emoções podem aparecer no comportamento, nas
+              brincadeiras, nas relações e em mudanças da rotina.
             </p>
             <p>
-              Dependendo da idade e do desenvolvimento, emoções e dificuldades podem
-              aparecer por meio do comportamento, das brincadeiras, das relações e de
-              mudanças percebidas na rotina.
-            </p>
-            <p>
-              Por isso, a psicoterapia infantil precisa considerar a maneira
-              particular como cada criança consegue se comunicar e compreender suas
-              experiências.
+              Por isso, a psicoterapia infantil considera a maneira particular
+              como cada criança consegue se comunicar.
             </p>
           </div>
         </Container>
@@ -153,10 +144,9 @@ export default function PsicoterapiaInfantilPage() {
               Processo de investigação
             </h2>
             <p className="mt-5 leading-relaxed opacity-85">
-              Já a avaliação neuropsicológica é um processo de investigação indicado
-              quando existem perguntas específicas sobre aspectos do funcionamento
-              cognitivo, desenvolvimento, aprendizagem, atenção ou outras questões
-              que precisam ser avaliadas.
+              A avaliação neuropsicológica é um processo de investigação, indicado
+              quando há perguntas específicas sobre funcionamento cognitivo,
+              aprendizagem ou atenção.
             </p>
           </article>
         </Container>
@@ -185,16 +175,10 @@ export default function PsicoterapiaInfantilPage() {
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              O processo considera a idade, o desenvolvimento, a história e as
-              necessidades da criança.
-            </p>
-            <p>
-              Os responsáveis também fazem parte desse contexto e podem participar do
-              processo conforme a necessidade do caso.
-            </p>
-            <p>
-              O trabalho é construído de forma individualizada, respeitando a maneira
-              como cada criança se comunica e se relaciona.
+              O processo considera idade, desenvolvimento, história e necessidades
+              da criança. Os responsáveis fazem parte desse contexto e podem
+              participar conforme o caso. O trabalho é individualizado, respeitando
+              a forma como cada criança se comunica.
             </p>
           </div>
         </Container>
@@ -211,17 +195,14 @@ export default function PsicoterapiaInfantilPage() {
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
-              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação profissional e clínica desde 2009.
+              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação clínica
+              desde 2009. Formação em Neuropsicologia e Psicopatologia no IPq-USP,
+              TCC e Terapia do Esquema no CETCC, e Reabilitação Cognitiva no INESP.
+              A ACT integra meus estudos clínicos.
             </p>
             <p>
-              Tenho formação em Neuropsicologia e Psicopatologia no IPq-USP, em TCC
-              e Terapia do Esquema pelo CETCC, e em Reabilitação Cognitiva pelo
-              INESP. A ACT integra meus estudos e conhecimentos clínicos.
-            </p>
-
-            <p>
-              Essa trajetória contribui para um olhar que considera não apenas a
-              dificuldade apresentada, mas também o desenvolvimento, a história e o
+              Essa trajetória contribui para um olhar que considera não só a
+              dificuldade apresentada, mas o desenvolvimento, a história e o
               contexto de cada criança.
             </p>
           </div>

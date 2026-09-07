@@ -27,7 +27,7 @@ const caminhos = [
     tone: "bg-peach text-ink",
     title: "Autoconhecimento e Desenvolvimento Emocional",
     lead: "Nem sempre é preciso estar mal para querer se compreender melhor.",
-    text: "Para quem deseja conhecer melhor suas emoções, escolhas, necessidades, comportamentos e formas de se relacionar.",
+    text: "Para quem deseja conhecer melhor emoções, escolhas, necessidades e formas de se relacionar.",
     cta: "Quero me conhecer melhor",
     button: "secondary" as const,
   },
@@ -37,7 +37,7 @@ const caminhos = [
     tone: "bg-mid text-white",
     title: "Ansiedade, Estresse e Sofrimento Emocional",
     lead: "Quando aquilo que você sente começa a ocupar espaço demais na sua vida.",
-    text: "Ansiedade, crises, estresse, sobrecarga, alterações de humor e outros momentos de sofrimento emocional podem afetar a rotina, as relações e a forma como você se sente consigo.",
+    text: "Ansiedade, crises, estresse e sobrecarga podem afetar a rotina, as relações e a forma como você se sente.",
     cta: "Entenda como a psicoterapia pode ajudar",
     button: "ghost" as const,
   },
@@ -47,7 +47,7 @@ const caminhos = [
     tone: "bg-ink text-white",
     title: "Relacionamentos e Padrões Emocionais",
     lead: "Quando as pessoas mudam, mas algumas histórias parecem se repetir.",
-    text: "Dificuldade para colocar limites, dependência emocional, medo de abandono, conflitos ou relações que parecem seguir sempre o mesmo roteiro podem revelar padrões importantes da nossa história.",
+    text: "Limites, dependência emocional, medo de abandono ou relações que repetem o mesmo roteiro podem revelar padrões importantes da história.",
     cta: "Quero entender meus padrões",
     button: "ghost" as const,
   },
@@ -57,7 +57,7 @@ const caminhos = [
     tone: "bg-soft text-ink",
     title: "Psicoterapia Infantil",
     lead: "Quando a criança ainda não consegue explicar em palavras tudo o que está vivendo.",
-    text: "Mudanças de comportamento, dificuldades emocionais ou relacionais e situações vividas pela criança podem levar os responsáveis a buscar acompanhamento psicológico.",
+    text: "Mudanças de comportamento, dificuldades emocionais ou relacionais podem levar os responsáveis a buscar acompanhamento.",
     cta: "Conheça a Psicoterapia Infantil",
     button: "secondary" as const,
   },
@@ -82,7 +82,7 @@ const faqs = [
   {
     question: "Qual abordagem é utilizada?",
     answer:
-      "A Terapia Cognitivo-Comportamental (TCC) e a Terapia do Esquema estão entre as principais referências que orientam o trabalho clínico da Laís. A ACT (Terapia de Aceitação e Compromisso) também integra seus estudos e conhecimentos clínicos, e a Psicopatologia é uma área importante da sua formação.",
+      "A TCC e a Terapia do Esquema estão entre as principais referências do trabalho clínico. A ACT também integra os estudos, e a Psicopatologia é parte importante da formação.",
   },
   {
     question: "A psicoterapia pode ser online?",
@@ -98,7 +98,7 @@ export default function PsicoterapiaPage() {
         eyebrow="Psicoterapia individual"
         title="Psicoterapia para compreender o que você está vivendo e o que talvez continue se repetindo"
         description="Nem sempre quem procura terapia consegue dar um nome exato ao que está sentindo. Pode ser ansiedade, sobrecarga, dificuldades nos relacionamentos, um momento de mudança ou simplesmente o desejo de se conhecer melhor."
-        extra="A psicoterapia é um espaço para compreender essas experiências dentro da sua história e construir novas formas de lidar com elas."
+        extra="A psicoterapia é um espaço para compreender essas experiências na sua história e construir novas formas de lidar com elas."
         pills={[
           site.pills.therapy,
           "TCC • Terapia do Esquema • ACT • Psicopatologia",
@@ -153,26 +153,17 @@ export default function PsicoterapiaPage() {
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              Meu trabalho clínico é orientado pela Terapia Cognitivo-Comportamental
-              (TCC) e pela Terapia do Esquema. A ACT (Terapia de Aceitação e
-              Compromisso) também integra meus estudos e conhecimentos clínicos, e a
-              Psicopatologia é uma área importante da minha formação.
+              Meu trabalho é orientado pela TCC e pela Terapia do Esquema. A ACT
+              também integra meus estudos, e a Psicopatologia é parte importante
+              da formação. O processo parte de uma formulação individualizada:
+              história, padrões emocionais, necessidades e o que mantém as
+              dificuldades.
             </p>
             <p>
-              O trabalho parte de formulação clínica individualizada, considerando
-              história e contexto de vida, padrões emocionais e relacionais,
-              necessidades, objetivos e processos que contribuem para a manutenção
-              das dificuldades.
+              A partir dessa compreensão, escolhemos intervenções que façam
+              sentido para cada caso, ampliando formas de lidar com pensamentos e
+              emoções. Não existe fórmula pronta para pessoas diferentes.
             </p>
-            <p>
-              A psicoterapia considera a história, o contexto, emoções, pensamentos,
-              comportamentos, relações e necessidades individuais. A partir dessa
-              compreensão, são escolhidas intervenções que façam sentido para cada
-              caso e momento do processo, ajudando a ampliar formas de lidar com
-              pensamentos e emoções, reduzir estratégias que limitam a vida e
-              aproximar as ações de valores e objetivos pessoais.
-            </p>
-            <p>Não existe uma fórmula pronta para pessoas diferentes.</p>
           </div>
         </Container>
       </section>
@@ -185,18 +176,14 @@ export default function PsicoterapiaPage() {
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              Alguns padrões emocionais e relacionais são construídos ao longo da
-              nossa história e podem continuar aparecendo mesmo quando já
-              reconhecemos que nos fazem mal.
+              Alguns padrões emocionais e relacionais se constroem ao longo da
+              história e continuam aparecendo mesmo quando já reconhecemos que nos
+              fazem mal.
             </p>
             <p>
-              A Terapia do Esquema ajuda a compreender essas repetições, as
-              necessidades emocionais envolvidas e as formas que aprendemos a
-              utilizar para lidar com elas.
-            </p>
-            <p>
-              O objetivo não é apenas perceber o padrão, mas compreender por que
-              ele existe e o que pode começar a ser construído de outra maneira.
+              A Terapia do Esquema ajuda a compreender essas repetições e as
+              necessidades envolvidas. O objetivo não é só perceber o padrão, mas
+              entender por que ele existe e o que pode ser construído de outro jeito.
             </p>
           </div>
         </Container>
@@ -210,15 +197,11 @@ export default function PsicoterapiaPage() {
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              Nos primeiros encontros, buscamos compreender o que levou você à
-              psicoterapia, sua história e as dificuldades ou questões que fazem
-              sentido trabalhar naquele momento.
+              Nos primeiros encontros, compreendemos o que levou você à
+              psicoterapia, sua história e o que faz sentido trabalhar naquele
+              momento. O processo é individualizado. Atendimento presencial e
+              online.
             </p>
-            <p>
-              A partir disso, o processo é construído de maneira individualizada,
-              respeitando as necessidades e o momento de cada pessoa.
-            </p>
-            <p>Atendimento presencial e online.</p>
           </div>
         </Container>
       </section>
@@ -234,18 +217,15 @@ export default function PsicoterapiaPage() {
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
-              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação profissional
-              e clínica desde 2009.
+              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação clínica
+              desde 2009. Formação em Neuropsicologia e Psicopatologia no IPq-USP,
+              TCC e Terapia do Esquema no CETCC, e Reabilitação Cognitiva no INESP.
+              A ACT integra meus estudos clínicos.
             </p>
             <p>
-              Tenho formação em Neuropsicologia e Psicopatologia no IPq-USP, em TCC
-              e Terapia do Esquema pelo CETCC, e em Reabilitação Cognitiva pelo
-              INESP. A ACT integra meus estudos e conhecimentos clínicos.
-            </p>
-            <p>
-              Essa trajetória me permite olhar para cada pessoa considerando o que
-              ela vive hoje, mas também sua história, seus padrões emocionais e a
-              maneira particular como aprendeu a lidar com suas experiências.
+              Essa trajetória me permite olhar para o que a pessoa vive hoje, e
+              também para sua história e para a maneira como aprendeu a lidar com
+              as próprias experiências.
             </p>
           </div>
           <p className="mt-6 text-sm tracking-wide text-peach">

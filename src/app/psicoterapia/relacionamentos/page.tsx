@@ -80,19 +80,14 @@ export default function PsicoterapiaRelacionamentosPage() {
             title="Talvez não seja apenas sobre escolher “a pessoa errada”"
           />
           <div className="space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
-            <p>Você muda de relacionamento, mas algumas sensações permanecem.</p>
             <p>
-              Pode ser difícil dizer não. Você se responsabiliza demais pelo outro.
-              Precisa constantemente de aprovação. Tem medo de ser abandonado ou
-              acaba cedendo para evitar conflitos.
+              Você muda de relacionamento, mas algumas sensações permanecem.
+              Dificuldade para dizer não, medo de abandono, necessidade de
+              aprovação, ou o hábito de se afastar quando alguém se aproxima.
             </p>
             <p>
-              Em outros casos, percebe que se afasta justamente quando alguém se
-              aproxima.
-            </p>
-            <p>
-              Quando uma situação se repete, pode valer a pena olhar não apenas para
-              quem está do outro lado, mas para o padrão que se constrói na relação.
+              Quando uma situação se repete, pode valer olhar não só para quem
+              está do outro lado, mas para o padrão que se constrói na relação.
             </p>
           </div>
         </Container>
@@ -135,18 +130,14 @@ export default function PsicoterapiaRelacionamentosPage() {
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               Ao longo da vida, construímos formas de compreender a nós mesmos, aos
-              outros e às relações.
+              outros e às relações. A Terapia do Esquema ajuda a identificar
+              padrões, necessidades e formas de enfrentamento que continuam
+              influenciando os vínculos.
             </p>
             <p>
-              A Terapia do Esquema ajuda a identificar padrões emocionais,
-              necessidades e formas de enfrentamento que podem continuar
-              influenciando os vínculos na vida adulta.
-            </p>
-            <p>Perceber o padrão é importante. Mas o trabalho não termina aí.</p>
-            <p>
-              A questão também é compreender por que ele continua fazendo sentido
-              emocionalmente, mesmo quando racionalmente você sabe que gostaria de
-              agir diferente.
+              Perceber o padrão é importante. A questão também é compreender por
+              que ele continua fazendo sentido emocionalmente, mesmo quando você
+              gostaria de agir diferente.
             </p>
           </div>
         </Container>
@@ -181,15 +172,10 @@ export default function PsicoterapiaRelacionamentosPage() {
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               O processo começa pela sua história, pelas relações que fazem parte
-              dela e pelas questões que estão trazendo sofrimento ou despertando
-              dúvidas hoje.
+              dela e pelas questões que hoje trazem sofrimento ou dúvida. O
+              trabalho é orientado principalmente pela Terapia do Esquema e pela
+              TCC. Atendimento presencial e online.
             </p>
-            <p>
-              Meu trabalho é orientado principalmente pela Terapia do Esquema e pela
-              Terapia Cognitivo-Comportamental (TCC), considerando as necessidades e
-              particularidades de cada pessoa.
-            </p>
-            <p>Atendimento presencial e online.</p>
           </div>
         </Container>
       </section>
@@ -205,19 +191,15 @@ export default function PsicoterapiaRelacionamentosPage() {
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
-              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação profissional e clínica desde 2009.
+              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação clínica
+              desde 2009. Formação em Neuropsicologia e Psicopatologia no IPq-USP,
+              TCC e Terapia do Esquema no CETCC, e Reabilitação Cognitiva no INESP.
+              A ACT integra meus estudos clínicos.
             </p>
             <p>
-              Tenho formação em Neuropsicologia e Psicopatologia no IPq-USP, em TCC
-              e Terapia do Esquema pelo CETCC, e em Reabilitação Cognitiva pelo
-              INESP. A ACT integra meus estudos e conhecimentos clínicos.
-            </p>
-
-            <p>
-              Essa trajetória orienta um trabalho que busca compreender não apenas a
-              relação atual, mas também os padrões emocionais, necessidades e
-              experiências que atravessam a maneira como cada pessoa constrói seus
-              vínculos.
+              Essa trajetória orienta um trabalho que busca compreender não só a
+              relação atual, mas os padrões e necessidades que atravessam a forma
+              como cada pessoa constrói seus vínculos.
             </p>
           </div>
           <p className="mt-6 text-sm tracking-wide text-peach">

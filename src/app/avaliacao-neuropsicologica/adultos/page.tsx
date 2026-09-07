@@ -59,7 +59,7 @@ export default function AvaliacaoAdultosPage() {
         eyebrow="Avaliação neuropsicológica em adultos"
         title="Algumas dificuldades acompanham você há anos. Outras começaram agora. Entender essa diferença importa"
         description="Dificuldades de atenção, memória, organização ou funcionamento no dia a dia podem ter diferentes explicações."
-        extra="A avaliação neuropsicológica em adultos ajuda a investigar essas questões de forma cuidadosa, considerando seu funcionamento cognitivo, sua história e o contexto em que essas dificuldades aparecem."
+        extra="A avaliação investiga essas questões com cuidado, considerando o funcionamento cognitivo, a história e o contexto."
         pills={[
           ...site.credentials,
         ]}
@@ -74,27 +74,14 @@ export default function AvaliacaoAdultosPage() {
           />
           <div className="space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              Talvez você tenha dificuldade para se concentrar, esqueça compromissos,
-              perca objetos, comece tarefas e não consiga terminá-las ou sinta que se
-              organizar exige um esforço muito maior do que deveria.
+              Talvez seja difícil se concentrar, organizar tarefas ou terminar o
+              que começou. Em outros casos, a dúvida aparece quando memória ou
+              atenção mudam em relação ao que sempre foi habitual.
             </p>
             <p>
-              Em outros casos, a dúvida aparece quando a pessoa percebe mudanças na
-              memória, atenção ou em outras habilidades que antes não chamavam
-              atenção.
-            </p>
-            <p>
-              A questão não é reconhecer um sintoma isolado. É entender como essas
-              dificuldades aparecem na sua história e o que pode estar relacionado a
-              elas.
-            </p>
-            <p>
-              A avaliação também pode ser útil quando há descompasso entre o potencial
-              cognitivo e o impacto que suas dificuldades têm na funcionalidade, nos
-              estudos, no trabalho, na organização da rotina e/ou na autonomia. A
-              investigação ajuda a compreender quais processos podem estar
-              contribuindo para essa diferença e como eles repercutem na vida
-              cotidiana.
+              A questão não é um sintoma isolado. É entender como essas
+              dificuldades aparecem na sua história, inclusive quando o potencial
+              não se traduz no trabalho, nos estudos ou na autonomia.
             </p>
           </div>
         </Container>
@@ -128,18 +115,15 @@ export default function AvaliacaoAdultosPage() {
         <Container className="max-w-3xl">
           <SectionHeading title="“Será que eu tenho TDAH? Autismo? Ou existe outra explicação?”" />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
-            <p>Chegar com uma hipótese é diferente de chegar com uma conclusão.</p>
             <p>
-              Muitos adultos procuram avaliação depois de se reconhecerem em
-              conteúdos sobre TDAH ou Autismo, receberem uma sugestão de outro
-              profissional ou começarem a olhar de outra maneira para dificuldades
-              que os acompanham há anos.
+              Chegar com uma hipótese é diferente de chegar com uma conclusão.
+              Muitos adultos se reconhecem em conteúdos sobre TDAH ou Autismo, ou
+              passam a olhar de outro jeito para dificuldades antigas.
             </p>
             <p>
               Essas hipóteses podem ser investigadas, mas características isoladas
-              não são suficientes para chegar a uma conclusão.
+              não bastam. A avaliação existe para ampliar esse olhar.
             </p>
-            <p>A avaliação existe justamente para ampliar esse olhar.</p>
           </div>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
             <ButtonLink href="/avaliacao-neuropsicologica/tdah" variant="primary">
@@ -162,16 +146,9 @@ export default function AvaliacaoAdultosPage() {
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              O processo começa pela compreensão da sua história, das dificuldades
-              percebidas e da pergunta que motivou a avaliação.
-            </p>
-            <p>
-              A partir disso, são selecionados procedimentos e instrumentos adequados
-              à investigação. Depois, os dados obtidos são analisados em conjunto.
-            </p>
-            <p>
-              Ao final, acontece a devolutiva, com a apresentação dos resultados,
-              conclusões e possíveis orientações.
+              O processo começa pela sua história e pela pergunta que motivou a
+              avaliação. Depois, selecionamos os procedimentos adequados. Ao
+              final, a devolutiva apresenta resultados e possíveis orientações.
             </p>
           </div>
           <blockquote className="mt-12">
@@ -195,19 +172,14 @@ export default function AvaliacaoAdultosPage() {
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
-              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação profissional
-              e clínica desde 2009.
+              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação clínica
+              desde 2009. Formação em Neuropsicologia e Psicopatologia no IPq-USP,
+              TCC e Terapia do Esquema no CETCC, e Reabilitação Cognitiva no INESP.
+              Também desenvolvo pesquisa de mestrado em Psicologia na USP.
             </p>
             <p>
-              Tenho formação em Neuropsicologia e Psicopatologia no IPq-USP, em TCC
-              e Terapia do Esquema pelo CETCC, e em Reabilitação Cognitiva pelo
-              INESP. Também desenvolvo Pesquisa de Mestrado em Psicologia no
-              Instituto de Psicologia da USP (IP-USP), com ingresso em 2019.
-            </p>
-            <p>
-              Minha experiência clínica e acadêmica orienta uma avaliação que
-              integra os resultados dos instrumentos à história, ao contexto e às
-              particularidades de cada pessoa.
+              Essa trajetória orienta uma avaliação que integra os resultados à
+              história e às particularidades de cada pessoa.
             </p>
           </div>
           <p className="mt-6 text-sm tracking-wide text-peach">

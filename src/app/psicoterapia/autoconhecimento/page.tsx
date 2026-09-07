@@ -67,13 +67,9 @@ export default function PsicoterapiaAutoconhecimentoPage() {
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              Nem toda busca por psicoterapia começa em um momento de sofrimento
-              intenso.
-            </p>
-            <p>
-              Às vezes, começa pela vontade de compreender melhor suas emoções,
-              escolhas, necessidades, relações e a forma como você reage diante de
-              determinadas situações.
+              Nem toda busca por psicoterapia começa em sofrimento intenso. Às
+              vezes, começa pela vontade de compreender melhor emoções, escolhas,
+              necessidades e a forma como você reage.
             </p>
             <p>
               Autoconhecimento não significa encontrar uma explicação para tudo.
@@ -116,15 +112,15 @@ export default function PsicoterapiaAutoconhecimentoPage() {
             title="Autoconhecimento vai além de “saber como eu sou”"
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
-            <p>Perceber um padrão é diferente de compreender de onde ele vem.</p>
             <p>
-              Ao longo da vida, construímos maneiras de interpretar situações, lidar
-              com emoções, responder às nossas necessidades e nos relacionar.
+              Perceber um padrão é diferente de compreender de onde ele vem. Ao
+              longo da vida, construímos maneiras de interpretar situações, lidar
+              com emoções e nos relacionar.
             </p>
             <p>
-              Na psicoterapia, podemos olhar para essas formas de funcionamento com
-              mais profundidade, inclusive para aquilo que faz sentido manter e
-              aquilo que já não funciona da mesma maneira.
+              Na psicoterapia, olhamos essas formas de funcionamento com mais
+              profundidade: o que faz sentido manter e o que já não funciona da
+              mesma maneira.
             </p>
           </div>
         </Container>
@@ -138,19 +134,14 @@ export default function PsicoterapiaAutoconhecimentoPage() {
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              Meu trabalho clínico é orientado principalmente pela Terapia
-              Cognitivo-Comportamental (TCC) e pela Terapia do Esquema.
+              Meu trabalho é orientado principalmente pela TCC e pela Terapia do
+              Esquema. Essas referências ajudam a compreender pensamentos, emoções,
+              necessidades e padrões construídos ao longo da vida.
             </p>
             <p>
-              Essas referências ajudam a compreender pensamentos, emoções,
-              comportamentos, necessidades e padrões construídos ao longo da vida,
-              sempre considerando a história e as particularidades de cada pessoa.
+              O processo é construído a partir do que faz sentido trabalhar para
+              você. Atendimento presencial e online.
             </p>
-            <p>
-              O processo é construído a partir daquilo que faz sentido compreender e
-              trabalhar para você.
-            </p>
-            <p>Atendimento presencial e online.</p>
           </div>
         </Container>
       </section>
@@ -166,19 +157,15 @@ export default function PsicoterapiaAutoconhecimentoPage() {
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
-              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação profissional e clínica desde 2009.
+              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação clínica
+              desde 2009. Formação em Neuropsicologia e Psicopatologia no IPq-USP,
+              TCC e Terapia do Esquema no CETCC, e Reabilitação Cognitiva no INESP.
+              A ACT integra meus estudos clínicos.
             </p>
             <p>
-              Tenho formação em Neuropsicologia e Psicopatologia no IPq-USP, em TCC
-              e Terapia do Esquema pelo CETCC, e em Reabilitação Cognitiva pelo
-              INESP. A ACT integra meus estudos e conhecimentos clínicos.
-            </p>
-
-            <p>
-              Ao longo de quase duas décadas de clínica, construí um trabalho que
-              busca compreender cada pessoa para além da dificuldade que a trouxe à
-              terapia, considerando sua história, seus recursos, relações e
-              necessidades.
+              Ao longo de quase duas décadas, construí um trabalho que busca
+              compreender cada pessoa para além da dificuldade que a trouxe, olhando
+              história, recursos e necessidades.
             </p>
           </div>
           <p className="mt-6 text-sm tracking-wide text-peach">

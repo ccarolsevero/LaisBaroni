@@ -61,7 +61,7 @@ export default function AvaliacaoAutismoPage() {
         eyebrow="Avaliação para Autismo / TEA"
         title="Quando algumas características começam a chamar atenção, compreender a história por trás delas é mais importante do que procurar respostas em uma lista de sinais"
         description="Dúvidas relacionadas à comunicação, interação social, comportamento, interesses ou desenvolvimento podem levar à investigação de Transtorno do Espectro Autista (TEA) na infância ou na vida adulta."
-        extra="A avaliação contribui para compreender essas características dentro da história, do desenvolvimento e do funcionamento de cada pessoa."
+        extra="A avaliação ajuda a compreender essas características dentro da história e do funcionamento de cada pessoa."
         pills={[
           ...site.credentials,
         ]}
@@ -84,15 +84,12 @@ export default function AvaliacaoAutismoPage() {
               </h3>
               <div className="mt-4 space-y-4 text-[15px] leading-relaxed opacity-85">
                 <p>
-                  Talvez algumas características tenham chamado a atenção da família,
-                  da escola ou de outro profissional.
+                  Talvez algumas características tenham chamado a atenção da
+                  família, da escola ou de outro profissional. Interações,
+                  comunicação ou aspectos do desenvolvimento podem levantar
+                  perguntas, mas uma característica isolada não define Autismo. A
+                  avaliação ajuda a compreender o conjunto.
                 </p>
-                <p>
-                  Dificuldades nas interações, particularidades na comunicação,
-                  comportamentos ou aspectos do desenvolvimento podem levantar
-                  perguntas, mas uma característica isolada não define Autismo.
-                </p>
-                <p>A avaliação ajuda a compreender o conjunto.</p>
               </div>
             </article>
             <article className="rounded-2xl bg-ink p-8 text-white">
@@ -103,15 +100,11 @@ export default function AvaliacaoAutismoPage() {
                 Estou buscando uma avaliação para mim
               </h3>
               <div className="mt-4 space-y-4 text-[15px] leading-relaxed text-mist">
-                <p>Às vezes, a hipótese aparece somente na vida adulta.</p>
                 <p>
-                  Experiências vividas desde a infância, dificuldades nas relações ou
-                  características que antes eram entendidas apenas como “meu jeito”
-                  podem começar a ganhar outro significado.
-                </p>
-                <p>
-                  Nesses casos, a investigação considera não apenas como a pessoa
-                  funciona hoje, mas também sua história de desenvolvimento.
+                  Às vezes, a hipótese aparece só na vida adulta. Experiências da
+                  infância, dificuldades nas relações ou características vistas
+                  como “meu jeito” podem ganhar outro significado. A investigação
+                  considera o funcionamento de hoje e a história de desenvolvimento.
                 </p>
               </div>
             </article>
@@ -125,15 +118,9 @@ export default function AvaliacaoAutismoPage() {
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               Se reconhecer em algumas características pode despertar uma pergunta.
-              Não responde a ela.
-            </p>
-            <p>
-              Conteúdos sobre Autismo podem ajudar muitas pessoas a perceber aspectos
-              da própria experiência ou do desenvolvimento dos filhos.
-            </p>
-            <p>
-              Mas uma lista de características não consegue considerar história,
-              contexto, intensidade, impacto e outras possíveis explicações.
+              Não responde a ela. Conteúdos sobre Autismo ajudam a perceber
+              aspectos da própria experiência, mas uma lista não considera
+              história, contexto, intensidade e outras explicações possíveis.
             </p>
             <p>É justamente aí que uma avaliação cuidadosa faz diferença.</p>
           </div>
@@ -178,15 +165,14 @@ export default function AvaliacaoAutismoPage() {
               <h3 className="font-display text-2xl font-medium">Na infância</h3>
               <p className="mt-4 leading-relaxed hero-copy">
                 A história do desenvolvimento e informações da família e de outros
-                contextos relevantes ajudam a compreender as características
-                observadas.
+                contextos ajudam a compreender as características observadas.
               </p>
             </article>
             <article className="rounded-2xl bg-white p-8">
               <h3 className="font-display text-2xl font-medium">Na vida adulta</h3>
               <p className="mt-4 leading-relaxed hero-copy">
-                Olhar para experiências e características presentes ao longo da vida
-                ganha uma importância especial, principalmente quando nunca houve uma
+                Olhar para experiências presentes ao longo da vida ganha
+                importância especial, principalmente quando nunca houve
                 investigação anterior.
               </p>
             </article>
@@ -212,17 +198,9 @@ export default function AvaliacaoAutismoPage() {
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              O processo parte da queixa, da história e das questões que motivaram a
-              busca.
-            </p>
-            <p>
-              A partir disso, são utilizados procedimentos e instrumentos adequados à
-              idade e aos objetivos da investigação.
-            </p>
-            <p>
-              As informações são analisadas em conjunto e, ao final, acontece a
-              devolutiva, com a apresentação dos resultados, conclusões e possíveis
-              orientações.
+              O processo parte da queixa, da história e das questões que motivaram
+              a busca. Depois, usamos procedimentos adequados à idade. Ao final, a
+              devolutiva apresenta resultados e possíveis orientações.
             </p>
           </div>
           <blockquote className="mt-12">
@@ -245,19 +223,15 @@ export default function AvaliacaoAutismoPage() {
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
-              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação profissional
-              e clínica desde 2009.
+              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação clínica
+              desde 2009. Formação em Neuropsicologia e Psicopatologia no IPq-USP,
+              TCC e Terapia do Esquema no CETCC, e Reabilitação Cognitiva no INESP.
+              Também desenvolvo pesquisa de mestrado em Psicologia na USP.
             </p>
             <p>
-              Tenho formação em Neuropsicologia e Psicopatologia no IPq-USP, em TCC
-              e Terapia do Esquema pelo CETCC, e em Reabilitação Cognitiva pelo
-              INESP. Também desenvolvo Pesquisa de Mestrado em Psicologia no
-              Instituto de Psicologia da USP (IP-USP), com ingresso em 2019.
-            </p>
-            <p>
-              Minha experiência clínica e acadêmica orienta uma avaliação que integra
-              instrumentos, história, desenvolvimento e contexto, evitando conclusões
-              baseadas em características isoladas.
+              Essa trajetória orienta uma avaliação que integra instrumentos,
+              história e contexto, evitando conclusões baseadas em características
+              isoladas.
             </p>
           </div>
           <p className="mt-6 text-sm tracking-wide text-peach">

@@ -41,7 +41,7 @@ export default function SupervisaoPage() {
         eyebrow="Supervisão clínica"
         title="Alguns casos não pedem uma resposta rápida. Pedem um olhar clínico mais aprofundado"
         description="A supervisão clínica é um espaço para pensar casos, ampliar hipóteses, discutir intervenções e compreender os impasses que surgem ao longo da prática profissional."
-        extra="Um trabalho construído a partir da experiência clínica, do conhecimento teórico e das particularidades de cada caso, com o objetivo de desenvolver autonomia e raciocínio clínico do terapeuta, não apenas escolher técnicas para uma sessão."
+        extra="Um espaço construído a partir da experiência clínica e das particularidades de cada caso, com o objetivo de desenvolver autonomia e raciocínio clínico, não apenas escolher técnicas para uma sessão."
         pills={[
           site.pills.supervision,
           "TCC • Terapia do Esquema • ACT • Psicopatologia • Neuropsicologia",
@@ -58,13 +58,10 @@ export default function SupervisaoPage() {
           />
           <div className="space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              A supervisão pode fazer sentido tanto diante de um caso que trouxe
-              dúvidas ou impasses quanto para profissionais que desejam aprofundar o
-              raciocínio clínico e desenvolver sua prática.
-            </p>
-            <p>
-              É um espaço para sair do automático e olhar com mais cuidado para
-              aquilo que está acontecendo no processo terapêutico.
+              A supervisão pode fazer sentido diante de um caso com dúvidas ou
+              impasses, e também para quem deseja aprofundar o raciocínio clínico.
+              É um espaço para sair do automático e olhar com mais cuidado o
+              processo terapêutico.
             </p>
           </div>
         </Container>
@@ -86,18 +83,15 @@ export default function SupervisaoPage() {
           </ul>
           <div className="mt-10 max-w-3xl space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              A supervisão ajuda o profissional a ampliar sua compreensão dos casos,
-              desenvolver raciocínio clínico e caminhar em direção à autonomia
-              profissional. O trabalho envolve formular e revisar hipóteses,
-              reconhecer fatores que mantêm as dificuldades, compreender impasses e
-              escolher intervenções coerentes com o caso e o momento do processo
-              terapêutico.
+              A supervisão amplia a compreensão dos casos, desenvolve o raciocínio
+              clínico e caminha em direção à autonomia. Envolve formular hipóteses,
+              reconhecer o que mantém as dificuldades e escolher intervenções
+              coerentes com o momento do processo.
             </p>
             <p>
               Em algumas situações, o impasse não está na falta de uma técnica, mas
-              na forma como o caso está sendo compreendido. Quando pertinente, a
-              supervisão também pode considerar a relação terapêutica e as respostas
-              do próprio terapeuta como informações preciosas à análise do caso.
+              na forma como o caso está sendo compreendido. Quando pertinente,
+              também olhamos a relação terapêutica e as respostas do terapeuta.
             </p>
           </div>
         </Container>
@@ -111,14 +105,10 @@ export default function SupervisaoPage() {
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              Conhecer conceitos e técnicas é fundamental. Mas a clínica exige
-              integrar conhecimento, história, contexto, vínculo e aquilo que
-              acontece ao longo do processo.
-            </p>
-            <p>
-              Na supervisão, teoria e prática se encontram para ajudar o profissional
-              a organizar o raciocínio clínico e compreender melhor as decisões
-              envolvidas na condução do caso.
+              Conhecer conceitos e técnicas é fundamental. A clínica, porém, exige
+              integrar conhecimento, história, vínculo e o que acontece ao longo do
+              processo. Na supervisão, teoria e prática se encontram para
+              organizar o raciocínio e as decisões do caso.
             </p>
           </div>
         </Container>
@@ -132,14 +122,10 @@ export default function SupervisaoPage() {
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              Minha trajetória clínica reúne referências da Terapia
-              Cognitivo-Comportamental, Terapia do Esquema, ACT, Psicopatologia e
-              Neuropsicologia, respeitando a natureza de cada formação.
-            </p>
-            <p>
-              Esse repertório contribui para uma discussão que não olha apenas para
-              sintomas ou técnicas isoladas, mas também para padrões, funcionamento,
-              história e contexto do paciente.
+              Minha trajetória reúne TCC, Terapia do Esquema, ACT, Psicopatologia
+              e Neuropsicologia, respeitando a natureza de cada formação. Esse
+              repertório contribui para uma discussão que não olha só sintomas ou
+              técnicas isoladas, mas também padrões, história e contexto.
             </p>
           </div>
         </Container>
@@ -156,20 +142,17 @@ export default function SupervisaoPage() {
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
-              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação profissional
-              e clínica desde 2009.
+              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação clínica
+              desde 2009. Atuo como professora e supervisora no curso de
+              Neuropsicologia do CETCC; como supervisora clínica no INESP e no
+              IPq-USP; e realizei supervisão de psicólogos clínicos angolanos em
+              programa intensivo na Beneficência Portuguesa.
             </p>
             <p>
-              Atuo como professora e supervisora no curso de Neuropsicologia do
-              CETCC; como supervisora clínica no INESP e no IPq-USP; e realizei
-              supervisão de psicólogos clínicos angolanos em programa intensivo de
-              formação na Beneficência Portuguesa.
-            </p>
-            <p>
-              Minha formação inclui TCC, Terapia do Esquema, ACT, Psicopatologia e
-              Neuropsicologia. Ao longo da trajetória, a experiência clínica e
-              acadêmica foi construindo um olhar que busca integrar teoria,
-              raciocínio clínico e singularidade de cada caso.
+              A formação inclui TCC, Terapia do Esquema, ACT, Psicopatologia e
+              Neuropsicologia. A experiência clínica e acadêmica foi construindo um
+              olhar que integra teoria, raciocínio clínico e a singularidade de
+              cada caso.
             </p>
           </div>
           <p className="mt-6 text-sm tracking-wide text-peach">
@@ -186,18 +169,12 @@ export default function SupervisaoPage() {
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              Os encontros são direcionados às questões apresentadas pelo
-              profissional e aos casos que deseja discutir.
+              Os encontros partem das questões e dos casos que o profissional
+              deseja discutir: compreensão do caso, condução, hipóteses e
+              intervenções, com foco no raciocínio clínico, não em respostas
+              prontas sobre a próxima sessão.
             </p>
-            <p>
-              A supervisão pode envolver compreensão do caso, dúvidas sobre condução,
-              formulação de hipóteses e discussão de estratégias e intervenções, com
-              foco no desenvolvimento do raciocínio clínico, não apenas em
-              respostas prontas sobre a próxima sessão.
-            </p>
-            <p>
-              Entre em contato para informações sobre formato e disponibilidade.
-            </p>
+            <p>Entre em contato para informações sobre formato e disponibilidade.</p>
           </div>
         </Container>
       </section>

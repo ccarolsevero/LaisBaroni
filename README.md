@@ -22,6 +22,7 @@ Admin do blog: [http://localhost:3000/admin](http://localhost:3000/admin)
 | `NEXT_PUBLIC_WHATSAPP_DISPLAY` | Como o número aparece no site |
 | `NEXT_PUBLIC_EMAIL` | E-mail de contato |
 | `DATABASE_URL` | Connection string do Neon (blog) |
+| `ADMIN_USER` | Usuário do `/admin` |
 | `ADMIN_PASSWORD` | Senha do `/admin` |
 | `ADMIN_SECRET` | Chave da sessão do admin |
 

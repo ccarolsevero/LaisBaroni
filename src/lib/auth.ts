@@ -8,8 +8,33 @@ function getSecret() {
   return process.env.ADMIN_SECRET || process.env.ADMIN_PASSWORD || "dev-secret-change-me";
 }
 
+function readEnv(name: string, fallback: string) {
+  const value = process.env[name]?.trim();
+  if (value) return value;
+  if (process.env.VERCEL || process.env.NODE_ENV === "production") return "";
+  return fallback;
+}
+
+export function getAdminUser() {
+  return readEnv("ADMIN_USER", "lais");
+}
+
 export function getAdminPassword() {
-  return process.env.ADMIN_PASSWORD || "lais-admin";
+  return readEnv("ADMIN_PASSWORD", "lais-admin");
+}
+
+function safeEqual(left: string, right: string) {
+  const a = Buffer.from(left);
+  const b = Buffer.from(right);
+  if (a.length !== b.length) return false;
+  return timingSafeEqual(a, b);
+}
+
+export function credentialsMatch(user: string, password: string) {
+  const expectedUser = getAdminUser();
+  const expectedPassword = getAdminPassword();
+  if (!expectedUser || !expectedPassword) return false;
+  return safeEqual(user, expectedUser) && safeEqual(password, expectedPassword);
 }
 
 function sign(value: string) {

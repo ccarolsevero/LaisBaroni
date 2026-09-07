@@ -1,16 +1,20 @@
 import { NextResponse } from "next/server";
 import {
   createSessionToken,
-  getAdminPassword,
+  credentialsMatch,
   sessionCookieOptions,
 } from "@/lib/auth";
 
 export async function POST(request: Request) {
   const body = await request.json().catch(() => null);
+  const user = typeof body?.user === "string" ? body.user.trim() : "";
   const password = typeof body?.password === "string" ? body.password : "";
 
-  if (!password || password !== getAdminPassword()) {
-    return NextResponse.json({ error: "Senha incorreta." }, { status: 401 });
+  if (!credentialsMatch(user, password)) {
+    return NextResponse.json(
+      { error: "Usuário ou senha incorretos." },
+      { status: 401 },
+    );
   }
 
   const token = createSessionToken();

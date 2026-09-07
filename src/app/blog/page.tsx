@@ -11,7 +11,7 @@ import { getAllPosts } from "@/lib/posts";
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Conteúdos sobre Neuropsicologia, saúde emocional, relações e padrões de comportamento, traduzindo temas complexos para uma linguagem mais próxima da vida real.",
+    "Conteúdos sobre Neuropsicologia, saúde emocional, relações e padrões de comportamento, em uma linguagem mais próxima da vida real.",
 };
 
 export const dynamic = "force-dynamic";
@@ -24,7 +24,7 @@ export default async function BlogPage() {
       <PageHero
         eyebrow="Blog"
         title="Psicologia para compreender além das respostas rápidas"
-        description="Conteúdos sobre Neuropsicologia, saúde emocional, relações e padrões de comportamento, traduzindo temas complexos para uma linguagem mais próxima da vida real."
+        description="Conteúdos sobre Neuropsicologia, saúde emocional, relações e padrões de comportamento, em uma linguagem mais próxima da vida real."
         image={photos.blog}
       />
 

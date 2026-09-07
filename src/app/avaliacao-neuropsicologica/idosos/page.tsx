@@ -25,7 +25,7 @@ const faqs = [
   {
     question: "Toda queixa de memória indica demência?",
     answer:
-      "Não. Nem toda queixa de memória indica demência. A avaliação ajuda a compreender o que mudou, quando a mudança começou, como evoluiu e de que forma interfere na vida cotidiana. Diferentes fatores influenciam o funcionamento cognitivo, como aspectos neurológicos, emocionais, clínicos, medicamentosos e relacionados ao sono.",
+      "Não. A avaliação ajuda a compreender o que mudou, quando começou e de que forma interfere no cotidiano. Fatores neurológicos, emocionais, clínicos, medicamentosos e de sono também entram nessa leitura.",
   },
   {
     question: "A avaliação só identifica dificuldades?",
@@ -46,7 +46,7 @@ export default function AvaliacaoIdososPage() {
         eyebrow="Avaliação neuropsicológica em idosos"
         title="Quando mudanças cognitivas começam a levantar perguntas, investigar com cuidado faz diferença"
         description="Ao longo do envelhecimento, algumas mudanças cognitivas podem ocorrer de forma esperada, enquanto outras merecem investigação mais cuidadosa."
-        extra="A Avaliação Neuropsicológica contribui para compreender o perfil cognitivo atual, identificar capacidades preservadas e dificuldades, e auxiliar na investigação de alterações associadas ao envelhecimento."
+        extra="A avaliação ajuda a compreender o perfil cognitivo atual, o que está preservado e o que mudou no envelhecimento."
         pills={[...site.credentials]}
         image={photos.avaliacao}
       />
@@ -59,17 +59,14 @@ export default function AvaliacaoIdososPage() {
           />
           <div className="space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              Alterações de memória, atenção, linguagem, organização ou raciocínio,
-              sobretudo quando representam uma mudança em relação ao funcionamento
-              habitual ou começam a interferir na autonomia e nas atividades
-              cotidianas, podem indicar a necessidade de uma avaliação mais
-              detalhada.
+              Alterações de memória, atenção, linguagem, organização ou raciocínio
+              merecem um olhar mais atento quando mudam em relação ao habitual ou
+              interferem na autonomia.
             </p>
             <p>
-              A avaliação pode contribuir para investigar o funcionamento cognitivo
-              no envelhecimento, comprometimento cognitivo leve, síndromes
-              demenciais e diagnósticos diferenciais, considerando também
-              capacidades preservadas, autonomia e repercussões na vida cotidiana.
+              A avaliação investiga o perfil cognitivo atual, inclusive
+              comprometimento leve e diagnósticos diferenciais, sem perder de vista
+              o que a pessoa ainda consegue fazer bem.
             </p>
           </div>
         </Container>
@@ -107,14 +104,10 @@ export default function AvaliacaoIdososPage() {
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              A compreensão integra história clínica, observação, dados
-              quantitativos e qualitativos, funções preservadas e comprometidas,
-              hipóteses clínicas e impacto funcional.
-            </p>
-            <p>
-              Esse conjunto de informações mostra como memória, atenção, raciocínio,
-              organização e outras habilidades aparecem no dia a dia e de que forma
-              podem influenciar a autonomia e a rotina.
+              A compreensão integra história clínica, observação, resultados e
+              impacto no cotidiano. O conjunto mostra como memória, atenção e
+              organização aparecem no dia a dia e de que forma influenciam a
+              autonomia.
             </p>
           </div>
           <blockquote className="mt-12">
@@ -138,18 +131,13 @@ export default function AvaliacaoIdososPage() {
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
-              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação profissional
-              e clínica desde 2009.
+              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação clínica
+              desde 2009. Formação em Neuropsicologia e Psicopatologia no IPq-USP,
+              TCC e Terapia do Esquema no CETCC, e Reabilitação Cognitiva no INESP.
             </p>
             <p>
-              Tenho formação em Neuropsicologia e Psicopatologia no IPq-USP, em TCC
-              e Terapia do Esquema pelo CETCC, e em Reabilitação Cognitiva pelo
-              INESP.
-            </p>
-            <p>
-              Minha experiência clínica orienta uma avaliação que integra os
-              resultados dos instrumentos à história, ao contexto e às
-              particularidades de cada pessoa.
+              Essa trajetória orienta uma avaliação que integra os resultados à
+              história e às particularidades de cada pessoa.
             </p>
           </div>
           <p className="mt-6 text-sm tracking-wide text-peach">

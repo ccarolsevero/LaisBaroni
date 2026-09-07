@@ -54,7 +54,7 @@ export default function AvaliacaoTdahPage() {
         eyebrow="Avaliação para TDAH"
         title="Quando a dúvida é TDAH, reconhecer alguns sinais não basta. É preciso entender o que está por trás deles"
         description="Dificuldades de atenção, organização, impulsividade ou comportamento podem levantar a hipótese de TDAH tanto na infância quanto na vida adulta."
-        extra="A avaliação neuropsicológica contribui para investigar essas dificuldades considerando como elas aparecem, a história da pessoa e outros aspectos importantes do seu funcionamento."
+        extra="A avaliação investiga essas dificuldades considerando como elas aparecem, a história da pessoa e o funcionamento como um todo."
         pills={[
           ...site.credentials,
         ]}
@@ -77,15 +77,10 @@ export default function AvaliacaoTdahPage() {
               </h3>
               <div className="mt-4 space-y-4 text-[15px] leading-relaxed opacity-85">
                 <p>
-                  Talvez a escola tenha chamado atenção para dificuldades de
-                  concentração, organização, impulsividade ou realização das
-                  atividades. Ou talvez esses comportamentos já sejam percebidos pela
-                  família há algum tempo.
-                </p>
-                <p>
-                  Ter essas dificuldades não significa, por si só, que uma criança
-                  tenha TDAH. A avaliação ajuda a compreender o que está acontecendo
-                  e quais hipóteses precisam ser consideradas.
+                  Talvez a escola tenha chamado atenção para concentração,
+                  organização ou impulsividade. Ou a família já perceba isso há
+                  algum tempo. Ter essas dificuldades não significa, por si só,
+                  TDAH. A avaliação ajuda a compreender o que está acontecendo.
                 </p>
               </div>
             </article>
@@ -99,15 +94,10 @@ export default function AvaliacaoTdahPage() {
               <div className="mt-4 space-y-4 text-[15px] leading-relaxed text-mist">
                 <p>
                   Talvez você tenha passado anos ouvindo que era distraído,
-                  desorganizado, procrastinador ou que precisava “se esforçar mais”.
-                </p>
-                <p>
-                  Na vida adulta, essas dificuldades podem começar a gerar novas
-                  perguntas, inclusive sobre a possibilidade de TDAH.
-                </p>
-                <p>
-                  A investigação considera não apenas como você funciona hoje, mas
-                  também a história dessas dificuldades ao longo da vida.
+                  desorganizado ou que precisava “se esforçar mais”. Na vida
+                  adulta, essas dificuldades podem gerar novas perguntas, inclusive
+                  sobre TDAH. A investigação olha o funcionamento de hoje e a
+                  história dessas dificuldades.
                 </p>
               </div>
             </article>
@@ -119,16 +109,14 @@ export default function AvaliacaoTdahPage() {
         <Container className="max-w-3xl">
           <SectionHeading title="Por que não basta identificar os sintomas?" />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
-            <p>Porque dificuldade de atenção não é sinônimo de TDAH.</p>
             <p>
-              Na criança ou no adulto, características parecidas podem aparecer por
-              diferentes razões.
+              Porque dificuldade de atenção não é sinônimo de TDAH. Características
+              parecidas podem aparecer por razões diferentes.
             </p>
             <p>
-              Por isso, uma avaliação cuidadosa não procura apenas sinais que
-              confirmem uma hipótese. Ela considera quando as dificuldades
-              começaram, onde aparecem, qual impacto provocam e quais outras
-              informações precisam ser investigadas.
+              Uma avaliação cuidadosa não procura só sinais que confirmem uma
+              hipótese. Considera quando as dificuldades começaram, onde aparecem
+              e qual impacto provocam.
             </p>
           </div>
           <blockquote className="mt-12">
@@ -178,16 +166,15 @@ export default function AvaliacaoTdahPage() {
             <article className="rounded-2xl bg-white p-8">
               <h3 className="font-display text-2xl font-medium">Na infância</h3>
               <p className="mt-4 leading-relaxed hero-copy">
-                Informações sobre desenvolvimento, rotina familiar e contexto escolar
-                podem ser importantes para compreender as dificuldades apresentadas.
+                Informações sobre desenvolvimento, rotina familiar e contexto
+                escolar ajudam a compreender as dificuldades apresentadas.
               </p>
             </article>
             <article className="rounded-2xl bg-white p-8">
               <h3 className="font-display text-2xl font-medium">Na vida adulta</h3>
               <p className="mt-4 leading-relaxed hero-copy">
-                A investigação considera o funcionamento atual e também a trajetória
-                da pessoa, inclusive dificuldades que podem estar presentes desde
-                fases anteriores da vida.
+                A investigação considera o funcionamento atual e a trajetória,
+                inclusive dificuldades presentes desde fases anteriores da vida.
               </p>
             </article>
           </div>
@@ -212,17 +199,9 @@ export default function AvaliacaoTdahPage() {
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              O processo começa pela compreensão da queixa, da história e da pergunta
-              que motivou a avaliação.
-            </p>
-            <p>
-              A partir disso, são utilizados procedimentos e instrumentos adequados à
-              idade e aos objetivos da investigação.
-            </p>
-            <p>
-              As informações são analisadas em conjunto e, ao final, acontece a
-              devolutiva, com a apresentação dos resultados, conclusões e possíveis
-              orientações.
+              O processo começa pela queixa, pela história e pela pergunta que
+              motivou a avaliação. Depois, usamos procedimentos adequados à idade.
+              Ao final, a devolutiva apresenta resultados e possíveis orientações.
             </p>
           </div>
           <blockquote className="mt-12">
@@ -245,19 +224,15 @@ export default function AvaliacaoTdahPage() {
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
-              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação profissional
-              e clínica desde 2009.
+              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação clínica
+              desde 2009. Formação em Neuropsicologia e Psicopatologia no IPq-USP,
+              TCC e Terapia do Esquema no CETCC, e Reabilitação Cognitiva no INESP.
+              Também desenvolvo pesquisa de mestrado em Psicologia na USP.
             </p>
             <p>
-              Tenho formação em Neuropsicologia e Psicopatologia no IPq-USP, em TCC
-              e Terapia do Esquema pelo CETCC, e em Reabilitação Cognitiva pelo
-              INESP. Também desenvolvo Pesquisa de Mestrado em Psicologia no
-              Instituto de Psicologia da USP (IP-USP), com ingresso em 2019.
-            </p>
-            <p>
-              Minha experiência clínica e acadêmica orienta uma avaliação que integra
-              instrumentos, história e contexto, evitando conclusões baseadas em
-              características isoladas.
+              Essa trajetória orienta uma avaliação que integra instrumentos,
+              história e contexto, evitando conclusões baseadas em características
+              isoladas.
             </p>
           </div>
           <p className="mt-6 text-sm tracking-wide text-peach">

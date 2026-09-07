@@ -53,7 +53,7 @@ export default function AvaliacaoInfantilPage() {
         eyebrow="Avaliação neuropsicológica infantil"
         title="Quando uma dificuldade começa a chamar atenção, entender o que está por trás dela pode fazer toda a diferença"
         description="Dificuldades na aprendizagem, atenção, comportamento ou desenvolvimento podem gerar muitas dúvidas para a família."
-        extra="A avaliação neuropsicológica infantil ajuda a investigar como a criança funciona em diferentes aspectos, considerando seus recursos, dificuldades, história e contexto."
+        extra="A avaliação investiga como a criança funciona, considerando recursos, dificuldades, história e contexto."
         pills={[
           ...site.credentials,
         ]}
@@ -68,13 +68,14 @@ export default function AvaliacaoInfantilPage() {
           />
           <div className="space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              A escola percebe uma dificuldade. A criança não consegue acompanhar
-              algumas atividades como esperado. Manter a atenção parece exigir um
-              esforço enorme. Aprender determinados conteúdos se torna muito difícil.
-              Ou alguns comportamentos começam a gerar dúvidas na família.
+              A escola percebe uma dificuldade. A criança não acompanha algumas
+              atividades. Manter a atenção exige um esforço enorme. Ou alguns
+              comportamentos começam a gerar dúvidas.
             </p>
-            <p>Esses sinais, sozinhos, não definem um diagnóstico.</p>
-            <p>Mas podem indicar que vale compreender melhor o que está acontecendo.</p>
+            <p>
+              Esses sinais, sozinhos, não definem um diagnóstico. Mas podem indicar
+              que vale compreender melhor o que está acontecendo.
+            </p>
           </div>
         </Container>
       </section>
@@ -108,18 +109,12 @@ export default function AvaliacaoInfantilPage() {
           <SectionHeading title="“Meu filho tem TDAH? Autismo? É uma dificuldade de aprendizagem?”" />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              A avaliação não deveria começar pela resposta. Deveria começar pela
-              investigação.
+              A avaliação começa pela investigação, não pela resposta. É comum a
+              família chegar com uma hipótese da escola ou de outro profissional.
+              Comportamentos parecidos, porém, podem ter explicações diferentes.
             </p>
             <p>
-              É comum que a família chegue à avaliação já com uma hipótese,
-              levantada pela escola, por outro profissional ou pelas próprias
-              observações.
-            </p>
-            <p>Mas comportamentos parecidos podem ter explicações diferentes.</p>
-            <p>
-              Por isso, o objetivo da avaliação não é simplesmente confirmar uma
-              suspeita. É reunir e interpretar informações que ajudem a compreender o
+              O objetivo não é só confirmar uma suspeita. É compreender o
               funcionamento daquela criança e as hipóteses que precisam ser
               consideradas.
             </p>
@@ -135,17 +130,9 @@ export default function AvaliacaoInfantilPage() {
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              O processo começa pela compreensão da queixa e da história da criança,
-              incluindo informações relevantes sobre seu desenvolvimento e cotidiano.
-            </p>
-            <p>
-              A partir disso, são utilizados procedimentos e instrumentos adequados à
-              idade e ao objetivo da investigação.
-            </p>
-            <p>
-              Os dados obtidos são analisados em conjunto e, ao final, é realizada
-              uma devolutiva com os responsáveis, com a apresentação dos resultados e
-              possíveis orientações.
+              O processo começa pela queixa e pela história da criança. Depois,
+              usamos procedimentos adequados à idade. Ao final, há uma devolutiva
+              com os responsáveis, com resultados e possíveis orientações.
             </p>
           </div>
           <blockquote className="mt-12">
@@ -168,19 +155,14 @@ export default function AvaliacaoInfantilPage() {
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
-              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação profissional
-              e clínica desde 2009.
+              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação clínica
+              desde 2009. Formação em Neuropsicologia e Psicopatologia no IPq-USP,
+              TCC e Terapia do Esquema no CETCC, e Reabilitação Cognitiva no INESP.
+              Também desenvolvo pesquisa de mestrado em Psicologia na USP.
             </p>
             <p>
-              Tenho formação em Neuropsicologia e Psicopatologia no IPq-USP, em TCC
-              e Terapia do Esquema pelo CETCC, e em Reabilitação Cognitiva pelo
-              INESP. Também desenvolvo Pesquisa de Mestrado em Psicologia no
-              Instituto de Psicologia da USP (IP-USP), com ingresso em 2019.
-            </p>
-            <p>
-              Minha experiência clínica e acadêmica orienta uma avaliação que
-              considera os instrumentos utilizados, mas também a história, o
-              desenvolvimento e as particularidades de cada criança.
+              Essa trajetória orienta uma avaliação que considera os instrumentos,
+              mas também a história e as particularidades de cada criança.
             </p>
           </div>
           <p className="mt-6 text-sm tracking-wide text-peach">

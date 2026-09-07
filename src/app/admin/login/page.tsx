@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 
 export default function AdminLoginPage() {
   const router = useRouter();
+  const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -17,12 +18,12 @@ export default function AdminLoginPage() {
     const res = await fetch("/api/admin/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ password }),
+      body: JSON.stringify({ user, password }),
     });
 
     setLoading(false);
     if (!res.ok) {
-      setError("Senha incorreta.");
+      setError("Usuário ou senha incorretos.");
       return;
     }
 
@@ -41,13 +42,28 @@ export default function AdminLoginPage() {
         </p>
         <h1 className="font-display mt-3 text-3xl text-ink">Entrar no admin</h1>
         <p className="mt-2 text-mid">
-          Use a senha definida em <code className="text-sm">ADMIN_PASSWORD</code>.
+          Área para criar e editar os artigos do blog.
         </p>
 
         <label className="mt-8 block">
+          <span className="text-sm text-mid">Usuário</span>
+          <input
+            type="text"
+            name="username"
+            autoComplete="username"
+            required
+            value={user}
+            onChange={(e) => setUser(e.target.value)}
+            className="mt-1 w-full rounded-2xl border border-mist bg-base px-4 py-3 outline-none focus:border-soft"
+          />
+        </label>
+
+        <label className="mt-4 block">
           <span className="text-sm text-mid">Senha</span>
           <input
             type="password"
+            name="password"
+            autoComplete="current-password"
             required
             value={password}
             onChange={(e) => setPassword(e.target.value)}
