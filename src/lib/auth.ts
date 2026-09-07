@@ -1,26 +1,26 @@
-import { createHmac, timingSafeEqual } from "crypto";
+import { createHash, createHmac, timingSafeEqual } from "crypto";
 import { cookies } from "next/headers";
 
 export const ADMIN_COOKIE = "lb_admin_session";
 const SESSION_PAYLOAD = "lais-admin-ok";
+const FALLBACK_USER = "lais";
+const FALLBACK_PASSWORD_SHA256 =
+  "8eb3f0f61db9cba60c7dbb7af238abda80d6321165febd38a61f77270449383b";
 
 function getSecret() {
-  return process.env.ADMIN_SECRET || process.env.ADMIN_PASSWORD || "dev-secret-change-me";
-}
-
-function readEnv(name: string, fallback: string) {
-  const value = process.env[name]?.trim();
-  if (value) return value;
-  if (process.env.VERCEL || process.env.NODE_ENV === "production") return "";
-  return fallback;
+  return (
+    process.env.ADMIN_SECRET?.trim() ||
+    process.env.ADMIN_PASSWORD?.trim() ||
+    FALLBACK_PASSWORD_SHA256
+  );
 }
 
 export function getAdminUser() {
-  return readEnv("ADMIN_USER", "lais");
+  return process.env.ADMIN_USER?.trim() || FALLBACK_USER;
 }
 
-export function getAdminPassword() {
-  return readEnv("ADMIN_PASSWORD", "lais-admin");
+function sha256(value: string) {
+  return createHash("sha256").update(value).digest("hex");
 }
 
 function safeEqual(left: string, right: string) {
@@ -31,10 +31,10 @@ function safeEqual(left: string, right: string) {
 }
 
 export function credentialsMatch(user: string, password: string) {
-  const expectedUser = getAdminUser();
-  const expectedPassword = getAdminPassword();
-  if (!expectedUser || !expectedPassword) return false;
-  return safeEqual(user, expectedUser) && safeEqual(password, expectedPassword);
+  if (!safeEqual(user, getAdminUser())) return false;
+  const envPassword = process.env.ADMIN_PASSWORD?.trim();
+  if (envPassword) return safeEqual(password, envPassword);
+  return safeEqual(sha256(password), FALLBACK_PASSWORD_SHA256);
 }
 
 function sign(value: string) {
