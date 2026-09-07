@@ -3,7 +3,7 @@ import { categories } from "@/lib/blog";
 import { getAllPosts } from "@/lib/posts";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const base = "https://laisbarone.com.br";
+  const base = "https://laisberinghs.com.br";
   const posts = await getAllPosts();
   const routes = [
     "",

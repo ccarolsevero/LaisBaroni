@@ -5,6 +5,7 @@ export const site = {
   fullName: "Laís Beringhs Baroni",
   role: "Psicóloga e Neuropsicóloga",
   crp: "CRP 06/95581",
+  url: "https://laisberinghs.com.br",
   /** Atuação profissional e clínica */
   since: 2009,
   graduatedYear: 2008,
