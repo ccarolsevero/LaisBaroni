@@ -21,13 +21,9 @@ Admin do blog: [http://localhost:3000/admin](http://localhost:3000/admin)
 | `NEXT_PUBLIC_WHATSAPP` | Número com DDI + DDD, só dígitos |
 | `NEXT_PUBLIC_WHATSAPP_DISPLAY` | Como o número aparece no site |
 | `NEXT_PUBLIC_EMAIL` | E-mail de contato |
-| `DATABASE_URL` | Connection string do Neon (blog) |
 | `ADMIN_USER` | Usuário do `/admin` |
 | `ADMIN_PASSWORD` | Senha do `/admin` |
 | `ADMIN_SECRET` | Chave da sessão do admin |
+| `BLOG_GITHUB_TOKEN` | Token para gravar `content/posts.json` em produção |
 
-Depois de configurar o banco:
-
-```bash
-npm run db:setup
-```
+Os artigos ficam em `content/posts.json`. No admin, criar/editar/excluir atualiza esse arquivo e, em produção, o commit vai para o GitHub para os textos permanecerem.

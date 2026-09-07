@@ -10,7 +10,11 @@ import {
   isCategorySlug,
   type CategorySlug,
 } from "@/lib/blog";
-import { getSql, hasDatabase } from "@/lib/db";
+import {
+  loadStoredPosts,
+  persistStoredPosts,
+  type StoredPost,
+} from "@/lib/post-store";
 
 export type PostMeta = {
   title: string;
@@ -37,42 +41,37 @@ export type PostInput = {
   content: string;
 };
 
-type PostRow = {
-  slug: string;
-  title: string;
-  date: string | Date;
-  excerpt: string;
-  image: string | null;
-  category: string | null;
-  published: boolean;
-  content: string;
-};
-
 const postsDirectory = path.join(process.cwd(), "content/posts");
 const defaultCategory: CategorySlug = categories[0].slug;
-
-function formatDate(value: string | Date) {
-  if (value instanceof Date) {
-    return value.toISOString().slice(0, 10);
-  }
-  return String(value).slice(0, 10);
-}
 
 function normalizeCategory(value: string | null | undefined): CategorySlug {
   if (value && isCategorySlug(value)) return value;
   return defaultCategory;
 }
 
-function mapRow(row: PostRow): Post {
+function mapStored(row: StoredPost): Post {
   return {
     slug: row.slug,
     title: row.title,
-    date: formatDate(row.date),
+    date: String(row.date ?? "").slice(0, 10),
     excerpt: row.excerpt ?? "",
-    image: row.image || undefined,
+    image: row.image ? row.image : undefined,
     category: normalizeCategory(row.category),
     published: Boolean(row.published),
     content: row.content ?? "",
+  };
+}
+
+function toStored(post: Post): StoredPost {
+  return {
+    title: post.title,
+    slug: post.slug,
+    date: post.date,
+    excerpt: post.excerpt,
+    image: post.image ?? "",
+    category: post.category,
+    published: post.published,
+    content: post.content,
   };
 }
 
@@ -105,6 +104,12 @@ function getPostsFromFiles(options?: { includeDrafts?: boolean }): Post[] {
   return posts.filter((post) => post.published);
 }
 
+function filterPosts(posts: Post[], options?: { includeDrafts?: boolean }) {
+  const sorted = [...posts].sort((a, b) => (a.date < b.date ? 1 : -1));
+  if (options?.includeDrafts) return sorted;
+  return sorted.filter((post) => post.published);
+}
+
 function revalidatePostPaths(slug?: string, category?: string) {
   revalidatePath("/");
   revalidatePath("/blog");
@@ -113,14 +118,6 @@ function revalidatePostPaths(slug?: string, category?: string) {
   if (slug) {
     revalidatePath(`/blog/${slug}`);
     revalidatePath(`/admin/posts/${slug}`);
-  }
-}
-
-function requireDatabaseForWrites() {
-  if (!hasDatabase()) {
-    throw new Error(
-      "Para criar ou editar artigos, configure DATABASE_URL (Neon) em .env.local e rode npm run db:setup.",
-    );
   }
 }
 
@@ -135,45 +132,20 @@ export function slugify(input: string) {
     .replace(/-+/g, "-");
 }
 
+async function readPosts(): Promise<Post[]> {
+  const stored = await loadStoredPosts();
+  if (stored.length > 0) return stored.map(mapStored);
+  return getPostsFromFiles({ includeDrafts: true });
+}
+
 export async function getAllPosts(options?: {
   includeDrafts?: boolean;
 }): Promise<Post[]> {
-  if (!hasDatabase()) {
-    return getPostsFromFiles(options);
-  }
-
-  const sql = getSql();
-  const rows = options?.includeDrafts
-    ? ((await sql`
-        SELECT slug, title, date, excerpt, image, category, published, content
-        FROM posts
-        ORDER BY date DESC, slug ASC
-      `) as PostRow[])
-    : ((await sql`
-        SELECT slug, title, date, excerpt, image, category, published, content
-        FROM posts
-        WHERE published = true
-        ORDER BY date DESC, slug ASC
-      `) as PostRow[]);
-
-  return rows.map(mapRow);
+  return filterPosts(await readPosts(), options);
 }
 
 export async function getPostBySlug(slug: string): Promise<Post | null> {
-  if (!hasDatabase()) {
-    return getPostsFromFiles({ includeDrafts: true }).find((post) => post.slug === slug) ?? null;
-  }
-
-  const sql = getSql();
-  const rows = (await sql`
-    SELECT slug, title, date, excerpt, image, category, published, content
-    FROM posts
-    WHERE slug = ${slug}
-    LIMIT 1
-  `) as PostRow[];
-
-  if (!rows[0]) return null;
-  return mapRow(rows[0]);
+  return (await readPosts()).find((post) => post.slug === slug) ?? null;
 }
 
 export async function getPostsByCategory(slug: string) {
@@ -187,8 +159,6 @@ export async function markdownToHtml(markdown: string) {
 }
 
 export async function savePost(input: PostInput, previousSlug?: string) {
-  requireDatabaseForWrites();
-  const sql = getSql();
   const slug = slugify(input.slug || input.title);
   if (!slug) throw new Error("Slug inválido");
 
@@ -197,63 +167,45 @@ export async function savePost(input: PostInput, previousSlug?: string) {
     throw new Error("Categoria inválida.");
   }
 
-  const date = input.date || new Date().toISOString().slice(0, 10);
-  const image = input.image?.trim() ? input.image.trim() : null;
-  const excerpt = input.excerpt || "";
-  const content = input.content.trim();
-  const published = Boolean(input.published);
-  const title = input.title;
+  const next: Post = {
+    title: input.title,
+    slug,
+    date: input.date || new Date().toISOString().slice(0, 10),
+    excerpt: input.excerpt || "",
+    image: input.image?.trim() ? input.image.trim() : undefined,
+    category,
+    published: Boolean(input.published),
+    content: input.content.trim(),
+  };
+
+  const posts = await readPosts();
 
   if (previousSlug && previousSlug !== slug) {
-    const existing = await getPostBySlug(slug);
-    if (existing) {
-      throw new Error("Já existe um artigo com este slug.");
-    }
-
-    await sql`
-      UPDATE posts
-      SET
-        slug = ${slug},
-        title = ${title},
-        date = ${date},
-        excerpt = ${excerpt},
-        image = ${image},
-        category = ${category},
-        published = ${published},
-        content = ${content},
-        updated_at = NOW()
-      WHERE slug = ${previousSlug}
-    `;
-    revalidatePostPaths(previousSlug, category);
-  } else {
-    await sql`
-      INSERT INTO posts (slug, title, date, excerpt, image, category, published, content, updated_at)
-      VALUES (${slug}, ${title}, ${date}, ${excerpt}, ${image}, ${category}, ${published}, ${content}, NOW())
-      ON CONFLICT (slug) DO UPDATE SET
-        title = EXCLUDED.title,
-        date = EXCLUDED.date,
-        excerpt = EXCLUDED.excerpt,
-        image = EXCLUDED.image,
-        category = EXCLUDED.category,
-        published = EXCLUDED.published,
-        content = EXCLUDED.content,
-        updated_at = NOW()
-    `;
+    const clash = posts.find((post) => post.slug === slug);
+    if (clash) throw new Error("Já existe um artigo com este slug.");
   }
 
+  const withoutPrevious = posts.filter(
+    (post) => post.slug !== (previousSlug || slug),
+  );
+  withoutPrevious.push(next);
+
+  await persistStoredPosts(withoutPrevious.map(toStored));
+  if (previousSlug && previousSlug !== slug) {
+    revalidatePostPaths(previousSlug, category);
+  }
   revalidatePostPaths(slug, category);
-  const post = await getPostBySlug(slug);
-  if (!post) throw new Error("Não foi possível salvar o artigo.");
-  return post;
+  return next;
 }
 
 export async function deletePost(slug: string) {
-  requireDatabaseForWrites();
-  const sql = getSql();
-  const existing = await getPostBySlug(slug);
+  const posts = await readPosts();
+  const existing = posts.find((post) => post.slug === slug);
   if (!existing) return false;
 
-  await sql`DELETE FROM posts WHERE slug = ${slug}`;
+  await persistStoredPosts(
+    posts.filter((post) => post.slug !== slug).map(toStored),
+  );
   revalidatePostPaths(slug, existing.category);
   return true;
 }
