@@ -26,8 +26,7 @@ export default async function NovoPostPage({
       <p className="text-[11px] font-medium tracking-[0.2em] text-mid uppercase">Blog</p>
       <h1 className="font-display mt-2 text-4xl text-ink">Novo artigo</h1>
       <p className="mt-3 max-w-2xl text-sm leading-relaxed text-mid">
-        Primeiro escolha o conjunto. Depois o tipo de texto. O formulário já entra
-        no modelo daquela categoria.
+        Escolha a categoria e escreva o texto.
       </p>
       <div className="mt-8 rounded-2xl bg-white p-6 sm:p-8">
         <AdminPostForm mode="create" initialCategory={initialCategory} />

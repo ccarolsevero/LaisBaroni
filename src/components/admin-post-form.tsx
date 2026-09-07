@@ -2,12 +2,7 @@
 
 import { FormEvent, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
-import {
-  categories,
-  getCategory,
-  getTextType,
-  type CategorySlug,
-} from "@/lib/blog";
+import { categories, getCategory, type CategorySlug } from "@/lib/blog";
 import type { Post } from "@/lib/posts";
 
 type Props = {
@@ -92,33 +87,12 @@ export function AdminPostForm({ mode, initial, initialCategory }: Props) {
   const [category, setCategory] = useState<CategorySlug>(
     initial?.category ?? initialCategory ?? categories[0].slug,
   );
-  const [textTypeId, setTextTypeId] = useState("");
-  const [appliedTemplate, setAppliedTemplate] = useState("");
-  const [published, setPublished] = useState(initial?.published ?? false);
+  const [published, setPublished] = useState(initial?.published ?? true);
   const [content, setContent] = useState(initial?.content ?? "");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
   const selectedCategory = getCategory(category);
-  const selectedType = textTypeId ? getTextType(category, textTypeId) : undefined;
-
-  function selectCategory(next: CategorySlug) {
-    setCategory(next);
-    setTextTypeId("");
-    setAppliedTemplate("");
-  }
-
-  function applyTextType(typeId: string) {
-    const type = getTextType(category, typeId);
-    if (!type) return;
-    setTextTypeId(typeId);
-    if (!title.trim()) setTitle(type.titlePlaceholder);
-    if (!excerpt.trim()) setExcerpt(type.excerptPlaceholder);
-    if (!content.trim() || content === appliedTemplate) {
-      setContent(type.template.trim());
-      setAppliedTemplate(type.template.trim());
-    }
-  }
 
   async function onSubmit(event: FormEvent) {
     event.preventDefault();
@@ -163,59 +137,21 @@ export function AdminPostForm({ mode, initial, initialCategory }: Props) {
 
   return (
     <form onSubmit={onSubmit} className="space-y-8">
-      <fieldset>
-        <legend className="text-sm text-mid">Em qual conjunto este texto entra?</legend>
-        <div className="mt-3 grid gap-3 sm:grid-cols-2">
-          {categories.map((item) => {
-            const active = item.slug === category;
-            return (
-              <button
-                key={item.slug}
-                type="button"
-                onClick={() => selectCategory(item.slug)}
-                className={`rounded-2xl p-5 text-left transition ${item.tone} ${
-                  active ? "ring-2 ring-ink ring-offset-2" : "opacity-80 hover:opacity-100"
-                }`}
-              >
-                <p className="font-display text-xl leading-snug">{item.label}</p>
-                <p className="mt-2 text-[13px] leading-relaxed opacity-85">{item.description}</p>
-              </button>
-            );
-          })}
-        </div>
-      </fieldset>
-
-      {selectedCategory ? (
-        <fieldset>
-          <legend className="text-sm text-mid">
-            Tipo de texto para {selectedCategory.label}
-          </legend>
-          <p className="mt-1 text-[13px] text-mid">
-            Escolha o formato. O modelo preenche título, resumo e a estrutura do artigo,
-            no tom dos conteúdos que já existem. Você pode editar tudo depois.
-          </p>
-          <div className="mt-3 grid gap-3">
-            {selectedCategory.textTypes.map((type) => {
-              const active = type.id === textTypeId;
-              return (
-                <button
-                  key={type.id}
-                  type="button"
-                  onClick={() => applyTextType(type.id)}
-                  className={`rounded-2xl border px-5 py-4 text-left transition ${
-                    active
-                      ? "border-ink bg-paper"
-                      : "border-mist bg-white hover:border-soft"
-                  }`}
-                >
-                  <p className="font-medium text-ink">{type.label}</p>
-                  <p className="mt-1 text-[13px] leading-relaxed text-mid">{type.hint}</p>
-                </button>
-              );
-            })}
-          </div>
-        </fieldset>
-      ) : null}
+      <label className="block">
+        <span className="text-sm text-mid">Categoria</span>
+        <select
+          required
+          value={category}
+          onChange={(e) => setCategory(e.target.value as CategorySlug)}
+          className={fieldClass}
+        >
+          {categories.map((item) => (
+            <option key={item.slug} value={item.slug}>
+              {item.label}
+            </option>
+          ))}
+        </select>
+      </label>
 
       <label className="block">
         <span className="text-sm text-mid">Título</span>
@@ -223,7 +159,6 @@ export function AdminPostForm({ mode, initial, initialCategory }: Props) {
           required
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          placeholder={selectedType?.titlePlaceholder}
           className={fieldClass}
         />
       </label>
@@ -256,7 +191,6 @@ export function AdminPostForm({ mode, initial, initialCategory }: Props) {
           rows={3}
           value={excerpt}
           onChange={(e) => setExcerpt(e.target.value)}
-          placeholder={selectedType?.excerptPlaceholder}
           className={fieldClass}
         />
         <span className="mt-1 block text-[12px] text-mid">
@@ -284,7 +218,7 @@ export function AdminPostForm({ mode, initial, initialCategory }: Props) {
           onChange={(e) => setPublished(e.target.checked)}
           className="size-4 accent-ink"
         />
-        <span className="text-sm text-ink">Publicado no site</span>
+        <span className="text-sm text-ink">Mostrar este texto no blog</span>
       </label>
 
       <div className="grid gap-6 lg:grid-cols-2">

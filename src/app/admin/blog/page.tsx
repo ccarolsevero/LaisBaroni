@@ -28,8 +28,7 @@ export default async function AdminBlogPage() {
           </p>
           <h1 className="font-display mt-2 text-4xl text-ink">Artigos</h1>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-mid">
-            Cada texto entra em um dos quatro conjuntos do blog. Escolha a
-            categoria para criar no formato certo.
+            Crie, edite ou exclua os artigos do blog.
           </p>
         </div>
         <Link
@@ -54,12 +53,12 @@ export default async function AdminBlogPage() {
                   href={`/admin/posts/novo?categoria=${category.slug}`}
                   className="text-sm font-medium text-ink hover:text-mid"
                 >
-                  Novo neste conjunto
+                  Novo artigo
                 </Link>
               </div>
 
               {items.length === 0 ? (
-                <p className="mt-6 text-sm text-mid">Nenhum artigo neste conjunto ainda.</p>
+                <p className="mt-6 text-sm text-mid">Nenhum artigo nesta categoria ainda.</p>
               ) : (
                 <div className="mt-4 divide-y divide-mist">
                   {items.map((post) => (
