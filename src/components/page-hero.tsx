@@ -46,6 +46,7 @@ export function PageHero({
   note,
   pills,
   image,
+  showCta = true,
 }: {
   eyebrow: string;
   title: string;
@@ -54,13 +55,14 @@ export function PageHero({
   note?: string;
   pills?: string[];
   image?: HeroPhoto;
+  showCta?: boolean;
 }) {
-  const cta = (
+  const cta = showCta ? (
     <ButtonLink href={whatsappUrl()} variant={image ? "peach" : "primary"} external>
       <IconWhatsApp />
       Fale comigo pelo WhatsApp
     </ButtonLink>
-  );
+  ) : null;
 
   const copy = (
     <>
@@ -95,7 +97,7 @@ export function PageHero({
           ))}
         </div>
       ) : null}
-      <div className="mt-10">{cta}</div>
+      {cta ? <div className="mt-10">{cta}</div> : null}
     </>
   );
 
@@ -145,7 +147,7 @@ export function PageHero({
             ))}
           </div>
         ) : null}
-        <div className="mt-10">{cta}</div>
+        {cta ? <div className="mt-10">{cta}</div> : null}
       </Container>
     </section>
   );

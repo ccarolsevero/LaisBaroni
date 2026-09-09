@@ -3,28 +3,28 @@ export const categories = [
     slug: "neuropsicologia-e-avaliacao",
     label: "Neuropsicologia e Avaliação",
     description:
-      "Avaliação neuropsicológica, atenção, memória, TDAH, Autismo e outras questões do funcionamento cognitivo.",
+      "Avaliação neuropsicológica, atenção, memória, TDAH, Autismo e funcionamento cognitivo.",
     tone: "bg-soft text-ink",
   },
   {
     slug: "saude-emocional",
     label: "Saúde Emocional",
     description:
-      "Ansiedade, estresse, emoções, autocobrança e questões que atravessam o cotidiano.",
+      "Ansiedade, estresse, emoções e autocobrança.",
     tone: "bg-ink text-white",
   },
   {
     slug: "relacoes-e-padroes-emocionais",
     label: "Relações e Padrões Emocionais",
     description:
-      "Relacionamentos, limites, necessidades emocionais e padrões que parecem se repetir.",
+      "Relacionamentos, limites, necessidades emocionais e padrões repetitivos.",
     tone: "bg-mid text-white",
   },
   {
     slug: "infancia-e-desenvolvimento",
     label: "Infância e Desenvolvimento",
     description:
-      "Comportamento, emoções, aprendizagem e questões do desenvolvimento infantil.",
+      "Comportamento, emoções, aprendizagem e desenvolvimento infantil.",
     tone: "bg-peach text-ink",
   },
 ] as const satisfies ReadonlyArray<{
