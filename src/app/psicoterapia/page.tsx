@@ -12,7 +12,6 @@ import {
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
 import { photos } from "@/lib/photos";
-import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Psicoterapia Individual",
@@ -26,7 +25,6 @@ const caminhos = [
     icon: IconSearch,
     tone: "bg-peach text-ink",
     title: "Autoconhecimento e Desenvolvimento Emocional",
-    lead: "Nem sempre é preciso estar mal para querer se compreender melhor.",
     text: "Para quem deseja conhecer melhor emoções, escolhas, necessidades e formas de se relacionar.",
     cta: "Quero me conhecer melhor",
     button: "secondary" as const,
@@ -36,7 +34,6 @@ const caminhos = [
     icon: IconBrain,
     tone: "bg-mid text-white",
     title: "Ansiedade, Estresse e Sofrimento Emocional",
-    lead: "Quando aquilo que você sente começa a ocupar espaço demais na sua vida.",
     text: "Ansiedade, crises, estresse e sobrecarga podem afetar a rotina, as relações e a forma como você se sente.",
     cta: "Entenda como a psicoterapia pode ajudar",
     button: "ghost" as const,
@@ -46,8 +43,7 @@ const caminhos = [
     icon: IconChat,
     tone: "bg-ink text-white",
     title: "Relacionamentos e Padrões Emocionais",
-    lead: "Quando as pessoas mudam, mas algumas histórias parecem se repetir.",
-    text: "Limites, dependência emocional, medo de abandono ou relações que repetem o mesmo roteiro podem revelar padrões importantes da história.",
+    text: "Limites, dependência emocional, medo de abandono ou relações que repetem o mesmo roteiro podem revelar padrões importantes.",
     cta: "Quero entender meus padrões",
     button: "ghost" as const,
   },
@@ -56,7 +52,6 @@ const caminhos = [
     icon: IconChild,
     tone: "bg-soft text-ink",
     title: "Psicoterapia Infantil",
-    lead: "Quando a criança ainda não consegue explicar em palavras tudo o que está vivendo.",
     text: "Mudanças de comportamento, dificuldades emocionais ou relacionais podem levar os responsáveis a buscar acompanhamento.",
     cta: "Conheça a Psicoterapia Infantil",
     button: "secondary" as const,
@@ -97,22 +92,13 @@ export default function PsicoterapiaPage() {
       <PageHero
         eyebrow="Psicoterapia individual"
         title="Psicoterapia para compreender o que você está vivendo e o que talvez continue se repetindo"
-        description="Nem sempre quem procura terapia consegue dar um nome exato ao que está sentindo. Pode ser ansiedade, sobrecarga, dificuldades nos relacionamentos, um momento de mudança ou simplesmente o desejo de se conhecer melhor."
-        extra="A psicoterapia é um espaço para compreender essas experiências na sua história e construir novas formas de lidar com elas."
-        pills={[
-          site.pills.therapy,
-          "TCC • Terapia do Esquema • ACT • Psicopatologia",
-          site.pills.mestrado,
-        ]}
+        description="Ansiedade, sobrecarga, dificuldades nos relacionamentos ou o desejo de se conhecer melhor podem levar alguém à psicoterapia. O processo ajuda a compreender essas experiências e desenvolver novas formas de lidar com elas."
         image={photos.psicoterapia}
       />
 
       <section className="bg-base py-12 sm:py-16">
         <Container>
-          <SectionHeading
-            eyebrow="O que trouxe você até a psicoterapia?"
-            title="Pessoas chegam à terapia por motivos diferentes. E nem sempre é preciso estar em crise para começar"
-          />
+          <SectionHeading title="O que trouxe você até a psicoterapia?" />
           <div className="mt-12 grid gap-3 lg:grid-cols-2">
             {caminhos.map((item) => (
               <article
@@ -125,10 +111,7 @@ export default function PsicoterapiaPage() {
                 <h2 className="font-display mt-6 text-[1.85rem] leading-snug font-medium">
                   {item.title}
                 </h2>
-                <p className="mt-4 font-medium leading-relaxed opacity-90">
-                  {item.lead}
-                </p>
-                <p className="mt-3 flex-1 text-[15px] leading-relaxed opacity-85">
+                <p className="mt-4 flex-1 text-[15px] leading-relaxed opacity-85">
                   {item.text}
                 </p>
                 <ButtonLink
@@ -153,43 +136,15 @@ export default function PsicoterapiaPage() {
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              Meu trabalho é orientado pela TCC e pela Terapia do Esquema. A ACT
-              também integra meus estudos, e a Psicopatologia é parte importante
-              da formação. O processo parte de uma formulação individualizada:
-              história, padrões emocionais, necessidades e o que mantém as
-              dificuldades.
-            </p>
-            <p>
-              A partir dessa compreensão, escolhemos intervenções que façam
-              sentido para cada caso, ampliando formas de lidar com pensamentos e
-              emoções. Não existe fórmula pronta para pessoas diferentes.
+              Meu trabalho é orientado principalmente pela TCC e pela Terapia do
+              Esquema, considerando a história, os padrões emocionais, as
+              necessidades e as particularidades de cada pessoa.
             </p>
           </div>
         </Container>
       </section>
 
       <section className="bg-mist py-12 sm:py-16">
-        <Container className="max-w-3xl">
-          <SectionHeading
-            eyebrow="Terapia do Esquema"
-            title="Algumas histórias mudam de personagem, mas parecem repetir o mesmo roteiro"
-          />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
-            <p>
-              Alguns padrões emocionais e relacionais se constroem ao longo da
-              história e continuam aparecendo mesmo quando já reconhecemos que nos
-              fazem mal.
-            </p>
-            <p>
-              A Terapia do Esquema ajuda a compreender essas repetições e as
-              necessidades envolvidas. O objetivo não é só perceber o padrão, mas
-              entender por que ele existe e o que pode ser construído de outro jeito.
-            </p>
-          </div>
-        </Container>
-      </section>
-
-      <section className="bg-white py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Como funciona a psicoterapia?"
@@ -222,15 +177,7 @@ export default function PsicoterapiaPage() {
               TCC e Terapia do Esquema no CETCC, e Reabilitação Cognitiva no INESP.
               A ACT integra meus estudos clínicos.
             </p>
-            <p>
-              Essa trajetória me permite olhar para o que a pessoa vive hoje, e
-              também para sua história e para a maneira como aprendeu a lidar com
-              as próprias experiências.
-            </p>
           </div>
-          <p className="mt-6 text-sm tracking-wide text-peach">
-            {site.credentialLines.therapy}
-          </p>
           <ButtonLink href="/sobre" variant="peach" className="mt-8">
             Conheça minha trajetória
           </ButtonLink>
@@ -248,7 +195,7 @@ export default function PsicoterapiaPage() {
 
       <ContactBand
         title="Você não precisa saber exatamente o que está acontecendo para começar a falar sobre isso"
-        description="Se você está considerando iniciar psicoterapia para você ou buscando atendimento para seu filho, entre em contato para receber mais informações."
+        description=""
       />
     </>
   );
