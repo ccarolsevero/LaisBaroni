@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ContactBand } from "@/components/contact-band";
 import { FaqList } from "@/components/faq-list";
-import { LineMarks } from "@/components/illustrations";
+import { IconArrow } from "@/components/icons";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
 import { photos } from "@/lib/photos";
-import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Avaliação Neuropsicológica Infantil",
@@ -20,6 +20,21 @@ const aspectos = [
   "Linguagem",
   "Funções executivas",
   "Raciocínio e outras funções cognitivas",
+];
+
+const etapas = [
+  {
+    title: "Conversa com os responsáveis",
+    text: "O processo começa pela queixa e pela história da criança.",
+  },
+  {
+    title: "Avaliação",
+    text: "São utilizados procedimentos e instrumentos adequados à idade e à necessidade de cada caso.",
+  },
+  {
+    title: "Devolutiva",
+    text: "Os responsáveis recebem os resultados e as orientações relacionadas à avaliação.",
+  },
 ];
 
 const faqs = [
@@ -52,11 +67,7 @@ export default function AvaliacaoInfantilPage() {
       <PageHero
         eyebrow="Avaliação neuropsicológica infantil"
         title="Quando uma dificuldade começa a chamar atenção, entender o que está por trás dela pode fazer toda a diferença"
-        description="Dificuldades na aprendizagem, atenção, comportamento ou desenvolvimento podem gerar muitas dúvidas para a família."
-        extra="A avaliação investiga como a criança funciona, considerando recursos, dificuldades, história e contexto."
-        pills={[
-          ...site.credentials,
-        ]}
+        description="Dificuldades na aprendizagem, atenção, comportamento ou desenvolvimento podem gerar dúvidas. A avaliação ajuda a compreender o que pode estar acontecendo."
         image={photos.infantil}
       />
 
@@ -86,10 +97,6 @@ export default function AvaliacaoInfantilPage() {
             eyebrow="O que a avaliação pode investigar?"
             title="Não é apenas sobre descobrir uma dificuldade. É sobre compreender como aquela criança funciona"
           />
-          <p className="mt-8 max-w-3xl text-[15px] leading-relaxed hero-copy sm:text-base">
-            De acordo com a necessidade de cada caso, a avaliação pode investigar
-            aspectos como:
-          </p>
           <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {aspectos.map((item) => (
               <li key={item} className="rounded-2xl bg-mist px-6 py-5 text-ink">
@@ -109,38 +116,48 @@ export default function AvaliacaoInfantilPage() {
           <SectionHeading title="“Meu filho tem TDAH? Autismo? É uma dificuldade de aprendizagem?”" />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              A avaliação começa pela investigação, não pela resposta. É comum a
-              família chegar com uma hipótese da escola ou de outro profissional.
-              Comportamentos parecidos, porém, podem ter explicações diferentes.
+              É comum a família chegar com uma suspeita levantada pela escola ou
+              por outro profissional. A avaliação ajuda a investigar as diferentes
+              possibilidades e compreender o funcionamento da criança antes de
+              chegar a conclusões.
             </p>
-            <p>
-              O objetivo não é só confirmar uma suspeita. É compreender o
-              funcionamento daquela criança e as hipóteses que precisam ser
-              consideradas.
-            </p>
+          </div>
+          <div className="mt-8 flex flex-col gap-3">
+            <Link
+              href="/avaliacao-neuropsicologica/tdah"
+              className="inline-flex items-center gap-2 text-sm font-medium text-ink hover:text-mid"
+            >
+              Saiba mais sobre avaliação para TDAH
+              <IconArrow />
+            </Link>
+            <Link
+              href="/avaliacao-neuropsicologica/autismo"
+              className="inline-flex items-center gap-2 text-sm font-medium text-ink hover:text-mid"
+            >
+              Saiba mais sobre avaliação para Autismo
+              <IconArrow />
+            </Link>
           </div>
         </Container>
       </section>
 
       <section className="bg-white py-12 sm:py-16">
-        <Container className="max-w-3xl">
+        <Container>
           <SectionHeading
             eyebrow="Como funciona a avaliação neuropsicológica infantil?"
             title="A criança não chega para “passar em uma prova”"
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
-            <p>
-              O processo começa pela queixa e pela história da criança. Depois,
-              usamos procedimentos adequados à idade. Ao final, há uma devolutiva
-              com os responsáveis, com resultados e possíveis orientações.
-            </p>
+          <div className="mt-12 grid gap-3 md:grid-cols-3">
+            {etapas.map((etapa, index) => (
+              <article key={etapa.title} className="rounded-2xl bg-mist p-7">
+                <p className="font-display text-3xl text-mid">0{index + 1}</p>
+                <h3 className="font-display mt-4 text-xl font-medium text-ink">
+                  {etapa.title}
+                </h3>
+                <p className="mt-3 leading-relaxed hero-copy">{etapa.text}</p>
+              </article>
+            ))}
           </div>
-          <blockquote className="mt-12">
-            <LineMarks className="mb-4 h-10 w-14 text-ink/35" />
-            <p className="font-display text-3xl leading-snug font-medium text-ink">
-              Um resultado isolado não conta a história de uma criança.
-            </p>
-          </blockquote>
         </Container>
       </section>
 
@@ -150,8 +167,8 @@ export default function AvaliacaoInfantilPage() {
             Quem vai conduzir a avaliação?
           </p>
           <h2 className="font-display mt-4 text-3xl leading-[1.2] font-medium sm:text-4xl">
-            Experiência para investigar com técnica. Cuidado para não reduzir uma
-            criança a um resultado.
+            Experiência clínica para compreender cada caso com cuidado e
+            profundidade.
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
@@ -160,14 +177,7 @@ export default function AvaliacaoInfantilPage() {
               TCC e Terapia do Esquema no CETCC, e Reabilitação Cognitiva no INESP.
               Também desenvolvo pesquisa de mestrado em Psicologia na USP.
             </p>
-            <p>
-              Essa trajetória orienta uma avaliação que considera os instrumentos,
-              mas também a história e as particularidades de cada criança.
-            </p>
           </div>
-          <p className="mt-6 text-sm tracking-wide text-peach">
-            {site.credentialLines.neuro}
-          </p>
         </Container>
       </section>
 
@@ -182,7 +192,7 @@ export default function AvaliacaoInfantilPage() {
 
       <ContactBand
         title="Se alguma coisa no desenvolvimento, na aprendizagem ou no comportamento do seu filho está gerando dúvidas, vale compreender melhor antes de tirar conclusões"
-        description="Entre em contato para receber informações sobre a avaliação neuropsicológica infantil."
+        description=""
       />
     </>
   );
