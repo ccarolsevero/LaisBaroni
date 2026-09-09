@@ -1,8 +1,8 @@
 import type { ComponentProps } from "react";
 import Image from "next/image";
+import { ArticleCard } from "@/components/article-card";
 import { ButtonLink } from "@/components/button-link";
 import { ContactBand } from "@/components/contact-band";
-import { EditorialGrid } from "@/components/editorial-grid";
 import { HeroImage } from "@/components/page-hero";
 import {
   IconArrow,
@@ -11,10 +11,12 @@ import {
   IconGraduate,
   IconWhatsApp,
 } from "@/components/icons";
-import { LineMarks } from "@/components/illustrations";
 import { Container, SectionHeading } from "@/components/ui";
 import { photos } from "@/lib/photos";
+import { getAllPosts } from "@/lib/posts";
 import { site, whatsappUrl } from "@/lib/site";
+
+export const dynamic = "force-dynamic";
 
 function HomeHeading(props: ComponentProps<typeof SectionHeading>) {
   return (
@@ -31,7 +33,6 @@ const areas = [
     tone: "bg-soft text-ink",
     pill: "Avaliação",
     title: "Avaliação Neuropsicológica",
-    lead: "Quando existem dúvidas, investigar com cuidado faz diferença.",
     text: "Compreende o funcionamento cognitivo, emocional e comportamental além de resultados isolados.",
     cta: "Conheça a Avaliação Neuropsicológica",
   },
@@ -41,7 +42,6 @@ const areas = [
     tone: "bg-ink text-white",
     pill: "Psicoterapia",
     title: "Psicoterapia Individual",
-    lead: "Entender o que acontece nem sempre é suficiente para deixar de repetir.",
     text: "Olhamos para emoções, relações, necessidades e padrões que influenciam escolhas e vínculos no presente.",
     cta: "Conheça a Psicoterapia",
   },
@@ -51,13 +51,14 @@ const areas = [
     tone: "bg-mid text-white",
     pill: "Supervisão",
     title: "Supervisão Clínica",
-    lead: "A prática clínica também se constrói quando aprendemos a olhar melhor para cada caso.",
     text: "Espaço para discutir casos, ampliar hipóteses e aprofundar o raciocínio clínico.",
     cta: "Conheça a Supervisão Clínica",
   },
 ];
 
-export default function Home() {
+export default async function Home() {
+  const posts = (await getAllPosts()).slice(0, 3);
+
   return (
     <>
       <section className="relative bg-ink lg:min-h-[88vh]">
@@ -70,10 +71,8 @@ export default function Home() {
               que aparece à primeira vista
             </h1>
             <p className="mt-5 text-[15px] leading-relaxed text-white/90 sm:text-base">
-              Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação
-              profissional e clínica desde 2009. Meu trabalho une experiência
-              clínica, conhecimento técnico e um olhar individualizado para
-              compreender cada pessoa em sua história e contexto.
+              Psicóloga e neuropsicóloga com atuação clínica desde 2009, em São
+              Paulo e online.
             </p>
             <div className="mt-8 flex flex-wrap gap-2">
               {site.credentials.map((item) => (
@@ -103,7 +102,6 @@ export default function Home() {
           <HomeHeading
             eyebrow="Áreas de atuação"
             title="Diferentes caminhos para diferentes necessidades"
-            description="Meu trabalho acontece em três frentes, cada uma com objetivos e processos próprios."
           />
           <div className="mt-12 grid gap-3 lg:grid-cols-3">
             {areas.map((area) => (
@@ -120,7 +118,6 @@ export default function Home() {
                 <h3 className="font-display mt-3 text-[1.85rem] leading-snug font-medium">
                   {area.title}
                 </h3>
-                <p className="mt-4 text-[15px] leading-relaxed opacity-85">{area.lead}</p>
                 <p className="mt-4 flex-1 text-[15px] leading-relaxed opacity-80">{area.text}</p>
                 <ButtonLink
                   href={area.href}
@@ -173,39 +170,16 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="bg-peach py-12 sm:py-16">
-        <Container className="max-w-4xl text-left">
-          <HomeHeading
-            eyebrow="Um pouco sobre a forma como trabalho"
-            title="A mesma queixa pode contar histórias completamente diferentes"
-          />
-          <p className="mt-6 max-w-2xl text-left text-[15px] leading-relaxed hero-copy sm:text-base">
-            Dificuldade de concentração, esquecimentos ou um comportamento isolado
-            não contam a história inteira. Por isso, o trabalho começa por uma
-            pergunta:
-          </p>
-          <blockquote className="mt-8 text-left">
-            <LineMarks className="mb-3 h-8 w-12 text-ink/40" />
-            <p className="font-display text-3xl leading-snug font-medium text-ink sm:text-4xl">
-              O que precisamos compreender melhor aqui?
-            </p>
-          </blockquote>
-          <p className="mt-6 max-w-2xl text-left text-[15px] leading-relaxed hero-copy sm:text-base">
-            É a partir dessa compreensão que conduzo avaliação, psicoterapia e
-            supervisão clínica.
-          </p>
-        </Container>
-      </section>
-
       <section className="bg-base py-12 sm:py-16">
         <Container className="text-left">
           <HomeHeading
             eyebrow="Blog"
             title="Psicologia para quem quer compreender além das respostas rápidas"
-            description="No blog, compartilho reflexões e conteúdos sobre neuropsicologia, avaliação neuropsicológica, relações, padrões emocionais, psicopatologia e prática clínica, traduzindo assuntos complexos para uma linguagem mais próxima da vida real."
           />
-          <div className="mt-12">
-            <EditorialGrid />
+          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {posts.map((post) => (
+              <ArticleCard key={post.slug} post={post} />
+            ))}
           </div>
           <div className="mt-10">
             <ButtonLink href="/blog" variant="primary">
@@ -217,7 +191,7 @@ export default function Home() {
       </section>
 
       <div className="[&_h2]:break-words [&_h2]:[text-wrap:auto] lg:[&_h2]:[text-wrap:balance]">
-        <ContactBand />
+        <ContactBand description="" />
       </div>
     </>
   );

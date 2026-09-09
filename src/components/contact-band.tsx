@@ -22,7 +22,11 @@ export function ContactBand({
           <h2 className="font-display mt-3 max-w-2xl text-3xl leading-[1.2] font-medium text-balance sm:text-4xl">
             {title}
           </h2>
-          <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-mist sm:text-base">{description}</p>
+          {description ? (
+            <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-mist sm:text-base">
+              {description}
+            </p>
+          ) : null}
           {modality ? <p className="mt-4 text-soft">{modality}</p> : null}
         </div>
         <div className="flex flex-col gap-3 md:items-end">

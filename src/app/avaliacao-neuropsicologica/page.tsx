@@ -10,11 +10,9 @@ import {
   IconPuzzle,
   IconSearch,
 } from "@/components/icons";
-import { LineMarks } from "@/components/illustrations";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
 import { photos } from "@/lib/photos";
-import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Avaliação Neuropsicológica",
@@ -75,13 +73,6 @@ const tipos = [
   },
 ];
 
-const quotes = [
-  "Não consigo me concentrar.",
-  "Esqueço tudo.",
-  "Sempre tive dificuldade para me organizar.",
-  "Meu filho não acompanha a escola como esperávamos.",
-];
-
 const processo = [
   "Começa pela queixa, pela história e pela pergunta que motivou a avaliação.",
   "Em seguida, selecionamos os procedimentos adequados e analisamos as informações em conjunto.",
@@ -124,7 +115,6 @@ export default function AvaliacaoPage() {
         title="Quando as dificuldades começam a levantar perguntas, uma avaliação cuidadosa pode ajudar a encontrar respostas"
         description="Dificuldades de atenção, memória, aprendizagem ou comportamento podem ter explicações diferentes. A avaliação ajuda a compreender o que pode estar por trás delas."
         note="Avaliação neuropsicológica infantil, adulta e em idosos"
-        pills={[...site.credentials]}
         image={photos.avaliacao}
       />
 
@@ -136,15 +126,10 @@ export default function AvaliacaoPage() {
           />
           <div className="space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              Esquecimentos, dificuldade de atenção, organização ou aprendizagem
-              podem despertar dúvidas na infância, na vida adulta ou no
-              envelhecimento.
-            </p>
-            <p>
-              Também vale investigar quando o potencial cognitivo não se traduz no
-              estudo, no trabalho ou na autonomia. A avaliação não parte de um
-              diagnóstico pronto: ela investiga o que pode estar por trás do que
-              está sendo observado.
+              Esquecimentos, dificuldades de atenção, organização, aprendizagem
+              ou mudanças no funcionamento cotidiano podem gerar dúvidas em
+              diferentes fases da vida. A avaliação ajuda a investigar o que pode
+              estar por trás dessas dificuldades.
             </p>
           </div>
         </Container>
@@ -158,42 +143,14 @@ export default function AvaliacaoPage() {
           />
           <div className="mt-8 max-w-3xl space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              É um processo clínico que investiga atenção, memória, linguagem,
-              funções executivas e aprendizagem, conforme cada caso.
+              A avaliação neuropsicológica é um processo clínico que investiga
+              funções como atenção, memória, linguagem, funções executivas e
+              aprendizagem, de acordo com cada caso.
             </p>
             <p>
-              Não se resume a testes. Integra história, observação, funções
-              preservadas e comprometidas, e o impacto no dia a dia. Ajuda a
-              entender as dificuldades e também o que a pessoa consegue fazer bem.
-            </p>
-          </div>
-        </Container>
-      </section>
-
-      <section className="bg-mist py-12 sm:py-16">
-        <Container>
-          <SectionHeading
-            eyebrow="A mesma queixa"
-            title="A mesma queixa pode ter explicações diferentes"
-          />
-          <div className="mt-12 grid gap-3 sm:grid-cols-2">
-            {quotes.map((quote, index) => (
-              <blockquote
-                key={quote}
-                className={`rounded-2xl p-8 font-display text-[1.65rem] leading-snug font-medium ${
-                  index % 2 === 0 ? "bg-ink text-white" : "bg-soft text-ink"
-                }`}
-              >
-                “{quote}”
-              </blockquote>
-            ))}
-          </div>
-          <div className="mt-10 max-w-3xl space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
-            <p>
-              Essas frases podem ser o começo de uma investigação, não uma
-              conclusão. Memória, atenção ou organização podem ter causas
-              diferentes. A avaliação integra história, cotidiano e instrumentos
-              para compreender o que mudou.
+              Mais do que aplicar testes, integra história, observação e impacto
+              das dificuldades no cotidiano para compreender o funcionamento de
+              cada pessoa.
             </p>
           </div>
         </Container>
@@ -253,13 +210,6 @@ export default function AvaliacaoPage() {
               </article>
             ))}
           </div>
-          <blockquote className="mt-12 max-w-3xl">
-            <LineMarks className="mb-4 h-10 w-14 text-ink/35" />
-            <p className="font-display text-3xl leading-snug font-medium text-ink sm:text-4xl">
-              A avaliação não começa no teste. Começa na pergunta que precisamos
-              investigar.
-            </p>
-          </blockquote>
         </Container>
       </section>
 
@@ -284,9 +234,6 @@ export default function AvaliacaoPage() {
               história e do contexto de cada pessoa.
             </p>
           </div>
-          <p className="mt-6 text-sm tracking-wide text-peach">
-            {site.credentialLines.neuro}
-          </p>
           <ButtonLink href="/sobre" variant="peach" className="mt-8">
             Conheça minha trajetória
           </ButtonLink>
@@ -304,7 +251,7 @@ export default function AvaliacaoPage() {
 
       <ContactBand
         title="Talvez você ainda não saiba qual é a resposta. A avaliação existe justamente para investigar a pergunta"
-        description="Entre em contato para saber mais sobre a avaliação neuropsicológica."
+        description=""
       />
     </>
   );
