@@ -20,9 +20,7 @@ export const metadata: Metadata = {
 };
 
 const formacao = [
-  "Graduação em Psicologia concluída em dezembro de 2008",
   "Atuação profissional e clínica desde 2009",
-  `Consultório particular desde ${site.privatePracticeSince}`,
   "Especializações em Neuropsicologia e Psicopatologia — IPq-USP",
   "Formações em TCC e Terapia do Esquema — CETCC",
   "Formação em Reabilitação Cognitiva — INESP",
@@ -36,7 +34,7 @@ const praticas = [
     icon: IconBrain,
     tone: "bg-soft text-ink",
     title: "Avaliação Neuropsicológica",
-    text: "Investigar com cuidado para compreender o funcionamento cognitivo, emocional e comportamental para além de resultados isolados.",
+    text: "Investigação do funcionamento cognitivo, emocional e comportamental.",
     cta: "Conheça a Avaliação Neuropsicológica",
   },
   {
@@ -44,7 +42,7 @@ const praticas = [
     icon: IconChat,
     tone: "bg-ink text-white",
     title: "Psicoterapia",
-    text: "Compreender emoções, experiências e padrões que influenciam a maneira como cada pessoa se relaciona consigo, com os outros e com aquilo que vive.",
+    text: "Compreensão de emoções, experiências e padrões que influenciam relações e escolhas.",
     cta: "Conheça a Psicoterapia",
   },
   {
@@ -52,7 +50,7 @@ const praticas = [
     icon: IconGraduate,
     tone: "bg-mid text-white",
     title: "Supervisão Clínica",
-    text: "Compartilhar experiência e conhecimento para ampliar o raciocínio clínico e a compreensão de casos.",
+    text: "Discussão de casos para ampliar o raciocínio e a compreensão clínica.",
     cta: "Conheça a Supervisão",
   },
 ];
@@ -64,8 +62,6 @@ export default function SobrePage() {
         eyebrow="Sobre Laís Baroni"
         title="Quase duas décadas de clínica ensinam que compreender uma pessoa exige mais do que encontrar um nome para o que ela sente"
         description="Sou Laís Beringhs Baroni, psicóloga e neuropsicóloga, com atuação profissional e clínica desde 2009."
-        extra="Minha trajetória foi construída entre clínica, estudo e diferentes formas de compreender o funcionamento humano, sempre com o compromisso de olhar para cada pessoa dentro da sua história e do seu contexto."
-        pills={[...site.credentials]}
         image={photos.sobre}
       />
 
@@ -192,18 +188,12 @@ export default function SobrePage() {
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              Ao longo dos anos, fui aprendendo a não olhar para uma queixa de forma
-              isolada.
-            </p>
-            <p>
               Uma dificuldade de atenção não conta toda a história. Um diagnóstico
-              não resume uma pessoa. E um padrão emocional não existe separado das
-              experiências que ajudaram a construí-lo.
+              não resume uma pessoa.
             </p>
             <p>
-              Por isso, meu trabalho busca integrar conhecimento técnico, história,
-              contexto e individualidade, seja em uma avaliação neuropsicológica, na
-              psicoterapia ou na discussão de um caso em supervisão.
+              Por isso, meu trabalho integra conhecimento técnico, história,
+              contexto e individualidade.
             </p>
           </div>
         </Container>
@@ -244,29 +234,9 @@ export default function SobrePage() {
         </Container>
       </section>
 
-      <section className="bg-white py-12 sm:py-16">
-        <Container className="max-w-3xl">
-          <SectionHeading
-            eyebrow="O que orienta meu trabalho"
-            title="Técnica para investigar. Experiência para interpretar. Escuta para compreender quem está por trás da queixa"
-          />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
-            <p>Não acredito em uma forma única de compreender pessoas diferentes.</p>
-            <p>
-              Meu trabalho é construído a partir das particularidades de cada caso,
-              integrando minha experiência clínica às referências teóricas que
-              fizeram parte da minha formação.
-            </p>
-            <p className="font-display text-3xl leading-snug font-medium text-ink">
-              Antes de procurar uma resposta, é preciso compreender bem a pergunta.
-            </p>
-          </div>
-        </Container>
-      </section>
-
       <ContactBand
         title="Se você chegou até aqui para conhecer quem estará do outro lado, agora conhece um pouco da trajetória que sustenta meu trabalho"
-        description="Entre em contato para saber mais sobre avaliação neuropsicológica, psicoterapia individual ou supervisão clínica."
+        description=""
       />
     </>
   );
