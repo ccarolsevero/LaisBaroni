@@ -3,11 +3,9 @@ import { ButtonLink } from "@/components/button-link";
 import { ContactBand } from "@/components/contact-band";
 import { FaqList } from "@/components/faq-list";
 import { IconArrow } from "@/components/icons";
-import { LineMarks } from "@/components/illustrations";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
 import { photos } from "@/lib/photos";
-import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Avaliação Neuropsicológica em Adultos",
@@ -22,6 +20,21 @@ const aspectos = [
   "Funções executivas",
   "Raciocínio",
   "Aprendizagem e outras funções cognitivas",
+];
+
+const etapas = [
+  {
+    title: "Entrevista inicial",
+    text: "O processo começa pela sua história e pelas questões que motivaram a avaliação.",
+  },
+  {
+    title: "Avaliação",
+    text: "São selecionados os procedimentos e instrumentos adequados ao objetivo da investigação.",
+  },
+  {
+    title: "Devolutiva",
+    text: "Ao final, os resultados são apresentados e discutidos, junto às possíveis orientações.",
+  },
 ];
 
 const faqs = [
@@ -58,11 +71,7 @@ export default function AvaliacaoAdultosPage() {
       <PageHero
         eyebrow="Avaliação neuropsicológica em adultos"
         title="Algumas dificuldades acompanham você há anos. Outras começaram agora. Entender essa diferença importa"
-        description="Dificuldades de atenção, memória, organização ou funcionamento no dia a dia podem ter diferentes explicações."
-        extra="A avaliação investiga essas questões com cuidado, considerando o funcionamento cognitivo, a história e o contexto."
-        pills={[
-          ...site.credentials,
-        ]}
+        description="Dificuldades de atenção, memória, organização ou mudanças no funcionamento podem ter diferentes explicações. A avaliação ajuda a compreender o que pode estar acontecendo."
         image={photos.avaliacao}
       />
 
@@ -79,9 +88,8 @@ export default function AvaliacaoAdultosPage() {
               atenção mudam em relação ao que sempre foi habitual.
             </p>
             <p>
-              A questão não é um sintoma isolado. É entender como essas
-              dificuldades aparecem na sua história, inclusive quando o potencial
-              não se traduz no trabalho, nos estudos ou na autonomia.
+              Essas dificuldades podem aparecer no trabalho, nos estudos, na
+              rotina ou na autonomia e nem sempre tiveram início recentemente.
             </p>
           </div>
         </Container>
@@ -93,10 +101,6 @@ export default function AvaliacaoAdultosPage() {
             eyebrow="O que a avaliação pode investigar?"
             title="A pergunta não é apenas “o que está difícil?”, mas “como você funciona?”"
           />
-          <p className="mt-8 max-w-3xl text-[15px] leading-relaxed hero-copy sm:text-base">
-            De acordo com a necessidade de cada caso, podem ser investigados aspectos
-            como:
-          </p>
           <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {aspectos.map((item) => (
               <li key={item} className="rounded-2xl bg-mist px-6 py-5 text-ink">
@@ -105,8 +109,8 @@ export default function AvaliacaoAdultosPage() {
             ))}
           </ul>
           <p className="mt-10 max-w-3xl text-[15px] leading-relaxed hero-copy sm:text-base">
-            Essas informações são interpretadas considerando também a história, o
-            contexto e a questão que motivou a avaliação.
+            Os resultados são interpretados junto à história e ao contexto de cada
+            pessoa.
           </p>
         </Container>
       </section>
@@ -116,13 +120,11 @@ export default function AvaliacaoAdultosPage() {
           <SectionHeading title="“Será que eu tenho TDAH? Autismo? Ou existe outra explicação?”" />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              Chegar com uma hipótese é diferente de chegar com uma conclusão.
-              Muitos adultos se reconhecem em conteúdos sobre TDAH ou Autismo, ou
-              passam a olhar de outro jeito para dificuldades antigas.
-            </p>
-            <p>
-              Essas hipóteses podem ser investigadas, mas características isoladas
-              não bastam. A avaliação existe para ampliar esse olhar.
+              Muitos adultos procuram uma avaliação após se identificarem com
+              características relacionadas ao TDAH ou ao Autismo, ou por
+              perceberem dificuldades que os acompanham há anos. Essas hipóteses
+              podem ser investigadas sem partir da necessidade de confirmar um
+              diagnóstico.
             </p>
           </div>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
@@ -139,25 +141,22 @@ export default function AvaliacaoAdultosPage() {
       </section>
 
       <section className="bg-white py-12 sm:py-16">
-        <Container className="max-w-3xl">
+        <Container>
           <SectionHeading
             eyebrow="Como funciona a avaliação em adultos?"
             title="Você não chega para provar que tem ou não tem um diagnóstico"
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
-            <p>
-              O processo começa pela sua história e pela pergunta que motivou a
-              avaliação. Depois, selecionamos os procedimentos adequados. Ao
-              final, a devolutiva apresenta resultados e possíveis orientações.
-            </p>
+          <div className="mt-12 grid gap-3 md:grid-cols-3">
+            {etapas.map((etapa, index) => (
+              <article key={etapa.title} className="rounded-2xl bg-mist p-7">
+                <p className="font-display text-3xl text-mid">0{index + 1}</p>
+                <h3 className="font-display mt-4 text-xl font-medium text-ink">
+                  {etapa.title}
+                </h3>
+                <p className="mt-3 leading-relaxed hero-copy">{etapa.text}</p>
+              </article>
+            ))}
           </div>
-          <blockquote className="mt-12">
-            <LineMarks className="mb-4 h-10 w-14 text-ink/35" />
-            <p className="font-display text-3xl leading-snug font-medium text-ink">
-              A avaliação não procura apenas um nome. Procura compreender o que os
-              dados significam na sua história.
-            </p>
-          </blockquote>
         </Container>
       </section>
 
@@ -167,8 +166,7 @@ export default function AvaliacaoAdultosPage() {
             Quem vai conduzir sua avaliação?
           </p>
           <h2 className="font-display mt-4 text-3xl leading-[1.2] font-medium sm:text-4xl">
-            Um resultado pode trazer números. A experiência clínica ajuda a
-            compreender o que eles significam.
+            Experiência clínica para uma avaliação cuidadosa e individualizada.
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
@@ -177,14 +175,7 @@ export default function AvaliacaoAdultosPage() {
               TCC e Terapia do Esquema no CETCC, e Reabilitação Cognitiva no INESP.
               Também desenvolvo pesquisa de mestrado em Psicologia na USP.
             </p>
-            <p>
-              Essa trajetória orienta uma avaliação que integra os resultados à
-              história e às particularidades de cada pessoa.
-            </p>
           </div>
-          <p className="mt-6 text-sm tracking-wide text-peach">
-            {site.credentialLines.neuro}
-          </p>
         </Container>
       </section>
 
@@ -198,8 +189,8 @@ export default function AvaliacaoAdultosPage() {
       </section>
 
       <ContactBand
-        title="Você não precisa chegar com a resposta. Pode chegar com a dúvida"
-        description="Se existem dificuldades no seu dia a dia que você gostaria de compreender melhor, entre em contato para receber informações sobre a avaliação neuropsicológica em adultos."
+        title="Você não precisa chegar com a resposta. Pode chegar com a dúvida."
+        description=""
       />
     </>
   );
