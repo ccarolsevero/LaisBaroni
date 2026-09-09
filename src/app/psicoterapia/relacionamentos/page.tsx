@@ -4,7 +4,6 @@ import { FaqList } from "@/components/faq-list";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
 import { photos } from "@/lib/photos";
-import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Psicoterapia para Relacionamentos e Padrões Emocionais",
@@ -26,7 +25,6 @@ const temas = [
   "Medo de abandono ou rejeição",
   "Necessidade excessiva de aprovação",
   "Autocobrança e dificuldade de priorizar as próprias necessidades",
-  "Conflitos e padrões que se repetem nas relações",
   "Dificuldade para confiar ou se permitir criar vínculos",
 ];
 
@@ -63,13 +61,7 @@ export default function PsicoterapiaRelacionamentosPage() {
       <PageHero
         eyebrow="Relacionamentos e padrões emocionais"
         title="As pessoas mudam. Mas por que algumas histórias parecem sempre terminar do mesmo jeito?"
-        description="Relacionamentos podem revelar padrões que se repetem: dificuldade para colocar limites, medo de perder o outro, necessidade constante de aprovação ou a sensação de estar sempre vivendo versões parecidas da mesma história."
-        extra="Na psicoterapia, podemos compreender o que sustenta essas repetições e como sua história influencia a maneira como você se relaciona hoje."
-        pills={[
-          site.pills.therapy,
-          "TCC • Terapia do Esquema • Psicopatologia",
-          site.pills.mestrado,
-        ]}
+        description="Dificuldade para colocar limites, medo de perder o outro, necessidade de aprovação ou relações que parecem repetir a mesma história podem gerar sofrimento. A psicoterapia ajuda a compreender o que sustenta esses padrões."
         image={photos.psicoterapia}
       />
 
@@ -81,13 +73,9 @@ export default function PsicoterapiaRelacionamentosPage() {
           />
           <div className="space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              Você muda de relacionamento, mas algumas sensações permanecem.
-              Dificuldade para dizer não, medo de abandono, necessidade de
-              aprovação, ou o hábito de se afastar quando alguém se aproxima.
-            </p>
-            <p>
-              Quando uma situação se repete, pode valer olhar não só para quem
-              está do outro lado, mas para o padrão que se constrói na relação.
+              Você muda de relacionamento, mas algumas sensações permanecem:
+              dificuldade para dizer não, medo de abandono, necessidade de
+              aprovação ou o hábito de se afastar quando alguém se aproxima.
             </p>
           </div>
         </Container>
@@ -111,13 +99,6 @@ export default function PsicoterapiaRelacionamentosPage() {
               </blockquote>
             ))}
           </div>
-          <div className="mt-10 max-w-3xl space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
-            <p>Essas experiências podem ter histórias muito diferentes.</p>
-            <p>
-              A psicoterapia permite compreender o que essas formas de se relacionar
-              significam para você, sem reduzir sua história a um rótulo.
-            </p>
-          </div>
         </Container>
       </section>
 
@@ -134,21 +115,13 @@ export default function PsicoterapiaRelacionamentosPage() {
               padrões, necessidades e formas de enfrentamento que continuam
               influenciando os vínculos.
             </p>
-            <p>
-              Perceber o padrão é importante. A questão também é compreender por
-              que ele continua fazendo sentido emocionalmente, mesmo quando você
-              gostaria de agir diferente.
-            </p>
           </div>
         </Container>
       </section>
 
       <section className="bg-base py-12 sm:py-16">
         <Container>
-          <SectionHeading
-            eyebrow="O que pode ser trabalhado na psicoterapia?"
-            title="Dependendo da história e das necessidades de cada pessoa, podem aparecer questões relacionadas a:"
-          />
+          <SectionHeading title="O que pode ser trabalhado na psicoterapia?" />
           <ul className="mt-12 grid gap-3 sm:grid-cols-2">
             {temas.map((item) => (
               <li key={item} className="rounded-2xl bg-white px-6 py-5 text-ink">
@@ -156,10 +129,6 @@ export default function PsicoterapiaRelacionamentosPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed hero-copy sm:text-base">
-            Não se trata de encaixar a pessoa em um padrão, mas de compreender como
-            ele aparece e qual função teve, ou ainda tem, em sua história.
-          </p>
         </Container>
       </section>
 
@@ -171,10 +140,9 @@ export default function PsicoterapiaRelacionamentosPage() {
           />
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              O processo começa pela sua história, pelas relações que fazem parte
-              dela e pelas questões que hoje trazem sofrimento ou dúvida. O
-              trabalho é orientado principalmente pela Terapia do Esquema e pela
-              TCC. Atendimento presencial e online.
+              O processo parte da sua história e das questões que hoje geram
+              sofrimento ou dúvidas nas relações. O trabalho é orientado
+              principalmente pela Terapia do Esquema e pela TCC.
             </p>
           </div>
         </Container>
@@ -186,8 +154,8 @@ export default function PsicoterapiaRelacionamentosPage() {
             Quem vai conduzir seu processo?
           </p>
           <h2 className="font-display mt-4 text-3xl leading-[1.2] font-medium sm:text-4xl">
-            Quase duas décadas de clínica mostram que aquilo que se repete costuma
-            ter uma história.
+            Experiência clínica para compreender relações, padrões e necessidades
+            com profundidade.
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
@@ -196,15 +164,7 @@ export default function PsicoterapiaRelacionamentosPage() {
               TCC e Terapia do Esquema no CETCC, e Reabilitação Cognitiva no INESP.
               A ACT integra meus estudos clínicos.
             </p>
-            <p>
-              Essa trajetória orienta um trabalho que busca compreender não só a
-              relação atual, mas os padrões e necessidades que atravessam a forma
-              como cada pessoa constrói seus vínculos.
-            </p>
           </div>
-          <p className="mt-6 text-sm tracking-wide text-peach">
-            {site.credentialLines.therapy}
-          </p>
         </Container>
       </section>
 
@@ -219,7 +179,7 @@ export default function PsicoterapiaRelacionamentosPage() {
 
       <ContactBand
         title="Talvez você já tenha percebido o que se repete. Agora pode ser hora de compreender por quê"
-        description="Se relacionamentos, limites ou padrões emocionais têm gerado sofrimento ou questionamentos, entre em contato para saber mais sobre a psicoterapia."
+        description=""
       />
     </>
   );
