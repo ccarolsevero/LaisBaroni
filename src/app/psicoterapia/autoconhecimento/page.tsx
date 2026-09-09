@@ -4,7 +4,6 @@ import { FaqList } from "@/components/faq-list";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
 import { photos } from "@/lib/photos";
-import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Psicoterapia para Autoconhecimento e Desenvolvimento Emocional",
@@ -14,10 +13,8 @@ export const metadata: Metadata = {
 
 const perguntas = [
   "Por que algumas situações mexem tanto comigo?",
-  "O que eu realmente preciso e quero?",
   "Por que tenho tanta dificuldade para colocar limites?",
   "Por que faço determinadas escolhas repetidamente?",
-  "Como tenho construído minhas relações?",
   "Que padrões da minha história ainda influenciam quem sou hoje?",
 ];
 
@@ -33,11 +30,6 @@ const faqs = [
       "Não. As questões e os objetivos do processo podem ser construídos e compreendidos ao longo dos encontros.",
   },
   {
-    question: "Autoconhecimento é o mesmo que fazer terapia?",
-    answer:
-      "Não necessariamente. Na psicoterapia, o autoconhecimento acontece dentro de um processo clínico conduzido por uma profissional, considerando a história e as necessidades de cada pessoa.",
-  },
-  {
     question: "O atendimento pode ser online?",
     answer: "Sim. Há atendimento presencial e online.",
   },
@@ -49,13 +41,7 @@ export default function PsicoterapiaAutoconhecimentoPage() {
       <PageHero
         eyebrow="Autoconhecimento e desenvolvimento emocional"
         title="Você não precisa estar em crise para querer se compreender melhor"
-        description="Talvez não exista um grande problema para resolver. Mas existem escolhas que você gostaria de entender, emoções que nem sempre consegue nomear ou aspectos da sua história que deseja olhar com mais cuidado."
-        extra="A psicoterapia também pode ser um espaço de autoconhecimento e desenvolvimento emocional."
-        pills={[
-          site.pills.therapy,
-          "TCC • Terapia do Esquema • Psicopatologia",
-          site.pills.mestrado,
-        ]}
+        description="Nem sempre é preciso estar em crise para buscar psicoterapia. O desejo de compreender melhor suas emoções, escolhas e padrões também pode ser um motivo para começar."
         image={photos.psicoterapia}
       />
 
@@ -71,10 +57,6 @@ export default function PsicoterapiaAutoconhecimentoPage() {
               vezes, começa pela vontade de compreender melhor emoções, escolhas,
               necessidades e a forma como você reage.
             </p>
-            <p>
-              Autoconhecimento não significa encontrar uma explicação para tudo.
-              Significa ampliar a compreensão sobre si.
-            </p>
           </div>
         </Container>
       </section>
@@ -85,10 +67,7 @@ export default function PsicoterapiaAutoconhecimentoPage() {
             eyebrow="O que pode ser trabalhado na psicoterapia?"
             title="Algumas perguntas não surgem porque algo está errado. Surgem porque você começou a olhar para si com mais atenção"
           />
-          <p className="mt-8 text-base text-ink">
-            A psicoterapia pode abrir espaço para questões como:
-          </p>
-          <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+          <ul className="mt-12 grid gap-3 sm:grid-cols-2">
             {perguntas.map((item) => (
               <li
                 key={item}
@@ -98,35 +77,10 @@ export default function PsicoterapiaAutoconhecimentoPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed hero-copy sm:text-base">
-            As questões trabalhadas são construídas a partir da história e dos
-            objetivos de cada pessoa.
-          </p>
         </Container>
       </section>
 
       <section className="bg-mist py-12 sm:py-16">
-        <Container className="max-w-3xl">
-          <SectionHeading
-            eyebrow="Autoconhecimento"
-            title="Autoconhecimento vai além de “saber como eu sou”"
-          />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
-            <p>
-              Perceber um padrão é diferente de compreender de onde ele vem. Ao
-              longo da vida, construímos maneiras de interpretar situações, lidar
-              com emoções e nos relacionar.
-            </p>
-            <p>
-              Na psicoterapia, olhamos essas formas de funcionamento com mais
-              profundidade: o que faz sentido manter e o que já não funciona da
-              mesma maneira.
-            </p>
-          </div>
-        </Container>
-      </section>
-
-      <section className="bg-white py-12 sm:py-16">
         <Container className="max-w-3xl">
           <SectionHeading
             eyebrow="Como eu trabalho"
@@ -135,12 +89,8 @@ export default function PsicoterapiaAutoconhecimentoPage() {
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               Meu trabalho é orientado principalmente pela TCC e pela Terapia do
-              Esquema. Essas referências ajudam a compreender pensamentos, emoções,
-              necessidades e padrões construídos ao longo da vida.
-            </p>
-            <p>
-              O processo é construído a partir do que faz sentido trabalhar para
-              você. Atendimento presencial e online.
+              Esquema, considerando pensamentos, emoções, necessidades, padrões e
+              a história de cada pessoa.
             </p>
           </div>
         </Container>
@@ -152,8 +102,8 @@ export default function PsicoterapiaAutoconhecimentoPage() {
             Quem vai conduzir seu processo?
           </p>
           <h2 className="font-display mt-4 text-3xl leading-[1.2] font-medium sm:text-4xl">
-            Experiência clínica também é saber que nem toda pessoa chega à terapia
-            procurando a mesma coisa.
+            Experiência clínica para compreender diferentes histórias e
+            necessidades.
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
@@ -162,15 +112,7 @@ export default function PsicoterapiaAutoconhecimentoPage() {
               TCC e Terapia do Esquema no CETCC, e Reabilitação Cognitiva no INESP.
               A ACT integra meus estudos clínicos.
             </p>
-            <p>
-              Ao longo de quase duas décadas, construí um trabalho que busca
-              compreender cada pessoa para além da dificuldade que a trouxe, olhando
-              história, recursos e necessidades.
-            </p>
           </div>
-          <p className="mt-6 text-sm tracking-wide text-peach">
-            {site.credentialLines.therapy}
-          </p>
         </Container>
       </section>
 
@@ -185,7 +127,7 @@ export default function PsicoterapiaAutoconhecimentoPage() {
 
       <ContactBand
         title="Talvez você não esteja procurando uma resposta. Talvez queira começar a fazer perguntas melhores sobre si"
-        description="Se você deseja iniciar um processo de psicoterapia voltado também ao autoconhecimento e desenvolvimento emocional, entre em contato para receber mais informações."
+        description=""
       />
     </>
   );
