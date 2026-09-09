@@ -54,7 +54,7 @@ export default function PsicoterapiaAnsiedadePage() {
       />
 
       <section className="bg-base py-12 sm:py-16">
-        <Container className="grid gap-12 lg:grid-cols-2 lg:items-start">
+        <Container className="grid gap-10 lg:grid-cols-2 lg:items-center">
           <SectionHeading
             eyebrow="Quando o sofrimento começa a ocupar espaço demais"
             title="Nem sempre é fácil perceber quando “estou dando conta” virou “estou apenas tentando aguentar”"

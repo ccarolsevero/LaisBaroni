@@ -66,7 +66,7 @@ export default function PsicoterapiaRelacionamentosPage() {
       />
 
       <section className="bg-base py-12 sm:py-16">
-        <Container className="grid gap-12 lg:grid-cols-2 lg:items-start">
+        <Container className="grid gap-10 lg:grid-cols-2 lg:items-center">
           <SectionHeading
             eyebrow="Quando o relacionamento muda, mas o padrão continua"
             title="Talvez não seja apenas sobre escolher “a pessoa errada”"

@@ -78,7 +78,7 @@ export default async function Home() {
               {site.credentials.map((item) => (
                 <span
                   key={item}
-                  className="rounded-full bg-peach px-3.5 py-1.5 text-[12px] leading-snug text-ink"
+                  className="rounded-full bg-peach px-3 py-1.5 text-[11px] leading-snug text-ink sm:px-3.5 sm:text-[12px]"
                 >
                   {item}
                 </span>
@@ -107,7 +107,7 @@ export default async function Home() {
             {areas.map((area) => (
               <article
                 key={area.href}
-                className={`flex flex-col items-start text-left rounded-2xl p-8 ${area.tone}`}
+                className={`flex h-full flex-col items-start text-left rounded-2xl p-8 ${area.tone}`}
               >
                 <span className="grid h-11 w-11 place-items-center rounded-full bg-white/20">
                   <area.icon className="h-6 w-6" />
@@ -141,7 +141,7 @@ export default async function Home() {
               alt={photos.homeSobre.alt}
               fill
               quality={90}
-              className="object-contain object-center sm:object-cover sm:object-[center_15%]"
+              className="object-cover object-[center_15%]"
               sizes="(max-width: 1024px) 90vw, 40vw"
             />
           </div>

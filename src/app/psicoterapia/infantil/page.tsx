@@ -56,7 +56,7 @@ export default function PsicoterapiaInfantilPage() {
       />
 
       <section className="bg-base py-12 sm:py-16">
-        <Container className="grid gap-12 lg:grid-cols-2 lg:items-start">
+        <Container className="grid gap-10 lg:grid-cols-2 lg:items-center">
           <SectionHeading
             eyebrow="Quando procurar"
             title="Nem toda mudança significa que existe um problema. Mas algumas mudanças merecem ser compreendidas"

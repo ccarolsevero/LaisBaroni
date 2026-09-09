@@ -47,7 +47,7 @@ export default function AvaliacaoIdososPage() {
       />
 
       <section className="bg-base py-12 sm:py-16">
-        <Container className="grid gap-12 lg:grid-cols-2 lg:items-start">
+        <Container className="grid gap-10 lg:grid-cols-2 lg:items-center">
           <SectionHeading
             eyebrow="Quando vale investigar?"
             title="Mudanças que interferem na autonomia merecem um olhar mais atento"
@@ -88,8 +88,8 @@ export default function AvaliacaoIdososPage() {
             eyebrow="Como funciona?"
             title="A avaliação não se resume à aplicação de testes"
           />
-          <div className="mt-12 grid gap-3 md:grid-cols-3">
-            <article className="rounded-2xl bg-white p-7">
+          <div className="mt-12 grid items-stretch gap-3 md:grid-cols-3">
+            <article className="flex h-full flex-col rounded-2xl bg-white p-7">
               <p className="font-display text-3xl text-mid">01</p>
               <h3 className="font-display mt-4 text-xl font-medium text-ink">
                 Entrevista inicial
@@ -99,7 +99,7 @@ export default function AvaliacaoIdososPage() {
                 dúvidas que motivaram a avaliação.
               </p>
             </article>
-            <article className="rounded-2xl bg-white p-7">
+            <article className="flex h-full flex-col rounded-2xl bg-white p-7">
               <p className="font-display text-3xl text-mid">02</p>
               <h3 className="font-display mt-4 text-xl font-medium text-ink">
                 Avaliação
@@ -109,7 +109,7 @@ export default function AvaliacaoIdososPage() {
                 da investigação.
               </p>
             </article>
-            <article className="rounded-2xl bg-white p-7">
+            <article className="flex h-full flex-col rounded-2xl bg-white p-7">
               <p className="font-display text-3xl text-mid">03</p>
               <h3 className="font-display mt-4 text-xl font-medium text-ink">
                 Devolutiva

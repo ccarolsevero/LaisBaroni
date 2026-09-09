@@ -72,7 +72,7 @@ export default function AvaliacaoInfantilPage() {
       />
 
       <section className="bg-base py-12 sm:py-16">
-        <Container className="grid gap-12 lg:grid-cols-2 lg:items-start">
+        <Container className="grid gap-10 lg:grid-cols-2 lg:items-center">
           <SectionHeading
             eyebrow="O que leva uma família a buscar uma avaliação?"
             title="Às vezes, a dúvida começa com uma frase simples: “Por que isso está sendo tão difícil para ele?”"
@@ -147,9 +147,9 @@ export default function AvaliacaoInfantilPage() {
             eyebrow="Como funciona a avaliação neuropsicológica infantil?"
             title="A criança não chega para “passar em uma prova”"
           />
-          <div className="mt-12 grid gap-3 md:grid-cols-3">
+          <div className="mt-12 grid items-stretch gap-3 md:grid-cols-3">
             {etapas.map((etapa, index) => (
-              <article key={etapa.title} className="rounded-2xl bg-mist p-7">
+              <article key={etapa.title} className="flex h-full flex-col rounded-2xl bg-mist p-7">
                 <p className="font-display text-3xl text-mid">0{index + 1}</p>
                 <h3 className="font-display mt-4 text-xl font-medium text-ink">
                   {etapa.title}

@@ -119,7 +119,7 @@ export default function AvaliacaoPage() {
       />
 
       <section className="bg-base py-12 sm:py-16">
-        <Container className="grid gap-12 lg:grid-cols-2 lg:items-start">
+        <Container className="grid gap-10 lg:grid-cols-2 lg:items-center">
           <SectionHeading
             eyebrow="Quando vale investigar?"
             title="Nem toda dificuldade significa um diagnóstico. Mas algumas perguntas merecem ser investigadas"
@@ -159,11 +159,17 @@ export default function AvaliacaoPage() {
       <section className="bg-base py-12 sm:py-16">
         <Container>
           <SectionHeading title="Qual avaliação você está procurando?" />
-          <div className="mt-12 grid gap-3 lg:grid-cols-2">
-            {tipos.map((tipo) => (
+          <div className="mt-12 grid gap-3 md:grid-cols-2 xl:grid-cols-6">
+            {tipos.map((tipo, index) => (
               <article
                 key={tipo.href}
-                className={`flex flex-col rounded-2xl p-8 ${tipo.tone}`}
+                className={`flex h-full flex-col rounded-2xl p-8 ${tipo.tone} ${
+                  index < 3
+                    ? "xl:col-span-2"
+                    : index === tipos.length - 1
+                      ? "md:col-span-2 xl:col-span-3"
+                      : "xl:col-span-3"
+                }`}
               >
                 <span className="grid h-11 w-11 place-items-center rounded-full bg-white/20">
                   <tipo.icon className="h-6 w-6" />
@@ -202,9 +208,9 @@ export default function AvaliacaoPage() {
             eyebrow="Como funciona?"
             title="Avaliar não é fazer uma sequência de testes e esperar que eles deem uma resposta"
           />
-          <div className="mt-12 grid gap-3 md:grid-cols-3">
+          <div className="mt-12 grid items-stretch gap-3 md:grid-cols-3">
             {processo.map((text, index) => (
-              <article key={text} className="rounded-2xl bg-mist p-7">
+              <article key={text} className="flex h-full flex-col rounded-2xl bg-mist p-7">
                 <p className="font-display text-3xl text-mid">0{index + 1}</p>
                 <p className="mt-4 leading-relaxed hero-copy">{text}</p>
               </article>

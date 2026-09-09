@@ -103,7 +103,7 @@ export default function PsicoterapiaPage() {
             {caminhos.map((item) => (
               <article
                 key={item.href}
-                className={`flex flex-col rounded-2xl p-8 ${item.tone}`}
+                className={`flex h-full flex-col rounded-2xl p-8 ${item.tone}`}
               >
                 <span className="grid h-11 w-11 place-items-center rounded-full bg-white/20">
                   <item.icon className="h-6 w-6" />

@@ -76,7 +76,7 @@ export default function AvaliacaoAdultosPage() {
       />
 
       <section className="bg-base py-12 sm:py-16">
-        <Container className="grid gap-12 lg:grid-cols-2 lg:items-start">
+        <Container className="grid gap-10 lg:grid-cols-2 lg:items-center">
           <SectionHeading
             eyebrow="O que leva um adulto a procurar uma avaliação?"
             title="“Eu sempre fui assim ou alguma coisa mudou?”"
@@ -116,9 +116,9 @@ export default function AvaliacaoAdultosPage() {
       </section>
 
       <section className="bg-mist py-12 sm:py-16">
-        <Container className="max-w-3xl">
+        <Container className="max-w-4xl">
           <SectionHeading title="“Será que eu tenho TDAH? Autismo? Ou existe outra explicação?”" />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
+          <div className="mt-8 max-w-3xl space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               Muitos adultos procuram uma avaliação após se identificarem com
               características relacionadas ao TDAH ou ao Autismo, ou por
@@ -146,9 +146,9 @@ export default function AvaliacaoAdultosPage() {
             eyebrow="Como funciona a avaliação em adultos?"
             title="Você não chega para provar que tem ou não tem um diagnóstico"
           />
-          <div className="mt-12 grid gap-3 md:grid-cols-3">
+          <div className="mt-12 grid items-stretch gap-3 md:grid-cols-3">
             {etapas.map((etapa, index) => (
-              <article key={etapa.title} className="rounded-2xl bg-mist p-7">
+              <article key={etapa.title} className="flex h-full flex-col rounded-2xl bg-mist p-7">
                 <p className="font-display text-3xl text-mid">0{index + 1}</p>
                 <h3 className="font-display mt-4 text-xl font-medium text-ink">
                   {etapa.title}
@@ -168,7 +168,7 @@ export default function AvaliacaoAdultosPage() {
           <h2 className="font-display mt-4 text-3xl leading-[1.2] font-medium sm:text-4xl">
             Experiência clínica para uma avaliação cuidadosa e individualizada.
           </h2>
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
+          <div className="mt-8 max-w-3xl space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
               Sou Laís Baroni, psicóloga e neuropsicóloga, com atuação clínica
               desde 2009. Formação em Neuropsicologia e Psicopatologia no IPq-USP,
@@ -176,6 +176,9 @@ export default function AvaliacaoAdultosPage() {
               Também desenvolvo pesquisa de mestrado em Psicologia na USP.
             </p>
           </div>
+          <ButtonLink href="/sobre" variant="peach" className="mt-8">
+            Conheça minha trajetória
+          </ButtonLink>
         </Container>
       </section>
 

@@ -72,7 +72,7 @@ export default function SobrePage() {
               src={photos.trajetoria.src}
               alt={photos.trajetoria.alt}
               fill
-              className="object-contain object-center sm:object-cover sm:object-top"
+              className="object-cover object-top"
               sizes="(max-width: 1024px) 80vw, 35vw"
             />
           </div>

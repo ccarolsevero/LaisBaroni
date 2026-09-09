@@ -175,8 +175,8 @@ export default function AvaliacaoAutismoPage() {
             eyebrow="Como funciona a avaliação?"
             title="A avaliação não começa perguntando “onde estão os sinais de Autismo?”. Começa conhecendo a pessoa"
           />
-          <div className="mt-12 grid gap-3 md:grid-cols-3">
-            <article className="rounded-2xl bg-mist p-7">
+          <div className="mt-12 grid items-stretch gap-3 md:grid-cols-3">
+            <article className="flex h-full flex-col rounded-2xl bg-mist p-7">
               <p className="font-display text-3xl text-mid">01</p>
               <h3 className="font-display mt-4 text-xl font-medium text-ink">
                 Entrevista inicial
@@ -186,7 +186,7 @@ export default function AvaliacaoAutismoPage() {
                 história da pessoa.
               </p>
             </article>
-            <article className="rounded-2xl bg-mist p-7">
+            <article className="flex h-full flex-col rounded-2xl bg-mist p-7">
               <p className="font-display text-3xl text-mid">02</p>
               <h3 className="font-display mt-4 text-xl font-medium text-ink">
                 Avaliação
@@ -196,7 +196,7 @@ export default function AvaliacaoAutismoPage() {
                 objetivos da investigação.
               </p>
             </article>
-            <article className="rounded-2xl bg-mist p-7">
+            <article className="flex h-full flex-col rounded-2xl bg-mist p-7">
               <p className="font-display text-3xl text-mid">03</p>
               <h3 className="font-display mt-4 text-xl font-medium text-ink">
                 Devolutiva

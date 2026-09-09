@@ -14,7 +14,7 @@ export function ContactBand({
 }) {
   return (
     <section className="bg-ink text-white">
-      <Container className="grid gap-8 py-14 md:grid-cols-[1.4fr_1fr] md:items-end md:py-16">
+      <Container className="grid gap-8 py-14 md:grid-cols-[1.4fr_1fr] md:items-center md:py-16">
         <div>
           <p className="text-[11px] font-medium tracking-[0.2em] text-peach uppercase">
             Contato
@@ -27,7 +27,11 @@ export function ContactBand({
               {description}
             </p>
           ) : null}
-          {modality ? <p className="mt-4 text-soft">{modality}</p> : null}
+          {modality ? (
+            <p className={`text-soft ${description ? "mt-4" : "mt-5"}`}>
+              {modality}
+            </p>
+          ) : null}
         </div>
         <div className="flex flex-col gap-3 md:items-end">
           <ButtonLink href={whatsappUrl()} variant="ghost" external>

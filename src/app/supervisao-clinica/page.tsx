@@ -51,7 +51,7 @@ export default function SupervisaoPage() {
       />
 
       <section className="bg-base py-12 sm:py-16">
-        <Container className="grid gap-12 lg:grid-cols-2 lg:items-start">
+        <Container className="grid gap-10 lg:grid-cols-2 lg:items-center">
           <SectionHeading
             eyebrow="Para quem é a supervisão?"
             title="Você não precisa estar “sem saber o que fazer” para levar um caso à supervisão"

@@ -13,6 +13,7 @@ function isActive(pathname: string, href: string) {
 
 function DesktopItem({ item, pathname }: { item: NavItem; pathname: string }) {
   const active = isActive(pathname, item.href);
+  const alignEnd = item.href === "/blog";
 
   if (!item.children?.length) {
     return (
@@ -38,7 +39,11 @@ function DesktopItem({ item, pathname }: { item: NavItem; pathname: string }) {
         {item.label}
         <span className="text-[10px] opacity-60">▾</span>
       </Link>
-      <div className="invisible absolute top-full left-0 z-50 min-w-[240px] pt-3 opacity-0 transition group-hover:visible group-hover:opacity-100">
+      <div
+        className={`invisible absolute top-full z-50 min-w-[240px] pt-3 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 ${
+          alignEnd ? "right-0" : "left-0"
+        }`}
+      >
         <div className="rounded-2xl bg-white p-2 shadow-[0_16px_40px_rgba(73,101,123,0.16)] ring-1 ring-ink/8">
           {item.children.map((child) => (
             <Link

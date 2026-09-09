@@ -63,10 +63,11 @@ export function PageHero({
       Fale comigo pelo WhatsApp
     </ButtonLink>
   ) : null;
+  const ctaOffset = extra || note || pills?.length ? "mt-10" : "mt-8";
 
   const copy = (
     <>
-      <span className="inline-flex max-w-full whitespace-nowrap rounded-full bg-peach px-2.5 py-1 text-[10px] font-medium tracking-[0.04em] text-ink uppercase sm:px-3.5 sm:py-1.5 sm:text-[12px] sm:tracking-[0.08em]">
+      <span className="inline-flex max-w-full rounded-full bg-peach px-2.5 py-1 text-[10px] font-medium tracking-[0.04em] text-ink uppercase text-pretty sm:whitespace-nowrap sm:px-3.5 sm:py-1.5 sm:text-[12px] sm:tracking-[0.08em]">
         {eyebrow}
       </span>
       <h1 className="font-display mt-5 text-[2rem] leading-[1.18] font-medium break-words lg:text-balance sm:text-5xl">
@@ -90,14 +91,14 @@ export function PageHero({
           {pills.map((pill) => (
             <span
               key={pill}
-              className="max-w-full whitespace-nowrap rounded-full bg-peach px-2.5 py-1 text-[10px] leading-none text-ink sm:px-3.5 sm:py-1.5 sm:text-[12px] sm:leading-snug"
+              className="max-w-full rounded-full bg-peach px-2.5 py-1 text-[10px] leading-snug text-ink sm:whitespace-nowrap sm:px-3.5 sm:py-1.5 sm:text-[12px]"
             >
               {pill}
             </span>
           ))}
         </div>
       ) : null}
-      {cta ? <div className="mt-10">{cta}</div> : null}
+      {cta ? <div className={ctaOffset}>{cta}</div> : null}
     </>
   );
 
@@ -147,7 +148,7 @@ export function PageHero({
             ))}
           </div>
         ) : null}
-        {cta ? <div className="mt-10">{cta}</div> : null}
+        {cta ? <div className={ctaOffset}>{cta}</div> : null}
       </Container>
     </section>
   );
