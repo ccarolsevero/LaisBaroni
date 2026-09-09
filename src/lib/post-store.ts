@@ -218,7 +218,7 @@ export async function persistStoredPosts(posts: StoredPost[]) {
 
   if (process.env.VERCEL) {
     throw new Error(
-      "Para os artigos permanecerem no ar, o JSON precisa ser gravado no GitHub. Use o admin do deploy da Atmosfera ou configure BLOG_GITHUB_TOKEN.",
+      "Para os artigos permanecerem no ar, o JSON precisa ser gravado no GitHub. Configure BLOG_GITHUB_TOKEN.",
     );
   }
 }
