@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import { ContactBand } from "@/components/contact-band";
 import { FaqList } from "@/components/faq-list";
-import { LineMarks } from "@/components/illustrations";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
 import { photos } from "@/lib/photos";
-import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Avaliação Neuropsicológica em Idosos",
@@ -17,8 +15,7 @@ const indicacoes = [
   "Alterações de memória, atenção, linguagem, organização ou raciocínio",
   "Mudanças em relação ao funcionamento habitual",
   "Impacto na autonomia e nas atividades cotidianas",
-  "Investigação de comprometimento cognitivo leve e síndromes demenciais",
-  "Diagnósticos diferenciais e compreensão do perfil cognitivo atual",
+  "Investigação de comprometimento cognitivo leve e possíveis quadros demenciais",
 ];
 
 const faqs = [
@@ -45,9 +42,7 @@ export default function AvaliacaoIdososPage() {
       <PageHero
         eyebrow="Avaliação neuropsicológica em idosos"
         title="Quando mudanças cognitivas começam a levantar perguntas, investigar com cuidado faz diferença"
-        description="Ao longo do envelhecimento, algumas mudanças cognitivas podem ocorrer de forma esperada, enquanto outras merecem investigação mais cuidadosa."
-        extra="A avaliação ajuda a compreender o perfil cognitivo atual, o que está preservado e o que mudou no envelhecimento."
-        pills={[...site.credentials]}
+        description="Mudanças na memória, atenção, linguagem ou organização podem fazer parte do envelhecimento ou indicar a necessidade de uma investigação mais cuidadosa."
         image={photos.avaliacao}
       />
 
@@ -64,9 +59,8 @@ export default function AvaliacaoIdososPage() {
               interferem na autonomia.
             </p>
             <p>
-              A avaliação investiga o perfil cognitivo atual, inclusive
-              comprometimento leve e diagnósticos diferenciais, sem perder de vista
-              o que a pessoa ainda consegue fazer bem.
+              A avaliação ajuda a compreender o que mudou e de que forma essas
+              alterações estão impactando o cotidiano.
             </p>
           </div>
         </Container>
@@ -85,38 +79,47 @@ export default function AvaliacaoIdososPage() {
               </li>
             ))}
           </ul>
-          <div className="mt-10 max-w-3xl space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
-            <p>
-              Nem toda queixa de memória indica demência. Diferentes fatores
-              influenciam o funcionamento cognitivo, e a avaliação busca
-              compreender o conjunto, sem reduzir o envelhecimento a um único
-              diagnóstico.
-            </p>
-          </div>
         </Container>
       </section>
 
       <section className="bg-mist py-12 sm:py-16">
-        <Container className="max-w-3xl">
+        <Container>
           <SectionHeading
             eyebrow="Como funciona?"
             title="A avaliação não se resume à aplicação de testes"
           />
-          <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
-            <p>
-              A compreensão integra história clínica, observação, resultados e
-              impacto no cotidiano. O conjunto mostra como memória, atenção e
-              organização aparecem no dia a dia e de que forma influenciam a
-              autonomia.
-            </p>
+          <div className="mt-12 grid gap-3 md:grid-cols-3">
+            <article className="rounded-2xl bg-white p-7">
+              <p className="font-display text-3xl text-mid">01</p>
+              <h3 className="font-display mt-4 text-xl font-medium text-ink">
+                Entrevista inicial
+              </h3>
+              <p className="mt-3 leading-relaxed hero-copy">
+                O processo começa pela história, pelas mudanças percebidas e pelas
+                dúvidas que motivaram a avaliação.
+              </p>
+            </article>
+            <article className="rounded-2xl bg-white p-7">
+              <p className="font-display text-3xl text-mid">02</p>
+              <h3 className="font-display mt-4 text-xl font-medium text-ink">
+                Avaliação
+              </h3>
+              <p className="mt-3 leading-relaxed hero-copy">
+                São utilizados procedimentos e instrumentos adequados aos objetivos
+                da investigação.
+              </p>
+            </article>
+            <article className="rounded-2xl bg-white p-7">
+              <p className="font-display text-3xl text-mid">03</p>
+              <h3 className="font-display mt-4 text-xl font-medium text-ink">
+                Devolutiva
+              </h3>
+              <p className="mt-3 leading-relaxed hero-copy">
+                Os resultados são apresentados e discutidos, junto às possíveis
+                orientações.
+              </p>
+            </article>
           </div>
-          <blockquote className="mt-12">
-            <LineMarks className="mb-4 h-10 w-14 text-ink/35" />
-            <p className="font-display text-3xl leading-snug font-medium text-ink">
-              Investigar com cuidado é diferente de alarmar. A avaliação existe para
-              compreender, não para reduzir a pessoa a uma queixa.
-            </p>
-          </blockquote>
         </Container>
       </section>
 
@@ -126,8 +129,7 @@ export default function AvaliacaoIdososPage() {
             Quem vai conduzir sua avaliação?
           </p>
           <h2 className="font-display mt-4 text-3xl leading-[1.2] font-medium sm:text-4xl">
-            Experiência clínica faz diferença quando o resultado precisa ser
-            interpretado, não apenas calculado.
+            Experiência clínica para uma avaliação cuidadosa e individualizada.
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
@@ -135,14 +137,7 @@ export default function AvaliacaoIdososPage() {
               desde 2009. Formação em Neuropsicologia e Psicopatologia no IPq-USP,
               TCC e Terapia do Esquema no CETCC, e Reabilitação Cognitiva no INESP.
             </p>
-            <p>
-              Essa trajetória orienta uma avaliação que integra os resultados à
-              história e às particularidades de cada pessoa.
-            </p>
           </div>
-          <p className="mt-6 text-sm tracking-wide text-peach">
-            {site.credentialLines.neuro}
-          </p>
         </Container>
       </section>
 
@@ -157,7 +152,7 @@ export default function AvaliacaoIdososPage() {
 
       <ContactBand
         title="Mudanças cognitivas merecem compreensão, não conclusões apressadas"
-        description="Se você ou alguém próximo está percebendo alterações que gostaria de compreender melhor, entre em contato para receber informações sobre a avaliação neuropsicológica em idosos."
+        description=""
       />
     </>
   );
