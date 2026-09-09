@@ -4,7 +4,6 @@ import { FaqList } from "@/components/faq-list";
 import { PageHero } from "@/components/page-hero";
 import { Container, SectionHeading } from "@/components/ui";
 import { photos } from "@/lib/photos";
-import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Psicoterapia para Ansiedade, Estresse e Sofrimento Emocional",
@@ -19,7 +18,6 @@ const motivos = [
   "Estresse e sobrecarga",
   "Irritabilidade e dificuldade para desacelerar",
   "Alterações de humor e desânimo",
-  "Sofrimento que começa a interferir no cotidiano",
 ];
 
 const faqs = [
@@ -40,12 +38,6 @@ const faqs = [
       "Sim. Estresse, sobrecarga e a forma como a pessoa vem lidando com essas experiências podem fazer parte do processo terapêutico.",
   },
   {
-    question:
-      "E se eu estiver apenas percebendo que emocionalmente não estou bem?",
-    answer:
-      "Isso também pode ser motivo para procurar psicoterapia. Não é necessário conseguir nomear previamente tudo o que está acontecendo.",
-  },
-  {
     question: "O atendimento é online?",
     answer: "Há atendimento presencial e online.",
   },
@@ -57,13 +49,7 @@ export default function PsicoterapiaAnsiedadePage() {
       <PageHero
         eyebrow="Ansiedade, estresse e sofrimento emocional"
         title="Quando a mente não desliga e até o que parecia simples começa a exigir demais"
-        description="Preocupações constantes, ansiedade, estresse, sobrecarga ou mudanças no humor podem começar a ocupar espaço demais na rotina, nas relações e na forma como você se sente."
-        extra="Na psicoterapia, compreendemos o que está acontecendo, o que mantém esse sofrimento e como ele se relaciona com a sua história."
-        pills={[
-          site.pills.therapy,
-          "TCC • Terapia do Esquema • Psicopatologia",
-          site.pills.mestrado,
-        ]}
+        description="Ansiedade, preocupações constantes, estresse ou sobrecarga podem começar a interferir na rotina, nas relações e no bem-estar. A psicoterapia ajuda a compreender o que está acontecendo e o que pode estar mantendo esse sofrimento."
         image={photos.psicoterapia}
       />
 
@@ -75,14 +61,9 @@ export default function PsicoterapiaAnsiedadePage() {
           />
           <div className="space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
-              Talvez seja difícil desacelerar. A preocupação está sempre presente,
-              o corpo permanece em alerta, ou aparecem irritabilidade, cansaço e
-              sobrecarga. Em outros momentos, o sofrimento vem em crises ou
-              começa a interferir na rotina e nas relações.
-            </p>
-            <p>
-              Você não precisa nomear exatamente o que está acontecendo para
-              procurar ajuda.
+              Talvez esteja difícil desacelerar. A preocupação permanece presente,
+              o corpo parece sempre em alerta ou surgem irritabilidade, cansaço e
+              sobrecarga.
             </p>
           </div>
         </Container>
@@ -97,10 +78,6 @@ export default function PsicoterapiaAnsiedadePage() {
               vivendo. Ansiedade faz parte da experiência humana; o que merece
               atenção é intensidade, frequência e impacto.
             </p>
-            <p>
-              Na psicoterapia, o ponto de partida não precisa ser uma conclusão.
-              Pode ser a necessidade de entender melhor o que está acontecendo.
-            </p>
           </div>
         </Container>
       </section>
@@ -111,18 +88,13 @@ export default function PsicoterapiaAnsiedadePage() {
             eyebrow="O que pode levar alguém a procurar psicoterapia?"
             title="Às vezes, o corpo e a rotina começam a mostrar que alguma coisa precisa de atenção"
           />
-          <p className="mt-8 text-base text-ink">A busca pode acontecer diante de:</p>
-          <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+          <ul className="mt-12 grid gap-3 sm:grid-cols-2">
             {motivos.map((item) => (
               <li key={item} className="rounded-2xl bg-white px-6 py-5 text-ink">
                 {item}
               </li>
             ))}
           </ul>
-          <p className="mt-10 max-w-3xl text-[15px] leading-relaxed hero-copy sm:text-base">
-            Essas experiências não têm o mesmo significado para todas as pessoas. Por
-            isso, precisam ser compreendidas dentro de cada história.
-          </p>
         </Container>
       </section>
 
@@ -135,12 +107,9 @@ export default function PsicoterapiaAnsiedadePage() {
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed hero-copy sm:text-base">
             <p>
               Meu trabalho é orientado principalmente pela TCC e pela Terapia do
-              Esquema. Ao longo do processo, compreendemos pensamentos, emoções,
-              formas de enfrentamento e padrões ligados ao sofrimento atual.
-            </p>
-            <p>
-              Isso permite olhar não só o que você sente, mas o contexto em que
-              essas experiências aparecem. Atendimento presencial e online.
+              Esquema. Ao longo do processo, buscamos compreender pensamentos,
+              emoções, formas de enfrentamento e padrões relacionados ao
+              sofrimento atual.
             </p>
           </div>
         </Container>
@@ -152,8 +121,8 @@ export default function PsicoterapiaAnsiedadePage() {
             Quem vai conduzir seu processo?
           </p>
           <h2 className="font-display mt-4 text-3xl leading-[1.2] font-medium sm:text-4xl">
-            Quando o sofrimento tem muitas camadas, experiência clínica ajuda a não
-            olhar apenas para o que aparece primeiro.
+            Experiência clínica para compreender cada caso com cuidado e
+            profundidade.
           </h2>
           <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-mist sm:text-base">
             <p>
@@ -162,14 +131,7 @@ export default function PsicoterapiaAnsiedadePage() {
               TCC e Terapia do Esquema no CETCC, e Reabilitação Cognitiva no INESP.
               A ACT integra meus estudos clínicos.
             </p>
-            <p>
-              Essa trajetória orienta uma prática que busca compreender sintomas
-              sem separá-los da história e das particularidades de cada pessoa.
-            </p>
           </div>
-          <p className="mt-6 text-sm tracking-wide text-peach">
-            {site.credentialLines.therapy}
-          </p>
         </Container>
       </section>
 
@@ -184,7 +146,7 @@ export default function PsicoterapiaAnsiedadePage() {
 
       <ContactBand
         title="Você não precisa esperar ficar insustentável para começar a cuidar do que está acontecendo"
-        description="Se ansiedade, estresse, sobrecarga ou outras dificuldades emocionais estão ocupando espaço demais na sua vida, entre em contato para saber mais sobre a psicoterapia."
+        description=""
       />
     </>
   );
